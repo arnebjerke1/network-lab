@@ -27,6 +27,8 @@ Usage
 import json
 import os
 import time
+from collections import deque
+from urllib.parse import urlparse, urlunparse
 
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 
@@ -48,6 +50,7 @@ OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
 
 # How long (ms) to wait for elements before giving up on a page
 DEFAULT_TIMEOUT = 15_000
+MAX_PAGES_TO_VISIT = 400
 
 
 # ---------------------------------------------------------------------------
@@ -146,6 +149,43 @@ def extract_questions_from_page(page) -> list[dict]:
     return questions
 
 
+def normalize_url(url: str) -> str:
+    """Normalize URL to avoid revisiting the same page with query/hash variants."""
+    parsed = urlparse(url)
+    return urlunparse((parsed.scheme, parsed.netloc, parsed.path.rstrip("/"), "", "", ""))
+
+
+def question_key(question_text: str) -> str:
+    """Normalize question text for robust deduplication."""
+    return " ".join(question_text.split()).strip().lower()
+
+
+def collect_course_links(page) -> list[str]:
+    """Collect course-related links from the current page."""
+    try:
+        links = page.eval_on_selector_all(
+            "a[href]",
+            """
+            anchors => anchors
+                .map(a => a.href)
+                .filter(Boolean)
+            """
+        )
+    except Exception:
+        return []
+
+    out = []
+    for href in links:
+        if not href.startswith("https://learn.paloaltonetworks.com/learn/"):
+            continue
+        if "/learn/sign" in href:
+            continue
+        normalized = normalize_url(href)
+        if normalized:
+            out.append(normalized)
+    return out
+
+
 def _extract_from_json(obj, out: list, depth: int = 0):
     """Recursively look for quiz question patterns in arbitrary JSON."""
     if depth > 10:
@@ -236,12 +276,32 @@ def scrape_course() -> list[dict]:
         page.goto(LEARNING_PLAN_URL, wait_until="domcontentloaded")
         page.wait_for_load_state("networkidle")
 
+        queue = deque([normalize_url(page.url)])
+        for link in collect_course_links(page):
+            queue.append(link)
+
+        visited_pages: set[str] = set()
         page_number = 0
 
-        while True:
+        while queue and len(visited_pages) < MAX_PAGES_TO_VISIT:
+            next_url = queue.popleft()
+            if next_url in visited_pages:
+                continue
+
+            try:
+                page.goto(next_url, wait_until="domcontentloaded")
+                page.wait_for_load_state("networkidle")
+            except PWTimeout:
+                print(f"[!] Timeout loading page: {next_url}")
+                continue
+
+            current_url = normalize_url(page.url)
+            if current_url in visited_pages:
+                continue
+
+            visited_pages.add(current_url)
             page_number += 1
-            url = page.url
-            print(f"[{page_number}] {url}")
+            print(f"[{page_number}] {current_url}")
 
             # Give dynamic content time to render
             time.sleep(2)
@@ -249,23 +309,29 @@ def scrape_course() -> list[dict]:
             questions = extract_questions_from_page(page)
 
             for q in questions:
-                key = q["question"][:120]
+                key = question_key(q["question"])
                 if key not in seen_questions:
                     seen_questions.add(key)
                     all_questions.append(q)
                     print(f"    + Question collected: {q['question'][:70]} …")
 
+            for discovered in collect_course_links(page):
+                if discovered not in visited_pages:
+                    queue.append(discovered)
+
             next_btn = get_next_button(page)
             if next_btn is None:
-                print("[*] No 'Next' button found – end of course or manual navigation needed.")
-                break
+                continue
 
             try:
+                before = normalize_url(page.url)
                 next_btn.click()
                 page.wait_for_load_state("networkidle")
+                after = normalize_url(page.url)
+                if after != before and after not in visited_pages:
+                    queue.appendleft(after)
             except PWTimeout:
-                print("[!] Timeout waiting for next page – stopping.")
-                break
+                print("[!] Timeout waiting for next page – continuing with discovered links.")
 
         browser.close()
 
