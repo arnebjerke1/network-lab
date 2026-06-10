@@ -50,6 +50,8 @@ OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
 
 # How long (ms) to wait for elements before giving up on a page
 DEFAULT_TIMEOUT = 15_000
+# Longer timeout used after manual login – complex LMS pages need more time to settle
+MANUAL_TIMEOUT = 60_000
 MAX_PAGES_TO_VISIT = 400
 
 
@@ -269,12 +271,17 @@ def scrape_course() -> list[dict]:
             )
             page.goto(LOGIN_URL, wait_until="domcontentloaded")
             input("    >> Press ENTER here after you have logged in manually … ")
+            # Be more patient after manual login – the LMS page can be slow to settle
+            page.set_default_timeout(MANUAL_TIMEOUT)
         else:
             login(page)
 
         print(f"[*] Navigating to learning plan: {LEARNING_PLAN_URL}")
-        page.goto(LEARNING_PLAN_URL, wait_until="domcontentloaded")
-        page.wait_for_load_state("networkidle")
+        try:
+            page.goto(LEARNING_PLAN_URL, wait_until="domcontentloaded")
+            page.wait_for_load_state("networkidle")
+        except PWTimeout:
+            print("[!] Timeout reaching the learning plan page – continuing with current page …")
 
         queue = deque([normalize_url(page.url)])
         for link in collect_course_links(page):
