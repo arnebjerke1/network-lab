@@ -269,19 +269,28 @@ def scrape_course() -> list[dict]:
                 "    Set PALO_EMAIL and PALO_PASSWORD environment variables,\n"
                 "    then re-run.  The browser will open so you can log in manually."
             )
-            page.goto(LOGIN_URL, wait_until="domcontentloaded")
+            try:
+                page.goto(LOGIN_URL, wait_until="domcontentloaded")
+            except Exception as e:
+                print(f"[!] Could not open login page: {e}")
             input("    >> Press ENTER here after you have logged in manually … ")
             # Be more patient after manual login – the LMS page can be slow to settle
             page.set_default_timeout(MANUAL_TIMEOUT)
+            # Give the LMS session a moment to fully settle after manual login
+            time.sleep(5)
         else:
             login(page)
 
         print(f"[*] Navigating to learning plan: {LEARNING_PLAN_URL}")
         try:
             page.goto(LEARNING_PLAN_URL, wait_until="domcontentloaded")
+        except Exception as e:
+            print(f"[!] Error navigating to learning plan page: {e}")
+        try:
             page.wait_for_load_state("networkidle")
-        except PWTimeout:
-            print("[!] Timeout reaching the learning plan page – continuing with current page …")
+        except Exception as e:
+            print(f"[!] networkidle wait failed (continuing anyway): {e}")
+            time.sleep(5)
 
         queue = deque([normalize_url(page.url)])
         for link in collect_course_links(page):
@@ -297,10 +306,14 @@ def scrape_course() -> list[dict]:
 
             try:
                 page.goto(next_url, wait_until="domcontentloaded")
-                page.wait_for_load_state("networkidle")
-            except PWTimeout:
-                print(f"[!] Timeout loading page: {next_url}")
+            except Exception as e:
+                print(f"[!] Error loading page {next_url}: {e}")
                 continue
+            try:
+                page.wait_for_load_state("networkidle")
+            except Exception as e:
+                print(f"[!] networkidle wait failed for {next_url} (continuing): {e}")
+                time.sleep(3)
 
             current_url = normalize_url(page.url)
             if current_url in visited_pages:
@@ -333,12 +346,16 @@ def scrape_course() -> list[dict]:
             try:
                 before = normalize_url(page.url)
                 next_btn.click()
-                page.wait_for_load_state("networkidle")
+                try:
+                    page.wait_for_load_state("networkidle")
+                except Exception as e:
+                    print(f"[!] networkidle wait after Next click failed (continuing): {e}")
+                    time.sleep(3)
                 after = normalize_url(page.url)
                 if after != before and after not in visited_pages:
                     queue.appendleft(after)
-            except PWTimeout:
-                print("[!] Timeout waiting for next page – continuing with discovered links.")
+            except Exception as e:
+                print(f"[!] Error clicking Next button: {e}")
 
         browser.close()
 
