@@ -1,0 +1,67 @@
+[
+  {
+    "question": "Which Palo Alto Networks feature identifies applications regardless of port, protocol, or encryption?",
+    "choices": ["App-ID", "User-ID", "Content-ID", "Device-ID"],
+    "correct": "App-ID"
+  },
+  {
+    "question": "What is the primary function of Panorama in a Palo Alto Networks deployment?",
+    "choices": [
+      "Centralized management and visibility for multiple firewalls",
+      "Real-time malware analysis",
+      "User authentication and identity management",
+      "URL filtering and web categorization"
+    ],
+    "correct": "Centralized management and visibility for multiple firewalls"
+  },
+  {
+    "question": "Which zone type in PAN-OS is used for traffic that originates from or is destined for the firewall itself?",
+    "choices": ["External Zone", "Layer 3 Zone", "Tap Zone", "Functional Zone (MGT)"],
+    "correct": "Functional Zone (MGT)"
+  },
+  {
+    "question": "What does WildFire provide in the Palo Alto Networks security platform?",
+    "choices": [
+      "Cloud-based malware analysis and zero-day threat prevention",
+      "Policy-based NAT translation",
+      "BGP route redistribution",
+      "SSL/TLS certificate management"
+    ],
+    "correct": "Cloud-based malware analysis and zero-day threat prevention"
+  },
+  {
+    "question": "Which PAN-OS feature maps IP addresses to usernames to enforce user-based policies?",
+    "choices": ["User-ID", "App-ID", "Content-ID", "GlobalProtect"],
+    "correct": "User-ID"
+  },
+  {
+    "question": "What is the default action when no security policy rule matches traffic on a Palo Alto Networks firewall?",
+    "choices": ["Deny", "Allow", "Drop", "Reset"],
+    "correct": "Deny"
+  },
+  {
+    "question": "Which interface type in PAN-OS allows traffic inspection without being in the traffic path (passive monitoring)?",
+    "choices": ["Tap interface", "Virtual wire interface", "Layer 3 interface", "Loopback interface"],
+    "correct": "Tap interface"
+  },
+  {
+    "question": "In a High Availability (HA) active/passive configuration, what does the passive peer do when it detects the active peer has failed?",
+    "choices": [
+      "It takes over as the active device and starts processing traffic",
+      "It sends an alert to Panorama and waits for manual intervention",
+      "It reboots and re-establishes the HA link",
+      "It continues in passive mode until administrator approval"
+    ],
+    "correct": "It takes over as the active device and starts processing traffic"
+  },
+  {
+    "question": "Which Palo Alto Networks subscription service provides DNS-layer security to block malicious domains?",
+    "choices": ["DNS Security", "Threat Prevention", "URL Filtering", "IoT Security"],
+    "correct": "DNS Security"
+  },
+  {
+    "question": "What protocol does GlobalProtect use to establish secure remote access tunnels?",
+    "choices": ["IPsec/SSL", "PPTP", "L2TP only", "GRE"],
+    "correct": "IPsec/SSL"
+  }
+]
