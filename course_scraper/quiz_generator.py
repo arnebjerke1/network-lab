@@ -42,21 +42,32 @@ def load_questions(path: str) -> list[dict]:
     for i, q in enumerate(data):
         question = (q.get("question") or "").strip()
         choices   = [str(c).strip() for c in q.get("choices", []) if str(c).strip()]
-        correct   = (q.get("correct") or "").strip()
+        correct_raw = q.get("correct")
+        if isinstance(correct_raw, list):
+            correct = [str(c).strip() for c in correct_raw if str(c).strip()]
+        else:
+            cv = (str(correct_raw) if correct_raw is not None else "").strip()
+            correct = [cv] if cv else []
 
         if not question or not choices or not correct:
             print(f"[!] Skipping question {i+1}: missing question, choices, or correct answer")
             continue
 
-        # Ensure correct answer is among the choices
-        if correct not in choices:
-            choices.append(correct)
+        # Ensure all correct answers are among the choices
+        for c in correct:
+            if c not in choices:
+                choices.append(c)
 
-        # Keep exactly 4 choices: correct + up to 3 others (random selection if > 4)
-        wrong = [c for c in choices if c != correct]
-        random.shuffle(wrong)
-        four_choices = [correct] + wrong[:3]
-        random.shuffle(four_choices)
+        if len(correct) > 1:
+            # Multi-select: keep all choices, just shuffle
+            random.shuffle(choices)
+            four_choices = choices
+        else:
+            # Single correct: keep exactly 4 choices
+            wrong = [c for c in choices if c != correct[0]]
+            random.shuffle(wrong)
+            four_choices = [correct[0]] + wrong[:3]
+            random.shuffle(four_choices)
 
         valid.append({
             "question": question,
@@ -197,6 +208,31 @@ HTML_TEMPLATE = """\
     .choice-btn:disabled {{
       cursor: default;
     }}
+
+    .choice-btn.selected {{
+      background: #2d4a6e !important;
+      border-color: #5b9bd5 !important;
+      color: #a8d1f7 !important;
+    }}
+
+    .multi-choices {{
+      grid-template-columns: 1fr;
+    }}
+
+    .check-btn {{
+      background: #2e3f54;
+      color: #dce3ed;
+      border: 2px solid #4a6080;
+      border-radius: 8px;
+      padding: 11px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background 0.15s, transform 0.1s;
+    }}
+    .check-btn:hover:not(:disabled) {{ background: #3a5070; transform: translateY(-1px); }}
+    .check-btn:disabled {{ cursor: default; opacity: 0.6; }}
 
     .feedback {{
       margin-top: 18px;
@@ -357,8 +393,10 @@ HTML_TEMPLATE = """\
     document.querySelectorAll(".question-card").forEach(card => {{
       card.querySelectorAll(".choice-btn").forEach(b => {{
         b.disabled = false;
-        b.classList.remove("correct", "wrong");
+        b.classList.remove("correct", "wrong", "selected");
       }});
+      const cb = card.querySelector(".check-btn");
+      if (cb) {{ cb.disabled = false; }}
       const fb = card.querySelector(".feedback");
       if (fb) {{ fb.textContent = ""; fb.className = "feedback"; }}
       const nb = card.querySelector(".next-btn");
@@ -366,6 +404,51 @@ HTML_TEMPLATE = """\
     }});
 
     showQuestion(0);
+  }}
+
+  function toggleChoice(qIndex, btnEl) {{
+    if (!btnEl.disabled) {{
+      btnEl.classList.toggle("selected");
+    }}
+  }}
+
+  function checkMulti(qIndex, correctIndices) {{
+    const card     = document.getElementById("q" + qIndex);
+    const buttons  = Array.from(card.querySelectorAll(".choice-btn"));
+    const feedback = card.querySelector(".feedback");
+    const nextBtn  = card.querySelector(".next-btn");
+    const checkBtn = card.querySelector(".check-btn");
+
+    buttons.forEach(b => b.disabled = true);
+    if (checkBtn) checkBtn.disabled = true;
+
+    const correctSet  = new Set(correctIndices);
+    const selectedSet = new Set(
+      buttons.map((b, j) => b.classList.contains("selected") ? j : -1).filter(j => j >= 0)
+    );
+
+    buttons.forEach((b, j) => {{
+      if (correctSet.has(j)) {{
+        b.classList.add("correct");
+      }} else if (selectedSet.has(j)) {{
+        b.classList.add("wrong");
+      }}
+      b.classList.remove("selected");
+    }});
+
+    const isCorrect = correctIndices.length === selectedSet.size &&
+      correctIndices.every(i => selectedSet.has(i));
+
+    if (isCorrect) {{
+      feedback.textContent = "✓ Riktig!";
+      feedback.className   = "feedback correct";
+      score++;
+    }} else {{
+      feedback.textContent = "✗ Feil – riktige svar er vist i grønt";
+      feedback.className   = "feedback wrong";
+    }}
+
+    nextBtn.style.display = "inline-block";
   }}
 
   showQuestion(0);
@@ -396,6 +479,31 @@ BUTTON_TEMPLATE = (
     '{text}</button>'
 )
 
+MULTI_CARD_TEMPLATE = """\
+  <div class="question-card{active}" id="q{index}">
+    <div class="question-number">Spørsmål {num} av {total}</div>
+    <div class="question-text">{question}</div>
+    <div class="choices multi-choices">
+{buttons}
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="check-btn" id="check{index}" onclick="checkMulti({index}, {correct_indices})">
+        Sjekk svar
+      </button>
+      <button class="next-btn" onclick="nextQuestion({next_index})">
+        {next_label} →
+      </button>
+    </div>
+  </div>
+"""
+
+MULTI_BUTTON_TEMPLATE = (
+    '      <button class="choice-btn" id="{btn_id}" '
+    'onclick="toggleChoice({q_index}, this)">'
+    '{text}</button>'
+)
+
 
 # ---------------------------------------------------------------------------
 # Build HTML
@@ -406,34 +514,59 @@ def build_html(questions: list[dict]) -> str:
     cards_html = ""
 
     for i, q in enumerate(questions):
-        correct_btn_id = f"q{i}b{q['choices'].index(q['correct'])}"
+        is_last    = (i == total - 1)
+        next_index = i + 1
+        next_label = "Se resultat" if is_last else "Neste"
+        is_multi   = len(q["correct"]) > 1
 
-        buttons_html = ""
-        for j, choice in enumerate(q["choices"]):
-            btn_id     = f"q{i}b{j}"
-            is_correct = "true" if choice == q["correct"] else "false"
-            buttons_html += BUTTON_TEMPLATE.format(
-                btn_id=btn_id,
-                q_index=i,
-                is_correct=is_correct,
-                correct_btn_id=correct_btn_id,
-                text=escape(choice),
-            ) + "\n"
+        if is_multi:
+            correct_indices = [q["choices"].index(c) for c in q["correct"]]
+            buttons_html = ""
+            for j, choice in enumerate(q["choices"]):
+                btn_id = f"q{i}b{j}"
+                buttons_html += MULTI_BUTTON_TEMPLATE.format(
+                    btn_id=btn_id,
+                    q_index=i,
+                    text=escape(choice),
+                ) + "\n"
 
-        is_last     = (i == total - 1)
-        next_index  = i + 1
-        next_label  = "Se resultat" if is_last else "Neste"
+            cards_html += MULTI_CARD_TEMPLATE.format(
+                active=" active" if i == 0 else "",
+                index=i,
+                num=i + 1,
+                total=total,
+                question=escape(q["question"]),
+                buttons=buttons_html.rstrip(),
+                correct_indices=correct_indices,
+                next_index=next_index,
+                next_label=next_label,
+            )
+        else:
+            correct_val    = q["correct"][0]
+            correct_btn_id = f"q{i}b{q['choices'].index(correct_val)}"
 
-        cards_html += CARD_TEMPLATE.format(
-            active=" active" if i == 0 else "",
-            index=i,
-            num=i + 1,
-            total=total,
-            question=escape(q["question"]),
-            buttons=buttons_html.rstrip(),
-            next_index=next_index,
-            next_label=next_label,
-        )
+            buttons_html = ""
+            for j, choice in enumerate(q["choices"]):
+                btn_id     = f"q{i}b{j}"
+                is_correct = "true" if choice == correct_val else "false"
+                buttons_html += BUTTON_TEMPLATE.format(
+                    btn_id=btn_id,
+                    q_index=i,
+                    is_correct=is_correct,
+                    correct_btn_id=correct_btn_id,
+                    text=escape(choice),
+                ) + "\n"
+
+            cards_html += CARD_TEMPLATE.format(
+                active=" active" if i == 0 else "",
+                index=i,
+                num=i + 1,
+                total=total,
+                question=escape(q["question"]),
+                buttons=buttons_html.rstrip(),
+                next_index=next_index,
+                next_label=next_label,
+            )
 
     return HTML_TEMPLATE.format(
         question_cards=cards_html,

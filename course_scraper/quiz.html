@@ -124,6 +124,31 @@
       cursor: default;
     }
 
+    .choice-btn.selected {
+      background: #2d4a6e !important;
+      border-color: #5b9bd5 !important;
+      color: #a8d1f7 !important;
+    }
+
+    .multi-choices {
+      grid-template-columns: 1fr;
+    }
+
+    .check-btn {
+      background: #2e3f54;
+      color: #dce3ed;
+      border: 2px solid #4a6080;
+      border-radius: 8px;
+      padding: 11px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .check-btn:hover:not(:disabled) { background: #3a5070; transform: translateY(-1px); }
+    .check-btn:disabled { cursor: default; opacity: 0.6; }
+
     .feedback {
       margin-top: 18px;
       min-height: 24px;
@@ -208,11 +233,11 @@
 
 <div id="quiz-container">
   <div class="question-card active" id="q0">
-    <div class="question-number">Spørsmål 1 av 10</div>
+    <div class="question-number">Spørsmål 1 av 15</div>
     <div class="question-text">Which Palo Alto Networks feature identifies applications regardless of port, protocol, or encryption?</div>
     <div class="choices">
-      <button class="choice-btn" id="q0b0" onclick="answer(0, this, false, 'q0b3')">Content-ID</button>
-      <button class="choice-btn" id="q0b1" onclick="answer(0, this, false, 'q0b3')">User-ID</button>
+      <button class="choice-btn" id="q0b0" onclick="answer(0, this, false, 'q0b3')">User-ID</button>
+      <button class="choice-btn" id="q0b1" onclick="answer(0, this, false, 'q0b3')">Content-ID</button>
       <button class="choice-btn" id="q0b2" onclick="answer(0, this, false, 'q0b3')">Device-ID</button>
       <button class="choice-btn" id="q0b3" onclick="answer(0, this, true, 'q0b3')">App-ID</button>
     </div>
@@ -224,12 +249,12 @@
     </div>
   </div>
   <div class="question-card" id="q1">
-    <div class="question-number">Spørsmål 2 av 10</div>
+    <div class="question-number">Spørsmål 2 av 15</div>
     <div class="question-text">What is the primary function of Panorama in a Palo Alto Networks deployment?</div>
     <div class="choices">
-      <button class="choice-btn" id="q1b0" onclick="answer(1, this, false, 'q1b3')">Real-time malware analysis</button>
+      <button class="choice-btn" id="q1b0" onclick="answer(1, this, false, 'q1b3')">URL filtering and web categorization</button>
       <button class="choice-btn" id="q1b1" onclick="answer(1, this, false, 'q1b3')">User authentication and identity management</button>
-      <button class="choice-btn" id="q1b2" onclick="answer(1, this, false, 'q1b3')">URL filtering and web categorization</button>
+      <button class="choice-btn" id="q1b2" onclick="answer(1, this, false, 'q1b3')">Real-time malware analysis</button>
       <button class="choice-btn" id="q1b3" onclick="answer(1, this, true, 'q1b3')">Centralized management and visibility for multiple firewalls</button>
     </div>
     <div class="feedback"></div>
@@ -240,13 +265,13 @@
     </div>
   </div>
   <div class="question-card" id="q2">
-    <div class="question-number">Spørsmål 3 av 10</div>
+    <div class="question-number">Spørsmål 3 av 15</div>
     <div class="question-text">Which zone type in PAN-OS is used for traffic that originates from or is destined for the firewall itself?</div>
     <div class="choices">
-      <button class="choice-btn" id="q2b0" onclick="answer(2, this, false, 'q2b1')">Tap Zone</button>
-      <button class="choice-btn" id="q2b1" onclick="answer(2, this, true, 'q2b1')">Functional Zone (MGT)</button>
-      <button class="choice-btn" id="q2b2" onclick="answer(2, this, false, 'q2b1')">Layer 3 Zone</button>
-      <button class="choice-btn" id="q2b3" onclick="answer(2, this, false, 'q2b1')">External Zone</button>
+      <button class="choice-btn" id="q2b0" onclick="answer(2, this, false, 'q2b2')">Tap Zone</button>
+      <button class="choice-btn" id="q2b1" onclick="answer(2, this, false, 'q2b2')">Layer 3 Zone</button>
+      <button class="choice-btn" id="q2b2" onclick="answer(2, this, true, 'q2b2')">Functional Zone (MGT)</button>
+      <button class="choice-btn" id="q2b3" onclick="answer(2, this, false, 'q2b2')">External Zone</button>
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
@@ -256,13 +281,13 @@
     </div>
   </div>
   <div class="question-card" id="q3">
-    <div class="question-number">Spørsmål 4 av 10</div>
+    <div class="question-number">Spørsmål 4 av 15</div>
     <div class="question-text">What does WildFire provide in the Palo Alto Networks security platform?</div>
     <div class="choices">
-      <button class="choice-btn" id="q3b0" onclick="answer(3, this, true, 'q3b0')">Cloud-based malware analysis and zero-day threat prevention</button>
-      <button class="choice-btn" id="q3b1" onclick="answer(3, this, false, 'q3b0')">BGP route redistribution</button>
-      <button class="choice-btn" id="q3b2" onclick="answer(3, this, false, 'q3b0')">SSL/TLS certificate management</button>
-      <button class="choice-btn" id="q3b3" onclick="answer(3, this, false, 'q3b0')">Policy-based NAT translation</button>
+      <button class="choice-btn" id="q3b0" onclick="answer(3, this, false, 'q3b3')">SSL/TLS certificate management</button>
+      <button class="choice-btn" id="q3b1" onclick="answer(3, this, false, 'q3b3')">Policy-based NAT translation</button>
+      <button class="choice-btn" id="q3b2" onclick="answer(3, this, false, 'q3b3')">BGP route redistribution</button>
+      <button class="choice-btn" id="q3b3" onclick="answer(3, this, true, 'q3b3')">Cloud-based malware analysis and zero-day threat prevention</button>
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
@@ -272,12 +297,12 @@
     </div>
   </div>
   <div class="question-card" id="q4">
-    <div class="question-number">Spørsmål 5 av 10</div>
+    <div class="question-number">Spørsmål 5 av 15</div>
     <div class="question-text">Which PAN-OS feature maps IP addresses to usernames to enforce user-based policies?</div>
     <div class="choices">
       <button class="choice-btn" id="q4b0" onclick="answer(4, this, false, 'q4b3')">App-ID</button>
-      <button class="choice-btn" id="q4b1" onclick="answer(4, this, false, 'q4b3')">GlobalProtect</button>
-      <button class="choice-btn" id="q4b2" onclick="answer(4, this, false, 'q4b3')">Content-ID</button>
+      <button class="choice-btn" id="q4b1" onclick="answer(4, this, false, 'q4b3')">Content-ID</button>
+      <button class="choice-btn" id="q4b2" onclick="answer(4, this, false, 'q4b3')">GlobalProtect</button>
       <button class="choice-btn" id="q4b3" onclick="answer(4, this, true, 'q4b3')">User-ID</button>
     </div>
     <div class="feedback"></div>
@@ -288,13 +313,13 @@
     </div>
   </div>
   <div class="question-card" id="q5">
-    <div class="question-number">Spørsmål 6 av 10</div>
+    <div class="question-number">Spørsmål 6 av 15</div>
     <div class="question-text">What is the default action when no security policy rule matches traffic on a Palo Alto Networks firewall?</div>
     <div class="choices">
-      <button class="choice-btn" id="q5b0" onclick="answer(5, this, false, 'q5b3')">Reset</button>
-      <button class="choice-btn" id="q5b1" onclick="answer(5, this, false, 'q5b3')">Allow</button>
-      <button class="choice-btn" id="q5b2" onclick="answer(5, this, false, 'q5b3')">Drop</button>
-      <button class="choice-btn" id="q5b3" onclick="answer(5, this, true, 'q5b3')">Deny</button>
+      <button class="choice-btn" id="q5b0" onclick="answer(5, this, false, 'q5b1')">Allow</button>
+      <button class="choice-btn" id="q5b1" onclick="answer(5, this, true, 'q5b1')">Deny</button>
+      <button class="choice-btn" id="q5b2" onclick="answer(5, this, false, 'q5b1')">Reset</button>
+      <button class="choice-btn" id="q5b3" onclick="answer(5, this, false, 'q5b1')">Drop</button>
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
@@ -304,13 +329,13 @@
     </div>
   </div>
   <div class="question-card" id="q6">
-    <div class="question-number">Spørsmål 7 av 10</div>
+    <div class="question-number">Spørsmål 7 av 15</div>
     <div class="question-text">Which interface type in PAN-OS allows traffic inspection without being in the traffic path (passive monitoring)?</div>
     <div class="choices">
-      <button class="choice-btn" id="q6b0" onclick="answer(6, this, true, 'q6b0')">Tap interface</button>
-      <button class="choice-btn" id="q6b1" onclick="answer(6, this, false, 'q6b0')">Loopback interface</button>
-      <button class="choice-btn" id="q6b2" onclick="answer(6, this, false, 'q6b0')">Layer 3 interface</button>
-      <button class="choice-btn" id="q6b3" onclick="answer(6, this, false, 'q6b0')">Virtual wire interface</button>
+      <button class="choice-btn" id="q6b0" onclick="answer(6, this, false, 'q6b3')">Layer 3 interface</button>
+      <button class="choice-btn" id="q6b1" onclick="answer(6, this, false, 'q6b3')">Virtual wire interface</button>
+      <button class="choice-btn" id="q6b2" onclick="answer(6, this, false, 'q6b3')">Loopback interface</button>
+      <button class="choice-btn" id="q6b3" onclick="answer(6, this, true, 'q6b3')">Tap interface</button>
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
@@ -320,13 +345,13 @@
     </div>
   </div>
   <div class="question-card" id="q7">
-    <div class="question-number">Spørsmål 8 av 10</div>
+    <div class="question-number">Spørsmål 8 av 15</div>
     <div class="question-text">In a High Availability (HA) active/passive configuration, what does the passive peer do when it detects the active peer has failed?</div>
     <div class="choices">
       <button class="choice-btn" id="q7b0" onclick="answer(7, this, true, 'q7b0')">It takes over as the active device and starts processing traffic</button>
       <button class="choice-btn" id="q7b1" onclick="answer(7, this, false, 'q7b0')">It sends an alert to Panorama and waits for manual intervention</button>
-      <button class="choice-btn" id="q7b2" onclick="answer(7, this, false, 'q7b0')">It reboots and re-establishes the HA link</button>
-      <button class="choice-btn" id="q7b3" onclick="answer(7, this, false, 'q7b0')">It continues in passive mode until administrator approval</button>
+      <button class="choice-btn" id="q7b2" onclick="answer(7, this, false, 'q7b0')">It continues in passive mode until administrator approval</button>
+      <button class="choice-btn" id="q7b3" onclick="answer(7, this, false, 'q7b0')">It reboots and re-establishes the HA link</button>
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
@@ -336,13 +361,13 @@
     </div>
   </div>
   <div class="question-card" id="q8">
-    <div class="question-number">Spørsmål 9 av 10</div>
+    <div class="question-number">Spørsmål 9 av 15</div>
     <div class="question-text">Which Palo Alto Networks subscription service provides DNS-layer security to block malicious domains?</div>
     <div class="choices">
       <button class="choice-btn" id="q8b0" onclick="answer(8, this, true, 'q8b0')">DNS Security</button>
       <button class="choice-btn" id="q8b1" onclick="answer(8, this, false, 'q8b0')">URL Filtering</button>
-      <button class="choice-btn" id="q8b2" onclick="answer(8, this, false, 'q8b0')">IoT Security</button>
-      <button class="choice-btn" id="q8b3" onclick="answer(8, this, false, 'q8b0')">Threat Prevention</button>
+      <button class="choice-btn" id="q8b2" onclick="answer(8, this, false, 'q8b0')">Threat Prevention</button>
+      <button class="choice-btn" id="q8b3" onclick="answer(8, this, false, 'q8b0')">IoT Security</button>
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
@@ -352,17 +377,103 @@
     </div>
   </div>
   <div class="question-card" id="q9">
-    <div class="question-number">Spørsmål 10 av 10</div>
+    <div class="question-number">Spørsmål 10 av 15</div>
     <div class="question-text">What protocol does GlobalProtect use to establish secure remote access tunnels?</div>
     <div class="choices">
-      <button class="choice-btn" id="q9b0" onclick="answer(9, this, true, 'q9b0')">IPsec/SSL</button>
-      <button class="choice-btn" id="q9b1" onclick="answer(9, this, false, 'q9b0')">L2TP only</button>
-      <button class="choice-btn" id="q9b2" onclick="answer(9, this, false, 'q9b0')">GRE</button>
-      <button class="choice-btn" id="q9b3" onclick="answer(9, this, false, 'q9b0')">PPTP</button>
+      <button class="choice-btn" id="q9b0" onclick="answer(9, this, false, 'q9b1')">GRE</button>
+      <button class="choice-btn" id="q9b1" onclick="answer(9, this, true, 'q9b1')">IPsec/SSL</button>
+      <button class="choice-btn" id="q9b2" onclick="answer(9, this, false, 'q9b1')">L2TP only</button>
+      <button class="choice-btn" id="q9b3" onclick="answer(9, this, false, 'q9b1')">PPTP</button>
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
       <button class="next-btn" onclick="nextQuestion(10)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q10">
+    <div class="question-number">Spørsmål 11 av 15</div>
+    <div class="question-text">In the exploitation phase of a cyberattack, what is the primary goal of the attacker?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q10b0" onclick="answer(10, this, false, 'q10b3')">To install backdoors for future access</button>
+      <button class="choice-btn" id="q10b1" onclick="answer(10, this, false, 'q10b3')">To take control of the target system</button>
+      <button class="choice-btn" id="q10b2" onclick="answer(10, this, false, 'q10b3')">To exfiltrate data from the target system</button>
+      <button class="choice-btn" id="q10b3" onclick="answer(10, this, true, 'q10b3')">To manipulate system vulnerabilities for unauthorized access</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(11)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q11">
+    <div class="question-number">Spørsmål 12 av 15</div>
+    <div class="question-text">Which two actions during the command-and-control (C2) phase of the cyberattack lifecycle can help prevent the further evolution of an attack? (Choose two.)</div>
+    <div class="choices multi-choices">
+      <button class="choice-btn" id="q11b0" onclick="toggleChoice(11, this)">Block outbound traffic that is typical for C2 communication</button>
+      <button class="choice-btn" id="q11b1" onclick="toggleChoice(11, this)">Implement sandboxing for all files transferred to or from external networks</button>
+      <button class="choice-btn" id="q11b2" onclick="toggleChoice(11, this)">Implement granular control of applications</button>
+      <button class="choice-btn" id="q11b3" onclick="toggleChoice(11, this)">Train users to recognize phishing emails</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="check-btn" id="check11" onclick="checkMulti(11, [2, 0])">
+        Sjekk svar
+      </button>
+      <button class="next-btn" onclick="nextQuestion(12)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q12">
+    <div class="question-number">Spørsmål 13 av 15</div>
+    <div class="question-text">In the context of cyberattacks, what is an exploit?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q12b0" onclick="answer(12, this, true, 'q12b0')">A sequence of actions that take advantage of a software problem or host-system vulnerability</button>
+      <button class="choice-btn" id="q12b1" onclick="answer(12, this, false, 'q12b0')">A malicious software application that a user installs on a computer</button>
+      <button class="choice-btn" id="q12b2" onclick="answer(12, this, false, 'q12b0')">A person or group who poses a threat to a computer system</button>
+      <button class="choice-btn" id="q12b3" onclick="answer(12, this, false, 'q12b0')">An attempt by an intelligent threat to bypass security measures</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(13)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q13">
+    <div class="question-number">Spørsmål 14 av 15</div>
+    <div class="question-text">Which two methods are commonly used by attackers to deliver malicious payloads during the weaponization-and-delivery phase of the cyberattack lifecycle? (Choose two.)</div>
+    <div class="choices multi-choices">
+      <button class="choice-btn" id="q13b0" onclick="toggleChoice(13, this)">Port scanning</button>
+      <button class="choice-btn" id="q13b1" onclick="toggleChoice(13, this)">Use of exploit kits</button>
+      <button class="choice-btn" id="q13b2" onclick="toggleChoice(13, this)">Spear phishing attacks</button>
+      <button class="choice-btn" id="q13b3" onclick="toggleChoice(13, this)">Sinkholing</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="check-btn" id="check13" onclick="checkMulti(13, [1, 2])">
+        Sjekk svar
+      </button>
+      <button class="next-btn" onclick="nextQuestion(14)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q14">
+    <div class="question-number">Spørsmål 15 av 15</div>
+    <div class="question-text">What is the goal of an attacker in the acting-on-objectives phase of the cyberattack lifecycle?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q14b0" onclick="answer(14, this, true, 'q14b0')">To exfiltrate data or disrupt services</button>
+      <button class="choice-btn" id="q14b1" onclick="answer(14, this, false, 'q14b0')">To install malware on the target system</button>
+      <button class="choice-btn" id="q14b2" onclick="answer(14, this, false, 'q14b0')">To remotely manage compromised systems</button>
+      <button class="choice-btn" id="q14b3" onclick="answer(14, this, false, 'q14b0')">To scan for vulnerabilities in the target system</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(15)">
         Se resultat →
       </button>
     </div>
@@ -377,7 +488,7 @@
 </div>
 
 <script>
-  const TOTAL = 10;
+  const TOTAL = 15;
   let current = 0;
   let score   = 0;
 
@@ -443,8 +554,10 @@
     document.querySelectorAll(".question-card").forEach(card => {
       card.querySelectorAll(".choice-btn").forEach(b => {
         b.disabled = false;
-        b.classList.remove("correct", "wrong");
+        b.classList.remove("correct", "wrong", "selected");
       });
+      const cb = card.querySelector(".check-btn");
+      if (cb) { cb.disabled = false; }
       const fb = card.querySelector(".feedback");
       if (fb) { fb.textContent = ""; fb.className = "feedback"; }
       const nb = card.querySelector(".next-btn");
@@ -452,6 +565,51 @@
     });
 
     showQuestion(0);
+  }
+
+  function toggleChoice(qIndex, btnEl) {
+    if (!btnEl.disabled) {
+      btnEl.classList.toggle("selected");
+    }
+  }
+
+  function checkMulti(qIndex, correctIndices) {
+    const card     = document.getElementById("q" + qIndex);
+    const buttons  = Array.from(card.querySelectorAll(".choice-btn"));
+    const feedback = card.querySelector(".feedback");
+    const nextBtn  = card.querySelector(".next-btn");
+    const checkBtn = card.querySelector(".check-btn");
+
+    buttons.forEach(b => b.disabled = true);
+    if (checkBtn) checkBtn.disabled = true;
+
+    const correctSet  = new Set(correctIndices);
+    const selectedSet = new Set(
+      buttons.map((b, j) => b.classList.contains("selected") ? j : -1).filter(j => j >= 0)
+    );
+
+    buttons.forEach((b, j) => {
+      if (correctSet.has(j)) {
+        b.classList.add("correct");
+      } else if (selectedSet.has(j)) {
+        b.classList.add("wrong");
+      }
+      b.classList.remove("selected");
+    });
+
+    const isCorrect = correctIndices.length === selectedSet.size &&
+      correctIndices.every(i => selectedSet.has(i));
+
+    if (isCorrect) {
+      feedback.textContent = "✓ Riktig!";
+      feedback.className   = "feedback correct";
+      score++;
+    } else {
+      feedback.textContent = "✗ Feil – riktige svar er vist i grønt";
+      feedback.className   = "feedback wrong";
+    }
+
+    nextBtn.style.display = "inline-block";
   }
 
   showQuestion(0);
