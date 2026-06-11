@@ -9,8 +9,7 @@ Two text formats are handled automatically:
   Format A – scored quiz  (contains an "Options" / "Correct answer:" block)
   Format B – required quiz (inline "Correct answer: …" or "correct answer: …")
 
-Multi-select questions ("Choose two") are included with the first listed correct
-answer so the single-choice quiz UI still works.
+Multi-select questions ("Choose two") preserve all listed correct answers.
 
 Usage
 -----
@@ -116,8 +115,13 @@ def _parse_scored_block(question_text, body_lines):
     if not correct_list:
         return None
 
-    correct = correct_list[0]  # use first correct for multi-select
-    return {"question": question_text, "choices": choices, "correct": correct}
+    correct_answers = list(dict.fromkeys(correct_list))
+    return {
+        "question": question_text,
+        "choices": choices,
+        "correct": correct_answers[0],
+        "correct_answers": correct_answers,
+    }
 
 
 def _parse_required_block(question_text, body_lines):
@@ -127,7 +131,8 @@ def _parse_required_block(question_text, body_lines):
     Returns a dict or None.
     """
     choices = []
-    correct = ""
+    correct_list = []
+    in_correct_section = False
 
     for ln in body_lines:
         stripped = ln.strip()
@@ -136,11 +141,17 @@ def _parse_required_block(question_text, body_lines):
 
         m = _CORRECT_INLINE.match(stripped)
         if m:
-            correct = m.group(1).strip()
+            correct_list.append(m.group(1).strip())
+            in_correct_section = False
             continue
 
         if _CORRECT_SECTION.match(stripped):
-            # Next non-empty line is the answer
+            in_correct_section = True
+            continue
+
+        if in_correct_section:
+            if not _SKIP_LINES.match(stripped):
+                correct_list.append(stripped)
             continue
 
         if _SKIP_LINES.match(stripped):
@@ -148,10 +159,16 @@ def _parse_required_block(question_text, body_lines):
 
         choices.append(stripped)
 
-    if not choices or not correct:
+    correct_answers = [c for c in dict.fromkeys(correct_list) if c]
+    if not choices or not correct_answers:
         return None
 
-    return {"question": question_text, "choices": choices, "correct": correct}
+    return {
+        "question": question_text,
+        "choices": choices,
+        "correct": correct_answers[0],
+        "correct_answers": correct_answers,
+    }
 
 
 # ---------------------------------------------------------------------------
