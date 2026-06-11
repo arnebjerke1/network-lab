@@ -197,6 +197,37 @@ def collect_course_links(page) -> list[str]:
     return out
 
 
+def is_course_page(url: str) -> bool:
+    """True when URL belongs to the target learning plan."""
+    return normalize_url(url).startswith(COURSE_URL_PREFIX.rstrip("/"))
+
+
+def navigate_to_course_page(page, url: str, retries: int = 3) -> bool:
+    """Navigate robustly, tolerating auth redirects and interrupted navigations."""
+    target = normalize_url(url)
+    for attempt in range(1, retries + 1):
+        try:
+            page.goto(target, wait_until="domcontentloaded")
+            try:
+                page.wait_for_load_state("networkidle")
+            except Exception:
+                time.sleep(2)
+        except Exception as e:
+            if attempt == retries:
+                print(f"[!] Error loading page {target}: {e}")
+                return False
+            time.sleep(1)
+
+        current = normalize_url(page.url)
+        if current == target or is_course_page(current):
+            return True
+
+        # If auth flow redirected us, wait a bit and retry target once authenticated.
+        time.sleep(2)
+
+    return is_course_page(page.url)
+
+
 def _extract_from_json(obj, out: list, depth: int = 0):
     """Recursively look for quiz question patterns in arbitrary JSON."""
     if depth > 10:
@@ -238,8 +269,8 @@ def _extract_from_json(obj, out: list, depth: int = 0):
             _extract_from_json(item, out, depth + 1)
 
 
-def get_next_button(page):
-    """Return the 'Next' / 'Continue' button element, or None."""
+def get_next_button_selector(page):
+    """Return selector for a visible 'Next'/'Continue' button/link, or None."""
     for selector in [
         "button:has-text('Next')",
         "button:has-text('Continue')",
@@ -250,9 +281,8 @@ def get_next_button(page):
         "[class*='btn-next']",
     ]:
         try:
-            el = page.query_selector(selector)
-            if el and el.is_visible():
-                return el
+            if page.locator(selector).first.is_visible():
+                return selector
         except Exception:
             pass
     return None
@@ -291,15 +321,8 @@ def scrape_course() -> list[dict]:
             login(page)
 
         print(f"[*] Navigating to learning plan: {LEARNING_PLAN_URL}")
-        try:
-            page.goto(LEARNING_PLAN_URL, wait_until="domcontentloaded")
-        except Exception as e:
-            print(f"[!] Error navigating to learning plan page: {e}")
-        try:
-            page.wait_for_load_state("networkidle")
-        except Exception as e:
-            print(f"[!] networkidle wait failed (continuing anyway): {e}")
-            time.sleep(5)
+        if not navigate_to_course_page(page, LEARNING_PLAN_URL):
+            print("[!] Could not reach learning plan reliably; continuing with seed URLs.")
 
         # Seed the queue with the learning plan page and the first course URL
         queue = deque([normalize_url(page.url), normalize_url(COURSE_URL)])
@@ -314,16 +337,8 @@ def scrape_course() -> list[dict]:
             if next_url in visited_pages:
                 continue
 
-            try:
-                page.goto(next_url, wait_until="domcontentloaded")
-            except Exception as e:
-                print(f"[!] Error loading page {next_url}: {e}")
+            if not navigate_to_course_page(page, next_url):
                 continue
-            try:
-                page.wait_for_load_state("networkidle")
-            except Exception as e:
-                print(f"[!] networkidle wait failed for {next_url} (continuing): {e}")
-                time.sleep(3)
 
             current_url = normalize_url(page.url)
             if current_url in visited_pages:
@@ -349,13 +364,15 @@ def scrape_course() -> list[dict]:
                 if discovered not in visited_pages:
                     queue.append(discovered)
 
-            next_btn = get_next_button(page)
-            if next_btn is None:
+            next_selector = get_next_button_selector(page)
+            if next_selector is None:
                 continue
 
             try:
                 before = normalize_url(page.url)
-                next_btn.click()
+                btn = page.locator(next_selector).first
+                btn.scroll_into_view_if_needed()
+                btn.click(timeout=5_000, force=True)
                 try:
                     page.wait_for_load_state("networkidle")
                 except Exception as e:
@@ -365,7 +382,16 @@ def scrape_course() -> list[dict]:
                 if after != before and after not in visited_pages:
                     queue.appendleft(after)
             except Exception as e:
-                print(f"[!] Error clicking Next button: {e}")
+                print(f"[!] Error clicking Next button with Playwright click: {e}")
+                try:
+                    before = normalize_url(page.url)
+                    page.locator(next_selector).first.evaluate("el => el.click()")
+                    time.sleep(2)
+                    after = normalize_url(page.url)
+                    if after != before and after not in visited_pages:
+                        queue.appendleft(after)
+                except Exception as fallback_error:
+                    print(f"[!] Error clicking Next button with JS fallback: {fallback_error}")
 
         browser.close()
 
