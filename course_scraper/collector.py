@@ -66,11 +66,51 @@ def save(questions: list[dict]) -> None:
 # Page scraping (reused from scraper.py logic)
 # ---------------------------------------------------------------------------
 
+def _is_correct_element(el) -> bool:
+    """
+    Return True if an answer element is marked as the correct answer.
+    Checks data attributes, aria attributes, class names, and child icons.
+    """
+    # data-correct / data-right attribute
+    if el.get_attribute("data-correct") in ("true", "1", "yes"):
+        return True
+    if el.get_attribute("data-right") in ("true", "1", "yes"):
+        return True
+
+    # aria
+    if el.get_attribute("aria-correct") == "true":
+        return True
+
+    # class names on the element itself
+    cls = (el.get_attribute("class") or "").lower()
+    if any(k in cls for k in ("correct", "right-answer", "rightanswer",
+                               "is-correct", "answer-correct", "correct-answer",
+                               "success", "true-answer")):
+        return True
+
+    # Check child elements for correctness markers
+    for child_sel in [
+        "[class*='correct']", "[class*='right']", "[class*='success']",
+        "[data-correct='true']", "[aria-label*='correct' i]",
+        # common icon patterns (checkmark SVG titles, sr-only text)
+        "svg[class*='correct']", "[class*='check']",
+    ]:
+        try:
+            child = el.query_selector(child_sel)
+            if child and child.is_visible():
+                return True
+        except Exception:
+            pass
+
+    return False
+
+
 def extract_questions_from_page(page) -> list[dict]:
     """
     Try several common quiz markup patterns.
     Returns a list of dicts with keys: question, choices, correct.
-    'correct' is always "" because the LMS hides the answer.
+    'correct' is "" when the page does not reveal it (question pages).
+    On review/results pages the correct answer is populated where detectable.
     """
     questions: list[dict] = []
 
@@ -92,20 +132,24 @@ def extract_questions_from_page(page) -> list[dict]:
             continue
 
         choices: list[str] = []
+        correct = ""
         answer_els = block.query_selector_all(
             "li, label, [role='radio'], [role='checkbox'], "
             "[class*='answer'], [class*='choice'], [class*='option']"
         )
         for ans in answer_els:
             text = ans.inner_text().strip()
-            if text:
-                choices.append(text)
+            if not text:
+                continue
+            choices.append(text)
+            if not correct and _is_correct_element(ans):
+                correct = text
 
         if question_text and choices:
             questions.append({
                 "question": question_text,
                 "choices": choices,
-                "correct": "",
+                "correct": correct,
             })
 
     # Pattern 2 – JSON embedded in <script type="application/json">
@@ -206,6 +250,7 @@ def main() -> None:
 
                 found = extract_questions_from_page(page)
                 added = 0
+                updated = 0
                 for q in found:
                     key = question_key(q["question"])
                     if key not in seen_keys:
@@ -213,12 +258,33 @@ def main() -> None:
                         new_questions.append(q)
                         total += 1
                         added += 1
-                        print(f"  ✔  [{total} total]  {q['question'][:65]}{'…' if len(q['question']) > 65 else ''}")
+                        correct_tag = f"  ✓ answer: {q['correct']}" if q["correct"] else ""
+                        print(f"  ✔  [{total} total]  {q['question'][:60]}{'…' if len(q['question']) > 60 else ''}{correct_tag}")
+                    elif q["correct"]:
+                        # Results page revealed the answer – back-fill it
+                        for stored in new_questions:
+                            if question_key(stored["question"]) == key and not stored["correct"]:
+                                stored["correct"] = q["correct"]
+                                updated += 1
+                                print(f"  ↻  Answer filled: {q['correct'][:50]}  ← {q['question'][:45]}…")
+                                break
+                        # Also back-fill in the pre-existing list loaded from disk
+                        for stored in existing:
+                            if question_key(stored["question"]) == key and not stored["correct"]:
+                                stored["correct"] = q["correct"]
+                                updated += 1
+                                print(f"  ↻  Answer filled (existing): {q['correct'][:40]}  ← {q['question'][:35]}…")
+                                break
 
-                if added == 0:
-                    print(f"  ⚠  No new questions found on this page (URL: {page.url[:80]})")
+                if added == 0 and updated == 0:
+                    print(f"  ⚠  No new questions or answers found on this page (URL: {page.url[:80]})")
                 else:
-                    print(f"  → {added} question(s) recorded from this page.\n")
+                    parts = []
+                    if added:
+                        parts.append(f"{added} new question(s)")
+                    if updated:
+                        parts.append(f"{updated} answer(s) filled in")
+                    print(f"  → {', '.join(parts)} from this page.\n")
 
         except KeyboardInterrupt:
             print("\n[!] Interrupted.")
