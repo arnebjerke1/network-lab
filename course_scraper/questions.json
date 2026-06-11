@@ -1,122 +1,1390 @@
 [
   {
-    "question": "Which Palo Alto Networks feature identifies applications regardless of port, protocol, or encryption?",
+    "question": "In the exploitation phase of a cyberattack, what is the primary goal of the attacker?",
     "choices": [
-      "App-ID",
-      "User-ID",
-      "Content-ID",
-      "Device-ID"
+      "To take control of the target system",
+      "To install backdoors for future access",
+      "To exfiltrate data from the target system",
+      "To manipulate system vulnerabilities for unauthorized access"
     ],
-    "correct": "App-ID"
+    "correct": "To manipulate system vulnerabilities for unauthorized access"
   },
   {
-    "question": "What is the primary function of Panorama in a Palo Alto Networks deployment?",
+    "question": "Which two actions during the command-and-control (C2) phase of the cyberattack lifecycle can help prevent the further evolution of an attack? (Choose two.)",
     "choices": [
-      "Centralized management and visibility for multiple firewalls",
-      "Real-time malware analysis",
-      "User authentication and identity management",
-      "URL filtering and web categorization"
+      "Train users to recognize phishing emails",
+      "Implement granular control of applications",
+      "Block outbound traffic that is typical for C2 communication",
+      "Implement sandboxing for all files transferred to or from external networks"
     ],
-    "correct": "Centralized management and visibility for multiple firewalls"
+    "correct": "Implement granular control of applications"
   },
   {
-    "question": "Which zone type in PAN-OS is used for traffic that originates from or is destined for the firewall itself?",
+    "question": "In the context of cyberattacks, what is an exploit?",
     "choices": [
-      "External Zone",
-      "Layer 3 Zone",
-      "Tap Zone",
-      "Functional Zone (MGT)"
+      "A person or group who poses a threat to a computer system",
+      "An attempt by an intelligent threat to bypass security measures",
+      "A malicious software application that a user installs on a computer",
+      "A sequence of actions that take advantage of a software problem or host-system vulnerability"
     ],
-    "correct": "Functional Zone (MGT)"
+    "correct": "A sequence of actions that take advantage of a software problem or host-system vulnerability"
   },
   {
-    "question": "What does WildFire provide in the Palo Alto Networks security platform?",
+    "question": "Which two methods are commonly used by attackers to deliver malicious payloads during the weaponization-and-delivery phase of the cyberattack lifecycle? (Choose two.)",
     "choices": [
-      "Cloud-based malware analysis and zero-day threat prevention",
-      "Policy-based NAT translation",
-      "BGP route redistribution",
-      "SSL/TLS certificate management"
+      "Sinkholing",
+      "Port scanning",
+      "Use of exploit kits",
+      "Spear phishing attacks"
     ],
-    "correct": "Cloud-based malware analysis and zero-day threat prevention"
+    "correct": "Use of exploit kits"
   },
   {
-    "question": "Which PAN-OS feature maps IP addresses to usernames to enforce user-based policies?",
+    "question": "What is the goal of an attacker in the acting-on-objectives phase of the cyberattack lifecycle?",
     "choices": [
-      "User-ID",
-      "App-ID",
-      "Content-ID",
+      "To exfiltrate data or disrupt services",
+      "To install malware on the target system",
+      "To remotely manage compromised systems",
+      "To scan for vulnerabilities in the target system"
+    ],
+    "correct": "To exfiltrate data or disrupt services"
+  },
+  {
+    "question": "What is the purpose of a network access control list (ACL) for traditional network infrastructure devices?",
+    "choices": [
+      "To correlate user names with IP addresses",
+      "To encrypt data transmitted over the network",
+      "To assign IP addresses to devices on the network",
+      "To control the flow of traffic between network segments or subnets"
+    ],
+    "correct": "To control the flow of traffic between network segments or subnets"
+  },
+  {
+    "question": "What is an Ethernet or IP-based network broadcast domain?",
+    "choices": [
+      "The physical area covered by a wireless network",
+      "The total amount of data that can be transmitted over a network",
+      "The range of IP addresses that can be broadcasted over the internet",
+      "A set of devices connected to the same network segment and can communicate with each other directly"
+    ],
+    "correct": "A set of devices connected to the same network segment and can communicate with each other directly"
+  },
+  {
+    "question": "What is the typical purpose of a network diagram in the context of network security?",
+    "choices": [
+      "To list the security policies in use on the network",
+      "To cost-optimize the organization's cloud infrastructure",
+      "To show the distribution of malware across the network",
+      "To depict the layout of a network and the connections among devices"
+    ],
+    "correct": "To depict the layout of a network and the connections among devices"
+  },
+  {
+    "question": "What is the difference between north-south and east-west traffic flows?",
+    "choices": [
+      "North-south traffic is always faster than east-west traffic",
+      "North-south traffic is always encrypted; east-west traffic is unencrypted",
+      "North-south traffic moves between different networks; east-west traffic is limited to a single network",
+      "North-south traffic enters and leaves the network perimeter; east-west traffic flows among components within the network perimeter"
+    ],
+    "correct": "North-south traffic enters and leaves the network perimeter; east-west traffic flows among components within the network perimeter"
+  },
+  {
+    "question": "What does the term \"network perimeter\" refer to in the context of network security?",
+    "choices": [
+      "The physical boundaries of a data center",
+      "The range of wireless network connections",
+      "The range of IP addresses assigned to a network",
+      "The boundary between an organizationally controlled network and one or more external networks"
+    ],
+    "correct": "The boundary between an organizationally controlled network and one or more external networks"
+  },
+  {
+    "question": "What is the main difference between a denial-of-service (DoS) attack and a distributed denial-of-service (DDoS) attack?",
+    "choices": [
+      "The method used to launch the attack",
+      "The number of systems used to attack the target",
+      "The geographical dispersion of the target systems",
+      "The variability in packet sizes used to attack the target"
+    ],
+    "correct": "The number of systems used to attack the target"
+  },
+  {
+    "question": "What is a botnet?",
+    "choices": [
+      "A packet-intercept system",
+      "A network of attacker-controlled endpoints",
+      "A web crawler that facilitates reconnaissance",
+      "A method of scanning for open network services"
+    ],
+    "correct": "A network of attacker-controlled endpoints"
+  },
+  {
+    "question": "In a man-in-the-middle attack, what is the attacker's tactical goal?",
+    "choices": [
+      "To flood the target with traffic",
+      "To install malware on the victim's machine",
+      "To create a botnet for launching DDoS attacks",
+      "To intercept or manipulate data transferred between two devices"
+    ],
+    "correct": "To intercept or manipulate data transferred between two devices"
+  },
+  {
+    "question": "What is the tactical goal of a denial-of-service (DoS) attack?",
+    "choices": [
+      "To install malware on a target system",
+      "To intercept one or more IP addresses",
+      "To hinder or block access to a system or service",
+      "To steal sensitive information from a target system"
+    ],
+    "correct": "To hinder or block access to a system or service"
+  },
+  {
+    "question": "Which is a primary risk to organizations targeted by DDoS attacks?",
+    "choices": [
+      "IP spoofing",
+      "Theft of sensitive information",
+      "Downtime and lost productivity",
+      "Installation of malware on their systems"
+    ],
+    "correct": "Downtime and lost productivity"
+  },
+  {
+    "question": "What is the main function of a demilitarized zone (DMZ) within a network design?",
+    "choices": [
+      "To store sensitive data securely",
+      "To isolate internet-facing services",
+      "To manage user access and authentication",
+      "To monitor network traffic for suspicious activity"
+    ],
+    "correct": "To isolate internet-facing services"
+  },
+  {
+    "question": "Which two locations do enterprise networks most commonly protect with firewalls? (Choose two.)",
+    "choices": [
+      "Application layer",
+      "Database segment",
+      "Enterprise segment",
+      "Demilitarized zone (DMZ)"
+    ],
+    "correct": "Enterprise segment"
+  },
+  {
+    "question": "Which three types of cloud architectures are most commonly used today? (Choose three.)",
+    "choices": [
+      "Local Cloud",
+      "Public Cloud",
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Personal Cloud"
+    ],
+    "correct": "Public Cloud"
+  },
+  {
+    "question": "Which two practices most directly protect sensitive data from network-based attacks? (Choose two.)",
+    "choices": [
+      "Data encryption",
+      "Physical security",
+      "Regular patching",
+      "Strong passwords"
+    ],
+    "correct": "Data encryption"
+  },
+  {
+    "question": "What is the function of a network Intrusion Detection Systems (IDS)?",
+    "choices": [
+      "To store sensitive data securely",
+      "To manage user access and authentication",
+      "To scan traffic for suspicious activity and alert security analysts",
+      "To isolate internet-facing services and protect them with a firewall"
+    ],
+    "correct": "To scan traffic for suspicious activity and alert security analysts"
+  },
+  {
+    "question": "What does north-south protection refer to in a virtual data center?",
+    "choices": [
+      "Traffic moving within a private cloud",
+      "Traffic within a single virtual machine",
+      "Traffic in and out of the virtualized environment",
+      "Traffic between VMs and the management infrastructure"
+    ],
+    "correct": "Traffic in and out of the virtualized environment"
+  },
+  {
+    "question": "What type of firewall is typically used for east-west protection in a virtual data center?",
+    "choices": [
+      "Cloud-based firewall service",
+      "Physical perimeter edge firewall",
+      "Virtualized firewall on each hypervisor",
+      "Hardware-based firewall in the data center"
+    ],
+    "correct": "Virtualized firewall on each hypervisor"
+  },
+  {
+    "question": "Which are the benefits of implementing east-west protection in a virtual data center? (Choose two.)",
+    "choices": [
+      "Application authorization",
+      "Increased traffic throughput",
+      "Reduced load on perimeter network firewalls",
+      "Reduction of lateral threat movement"
+    ],
+    "correct": "Application authorization"
+  },
+  {
+    "question": "What advantages does a virtualized security device provide for east-west protection in a virtual data center? (Choose two.)",
+    "choices": [
+      "Traffic and threat visibility",
+      "Policy-based threat protection",
+      "Automatic vulnerability patching",
+      "Highest available throughput speeds"
+    ],
+    "correct": "Traffic and threat visibility"
+  },
+  {
+    "question": "Which type of traffic is typically secured by high-throughput appliances working in high-availability active-passive (or active-active) mode?",
+    "choices": [
+      "East-west",
+      "North-south",
+      "Management",
+      "Application-database"
+    ],
+    "correct": "North-south"
+  },
+  {
+    "question": "How do public cloud infrastructures impact enterprise expenses compared to traditional data centers?",
+    "choices": [
+      "Increase in OpEx",
+      "Increase in CapEx",
+      "Decrease in CapEx",
+      "Equal expenditure in CapEx and OpEx"
+    ],
+    "correct": "Decrease in CapEx"
+  },
+  {
+    "question": "What is the advantage of implementing CI/CD?",
+    "choices": [
+      "Rapid new-version product releases",
+      "Obfuscation of increased code complexity",
+      "Users typically have six to nine months to adapt to incremental changes",
+      "Discards the now outdated agile framework for application development"
+    ],
+    "correct": "Rapid new-version product releases"
+  },
+  {
+    "question": "What does FaaS stand for in the context of serverless computing?",
+    "choices": [
+      "File-as-a-Service",
+      "Fast-as-a-Service",
+      "Function-as-a-Service",
+      "Framework-as-a-Service"
+    ],
+    "correct": "Function-as-a-Service"
+  },
+  {
+    "question": "What is the role of a hypervisor in virtual machine environments?",
+    "choices": [
+      "To support for serverless functions",
+      "To govern access to cloud infrastructure",
+      "To provide a foundation for container images",
+      "To run emulation services for multiple virtual machines"
+    ],
+    "correct": "To run emulation services for multiple virtual machines"
+  },
+  {
+    "question": "What is the primary advantage of using containers over virtual machines?",
+    "choices": [
+      "Direct access to real hardware",
+      "Support for serverless functions",
+      "Leverage of hypervisors to manage resources",
+      "Direct, efficient use of kernel data and compute structures"
+    ],
+    "correct": "Direct, efficient use of kernel data and compute structures"
+  },
+  {
+    "question": "Which service(s) do the major cloud service providers offer as primary service?",
+    "choices": [
+      "Identity validation",
+      "Corporate governance",
+      "Application development",
+      "Core compute, network, and service infrastructure"
+    ],
+    "correct": "Core compute, network, and service infrastructure"
+  },
+  {
+    "question": "What is the primary function of computer services in cloud-based solutions?",
+    "choices": [
+      "To manage network traffic within cloud environments",
+      "To grant permissions and manage access to cloud resources",
+      "To store data files in a safe, secure, and scalable environment",
+      "To provide the needed components to run application and websites"
+    ],
+    "correct": "To provide the needed components to run application and websites"
+  },
+  {
+    "question": "Which element is essential for effective logging and monitoring outcomes when leveraging the cloud?",
+    "choices": [
+      "Resource and anomaly visibility",
+      "DNS security",
+      "X.500 support",
+      "Identity provider services"
+    ],
+    "correct": "Resource and anomaly visibility"
+  },
+  {
+    "question": "In the context of cloud-based solutions, what is the main function of a security group?",
+    "choices": [
+      "To store and process large volumes of data",
+      "To monitor and manage cloud resource usage",
+      "To define rules for allowed traffic to and from a resource",
+      "To manage cloud-administrator access to cloud resources"
+    ],
+    "correct": "To define rules for allowed traffic to and from a resource"
+  },
+  {
+    "question": "Which cloud service is responsible for isolating cloud infrastructure and controlling access to virtual networks?",
+    "choices": [
+      "Identity services",
+      "Compute services",
+      "Database services",
+      "Networking services"
+    ],
+    "correct": "Networking services"
+  },
+  {
+    "question": "In the shared responsibility model, which aspect of security is the cloud service provider (CSP) responsible for?",
+    "choices": [
+      "Managing the organization's security policies",
+      "Securing the organization's data and applications",
+      "Ensuring the organization's compliance with standards",
+      "Securing hardware, operating system, network, and infrastructure services"
+    ],
+    "correct": "Securing hardware, operating system, network, and infrastructure services"
+  },
+  {
+    "question": "What is the primary purpose of network access control lists (ACLs) in a virtual private cloud (VPC)?",
+    "choices": [
+      "To filter traffic between different VPCs",
+      "To control traffic within the same subnet",
+      "To restrict traffic between subnets within the VPC",
+      "To control traffic to cloud-provider reserved addresses"
+    ],
+    "correct": "To restrict traffic between subnets within the VPC"
+  },
+  {
+    "question": "What advantage does a software-defined network (SDN) offer over a conventional network in a data center?",
+    "choices": [
+      "Built-in security features",
+      "Replacement of the need for hypervisors",
+      "Dynamic and automated network provisioning",
+      "Elimination of the need for firewalls in the data center"
+    ],
+    "correct": "Dynamic and automated network provisioning"
+  },
+  {
+    "question": "What is the purpose of the use of security groups in a virtual private cloud (VPC)?",
+    "choices": [
+      "To control traffic between different VPCs",
+      "To restrict traffic between subnets within the VPC",
+      "To control traffic to cloud-provider reserved addresses",
+      "To define explicitly permitted network traffic for virtual machines' network interfaces"
+    ],
+    "correct": "To define explicitly permitted network traffic for virtual machines' network interfaces"
+  },
+  {
+    "question": "What is the difference between network ACLs and security groups in cloud network security?",
+    "choices": [
+      "ACLs apply to network interfaces; security groups apply to subnets.",
+      "ACLs enforce at Layer 3 and 4; security groups enforce at Layer 3 only",
+      "ACLs allow action rules only; security groups have both allow and deny rules.",
+      "ACLs are stateless and subnet-level; security groups are stateful and instance-level."
+    ],
+    "correct": "ACLs are stateless and subnet-level; security groups are stateful and instance-level."
+  },
+  {
+    "question": "What is cryptojacking?",
+    "choices": [
+      "The poisoning of open source cryptographic libraries",
+      "The unauthorized use of a computer to mine cryptocurrency",
+      "The successful execution of man-in-the-middle (MITM) attacks",
+      "The presentation of insecure crypto protocols for HTTPS communication"
+    ],
+    "correct": "The unauthorized use of a computer to mine cryptocurrency"
+  },
+  {
+    "question": "Which of the following are essential security measures for publishing APIs? (Choose three.)",
+    "choices": [
+      "Encryption",
+      "Authorization",
+      "Sufficient authentication",
+      "Compliance with REST API standards",
+      "Comprehensive API-use documentation"
+    ],
+    "correct": "Encryption"
+  },
+  {
+    "question": "Which is typically the least significant vulnerability for the use of cloud application use?",
+    "choices": [
+      "Data leaks",
+      "Host hardware",
+      "User negligence",
+      "Administrator error"
+    ],
+    "correct": "Host hardware"
+  },
+  {
+    "question": "Which is an example of a cloud-services or cloud-account security risk?",
+    "choices": [
+      "Regionalization",
+      "Credential theft",
+      "Database partitioning",
+      "Two-factor authentication"
+    ],
+    "correct": "Credential theft"
+  },
+  {
+    "question": "Which action is typically carried out by an insider with malicious intent?",
+    "choices": [
+      "DDoS attack",
+      "Cryptojacking",
+      "Spear phishing",
+      "Data exfiltration"
+    ],
+    "correct": "Data exfiltration"
+  },
+  {
+    "question": "What is a major issue caused by disconnected solutions and tools in network security management?",
+    "choices": [
+      "Improved integration and automation",
+      "Increased visibility into network security",
+      "Simplified management of complex security policies",
+      "Difficulty administering and managing firewalls and security capabilities"
+    ],
+    "correct": "Difficulty administering and managing firewalls and security capabilities"
+  },
+  {
+    "question": "What does \"single-pane-of-glass management\" refer to in network security?",
+    "choices": [
+      "Focusing on one specific security threat at a time",
+      "Implementing a single firewall for the entire network",
+      "Concentrating on a single security policy for the network",
+      "Using a single management console for all security tools"
+    ],
+    "correct": "Using a single management console for all security tools"
+  },
+  {
+    "question": "What is the primary goal of using a centralized network security console?",
+    "choices": [
+      "To focus on individual security policies",
+      "To increase the number of security tools",
+      "To simplify network security management",
+      "To separate firewall management from other tools"
+    ],
+    "correct": "To simplify network security management"
+  },
+  {
+    "question": "Why do organizations prefer integrating firewall management with other third-party tools?",
+    "choices": [
+      "To improve operational efficiency",
+      "To increase the complexity of the security system",
+      "To focus on maintaining individual security policies",
+      "To reduce the need for a single-pane-of-glass management"
+    ],
+    "correct": "To improve operational efficiency"
+  },
+  {
+    "question": "What are the two main objectives of organizations in managing network security? (Choose two.)",
+    "choices": [
+      "To reduce administrative overhead",
+      "To implement a large number of firewalls",
+      "To simplify network security management",
+      "To rely solely on third-party tools for operational efficiency",
+      "To use multiple management consoles for different security tools"
+    ],
+    "correct": "To reduce administrative overhead"
+  },
+  {
+    "question": "Where in Panorama can you access summarized log information?",
+    "choices": [
+      "Monitor",
+      "Templates",
+      "Device Groups",
+      "Application Command Center"
+    ],
+    "correct": "Application Command Center"
+  },
+  {
+    "question": "What are the two main reasons for deploying a Panorama server? (Choose two.)",
+    "choices": [
+      "To streamline the management of NGFWs",
+      "To provide a web interface for log collectors",
+      "To process offloaded decryption tasks for NGFWs",
+      "To provide centralized visibility into network traffic"
+    ],
+    "correct": "To streamline the management of NGFWs"
+  },
+  {
+    "question": "What is a key advantage of using Panorama management server?",
+    "choices": [
+      "Elimination of repetitive firewall deployment tasks",
+      "Bypass of license validation for registered firewalls",
+      "Enablement of direct internet access for all firewalls",
+      "Access to a web interface for Dedicated Log Collectors"
+    ],
+    "correct": "Elimination of repetitive firewall deployment tasks"
+  },
+  {
+    "question": "Which two data sources does Panorama use for generating reports? (Choose two.)",
+    "choices": [
+      "External dynamic lists",
+      "The local Panorama database",
+      "The Application Command Center (ACC)",
+      "The remote firewalls managed by Panorama"
+    ],
+    "correct": "The local Panorama database"
+  },
+  {
+    "question": "Which is a key function of Panorama?",
+    "choices": [
+      "To provide on-premises sandbox analysis",
+      "To aggregate logging data from multiple NGFWs",
+      "To automate local-area and wide-area network mapping",
+      "To perform offloaded decryption and encryption tasks for NGFWs"
+    ],
+    "correct": "To aggregate logging data from multiple NGFWs"
+  },
+  {
+    "question": "Which cloud-delivered security service provides the features of an advanced intrusion prevention system (IPS)?",
+    "choices": [
+      "Prisma SaaS",
+      "GlobalProtect",
+      "Advanced DLP",
+      "Advanced Threat Prevention"
+    ],
+    "correct": "Advanced Threat Prevention"
+  },
+  {
+    "question": "Which concept provides a framework for describing how Cloud-Delivered Security Services (CDSS) fits in with the Palo Alto Networks strategic approach comprehensive security?",
+    "choices": [
+      "Security as a Service (SECaaS)",
+      "Firewall as a Platform (FWaaP)",
+      "Code, Build, Deploy, Run (CBDR)",
+      "Next-Generation Firewall (NGFW)"
+    ],
+    "correct": "Firewall as a Platform (FWaaP)"
+  },
+  {
+    "question": "How does Palo Alto Networks' WildFire service help security teams?",
+    "choices": [
+      "By automatically analyzing files for threats",
+      "By using machine learning for accurate device discovery",
+      "By providing visibility into unsanctioned SaaS applications",
+      "By offering in-line machine learning-based detection of malicious domains"
+    ],
+    "correct": "By automatically analyzing files for threats"
+  },
+  {
+    "question": "Which cloud-delivered security service provides secure access to the network for the modern mobile workforce?",
+    "choices": [
+      "SD-WAN",
+      "IoT Security",
+      "Prisma SaaS",
       "GlobalProtect"
     ],
-    "correct": "User-ID"
+    "correct": "GlobalProtect"
   },
   {
-    "question": "What is the default action when no security policy rule matches traffic on a Palo Alto Networks firewall?",
+    "question": "What is the goal of Palo Alto Networks' cloud-delivered security services (CDSS) offerings?",
     "choices": [
-      "Deny",
-      "Allow",
-      "Drop",
-      "Reset"
+      "To replace on-box and Panorama-server-based policy management",
+      "To provide feature parity for hardware firewalls and software firewalls",
+      "To scan your infrastructure as code (IaC) scripts and cloud-based VMs for threats",
+      "To help ensure that customers can confidently secure all traffic that traverses any network"
     ],
-    "correct": "Deny"
+    "correct": "To help ensure that customers can confidently secure all traffic that traverses any network"
   },
   {
-    "question": "Which interface type in PAN-OS allows traffic inspection without being in the traffic path (passive monitoring)?",
+    "question": "Which two technologies are foundational elements of the Advanced URL Filtering service? (Choose two.)",
     "choices": [
-      "Tap interface",
-      "Virtual wire interface",
-      "Layer 3 interface",
-      "Loopback interface"
+      "PAN-DB",
+      "Exfiltration detection",
+      "Inline machine learning models",
+      "Fuzzy hashing"
     ],
-    "correct": "Tap interface"
+    "correct": "PAN-DB"
   },
   {
-    "question": "In a High Availability (HA) active/passive configuration, what does the passive peer do when it detects the active peer has failed?",
+    "question": "What is the primary purpose of Advanced URL Filtering?",
     "choices": [
-      "It takes over as the active device and starts processing traffic",
-      "It sends an alert to Panorama and waits for manual intervention",
-      "It reboots and re-establishes the HA link",
-      "It continues in passive mode until administrator approval"
+      "To provide anonymous browsing",
+      "To categorize websites as benign or malicious",
+      "To provide local, highly compressed caches of website category data",
+      "To block specific IP addresses"
     ],
-    "correct": "It takes over as the active device and starts processing traffic"
+    "correct": "To categorize websites as benign or malicious"
   },
   {
-    "question": "Which Palo Alto Networks subscription service provides DNS-layer security to block malicious domains?",
+    "question": "Which three risk categories are used in PAN-DB to classify websites? (Choose three.)",
     "choices": [
-      "DNS Security",
-      "Threat Prevention",
-      "URL Filtering",
-      "IoT Security"
+      "Medium",
+      "Low",
+      "High",
+      "Unknown",
+      "Critical"
     ],
-    "correct": "DNS Security"
+    "correct": "Low"
   },
   {
-    "question": "What protocol does GlobalProtect use to establish secure remote access tunnels?",
+    "question": "What is the first step in Advanced URL Filtering's category lookup and policy evaluation process?",
     "choices": [
-      "IPsec/SSL",
-      "PPTP",
-      "L2TP only",
-      "GRE"
+      "Firewall inspection of the URL request",
+      "Inline ML detection",
+      "PAN-DB URL lookup",
+      "Policy lookup for overrides to default settings"
     ],
-    "correct": "IPsec/SSL"
+    "correct": "Firewall inspection of the URL request"
   },
   {
-    "question": "Which feature identifies applications?",
+    "question": "How does Advanced URL Filtering compensate for coverage gaps in database solutions?",
     "choices": [
-      "App-ID",
-      "User-ID",
-      "Content-ID",
-      "Device-ID"
+      "By use of aggressive fuzzy hashing",
+      "By use of Safe Search Enforcement",
+      "By providing real-time URL analysis on a per-request basis",
+      "By leveraging DNS inspection"
     ],
-    "correct": ""
+    "correct": "By providing real-time URL analysis on a per-request basis"
   },
   {
-    "question": "What does WildFire do?",
+    "question": "How does SASE enhance user experience in a remote working environment?",
     "choices": [
-      "Malware analysis",
-      "NAT translation",
-      "Route redistribution",
-      "Certificate management"
+      "Reduces latency",
+      "Increases bandwidth availability",
+      "Provides secure connectivity",
+      "Optimizes performance and security"
     ],
-    "correct": ""
+    "correct": "Optimizes performance and security"
+  },
+  {
+    "question": "Which security concept is SASE designed to replace or augment for modern network architectures?",
+    "choices": [
+      "Biometric authentication",
+      "Intrusion Detection Systems (IDS)",
+      "Network Address Translation (NAT)",
+      "Castle-and-Moat perimeter security"
+    ],
+    "correct": "Castle-and-Moat perimeter security"
+  },
+  {
+    "question": "Which component is a fundamental part of the SASE architecture for secure access to applications and data?",
+    "choices": [
+      "Virtual reality integration",
+      "Legacy hardware firewalls",
+      "Social media authentication",
+      "Cloud-native security services"
+    ],
+    "correct": "Cloud-native security services"
+  },
+  {
+    "question": "What is the primary advantage of SASE in terms of scalability for businesses?",
+    "choices": [
+      "Predictable IP assignments",
+      "Limited device compatibility",
+      "Centralized network control points",
+      "Easily scalable cloud-native architecture"
+    ],
+    "correct": "Easily scalable cloud-native architecture"
+  },
+  {
+    "question": "Which accomplishment best describes the primary goal of SASE?",
+    "choices": [
+      "Improved user interface",
+      "Centralized data storage",
+      "Enhanced network speed",
+      "Converged networking and security"
+    ],
+    "correct": "Converged networking and security"
+  },
+  {
+    "question": "What does SASE stand for in IT networking?",
+    "choices": [
+      "Secure Access Service Edge",
+      "Simplified Application Security Endpoint",
+      "Strategic Access and Security Enhancement",
+      "Systematic Authentication and Security Environment"
+    ],
+    "correct": "Secure Access Service Edge"
+  },
+  {
+    "question": "How does IaaS differ from traditional infrastructure in terms of resource provisioning?",
+    "choices": [
+      "IaaS supports fixed resource allocations only.",
+      "Traditional infrastructure uses a pay-as-you-go model.",
+      "Traditional infrastructure always requires manual resource provisioning.",
+      "IaaS provides on-demand resources that can be scaled up or down as needed."
+    ],
+    "correct": "IaaS provides on-demand resources that can be scaled up or down as needed."
+  },
+  {
+    "question": "In which two ways does IaaS contribute to cost savings for organizations compared to traditional infrastructure?",
+    "choices": [
+      "(Choose two)",
+      "IaaS reduces capital expenditures and optimizes costs.",
+      "IaaS allows for streamlined IT staff as it requires less in-house management.",
+      "IaaS uses a Pay-As-You-Go pricing model, ensuring companies only pay for the resources they use.",
+      "IaaS minimizes downtime and maintenance costs by utilizing the service provider's expertise and infrastructure."
+    ],
+    "correct": "IaaS reduces capital expenditures and optimizes costs."
+  },
+  {
+    "question": "What two key advantages does IaaS offer in terms of scalability compared to traditional infrastructure?",
+    "choices": [
+      "(Choose two)",
+      "IaaS allows the service provider to scale resources as required.",
+      "IaaS allows businesses to scale their resources up based on demand.",
+      "IaaS allows for easy and rapid scalability to accommodate changing needs.",
+      "IaaS allows businesses to scale their resources up or down based on demand."
+    ],
+    "correct": "IaaS allows for easy and rapid scalability to accommodate changing needs."
+  },
+  {
+    "question": "What does IaaS stand for in the context of cloud computing?",
+    "choices": [
+      "Internet as a Service",
+      "Infrastructure as a Service",
+      "International Alliance for Advanced Servers",
+      "Integrated Application and Architecture System"
+    ],
+    "correct": "Infrastructure as a Service"
+  },
+  {
+    "question": "What is a key benefit of IaaS in terms of geographical flexibility for businesses?",
+    "choices": [
+      "IaaS supports rapid scaling of resources, but only within a specific region.",
+      "IaaS primarily focuses on providing local data center options for businesses.",
+      "IaaS enables businesses to deploy resources globally and access them from anywhere.",
+      "IaaS requires businesses to maintain a large in-house IT team for global resource management."
+    ],
+    "correct": "IaaS enables businesses to deploy resources globally and access them from anywhere."
+  },
+  {
+    "question": "How does SASE contribute to a seamless and user-friendly mobile access experience?",
+    "choices": [
+      "Relies on static IP assignments.",
+      "Implements lengthy authorization delays.",
+      "Requires complex authentication processes.",
+      "Integrates with Single Sign-On (SSO) solutions."
+    ],
+    "correct": "Integrates with Single Sign-On (SSO) solutions."
+  },
+  {
+    "question": "How does SASE improve the security posture for mobile users compared to traditional approaches?",
+    "choices": [
+      "Uses open guest networks.",
+      "Relies on basic firewall protection.",
+      "Provides a zero trust security model.",
+      "Depends on user-based security policies."
+    ],
+    "correct": "Provides a zero trust security model."
+  },
+  {
+    "question": "What benefit does SASE offer to mobile users in terms of device flexibility and accessibility?",
+    "choices": [
+      "Restricts access to corporate devices only.",
+      "Supports access from any device, anywhere.",
+      "Enforces device-specific access restrictions.",
+      "Provides improved security via specialized hardware."
+    ],
+    "correct": "Supports access from any device, anywhere."
+  },
+  {
+    "question": "In the context of remote access, how does SASE contribute to improved visibility and control for IT administrators?",
+    "choices": [
+      "Through comprehensive visibility into user activities.",
+      "Through prioritizing compatibility with legacy systems.",
+      "Through focusing on enhancing network speed and connectivity.",
+      "Through insights into user activities, focusing specifically on local networks."
+    ],
+    "correct": "Through comprehensive visibility into user activities."
+  },
+  {
+    "question": "In which two ways does SASE contribute to cost savings for organizations with a mobile workforce?",
+    "choices": [
+      "(Choose two)",
+      "By reducing administrative overhead.",
+      "By reducing the need for backhaul to data centers.",
+      "By routing application traffic over dedicated VPN connections.",
+      "By connecting users directly to the service, regardless of their location."
+    ],
+    "correct": "By reducing administrative overhead."
+  },
+  {
+    "question": "What advantage does SASE offer for branch offices in terms of network management?",
+    "choices": [
+      "SASE supports only large branches, not smaller offices.",
+      "SASE requires complex manual management for branches.",
+      "Traditional networks are easier to manage for branch offices.",
+      "SASE centralizes network management, making it simpler to support branches."
+    ],
+    "correct": "SASE centralizes network management, making it simpler to support branches."
+  },
+  {
+    "question": "What role does SASE play in optimizing the performance of applications used by branch offices?",
+    "choices": [
+      "SASE has no impact on application performance.",
+      "SASE relies on branch-specific optimization tools.",
+      "Traditional networks are more efficient in managing application performance for branches.",
+      "SASE optimizes application performance for branches by providing direct and secure access."
+    ],
+    "correct": "SASE optimizes application performance for branches by providing direct and secure access."
+  },
+  {
+    "question": "How does SASE support the agility of branch networks in responding to changing business needs?",
+    "choices": [
+      "SASE limits the agility of branch networks.",
+      "SASE requires manual reconfiguration for agile branch networks.",
+      "Traditional networks are more agile than SASE for branch offices.",
+      "SASE enables branches to scale and adapt quickly to changing requirements."
+    ],
+    "correct": "SASE enables branches to scale and adapt quickly to changing requirements."
+  },
+  {
+    "question": "How does SASE improve connectivity for branches in different locations?",
+    "choices": [
+      "SASE only works well for a single branch.",
+      "Traditional networking is more effective for branch connectivity.",
+      "SASE requires all branches to be physically close to each other.",
+      "SASE enables branches to connect securely and efficiently, regardless of their location."
+    ],
+    "correct": "SASE enables branches to connect securely and efficiently, regardless of their location."
+  },
+  {
+    "question": "How does SASE contribute to the resilience of branch networks in the face of network disruptions?",
+    "choices": [
+      "SASE has no impact on branch network resilience.",
+      "Traditional networking offers better resilience for branch offices.",
+      "SASE requires always-on backup connections for branch resilience.",
+      "SASE provides built-in redundancy, improving the resilience of branch networks."
+    ],
+    "correct": "SASE provides built-in redundancy, improving the resilience of branch networks."
+  },
+  {
+    "question": "How is application performance optimized in SD-WAN networks?",
+    "choices": [
+      "Through static routing.",
+      "Through intelligent traffic routing.",
+      "Through centralized network control.",
+      "Through decentralized network management."
+    ],
+    "correct": "Through intelligent traffic routing."
+  },
+  {
+    "question": "In which two ways does SD-WAN enhance the resilience of network connections?",
+    "choices": [
+      "(Choose two)",
+      "Provides built-in redundancy.",
+      "Simplifies bandwidth planning.",
+      "Provides improved visibility into network failures.",
+      "Uses dynamic path selection to intelligently choose the best path."
+    ],
+    "correct": "Provides built-in redundancy."
+  },
+  {
+    "question": "How does SD-WAN address the need for secure connections among different locations?",
+    "choices": [
+      "By reinforcing perimeter security.",
+      "By introducing complex security appliances.",
+      "By embedding security measures into the network.",
+      "By forcing convergence on a single cryptographic protocol."
+    ],
+    "correct": "By embedding security measures into the network."
+  },
+  {
+    "question": "Which network improvement does SD-WAN primarily focus on?",
+    "choices": [
+      "Network speed",
+      "Device security",
+      "User experience",
+      "Private connectivity"
+    ],
+    "correct": "User experience"
+  },
+  {
+    "question": "What does SD-WAN aim to simplify in network management?",
+    "choices": [
+      "Security policies",
+      "Network configuration",
+      "Hardware procurement",
+      "Application deployment"
+    ],
+    "correct": "Network configuration"
+  },
+  {
+    "question": "How does Digital Experience Monitoring (DEM) contribute to understanding user behavior in digital environments?",
+    "choices": [
+      "By monitoring access to user data.",
+      "By examining user disengagement patterns.",
+      "By focusing on non-user-related data sources.",
+      "By analyzing user behavior to improve experiences."
+    ],
+    "correct": "By analyzing user behavior to improve experiences."
+  },
+  {
+    "question": "What does Digital Experience Monitoring (DEM) seek to achieve in terms of digital interactions for organizations?",
+    "choices": [
+      "Reduction of digital fatigue.",
+      "Simplification of user feedback.",
+      "Monitoring of a user's online activity.",
+      "Optimization and elevation of digital experiences."
+    ],
+    "correct": "Optimization and elevation of digital experiences."
+  },
+  {
+    "question": "What does Digital Experience Monitoring (DEM) focus on when assessing the performance of digital applications?",
+    "choices": [
+      "Application usability.",
+      "Physical infrastructure.",
+      "Network bandwidth availability.",
+      "User satisfaction and experience."
+    ],
+    "correct": "User satisfaction and experience."
+  },
+  {
+    "question": "How does Digital Experience Monitoring (DEM) support the customization of digital experiences for different user segments?",
+    "choices": [
+      "By restricting access to personalized content.",
+      "By analyzing user data and tailoring experiences.",
+      "By prioritizing system stability over customization.",
+      "By focusing on standardized digital experiences for all users."
+    ],
+    "correct": "By analyzing user data and tailoring experiences."
+  },
+  {
+    "question": "Which goal for e-commerce does Digital Experience Monitoring (DEM) aim to help businesses achieve?",
+    "choices": [
+      "Reduced checkout complexity.",
+      "Optimization of future ad campaigns.",
+      "Better collection of customer feedback.",
+      "A seamless and satisfying online shopping experience."
+    ],
+    "correct": "A seamless and satisfying online shopping experience."
+  },
+  {
+    "question": "In what way does DEM's user feedback mechanism contribute to SASE's objectives?",
+    "choices": [
+      "By encrypting internal emails.",
+      "By enhancing user authentication.",
+      "By improving the user experience.",
+      "By monitoring network conditions in real-time."
+    ],
+    "correct": "By improving the user experience."
+  },
+  {
+    "question": "Which is the correct term for a Protocol Data Unit (PDU) at Layer 2 of the OSI model?",
+    "choices": [
+      "Bit",
+      "Frame",
+      "Packet",
+      "Segment"
+    ],
+    "correct": "Frame"
+  },
+  {
+    "question": "Which layer of the OSI model is responsible for transparent, reliable data transport and end-to-end transmission control?",
+    "choices": [
+      "Network layer",
+      "Data Link layer",
+      "Transport layer",
+      "Application layer"
+    ],
+    "correct": "Transport layer"
+  },
+  {
+    "question": "Which two protocols function at the Application layer of the OSI model? (Choose two.)",
+    "choices": [
+      "File Transfer Protocol (FTP)",
+      "Transmission Control Protocol (TCP)",
+      "User Datagram Protocol (UDP)",
+      "Hypertext Transfer Protocol (HTTP)"
+    ],
+    "correct": "File Transfer Protocol (FTP)"
+  },
+  {
+    "question": "What is the primary purpose of a subnet mask in IPv4 addressing?",
+    "choices": [
+      "To hide the host portion of an IP address",
+      "To convert IP addresses into binary format",
+      "To provide a one-to-one translation of IP addresses",
+      "To hide the network portion of an IP address"
+    ],
+    "correct": "To hide the network portion of an IP address"
+  },
+  {
+    "question": "In a packet-switched network, what is the main advantage compared to circuit-switched networks?",
+    "choices": [
+      "Higher resilience to error and congestion",
+      "Requires dedicated physical circuit paths",
+      "Faster connection establishment",
+      "Better suited for real-time communication"
+    ],
+    "correct": "Higher resilience to error and congestion"
+  },
+  {
+    "question": "At which layer of the OSI model do routers primarily operate?",
+    "choices": [
+      "Application layer",
+      "Transport layer",
+      "Network layer",
+      "Data Link laye"
+    ],
+    "correct": "Network layer"
+  },
+  {
+    "question": "Which IP address range is reserved for Class A private networks?",
+    "choices": [
+      "10.0.0.0–10.255.255.255",
+      "172.16.0.0–172.31.255.255",
+      "192.168.0.0–192.168.255.255",
+      "127.0.0.1 to 127.255.255.255"
+    ],
+    "correct": "10.0.0.0–10.255.255.255"
+  },
+  {
+    "question": "What is the primary purpose of data encapsulation in the OSI and TCP/IP models?",
+    "choices": [
+      "To wrap protocol information from the layer above in the data section of the layer below",
+      "To translate IP addresses into domain names",
+      "To improve data transfer rates",
+      "To provide error correction mechanisms"
+    ],
+    "correct": "To wrap protocol information from the layer above in the data section of the layer below"
+  },
+  {
+    "question": "In the context of packet lifecycle, which layer of the OSI model is responsible for sending and receiving bits across the network medium?",
+    "choices": [
+      "Application layer",
+      "Transport layer",
+      "Network layer",
+      "Physical layer"
+    ],
+    "correct": "Physical layer"
+  },
+  {
+    "question": "What are the two main reasons for subnetting a network? (Choose two.)",
+    "choices": [
+      "To limit network traffic",
+      "To increase the number of devices visible to each other",
+      "To limit the number of devices visible to each other",
+      "To improve the efficiency of routers"
+    ],
+    "correct": "To limit network traffic"
+  },
+  {
+    "question": "Which troubleshooting technique begins at the Physical layer of the OSI model by verifying network connections and device availability?",
+    "choices": [
+      "Bottom-up approach",
+      "Top-down approach",
+      "Divide-and-conquer approach",
+      "Substitution method"
+    ],
+    "correct": "Bottom-up approach"
+  },
+  {
+    "question": "Which task is part of server and system administration in server management?",
+    "choices": [
+      "Installing security patches",
+      "Analyzing network traffic",
+      "mClearing application caches",
+      "Searching log files for anomalies"
+    ],
+    "correct": "Installing security patches"
+  },
+  {
+    "question": "Which malware detection technique is based on evaluating an object's intended actions before it can execute them?",
+    "choices": [
+      "Heuristic-based",
+      "Signature-based",
+      "Behavior-based",
+      "Container-based"
+    ],
+    "correct": "Behavior-based"
+  },
+  {
+    "question": "In Mobile Device Management (MDM), what feature restricts specific functionality in a device based on its physical location?",
+    "choices": [
+      "Data Loss Prevention (DLP)",
+      "Policy Enforcement",
+      "Malware Protection",
+      "Geofencing and Location Services"
+    ],
+    "correct": "Geofencing and Location Services"
+  },
+  {
+    "question": "Which option is an essential element of endpoint security?",
+    "choices": [
+      "Patch management",
+      "Signature-based detection",
+      "Data compression",
+      "Data translation"
+    ],
+    "correct": "Patch management"
+  },
+  {
+    "question": "What type of malware threatens to publish the victim's data or block access to it unless a ransom is paid?",
+    "choices": [
+      "Worm",
+      "Virus",
+      "Ransomware",
+      "Trojan"
+    ],
+    "correct": "Ransomware"
+  },
+  {
+    "question": "Choose one: In the context of troubleshooting host and network connectivity problems, what is the purpose of a network baseline?",
+    "choices": [
+      "To provide a snapshot of normal network operations",
+      "To store warranty and support information",
+      "To encrypt communication between devices",
+      "To detect malware on devices"
+    ],
+    "correct": "To provide a snapshot of normal network operations"
+  },
+  {
+    "question": "Which type of firewall is installed as part of a desktop or mobile operating system?",
+    "choices": [
+      "Network firewall",
+      "Host-based firewall",
+      "Operating system firewall",
+      "Linux firewall"
+    ],
+    "correct": "Host-based firewall"
+  },
+  {
+    "question": "Which IDS/IPS system uses a database of known vulnerabilities and attack profiles to identify intrusion attempts?",
+    "choices": [
+      "knowledge-based",
+      "behavior-based",
+      "intuitive-based",
+      "standards-based"
+    ],
+    "correct": "knowledge-based"
+  },
+  {
+    "question": "Which type of system does not perform any preventive action to stop an attack?",
+    "choices": [
+      "data loss prevention",
+      "Intrusion Prevention",
+      "Unified Threat Management",
+      "intrusion detection"
+    ],
+    "correct": "intrusion detection"
+  },
+  {
+    "question": "Which next-generation product replaces UTM appliances to reduce traffic inspection latency?",
+    "choices": [
+      "hub",
+      "switch",
+      "firewall",
+      "router"
+    ],
+    "correct": "firewall"
+  },
+  {
+    "question": "Which of the following is considered sensitive data that a DLP security solution aims to protect?",
+    "choices": [
+      "Publicly available information",
+      "Marketing materials",
+      "Personally identifiable information",
+      "General company announcements"
+    ],
+    "correct": "Personally identifiable information"
+  },
+  {
+    "question": "Which of the following restrict the internet activity of user on a network by classifying websites into broad categories?",
+    "choices": [
+      "UDP",
+      "IDS",
+      "Web content filter",
+      "VPN"
+    ],
+    "correct": "Web content filter"
+  },
+  {
+    "question": "Which attack tactic allows adversaries to randomly change ports and protocols during a session?",
+    "choices": [
+      "Port Hopping",
+      "Tunneling",
+      "Hiding within SSL Encryption",
+      "Using non-standard ports"
+    ],
+    "correct": "Port Hopping"
+  },
+  {
+    "question": "What technology enables an immersive and interactive physical and digital sensory experience in real time?",
+    "choices": [
+      "Artificial Intelligence (AI)",
+      "Virtual Reality (VR)",
+      "Data Mining",
+      "Natural Language Search"
+    ],
+    "correct": "Virtual Reality (VR)"
+  },
+  {
+    "question": "Which option is an example of a SaaS application?",
+    "choices": [
+      "Microsoft Azure",
+      "Amazon Web Services",
+      "Oracle Cloud Infrastructure",
+      "Dropbox"
+    ],
+    "correct": "Dropbox"
+  },
+  {
+    "question": "What is the main objective of cybercrime vendors who offer their services on the dark web?",
+    "choices": [
+      "Political disruption",
+      "Financial gain",
+      "Social recognition",
+      "Providing malware and exploits as a service"
+    ],
+    "correct": "Providing malware and exploits as a service"
+  },
+  {
+    "question": "Which cloud computing service model provides consumers with the ability to deploy and run arbitrary software?",
+    "choices": [
+      "Software as a Service (SaaS)",
+      "Platform as a Service (PaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "Managed Security Services (MSS)"
+    ],
+    "correct": "Infrastructure as a Service (IaaS)"
+  },
+  {
+    "question": "What is the main characteristic of an APT?",
+    "choices": [
+      "It is a deliberate and focused attack",
+      "It is an opportunistic attack",
+      "It is a random and untargeted attack",
+      "It is a type of malware that spreads quickly"
+    ],
+    "correct": "It is a deliberate and focused attack"
+  },
+  {
+    "question": "Which security standard is considered the most secure for Wi-Fi networks?",
+    "choices": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": "WPA3"
+  },
+  {
+    "question": "Which type of cyberattack involves sending targeted emails that appear credible to the recipients by gathering specific information about them?",
+    "choices": [
+      "Spear phishing",
+      "Whaling",
+      "Watering hole attack",
+      "Pharming"
+    ],
+    "correct": "Spear phishing"
+  },
+  {
+    "question": "What is an advanced persistent threat (APT)?",
+    "choices": [
+      "A cyberattack that is opportunistic and random",
+      "A coordinated event associated with cybercriminal groups",
+      "A type of malware that targets mobile devices",
+      "A security measure to protect Wi-Fi networks"
+    ],
+    "correct": "A coordinated event associated with cybercriminal groups"
+  },
+  {
+    "question": "What is the primary objective of a DDoS attack?",
+    "choices": [
+      "Direct theft of funds from enterprises",
+      "Infecting computers and creating a botnet",
+      "Shutting down a machine or network",
+      "Sending targeted emails to deceive recipients"
+    ],
+    "correct": "Shutting down a machine or network"
+  },
+  {
+    "question": "In the Zero Trust security model, what is the purpose of trust zones?",
+    "choices": [
+      "To create pockets of trust for free communication",
+      "To compartmentalize resources with similar functionality and trust levels",
+      "To eliminate the need for security functionality",
+      "To allow unrestricted access to resources"
+    ],
+    "correct": "To compartmentalize resources with similar functionality and trust levels"
+  },
+  {
+    "question": "What is the primary issue with a perimeter-based network security strategy?",
+    "choices": [
+      "Relies too heavily on physical security",
+      "Assumes trust on the internal network",
+      "Focuses solely on external threats",
+      "Ignores modern business conditions"
+    ],
+    "correct": "Assumes trust on the internal network"
+  },
+  {
+    "question": "What is the main purpose of a Zero Trust segmentation platform?",
+    "choices": [
+      "To define internal trust boundaries and provide security functionality",
+      "To allow unrestricted access to resources",
+      "To eliminate the need for trust zones",
+      "To grant default trust to all entities"
+    ],
+    "correct": "To define internal trust boundaries and provide security functionality"
+  },
+  {
+    "question": "In the context of implementing a Zero Trust model, what is the purpose of configuring a segmentation platform in listen-only mode?",
+    "choices": [
+      "To obtain a detailed picture of traffic flows throughout the network",
+      "To establish trust boundaries and zones immediately",
+      "To grant default trust to all entities",
+      "To eliminate the need for trust zones"
+    ],
+    "correct": "To obtain a detailed picture of traffic flows throughout the network"
+  },
+  {
+    "question": "In a Zero Trust least privilege access model, what is the importance of having visibility of and control over the applications and their functionality in the traffic?",
+    "choices": [
+      "It ensures that all users have equal access to resources",
+      "It allows unrestricted communication within trust zones",
+      "It enables precise control over application use beyond port and protocol definitions",
+      "It allows risky file types to be transferred more efficiently"
+    ],
+    "correct": "It enables precise control over application use beyond port and protocol definitions"
+  },
+  {
+    "question": "How does the Zero Trust model improve effectiveness in mitigating data loss?",
+    "choices": [
+      "By granting default trust to all entities",
+      "By enabling essential business applications while preventing cyberthreats",
+      "By focusing solely on perimeter defenses",
+      "By allowing all traffic without inspection"
+    ],
+    "correct": "By enabling essential business applications while preventing cyberthreats"
+  },
+  {
+    "question": "What is the main difference between the protect surface in a Zero Trust model and the attack surface in traditional security models?",
+    "choices": [
+      "Protect surface is larger than the attack surface",
+      "Protect surface is smaller and contains critical resources",
+      "Protect surface is focused on external threats",
+      "Protect surface is not unique to each organization"
+    ],
+    "correct": "Protect surface is smaller and contains critical resources"
+  },
+  {
+    "question": "What is a key benefit of implementing a Zero Trust model with incremental modifications to the existing network?",
+    "choices": [
+      "It requires a major overhaul of the network infrastructure",
+      "It minimizes potential impact on operations and spreads investment over time",
+      "It disrupts user experience and requires extensive training",
+      "It relies on the existing trust model for security"
+    ],
+    "correct": "It minimizes potential impact on operations and spreads investment over time"
   }
 ]

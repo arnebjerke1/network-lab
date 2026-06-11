@@ -1,0 +1,2557 @@
+Question 1 of 5
+In the exploitation phase of a cyberattack, what is the primary goal of the attacker?
+
+
+To take control of the target system
+
+To install backdoors for future access
+
+To exfiltrate data from the target system
+
+To manipulate system vulnerabilities for unauthorized access
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To manipulate system vulnerabilities for unauthorized access
+Question 2 of 5
+Which two actions during the command-and-control (C2) phase of the cyberattack lifecycle can help prevent the further evolution of an attack? (Choose two.)
+
+
+Train users to recognize phishing emails
+(disabled)
+
+Implement granular control of applications
+(disabled)
+
+Block outbound traffic that is typical for C2 communication
+(disabled)
+
+Implement sandboxing for all files transferred to or from external networks
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Implement granular control of applications
+Block outbound traffic that is typical for C2 communication
+Question 3 of 5
+In the context of cyberattacks, what is an exploit?
+
+
+A person or group who poses a threat to a computer system
+
+An attempt by an intelligent threat to bypass security measures
+
+A malicious software application that a user installs on a computer
+
+A sequence of actions that take advantage of a software problem or host-system vulnerability
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+A sequence of actions that take advantage of a software problem or host-system vulnerability
+Question 4 of 5
+Which two methods are commonly used by attackers to deliver malicious payloads during the weaponization-and-delivery phase of the cyberattack lifecycle? (Choose two.)
+
+
+Sinkholing
+(disabled)
+
+Port scanning
+(disabled)
+
+Use of exploit kits
+(disabled)
+
+Spear phishing attacks
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+Use of exploit kits
+Spear phishing attacks
+Question 5 of 5
+What is the goal of an attacker in the acting-on-objectives phase of the cyberattack lifecycle?
+
+
+To exfiltrate data or disrupt services
+
+To install malware on the target system
+
+To remotely manage compromised systems
+
+To scan for vulnerabilities in the target system
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To exfiltrate data or disrupt services
+
+
+
+Question 1 of 5 (required)
+What is the purpose of a network access control list (ACL) for traditional network infrastructure devices?
+
+
+To correlate user names with IP addresses
+
+To encrypt data transmitted over the network
+
+To assign IP addresses to devices on the network
+
+To control the flow of traffic between network segments or subnets
+
+Correct answer: To control the flow of traffic between network segments or subnets
+
+
+Question 2 of 5 (required)
+What is an Ethernet or IP-based network broadcast domain?
+
+
+The physical area covered by a wireless network
+
+The total amount of data that can be transmitted over a network
+
+The range of IP addresses that can be broadcasted over the internet
+
+A set of devices connected to the same network segment and can communicate with each other directly
+
+correct answer: A set of devices connected to the same network segment and can communicate with each other directly
+
+
+Question 3 of 5 (required)
+What is the typical purpose of a network diagram in the context of network security?
+
+
+To list the security policies in use on the network
+
+To cost-optimize the organization's cloud infrastructure
+
+To show the distribution of malware across the network
+
+To depict the layout of a network and the connections among devices
+
+
+correct answer: To depict the layout of a network and the connections among devices
+
+
+Question 4 of 5 (required)
+What is the difference between north-south and east-west traffic flows?
+
+
+North-south traffic is always faster than east-west traffic
+
+North-south traffic is always encrypted; east-west traffic is unencrypted
+
+North-south traffic moves between different networks; east-west traffic is limited to a single network
+
+North-south traffic enters and leaves the network perimeter; east-west traffic flows among components within the network perimeter
+
+correct answer: North-south traffic enters and leaves the network perimeter; east-west traffic flows among components within the network perimeter
+
+
+Question 5 of 5 (required)
+What does the term "network perimeter" refer to in the context of network security?
+
+
+The physical boundaries of a data center
+
+The range of wireless network connections
+
+The range of IP addresses assigned to a network
+
+The boundary between an organizationally controlled network and one or more external networks
+
+correct answer: The boundary between an organizationally controlled network and one or more external networks
+
+Question 1 of 5
+What is the main difference between a denial-of-service (DoS) attack and a distributed denial-of-service (DDoS) attack?
+
+
+The method used to launch the attack
+
+The number of systems used to attack the target
+
+The geographical dispersion of the target systems
+
+The variability in packet sizes used to attack the target
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+The number of systems used to attack the target
+Question 2 of 5
+What is a botnet?
+
+
+A packet-intercept system
+
+A network of attacker-controlled endpoints
+
+A web crawler that facilitates reconnaissance
+
+A method of scanning for open network services
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+A network of attacker-controlled endpoints
+Question 3 of 5
+In a man-in-the-middle attack, what is the attacker's tactical goal?
+
+
+To flood the target with traffic
+
+To install malware on the victim's machine
+
+To create a botnet for launching DDoS attacks
+
+To intercept or manipulate data transferred between two devices
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To intercept or manipulate data transferred between two devices
+Question 4 of 5
+What is the tactical goal of a denial-of-service (DoS) attack?
+
+
+To install malware on a target system
+
+To intercept one or more IP addresses
+
+To hinder or block access to a system or service
+
+To steal sensitive information from a target system
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To hinder or block access to a system or service
+Question 5 of 5
+Which is a primary risk to organizations targeted by DDoS attacks?
+
+
+IP spoofing
+
+Theft of sensitive information
+
+Downtime and lost productivity
+
+Installation of malware on their systems
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Downtime and lost productivity
+
+Question 1 of 5
+What is the main function of a demilitarized zone (DMZ) within a network design?
+
+
+To store sensitive data securely
+
+To isolate internet-facing services
+
+To manage user access and authentication
+
+To monitor network traffic for suspicious activity
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To isolate internet-facing services
+Question 2 of 5
+Which two locations do enterprise networks most commonly protect with firewalls? (Choose two.)
+
+
+Application layer
+(disabled)
+
+Database segment
+(disabled)
+
+Enterprise segment
+(disabled)
+
+Demilitarized zone (DMZ)
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Enterprise segment
+Demilitarized zone (DMZ)
+Question 3 of 5
+Which three types of cloud architectures are most commonly used today? (Choose three.)
+
+
+Local Cloud
+(disabled)
+
+Public Cloud
+(disabled)
+
+Hybrid Cloud
+(disabled)
+
+Private Cloud
+(disabled)
+
+Personal Cloud
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Public Cloud
+Hybrid Cloud
+Private Cloud
+Question 4 of 5
+Which two practices most directly protect sensitive data from network-based attacks? (Choose two.)
+
+
+Data encryption
+(disabled)
+
+Physical security
+(disabled)
+
+Regular patching
+(disabled)
+
+Strong passwords
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+Data encryption
+Strong passwords
+Question 5 of 5
+What is the function of a network Intrusion Detection Systems (IDS)?
+
+
+To store sensitive data securely
+
+To manage user access and authentication
+
+To scan traffic for suspicious activity and alert security analysts
+
+To isolate internet-facing services and protect them with a firewall
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To scan traffic for suspicious activity and alert security analysts
+
+
+Question 1 of 5
+What does north-south protection refer to in a virtual data center?
+
+
+Traffic moving within a private cloud
+
+Traffic within a single virtual machine
+
+Traffic in and out of the virtualized environment
+
+Traffic between VMs and the management infrastructure
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Traffic in and out of the virtualized environment
+Question 2 of 5
+What type of firewall is typically used for east-west protection in a virtual data center?
+
+
+Cloud-based firewall service
+
+Physical perimeter edge firewall
+
+Virtualized firewall on each hypervisor
+
+Hardware-based firewall in the data center
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Virtualized firewall on each hypervisor
+Question 3 of 5
+Which are the benefits of implementing east-west protection in a virtual data center? (Choose two.)
+
+
+Application authorization
+(disabled)
+
+Increased traffic throughput
+(disabled)
+
+Reduced load on perimeter network firewalls
+(disabled)
+
+Reduction of lateral threat movement
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Application authorization
+Reduction of lateral threat movement
+Question 4 of 5
+What advantages does a virtualized security device provide for east-west protection in a virtual data center? (Choose two.)
+
+
+Traffic and threat visibility
+(disabled)
+
+Policy-based threat protection
+(disabled)
+
+Automatic vulnerability patching
+(disabled)
+
+Highest available throughput speeds
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Traffic and threat visibility
+Policy-based threat protection
+Question 5 of 5
+Which type of traffic is typically secured by high-throughput appliances working in high-availability active-passive (or active-active) mode?
+
+
+East-west
+
+North-south
+
+Management
+
+Application-database
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+North-south
+
+
+Question 1 of 5
+How do public cloud infrastructures impact enterprise expenses compared to traditional data centers?
+
+
+Increase in OpEx
+
+Increase in CapEx
+
+Decrease in CapEx
+
+Equal expenditure in CapEx and OpEx
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Decrease in CapEx
+Question 2 of 5
+What is the advantage of implementing CI/CD?
+
+
+Rapid new-version product releases
+
+Obfuscation of increased code complexity
+
+Users typically have six to nine months to adapt to incremental changes
+
+Discards the now outdated agile framework for application development
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Rapid new-version product releases
+Question 3 of 5
+What does FaaS stand for in the context of serverless computing?
+
+
+File-as-a-Service
+
+Fast-as-a-Service
+
+Function-as-a-Service
+
+Framework-as-a-Service
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Function-as-a-Service
+Question 4 of 5
+What is the role of a hypervisor in virtual machine environments?
+
+
+To support for serverless functions
+
+To govern access to cloud infrastructure
+
+To provide a foundation for container images
+
+To run emulation services for multiple virtual machines
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To run emulation services for multiple virtual machines
+Question 5 of 5
+What is the primary advantage of using containers over virtual machines?
+
+
+Direct access to real hardware
+
+Support for serverless functions
+
+Leverage of hypervisors to manage resources
+
+Direct, efficient use of kernel data and compute structures
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Direct, efficient use of kernel data and compute structures
+
+Question 1 of 5
+Which service(s) do the major cloud service providers offer as primary service?
+
+
+Identity validation
+
+Corporate governance
+
+Application development
+
+Core compute, network, and service infrastructure
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Core compute, network, and service infrastructure
+Question 2 of 5
+What is the primary function of computer services in cloud-based solutions?
+
+
+To manage network traffic within cloud environments
+
+To grant permissions and manage access to cloud resources
+
+To store data files in a safe, secure, and scalable environment
+
+To provide the needed components to run application and websites
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To provide the needed components to run application and websites
+Question 3 of 5
+Which element is essential for effective logging and monitoring outcomes when leveraging the cloud?
+
+
+Resource and anomaly visibility
+
+DNS security
+
+X.500 support
+
+Identity provider services
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Resource and anomaly visibility
+Question 4 of 5
+In the context of cloud-based solutions, what is the main function of a security group?
+
+
+To store and process large volumes of data
+
+To monitor and manage cloud resource usage
+
+To define rules for allowed traffic to and from a resource
+
+To manage cloud-administrator access to cloud resources
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To define rules for allowed traffic to and from a resource
+Question 5 of 5
+Which cloud service is responsible for isolating cloud infrastructure and controlling access to virtual networks?
+
+
+Identity services
+
+Compute services
+
+Database services
+
+Networking services
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Networking services
+
+Question 1 of 5
+In the shared responsibility model, which aspect of security is the cloud service provider (CSP) responsible for?
+
+
+Managing the organization's security policies
+
+Securing the organization's data and applications
+
+Ensuring the organization's compliance with standards
+
+Securing hardware, operating system, network, and infrastructure services
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Securing hardware, operating system, network, and infrastructure services
+Question 2 of 5
+What is the primary purpose of network access control lists (ACLs) in a virtual private cloud (VPC)?
+
+
+To filter traffic between different VPCs
+
+To control traffic within the same subnet
+
+To restrict traffic between subnets within the VPC
+
+To control traffic to cloud-provider reserved addresses
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To restrict traffic between subnets within the VPC
+Question 3 of 5
+What advantage does a software-defined network (SDN) offer over a conventional network in a data center?
+
+
+Built-in security features
+
+Replacement of the need for hypervisors
+
+Dynamic and automated network provisioning
+
+Elimination of the need for firewalls in the data center
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Dynamic and automated network provisioning
+Question 4 of 5
+What is the purpose of the use of security groups in a virtual private cloud (VPC)?
+
+
+To control traffic between different VPCs
+
+To restrict traffic between subnets within the VPC
+
+To control traffic to cloud-provider reserved addresses
+
+To define explicitly permitted network traffic for virtual machines' network interfaces
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To define explicitly permitted network traffic for virtual machines' network interfaces
+Question 5 of 5
+What is the difference between network ACLs and security groups in cloud network security?
+
+
+ACLs apply to network interfaces; security groups apply to subnets.
+
+ACLs enforce at Layer 3 and 4; security groups enforce at Layer 3 only
+
+ACLs allow action rules only; security groups have both allow and deny rules.
+
+ACLs are stateless and subnet-level; security groups are stateful and instance-level.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+ACLs are stateless and subnet-level; security groups are stateful and instance-level.
+
+Question 1 of 5
+What is cryptojacking?
+
+
+The poisoning of open source cryptographic libraries
+
+The unauthorized use of a computer to mine cryptocurrency
+
+The successful execution of man-in-the-middle (MITM) attacks
+
+The presentation of insecure crypto protocols for HTTPS communication
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+The unauthorized use of a computer to mine cryptocurrency
+Question 2 of 5
+Which of the following are essential security measures for publishing APIs? (Choose three.)
+
+
+Encryption
+(disabled)
+
+Authorization
+(disabled)
+
+Sufficient authentication
+(disabled)
+
+Compliance with REST API standards
+(disabled)
+
+Comprehensive API-use documentation
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Encryption
+Authorization
+Sufficient authentication
+Question 3 of 5
+Which is typically the least significant vulnerability for the use of cloud application use?
+
+
+Data leaks
+
+Host hardware
+
+User negligence
+
+Administrator error
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Host hardware
+Question 4 of 5
+Which is an example of a cloud-services or cloud-account security risk?
+
+
+Regionalization
+
+Credential theft
+
+Database partitioning
+
+Two-factor authentication
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Credential theft
+Question 5 of 5
+Which action is typically carried out by an insider with malicious intent?
+
+
+DDoS attack
+
+Cryptojacking
+
+Spear phishing
+
+Data exfiltration
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Data exfiltration
+
+
+Question 1 of 5
+What is a major issue caused by disconnected solutions and tools in network security management?
+
+
+Improved integration and automation
+
+Increased visibility into network security
+
+Simplified management of complex security policies
+
+Difficulty administering and managing firewalls and security capabilities
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Difficulty administering and managing firewalls and security capabilities
+Question 2 of 5
+What does "single-pane-of-glass management" refer to in network security?
+
+
+Focusing on one specific security threat at a time
+
+Implementing a single firewall for the entire network
+
+Concentrating on a single security policy for the network
+
+Using a single management console for all security tools
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Using a single management console for all security tools
+Question 3 of 5
+What is the primary goal of using a centralized network security console?
+
+
+To focus on individual security policies
+
+To increase the number of security tools
+
+To simplify network security management
+
+To separate firewall management from other tools
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To simplify network security management
+Question 4 of 5
+Why do organizations prefer integrating firewall management with other third-party tools?
+
+
+To improve operational efficiency
+
+To increase the complexity of the security system
+
+To focus on maintaining individual security policies
+
+To reduce the need for a single-pane-of-glass management
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To improve operational efficiency
+Question 5 of 5
+What are the two main objectives of organizations in managing network security? (Choose two.)
+
+
+To reduce administrative overhead
+(disabled)
+
+To implement a large number of firewalls
+(disabled)
+
+To simplify network security management
+(disabled)
+
+To rely solely on third-party tools for operational efficiency
+(disabled)
+
+To use multiple management consoles for different security tools
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+To reduce administrative overhead
+To simplify network security management
+
+Question 1 of 5
+Where in Panorama can you access summarized log information?
+
+
+Monitor
+
+Templates
+
+Device Groups
+
+Application Command Center
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Application Command Center
+Question 2 of 5
+What are the two main reasons for deploying a Panorama server? (Choose two.)
+
+
+To streamline the management of NGFWs
+(disabled)
+
+To provide a web interface for log collectors
+(disabled)
+
+To process offloaded decryption tasks for NGFWs
+(disabled)
+
+To provide centralized visibility into network traffic
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+To streamline the management of NGFWs
+To provide centralized visibility into network traffic
+Question 3 of 5
+What is a key advantage of using Panorama management server?
+
+
+Elimination of repetitive firewall deployment tasks
+
+Bypass of license validation for registered firewalls
+
+Enablement of direct internet access for all firewalls
+
+Access to a web interface for Dedicated Log Collectors
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Elimination of repetitive firewall deployment tasks
+Question 4 of 5
+Which two data sources does Panorama use for generating reports? (Choose two.)
+
+
+External dynamic lists
+(disabled)
+
+The local Panorama database
+(disabled)
+
+The Application Command Center (ACC)
+(disabled)
+
+The remote firewalls managed by Panorama
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+The local Panorama database
+The remote firewalls managed by Panorama
+Question 5 of 5
+Which is a key function of Panorama?
+
+
+To provide on-premises sandbox analysis
+
+To aggregate logging data from multiple NGFWs
+
+To automate local-area and wide-area network mapping
+
+To perform offloaded decryption and encryption tasks for NGFWs
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+To aggregate logging data from multiple NGFWs
+
+
+Question 1 of 5
+Which cloud-delivered security service provides the features of an advanced intrusion prevention system (IPS)?
+
+
+Prisma SaaS
+
+GlobalProtect
+
+
+Advanced DLP
+
+Advanced Threat Prevention
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Advanced Threat Prevention
+
+Question 2 of 5
+Which concept provides a framework for describing how Cloud-Delivered Security Services (CDSS) fits in with the Palo Alto Networks strategic approach comprehensive security?
+
+
+Security as a Service (SECaaS)
+
+Firewall as a Platform (FWaaP)
+
+Code, Build, Deploy, Run (CBDR)
+
+Next-Generation Firewall (NGFW)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Firewall as a Platform (FWaaP)
+Question 3 of 5
+How does Palo Alto Networks' WildFire service help security teams?
+
+
+By automatically analyzing files for threats
+
+By using machine learning for accurate device discovery
+
+By providing visibility into unsanctioned SaaS applications
+
+By offering in-line machine learning-based detection of malicious domains
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+By automatically analyzing files for threats
+Question 4 of 5
+Which cloud-delivered security service provides secure access to the network for the modern mobile workforce?
+
+
+SD-WAN
+
+IoT Security
+
+Prisma SaaS
+
+GlobalProtect
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+GlobalProtect
+Question 5 of 5
+What is the goal of Palo Alto Networks' cloud-delivered security services (CDSS) offerings?
+
+
+To replace on-box and Panorama-server-based policy management
+
+To provide feature parity for hardware firewalls and software firewalls
+
+To scan your infrastructure as code (IaC) scripts and cloud-based VMs for threats
+
+To help ensure that customers can confidently secure all traffic that traverses any network
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To help ensure that customers can confidently secure all traffic that traverses any network
+
+Question 1 of 5
+Which two technologies are foundational elements of the Advanced URL Filtering service? (Choose two.)
+
+
+PAN-DB
+
+(disabled)
+
+Exfiltration detection
+
+(disabled)
+
+Inline machine learning models
+
+(disabled)
+
+Fuzzy hashing
+
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+PAN-DB
+
+Inline machine learning models
+
+Question 2 of 5
+What is the primary purpose of Advanced URL Filtering?
+
+
+To provide anonymous browsing
+
+
+To categorize websites as benign or malicious
+
+
+To provide local, highly compressed caches of website category data
+
+
+To block specific IP addresses
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To categorize websites as benign or malicious
+
+Question 3 of 5
+Which three risk categories are used in PAN-DB to classify websites? (Choose three.)
+
+
+Medium
+
+(disabled)
+
+Low
+
+(disabled)
+
+High
+
+(disabled)
+
+Unknown
+
+(disabled)
+
+Critical
+
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Low
+
+Medium
+
+High
+
+Question 4 of 5
+What is the first step in Advanced URL Filtering's category lookup and policy evaluation process?
+
+
+Firewall inspection of the URL request
+
+
+Inline ML detection
+
+
+PAN-DB URL lookup
+
+
+Policy lookup for overrides to default settings
+
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Firewall inspection of the URL request
+
+Question 5 of 5
+How does Advanced URL Filtering compensate for coverage gaps in database solutions?
+
+
+By use of aggressive fuzzy hashing
+
+
+By use of Safe Search Enforcement
+
+
+By providing real-time URL analysis on a per-request basis
+
+
+By leveraging DNS inspection
+
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By providing real-time URL analysis on a per-request basis
+
+
+Question 1 of 6
+How does SASE enhance user experience in a remote working environment?
+
+
+Reduces latency
+
+Increases bandwidth availability
+
+Provides secure connectivity
+
+Optimizes performance and security
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Optimizes performance and security
+Question 2 of 6
+Which security concept is SASE designed to replace or augment for modern network architectures?
+
+
+Biometric authentication
+
+Intrusion Detection Systems (IDS)
+
+Network Address Translation (NAT)
+
+Castle-and-Moat perimeter security
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Castle-and-Moat perimeter security
+Question 3 of 6
+Which component is a fundamental part of the SASE architecture for secure access to applications and data?
+
+
+Virtual reality integration
+
+Legacy hardware firewalls
+
+Social media authentication
+
+Cloud-native security services
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Cloud-native security services
+Question 4 of 6
+What is the primary advantage of SASE in terms of scalability for businesses?
+
+
+Predictable IP assignments
+
+Limited device compatibility
+
+Centralized network control points
+
+Easily scalable cloud-native architecture
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Easily scalable cloud-native architecture
+Question 5 of 6
+Which accomplishment best describes the primary goal of SASE?
+
+
+Improved user interface
+
+Centralized data storage
+
+Enhanced network speed
+
+Converged networking and security
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Converged networking and security
+Question 6 of 6
+What does SASE stand for in IT networking?
+
+
+Secure Access Service Edge
+
+Simplified Application Security Endpoint
+
+Strategic Access and Security Enhancement
+
+Systematic Authentication and Security Environment
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Secure Access Service Edge
+
+Question 1 of 5
+How does IaaS differ from traditional infrastructure in terms of resource provisioning?
+
+
+IaaS supports fixed resource allocations only.
+
+Traditional infrastructure uses a pay-as-you-go model.
+
+Traditional infrastructure always requires manual resource provisioning.
+
+IaaS provides on-demand resources that can be scaled up or down as needed.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+IaaS provides on-demand resources that can be scaled up or down as needed.
+Question 2 of 5
+In which two ways does IaaS contribute to cost savings for organizations compared to traditional infrastructure?
+
+ (Choose two)
+
+
+IaaS reduces capital expenditures and optimizes costs.
+(disabled)
+
+IaaS allows for streamlined IT staff as it requires less in-house management.
+(disabled)
+
+IaaS uses a Pay-As-You-Go pricing model, ensuring companies only pay for the resources they use.
+(disabled)
+
+IaaS minimizes downtime and maintenance costs by utilizing the service provider's expertise and infrastructure.
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+IaaS reduces capital expenditures and optimizes costs.
+IaaS uses a Pay-As-You-Go pricing model, ensuring companies only pay for the resources they use.
+Question 3 of 5
+What two key advantages does IaaS offer in terms of scalability compared to traditional infrastructure?
+
+ (Choose two)
+
+
+IaaS allows the service provider to scale resources as required.
+(disabled)
+
+IaaS allows businesses to scale their resources up based on demand.
+(disabled)
+
+IaaS allows for easy and rapid scalability to accommodate changing needs.
+(disabled)
+
+IaaS allows businesses to scale their resources up or down based on demand.
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+IaaS allows for easy and rapid scalability to accommodate changing needs.
+IaaS allows businesses to scale their resources up or down based on demand.
+Question 4 of 5
+What does IaaS stand for in the context of cloud computing?
+
+
+Internet as a Service
+
+Infrastructure as a Service
+
+International Alliance for Advanced Servers
+
+Integrated Application and Architecture System
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Infrastructure as a Service
+Question 5 of 5
+What is a key benefit of IaaS in terms of geographical flexibility for businesses?
+
+
+IaaS supports rapid scaling of resources, but only within a specific region.
+
+IaaS primarily focuses on providing local data center options for businesses.
+
+IaaS enables businesses to deploy resources globally and access them from anywhere.
+
+IaaS requires businesses to maintain a large in-house IT team for global resource management.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+IaaS enables businesses to deploy resources globally and access them from anywhere.
+
+
+Question 1 of 5
+How does SASE contribute to a seamless and user-friendly mobile access experience?
+
+
+Relies on static IP assignments.
+
+Implements lengthy authorization delays.
+
+Requires complex authentication processes.
+
+Integrates with Single Sign-On (SSO) solutions.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Integrates with Single Sign-On (SSO) solutions.
+Question 2 of 5
+How does SASE improve the security posture for mobile users compared to traditional approaches?
+
+
+Uses open guest networks.
+
+Relies on basic firewall protection.
+
+Provides a zero trust security model.
+
+Depends on user-based security policies.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Provides a zero trust security model.
+Question 3 of 5
+What benefit does SASE offer to mobile users in terms of device flexibility and accessibility?
+
+
+Restricts access to corporate devices only.
+
+Supports access from any device, anywhere.
+
+Enforces device-specific access restrictions.
+
+Provides improved security via specialized hardware.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Supports access from any device, anywhere.
+Question 4 of 5
+In the context of remote access, how does SASE contribute to improved visibility and control for IT administrators?
+
+
+Through comprehensive visibility into user activities.
+
+Through prioritizing compatibility with legacy systems.
+
+Through focusing on enhancing network speed and connectivity.
+
+Through insights into user activities, focusing specifically on local networks.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Through comprehensive visibility into user activities.
+Question 5 of 5
+In which two ways does SASE contribute to cost savings for organizations with a mobile workforce?
+
+ (Choose two)
+
+
+By reducing administrative overhead.
+(disabled)
+
+By reducing the need for backhaul to data centers.
+(disabled)
+
+By routing application traffic over dedicated VPN connections.
+(disabled)
+
+By connecting users directly to the service, regardless of their location.
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+By reducing administrative overhead.
+By reducing the need for backhaul to data centers.
+
+Question 1 of 5
+What advantage does SASE offer for branch offices in terms of network management?
+
+
+SASE supports only large branches, not smaller offices.
+
+SASE requires complex manual management for branches.
+
+Traditional networks are easier to manage for branch offices.
+
+SASE centralizes network management, making it simpler to support branches.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+SASE centralizes network management, making it simpler to support branches.
+Question 2 of 5
+What role does SASE play in optimizing the performance of applications used by branch offices?
+
+
+SASE has no impact on application performance.
+
+SASE relies on branch-specific optimization tools.
+
+Traditional networks are more efficient in managing application performance for branches.
+
+SASE optimizes application performance for branches by providing direct and secure access.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+SASE optimizes application performance for branches by providing direct and secure access.
+Question 3 of 5
+How does SASE support the agility of branch networks in responding to changing business needs?
+
+
+SASE limits the agility of branch networks.
+
+SASE requires manual reconfiguration for agile branch networks.
+
+Traditional networks are more agile than SASE for branch offices.
+
+SASE enables branches to scale and adapt quickly to changing requirements.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+SASE enables branches to scale and adapt quickly to changing requirements.
+Question 4 of 5
+How does SASE improve connectivity for branches in different locations?
+
+
+SASE only works well for a single branch.
+
+Traditional networking is more effective for branch connectivity.
+
+SASE requires all branches to be physically close to each other.
+
+SASE enables branches to connect securely and efficiently, regardless of their location.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+SASE enables branches to connect securely and efficiently, regardless of their location.
+Question 5 of 5
+How does SASE contribute to the resilience of branch networks in the face of network disruptions?
+
+
+SASE has no impact on branch network resilience.
+
+Traditional networking offers better resilience for branch offices.
+
+SASE requires always-on backup connections for branch resilience.
+
+SASE provides built-in redundancy, improving the resilience of branch networks.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+SASE provides built-in redundancy, improving the resilience of branch networks.
+
+Question 1 of 5
+How is application performance optimized in SD-WAN networks?
+
+
+Through static routing.
+
+Through intelligent traffic routing.
+
+Through centralized network control.
+
+Through decentralized network management.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Through intelligent traffic routing.
+Question 2 of 5
+In which two ways does SD-WAN enhance the resilience of network connections?
+
+ (Choose two)
+
+
+Provides built-in redundancy.
+(disabled)
+
+Simplifies bandwidth planning.
+(disabled)
+
+Provides improved visibility into network failures.
+(disabled)
+
+Uses dynamic path selection to intelligently choose the best path.
+(disabled)
+Options
+You gave a partially correct answer and your score is 1
+Partially correct answer
+Score: 1
+Correct answers:
+Provides built-in redundancy.
+Provides improved visibility into network failures.
+Question 3 of 5
+How does SD-WAN address the need for secure connections among different locations?
+
+
+By reinforcing perimeter security.
+
+By introducing complex security appliances.
+
+By embedding security measures into the network.
+
+By forcing convergence on a single cryptographic protocol.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+By embedding security measures into the network.
+Question 4 of 5
+Which network improvement does SD-WAN primarily focus on?
+
+
+Network speed
+
+Device security
+
+User experience
+
+Private connectivity
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+User experience
+Question 5 of 5
+What does SD-WAN aim to simplify in network management?
+
+
+Security policies
+
+Network configuration
+
+Hardware procurement
+
+Application deployment
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Network configuration
+
+Question 1 of 8
+How does Digital Experience Monitoring (DEM) contribute to understanding user behavior in digital environments?
+
+
+By monitoring access to user data.
+
+By examining user disengagement patterns.
+
+By focusing on non-user-related data sources.
+
+By analyzing user behavior to improve experiences.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+By analyzing user behavior to improve experiences.
+Question 2 of 8
+What does Digital Experience Monitoring (DEM) seek to achieve in terms of digital interactions for organizations?
+
+
+Reduction of digital fatigue.
+
+Simplification of user feedback.
+
+Monitoring of a user's online activity.
+
+Optimization and elevation of digital experiences.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Optimization and elevation of digital experiences.
+Question 3 of 8
+What does Digital Experience Monitoring (DEM) focus on when assessing the performance of digital applications?
+
+
+Application usability.
+
+Physical infrastructure.
+
+Network bandwidth availability.
+
+User satisfaction and experience.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+User satisfaction and experience.
+Question 4 of 8
+How does Digital Experience Monitoring (DEM) support the customization of digital experiences for different user segments?
+
+
+By restricting access to personalized content.
+
+By analyzing user data and tailoring experiences.
+
+By prioritizing system stability over customization.
+
+By focusing on standardized digital experiences for all users.
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+By analyzing user data and tailoring experiences.
+Question 5 of 8
+Which goal for e-commerce does Digital Experience Monitoring (DEM) aim to help businesses achieve?
+
+
+Reduced checkout complexity.
+
+Optimization of future ad campaigns.
+
+Better collection of customer feedback.
+
+A seamless and satisfying online shopping experience.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+A seamless and satisfying online shopping experience.
+Question 6 of 8
+How does Digital Experience Monitoring (DEM) support the customization of digital experiences for different user segments?
+
+
+By ignoring user preferences.
+
+By providing a one-size-fits-all approach.
+
+By restricting access to personalized content.
+
+By analyzing user data and tailoring experiences.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+By analyzing user data and tailoring experiences.
+Question 7 of 8
+In what way does DEM's user feedback mechanism contribute to SASE's objectives?
+
+
+By encrypting internal emails.
+
+By enhancing user authentication.
+
+By improving the user experience.
+
+By monitoring network conditions in real-time.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+By improving the user experience.
+Question 8 of 8
+How does Digital Experience Monitoring (DEM) contribute to understanding user behavior in digital environments?
+
+
+By monitoring access to user data.
+
+By disregarding user interaction data.
+
+By ignoring the digital customer journey.
+
+By analyzing user behavior to improve experiences.
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+By analyzing user behavior to improve experiences.
+
+Question 1 of 10
+Which is the correct term for a Protocol Data Unit (PDU) at Layer 2 of the OSI model?
+
+
+Bit
+
+Frame
+
+Packet
+
+Segment
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Frame
+Question 2 of 10
+Which layer of the OSI model is responsible for transparent, reliable data transport and end-to-end transmission control?
+
+
+Network layer
+
+Data Link layer
+
+Transport layer
+
+Application layer
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Transport layer
+Question 3 of 10
+Which two protocols function at the Application layer of the OSI model? (Choose two.)
+
+
+File Transfer Protocol (FTP)
+(disabled)
+
+Transmission Control Protocol (TCP)
+(disabled)
+
+User Datagram Protocol (UDP)
+(disabled)
+
+Hypertext Transfer Protocol (HTTP)
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+File Transfer Protocol (FTP)
+Hypertext Transfer Protocol (HTTP)
+Question 4 of 10
+What is the primary purpose of a subnet mask in IPv4 addressing?
+
+
+To hide the host portion of an IP address
+
+To convert IP addresses into binary format
+
+To provide a one-to-one translation of IP addresses
+
+To hide the network portion of an IP address
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To hide the network portion of an IP address
+Question 5 of 10
+In a packet-switched network, what is the main advantage compared to circuit-switched networks?
+
+
+Higher resilience to error and congestion
+
+Requires dedicated physical circuit paths
+
+Faster connection establishment
+
+Better suited for real-time communication
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Higher resilience to error and congestion
+Question 6 of 10
+At which layer of the OSI model do routers primarily operate?
+
+
+Application layer
+
+Transport layer
+
+Network layer
+
+Data Link laye
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Network layer
+Question 7 of 10
+Which IP address range is reserved for Class A private networks?
+
+
+10.0.0.0–10.255.255.255
+
+172.16.0.0–172.31.255.255
+
+192.168.0.0–192.168.255.255
+
+127.0.0.1 to 127.255.255.255
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+10.0.0.0–10.255.255.255
+Question 8 of 10
+What is the primary purpose of data encapsulation in the OSI and TCP/IP models?
+
+
+To wrap protocol information from the layer above in the data section of the layer below
+
+To translate IP addresses into domain names
+
+To improve data transfer rates
+
+To provide error correction mechanisms
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To wrap protocol information from the layer above in the data section of the layer below
+Question 9 of 10
+In the context of packet lifecycle, which layer of the OSI model is responsible for sending and receiving bits across the network medium?
+
+
+Application layer
+
+Transport layer
+
+Network layer
+
+Physical layer
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Physical layer
+Question 10 of 10
+What are the two main reasons for subnetting a network? (Choose two.)
+
+
+To limit network traffic
+(disabled)
+
+To increase the number of devices visible to each other
+(disabled)
+
+To limit the number of devices visible to each other
+(disabled)
+
+To improve the efficiency of routers
+(disabled)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answers:
+To limit network traffic
+To limit the number of devices visible to each other
+
+
+Question 1 of 8
+Which troubleshooting technique begins at the Physical layer of the OSI model by verifying network connections and device availability?
+
+
+Bottom-up approach
+
+Top-down approach
+
+Divide-and-conquer approach
+
+Substitution method
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Bottom-up approach
+Question 2 of 8
+Which task is part of server and system administration in server management?
+
+
+Installing security patches
+
+Analyzing network traffic
+
+mClearing application caches
+
+Searching log files for anomalies
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Installing security patches
+Question 3 of 8
+Which malware detection technique is based on evaluating an object's intended actions before it can execute them?
+
+
+Heuristic-based
+
+Signature-based
+
+Behavior-based
+
+Container-based
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Behavior-based
+Question 4 of 8
+In Mobile Device Management (MDM), what feature restricts specific functionality in a device based on its physical location?
+
+
+Data Loss Prevention (DLP)
+
+Policy Enforcement
+
+Malware Protection
+
+Geofencing and Location Services
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Geofencing and Location Services
+Question 5 of 8
+Which option is an essential element of endpoint security?
+
+
+Patch management
+
+Signature-based detection
+
+Data compression
+
+Data translation
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Patch management
+Question 6 of 8
+What type of malware threatens to publish the victim's data or block access to it unless a ransom is paid?
+
+
+Worm
+
+Virus
+
+Ransomware
+
+Trojan
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Ransomware
+Question 7 of 8
+Choose one: In the context of troubleshooting host and network connectivity problems, what is the purpose of a network baseline?
+
+
+To provide a snapshot of normal network operations
+
+To store warranty and support information
+
+To encrypt communication between devices
+
+To detect malware on devices
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To provide a snapshot of normal network operations
+Question 8 of 8
+Which type of firewall is installed as part of a desktop or mobile operating system?
+
+
+Network firewall
+
+Host-based firewall
+
+Operating system firewall
+
+Linux firewall
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Host-based firewall
+
+Question 1 of 5
+Which IDS/IPS system uses a database of known vulnerabilities and attack profiles to identify intrusion attempts?
+
+
+knowledge-based
+
+behavior-based
+
+intuitive-based
+
+standards-based
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+knowledge-based
+Question 2 of 5
+Which type of system does not perform any preventive action to stop an attack?
+
+
+data loss prevention
+
+Intrusion Prevention
+
+Unified Threat Management
+
+intrusion detection
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+intrusion detection
+Question 3 of 5
+Which next-generation product replaces UTM appliances to reduce traffic inspection latency?
+
+
+hub
+
+switch
+
+firewall
+
+router
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+firewall
+Question 4 of 5
+Which of the following is considered sensitive data that a DLP security solution aims to protect?
+
+
+Publicly available information
+
+Marketing materials
+
+Personally identifiable information
+
+General company announcements
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Personally identifiable information
+Question 5 of 5
+Which of the following restrict the internet activity of user on a network by classifying websites into broad categories?
+
+
+UDP
+
+IDS
+
+Web content filter
+
+VPN
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Web content filter
+
+Question 1 of 5
+Which attack tactic allows adversaries to randomly change ports and protocols during a session?
+
+
+Port Hopping
+
+Tunneling
+
+Hiding within SSL Encryption
+
+Using non-standard ports
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Port Hopping
+Question 2 of 5
+What technology enables an immersive and interactive physical and digital sensory experience in real time?
+
+
+Artificial Intelligence (AI)
+
+Virtual Reality (VR)
+
+Data Mining
+
+Natural Language Search
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+Virtual Reality (VR)
+Question 3 of 5
+Which option is an example of a SaaS application?
+
+
+Microsoft Azure
+
+Amazon Web Services
+
+Oracle Cloud Infrastructure
+
+Dropbox
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Dropbox
+Question 4 of 5
+What is the main objective of cybercrime vendors who offer their services on the dark web?
+
+
+Political disruption
+
+Financial gain
+
+Social recognition
+
+Providing malware and exploits as a service
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Providing malware and exploits as a service
+Question 5 of 5
+Which cloud computing service model provides consumers with the ability to deploy and run arbitrary software?
+
+
+Software as a Service (SaaS)
+
+Platform as a Service (PaaS)
+
+Infrastructure as a Service (IaaS)
+
+Managed Security Services (MSS)
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Infrastructure as a Service (IaaS)
+
+Question 1 of 5
+What is the main characteristic of an APT?
+
+
+It is a deliberate and focused attack
+
+It is an opportunistic attack
+
+It is a random and untargeted attack
+
+It is a type of malware that spreads quickly
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It is a deliberate and focused attack
+Question 2 of 5
+Which security standard is considered the most secure for Wi-Fi networks?
+
+
+WEP
+
+WPA
+
+WPA2
+
+WPA3
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+WPA3
+Question 3 of 5
+Which type of cyberattack involves sending targeted emails that appear credible to the recipients by gathering specific information about them?
+
+
+Spear phishing
+
+Whaling
+
+Watering hole attack
+
+Pharming
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Spear phishing
+Question 4 of 5
+What is an advanced persistent threat (APT)?
+
+
+A cyberattack that is opportunistic and random
+
+A coordinated event associated with cybercriminal groups
+
+A type of malware that targets mobile devices
+
+A security measure to protect Wi-Fi networks
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+A coordinated event associated with cybercriminal groups
+Question 5 of 5
+What is the primary objective of a DDoS attack?
+
+
+Direct theft of funds from enterprises
+
+Infecting computers and creating a botnet
+
+Shutting down a machine or network
+
+Sending targeted emails to deceive recipients
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Shutting down a machine or network
+
+Question 1 of 8
+In the Zero Trust security model, what is the purpose of trust zones?
+
+
+To create pockets of trust for free communication
+
+To compartmentalize resources with similar functionality and trust levels
+
+To eliminate the need for security functionality
+
+To allow unrestricted access to resources
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To compartmentalize resources with similar functionality and trust levels
+Question 2 of 8
+What is the primary issue with a perimeter-based network security strategy?
+
+
+Relies too heavily on physical security
+
+Assumes trust on the internal network
+
+Focuses solely on external threats
+
+Ignores modern business conditions
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Assumes trust on the internal network
+Question 3 of 8
+What is the main purpose of a Zero Trust segmentation platform?
+
+
+To define internal trust boundaries and provide security functionality
+
+To allow unrestricted access to resources
+
+To eliminate the need for trust zones
+
+To grant default trust to all entities
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To define internal trust boundaries and provide security functionality
+Question 4 of 8
+In the context of implementing a Zero Trust model, what is the purpose of configuring a segmentation platform in listen-only mode?
+
+
+To obtain a detailed picture of traffic flows throughout the network
+
+To establish trust boundaries and zones immediately
+
+To grant default trust to all entities
+
+
+To eliminate the need for trust zones
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+To obtain a detailed picture of traffic flows throughout the network
+Question 5 of 8
+In a Zero Trust least privilege access model, what is the importance of having visibility of and control over the applications and their functionality in the traffic?
+
+
+It ensures that all users have equal access to resources
+
+It allows unrestricted communication within trust zones
+
+It enables precise control over application use beyond port and protocol definitions
+
+It allows risky file types to be transferred more efficiently
+Options
+You gave the correct answer and your score is 1
+Correct answer
+Score: 1
+Correct answer:
+It enables precise control over application use beyond port and protocol definitions
+Question 6 of 8
+How does the Zero Trust model improve effectiveness in mitigating data loss?
+
+
+By granting default trust to all entities
+
+By enabling essential business applications while preventing cyberthreats
+
+By focusing solely on perimeter defenses
+
+By allowing all traffic without inspection
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+By enabling essential business applications while preventing cyberthreats
+Question 7 of 8
+What is the main difference between the protect surface in a Zero Trust model and the attack surface in traditional security models?
+
+
+Protect surface is larger than the attack surface
+
+Protect surface is smaller and contains critical resources
+
+Protect surface is focused on external threats
+
+Protect surface is not unique to each organization
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+Protect surface is smaller and contains critical resources
+Question 8 of 8
+What is a key benefit of implementing a Zero Trust model with incremental modifications to the existing network?
+
+
+It requires a major overhaul of the network infrastructure
+
+It minimizes potential impact on operations and spreads investment over time
+
+It disrupts user experience and requires extensive training
+
+It relies on the existing trust model for security
+Options
+You gave the wrong answer and your score is 0
+Wrong answer
+Score: 0
+Correct answer:
+It minimizes potential impact on operations and spreads investment over time
+
+
+
+
+
