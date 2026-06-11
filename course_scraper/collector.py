@@ -1,44 +1,56 @@
 """
-Question Collector – interactive CLI
-=====================================
-Go through the course page by page and paste each question + its choices here.
-Correct answers are stored as "" (unknown) until you fill them in later.
+Question Collector – paste-and-record CLI
+==========================================
+Go through the course page by page and paste each question block here.
 
-Usage
------
-    python course_scraper/collector.py
+How it works
+------------
+1. Paste the question text and all its choices (one line at a time).
+2. Press Enter on a **blank line** → the question is recorded automatically.
+   You will see a live count of how many questions have been collected.
+3. Keep going until you have entered all questions.
+4. When you are completely finished, press Enter on a blank line when
+   nothing has been pasted (i.e. two blank lines in a row, or blank line
+   right after the previous question was saved) → saves to questions.json.
 
-Controls
---------
-  • After each question you will be asked whether to add another.
-  • Type  done  (or press Ctrl-C) at any prompt to stop and save.
-  • New questions are **appended** to questions.json (existing entries kept).
+Ctrl-C also saves whatever has been collected so far and exits.
 
-Filling in answers later
-------------------------
-Open questions.json, find entries where "correct" is "", and fill in the
-exact text of the correct choice.
+Parsing rules
+-------------
+The script auto-detects question vs. choice lines:
+  • Lines that look like  "A. ...",  "B) ...",  "1. ...",  "- ..." etc.
+    are treated as choices (the prefix is stripped).
+  • The remaining lines (before the first choice line) form the question text.
+  • Lines with only a question/page number (e.g. "1", "Question 1") are skipped.
+
+Correct answers are stored as "" – fill them in questions.json later.
 """
 
 import json
 import os
+import re
 import sys
 
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
-DONE_WORDS = {"done", "quit", "exit", "q"}
+
+# Regex that matches typical choice prefixes:  A.  A)  a.  1.  1)  -
+_CHOICE_PREFIX = re.compile(
+    r"^(?:[A-Da-d][.)]\s+|[1-9]\d*[.)]\s+|-\s+)"
+)
+# Lines that are only a standalone number or "Question N" – skip them
+_SKIP_LINE = re.compile(r"^\s*(?:question\s+)?\d+\.?\s*$", re.IGNORECASE)
 
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
-def _input(prompt: str) -> str:
-    """Thin wrapper so Ctrl-C always triggers a clean exit."""
+def _read_line(prompt: str = "") -> str:
+    """Read one line from stdin.  Returns empty string on blank line."""
     try:
-        return input(prompt).strip()
+        return input(prompt)
     except (EOFError, KeyboardInterrupt):
-        print("\n[!] Interrupted – saving and exiting.")
-        sys.exit(0)
+        raise KeyboardInterrupt
 
 
 def load_existing() -> list[dict]:
@@ -57,76 +69,104 @@ def load_existing() -> list[dict]:
 def save(questions: list[dict]) -> None:
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(questions, f, ensure_ascii=False, indent=2)
-    print(f"\n[+] Saved {len(questions)} total question(s) → {OUTPUT_FILE}")
+    print(f"\n✔  Saved {len(questions)} total question(s) → {OUTPUT_FILE}")
 
 
-# ---------------------------------------------------------------------------
-# Collection loop
-# ---------------------------------------------------------------------------
-
-def collect_one(number: int) -> dict | None:
-    """Interactively collect one question.  Returns None if the user is done."""
-    print(f"\n── Question #{number} ──────────────────────────────")
-
-    question_text = _input("Question text (or 'done' to finish): ")
-    if question_text.lower() in DONE_WORDS or not question_text:
+def parse_block(lines: list[str]) -> dict | None:
+    """
+    Split a list of raw lines into a question dict.
+    Returns None if the block has no usable content.
+    """
+    # Remove leading/trailing blank lines
+    lines = [l.rstrip() for l in lines if l.strip()]
+    if not lines:
         return None
 
+    question_lines: list[str] = []
     choices: list[str] = []
-    print("Enter each choice and press Enter.  Type 'done' when all choices are entered.")
+    in_choices = False
 
-    choice_labels = "ABCDEFGHIJ"
-    while len(choices) < 10:
-        label = choice_labels[len(choices)] if len(choices) < len(choice_labels) else str(len(choices) + 1)
-        choice = _input(f"  Choice {label}: ")
-        if choice.lower() in DONE_WORDS:
-            break
-        if choice:
-            choices.append(choice)
+    for line in lines:
+        if _SKIP_LINE.match(line):
+            continue
+        m = _CHOICE_PREFIX.match(line)
+        if m:
+            in_choices = True
+            # Strip the prefix (e.g. "A. ", "1) ", "- ")
+            choices.append(line[m.end():].strip())
+        elif not in_choices:
+            question_lines.append(line.strip())
+        # Lines after choices started but without a prefix are continuations of
+        # the last choice (rare, but handle gracefully)
+        elif choices:
+            choices[-1] += " " + line.strip()
 
-    if not choices:
-        print("[!] No choices entered – skipping this question.")
+    question_text = " ".join(question_lines).strip()
+    if not question_text or not choices:
         return None
 
     return {
         "question": question_text,
         "choices": choices,
-        "correct": "",          # unknown – fill in later
+        "correct": "",  # unknown – fill in later
     }
 
 
+# ---------------------------------------------------------------------------
+# Main loop
+# ---------------------------------------------------------------------------
+
 def main() -> None:
-    print("=" * 55)
+    print("=" * 60)
     print("  Palo Alto Course – Question Collector")
-    print("=" * 55)
-    print("Paste each question and its choices from the course.")
-    print("Type  done  at any prompt to stop and save.\n")
+    print("=" * 60)
+    print("Paste a question + its choices, then press Enter on a blank")
+    print("line to record it.  Press Enter again (blank) when done.\n")
 
     existing = load_existing()
-    start_count = len(existing)
-    print(f"[*] Loaded {start_count} existing question(s) from {OUTPUT_FILE}")
-
     new_questions: list[dict] = []
-    n = 1
+    total = len(existing)
 
-    while True:
-        q = collect_one(start_count + n)
-        if q is None:
-            break
-        new_questions.append(q)
-        print(f"[+] Saved (not yet written to disk – keep going or type 'done')")
-        n += 1
+    if total:
+        print(f"[*] Loaded {total} existing question(s) from questions.json\n")
 
-        again = _input("\nAdd another question? (press Enter to continue / 'done' to stop): ")
-        if again.lower() in DONE_WORDS:
-            break
+    current_block: list[str] = []
+
+    try:
+        while True:
+            line = _read_line()
+
+            if line.strip() == "":
+                # Blank line = end of current block
+                if current_block:
+                    q = parse_block(current_block)
+                    current_block = []
+                    if q:
+                        new_questions.append(q)
+                        total += 1
+                        print(f"  ✔  Recorded  [{total} total]  {q['question'][:65]}{'…' if len(q['question']) > 65 else ''}")
+                    else:
+                        print("  ⚠  Could not parse that block – skipped.")
+                else:
+                    # Second blank in a row with nothing pending → done
+                    break
+            else:
+                current_block.append(line)
+
+    except KeyboardInterrupt:
+        # Also save whatever is buffered
+        if current_block:
+            q = parse_block(current_block)
+            if q:
+                new_questions.append(q)
+                total += 1
 
     if new_questions:
         all_questions = existing + new_questions
         save(all_questions)
-        print(f"[+] Added {len(new_questions)} new question(s).")
+        print(f"[+] {len(new_questions)} new question(s) added this session.")
     else:
-        print("[*] No new questions collected.  questions.json unchanged.")
+        print("[*] No new questions collected – questions.json unchanged.")
 
 
 if __name__ == "__main__":
