@@ -4,9 +4,10 @@ Quiz Generator
 Reads questions.json (produced by scraper.py) and generates a standalone
 HTML quiz file.
 
-Each question shows exactly 4 answer alternatives.
-- Click the correct answer  → button turns GREEN  ✓
-- Click a wrong answer      → button turns RED    ✗ (and the correct one turns green)
+Each question supports one or more correct alternatives.
+- Select the answer(s) and click "Sjekk svar"
+- Correct choices turn GREEN ✓
+- Wrong selected choices turn RED ✗
 
 Usage
 -----
@@ -42,26 +43,37 @@ def load_questions(path: str) -> list[dict]:
     for i, q in enumerate(data):
         question = (q.get("question") or "").strip()
         choices   = [str(c).strip() for c in q.get("choices", []) if str(c).strip()]
-        correct   = (q.get("correct") or "").strip()
+        correct_answers_raw = q.get("correct_answers", [])
+        correct_answers = [
+            str(c).strip() for c in correct_answers_raw
+            if str(c).strip()
+        ] if isinstance(correct_answers_raw, list) else []
+        if not correct_answers:
+            single = (q.get("correct") or "").strip()
+            if single:
+                correct_answers = [single]
 
-        if not question or not choices or not correct:
-            print(f"[!] Skipping question {i+1}: missing question, choices, or correct answer")
+        if not question or not choices or not correct_answers:
+            print(f"[!] Skipping question {i+1}: missing question, choices, or correct answer(s)")
             continue
 
-        # Ensure correct answer is among the choices
-        if correct not in choices:
-            choices.append(correct)
+        # Ensure all correct answers are among the choices
+        for correct in correct_answers:
+            if correct not in choices:
+                choices.append(correct)
 
-        # Keep exactly 4 choices: correct + up to 3 others (random selection if > 4)
-        wrong = [c for c in choices if c != correct]
+        # Preserve unique choices and keep at least 4 options when possible.
+        choices = list(dict.fromkeys(choices))
+        wrong = [c for c in choices if c not in correct_answers]
         random.shuffle(wrong)
-        four_choices = [correct] + wrong[:3]
-        random.shuffle(four_choices)
+        option_count = max(4, len(correct_answers))
+        final_choices = correct_answers + wrong[:max(option_count - len(correct_answers), 0)]
+        random.shuffle(final_choices)
 
         valid.append({
             "question": question,
-            "choices":  four_choices,
-            "correct":  correct,
+            "choices":  final_choices,
+            "correct_answers": correct_answers,
         })
 
     return valid
@@ -188,6 +200,10 @@ HTML_TEMPLATE = """\
       color: #5ddb96 !important;
       cursor: default;
     }}
+    .choice-btn.selected {{
+      border-color: #fa582d;
+      background: #2d3f56;
+    }}
     .choice-btn.wrong {{
       background: #4a0e0e !important;
       border-color: #e74c3c !important;
@@ -211,7 +227,24 @@ HTML_TEMPLATE = """\
     .nav-row {{
       display: flex;
       justify-content: flex-end;
+      gap: 10px;
       margin-top: 22px;
+    }}
+    .check-btn {{
+      background: #2f7bd8;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 11px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }}
+    .check-btn:hover {{ background: #2568b9; transform: translateY(-1px); }}
+    .check-btn:disabled {{
+      cursor: default;
+      opacity: 0.65;
     }}
     .next-btn {{
       background: #fa582d;
@@ -303,23 +336,48 @@ HTML_TEMPLATE = """\
       (index / TOTAL * 100) + "%";
   }}
 
-  function answer(qIndex, btnEl, isCorrect, correctBtnId) {{
-    // Disable all buttons in this question
+  function toggleChoice(btnEl) {{
+    if (btnEl.disabled) return;
+    btnEl.classList.toggle("selected");
+  }}
+
+  function checkAnswer(qIndex, correctBtnIds) {{
     const card = document.getElementById("q" + qIndex);
-    card.querySelectorAll(".choice-btn").forEach(b => b.disabled = true);
-
     const feedback = card.querySelector(".feedback");
+    const checkBtn = card.querySelector(".check-btn");
     const nextBtn  = card.querySelector(".next-btn");
+    const selected = Array.from(card.querySelectorAll(".choice-btn.selected")).map(b => b.id);
 
-    if (isCorrect) {{
-      btnEl.classList.add("correct");
+    if (!selected.length) {{
+      feedback.textContent = "Velg minst ett svar først.";
+      feedback.className = "feedback wrong";
+      return;
+    }}
+
+    card.querySelectorAll(".choice-btn").forEach(b => b.disabled = true);
+    checkBtn.disabled = true;
+
+    const exactMatch =
+      selected.length === correctBtnIds.length &&
+      selected.every(id => correctBtnIds.includes(id));
+
+    card.querySelectorAll(".choice-btn").forEach(btn => {{
+      const isCorrect = correctBtnIds.includes(btn.id);
+      const isSelected = selected.includes(btn.id);
+      btn.classList.remove("selected");
+      if (isCorrect) {{
+        btn.classList.add("correct");
+      }} else if (isSelected) {{
+        btn.classList.add("wrong");
+      }}
+    }});
+
+    if (exactMatch) {{
       feedback.textContent = "✓ Riktig!";
       feedback.className   = "feedback correct";
       score++;
     }} else {{
-      btnEl.classList.add("wrong");
-      document.getElementById(correctBtnId).classList.add("correct");
-      feedback.textContent = "✗ Feil – riktig svar er vist i grønt";
+      feedback.textContent = "✗ Feil – riktige svar er vist i grønt";
       feedback.className   = "feedback wrong";
     }}
 
@@ -357,10 +415,12 @@ HTML_TEMPLATE = """\
     document.querySelectorAll(".question-card").forEach(card => {{
       card.querySelectorAll(".choice-btn").forEach(b => {{
         b.disabled = false;
-        b.classList.remove("correct", "wrong");
+        b.classList.remove("correct", "wrong", "selected");
       }});
       const fb = card.querySelector(".feedback");
       if (fb) {{ fb.textContent = ""; fb.className = "feedback"; }}
+      const cb = card.querySelector(".check-btn");
+      if (cb) cb.disabled = false;
       const nb = card.querySelector(".next-btn");
       if (nb) nb.style.display = "none";
     }});
@@ -383,6 +443,9 @@ CARD_TEMPLATE = """\
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
+      <button class="check-btn" onclick="checkAnswer({index}, {correct_btn_ids})">
+        Sjekk svar
+      </button>
       <button class="next-btn" onclick="nextQuestion({next_index})">
         {next_label} →
       </button>
@@ -392,7 +455,7 @@ CARD_TEMPLATE = """\
 
 BUTTON_TEMPLATE = (
     '      <button class="choice-btn" id="{btn_id}" '
-    'onclick="answer({q_index}, this, {is_correct}, \'{correct_btn_id}\')">'
+    'onclick="toggleChoice(this)">'
     '{text}</button>'
 )
 
@@ -406,17 +469,16 @@ def build_html(questions: list[dict]) -> str:
     cards_html = ""
 
     for i, q in enumerate(questions):
-        correct_btn_id = f"q{i}b{q['choices'].index(q['correct'])}"
+        correct_btn_ids = [
+            f"q{i}b{j}" for j, choice in enumerate(q["choices"])
+            if choice in q["correct_answers"]
+        ]
 
         buttons_html = ""
         for j, choice in enumerate(q["choices"]):
             btn_id     = f"q{i}b{j}"
-            is_correct = "true" if choice == q["correct"] else "false"
             buttons_html += BUTTON_TEMPLATE.format(
                 btn_id=btn_id,
-                q_index=i,
-                is_correct=is_correct,
-                correct_btn_id=correct_btn_id,
                 text=escape(choice),
             ) + "\n"
 
@@ -431,6 +493,7 @@ def build_html(questions: list[dict]) -> str:
             total=total,
             question=escape(q["question"]),
             buttons=buttons_html.rstrip(),
+            correct_btn_ids=json.dumps(correct_btn_ids),
             next_index=next_index,
             next_label=next_label,
         )

@@ -89,9 +89,10 @@ start quiz.html
 
 ## Quiz-funksjoner
 
-- **4 svaralternativer** per spørsmål
-- Klikk riktig svar → **grønn** ✓
-- Klikk feil svar → **rød** ✗, og riktig svar vises i grønt
+- **Flervalg støttes** (ett eller flere riktige svar)
+- Velg svar og trykk **Sjekk svar**
+- Riktige svar vises i **grønt** ✓
+- Feil valgte svar vises i **rødt** ✗
 - Fremdriftslinje øverst
 - Sluttresultat med prosentpoeng
 - "Ta quizen på nytt"-knapp
