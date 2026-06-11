@@ -165,8 +165,14 @@ HTML_TEMPLATE = """\
     .question-text {{
       font-size: 1.12rem;
       line-height: 1.6;
-      margin-bottom: 26px;
+      margin-bottom: 12px;
       color: #dce3ed;
+    }}
+
+    .select-hint {{
+      font-size: 0.85rem;
+      color: #8892a4;
+      margin-bottom: 18px;
     }}
 
     .choices {{
@@ -200,10 +206,6 @@ HTML_TEMPLATE = """\
       color: #5ddb96 !important;
       cursor: default;
     }}
-    .choice-btn.selected {{
-      border-color: #fa582d;
-      background: #2d3f56;
-    }}
     .choice-btn.wrong {{
       background: #4a0e0e !important;
       border-color: #e74c3c !important;
@@ -229,22 +231,6 @@ HTML_TEMPLATE = """\
       justify-content: flex-end;
       gap: 10px;
       margin-top: 22px;
-    }}
-    .check-btn {{
-      background: #2f7bd8;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      padding: 11px 20px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.15s, transform 0.1s;
-    }}
-    .check-btn:hover {{ background: #2568b9; transform: translateY(-1px); }}
-    .check-btn:disabled {{
-      cursor: default;
-      opacity: 0.65;
     }}
     .next-btn {{
       background: #fa582d;
@@ -338,50 +324,43 @@ HTML_TEMPLATE = """\
 
   function toggleChoice(btnEl) {{
     if (btnEl.disabled) return;
-    btnEl.classList.toggle("selected");
-  }}
+    const card = btnEl.closest(".question-card");
+    const correctIds = card.dataset.correct.split(",");
+    const required   = parseInt(card.dataset.required, 10);
 
-  function checkAnswer(qIndex, correctBtnIds) {{
-    const card = document.getElementById("q" + qIndex);
-    const feedback = card.querySelector(".feedback");
-    const checkBtn = card.querySelector(".check-btn");
-    const nextBtn  = card.querySelector(".next-btn");
-    const selected = Array.from(card.querySelectorAll(".choice-btn.selected")).map(b => b.id);
+    // Mark the clicked button immediately green or red
+    const isCorrect = correctIds.includes(btnEl.id);
+    btnEl.disabled = true;
+    btnEl.classList.add(isCorrect ? "correct" : "wrong");
 
-    if (!selected.length) {{
-      feedback.textContent = "Velg minst ett svar først.";
-      feedback.className = "feedback wrong";
-      return;
-    }}
+    // Count how many have been answered so far
+    const answered     = card.querySelectorAll(".choice-btn.correct, .choice-btn.wrong");
+    const countCorrect = card.querySelectorAll(".choice-btn.correct").length;
+    const countWrong   = card.querySelectorAll(".choice-btn.wrong").length;
 
-    card.querySelectorAll(".choice-btn").forEach(b => b.disabled = true);
-    checkBtn.disabled = true;
+    if (answered.length >= required) {{
+      // Lock all remaining buttons and reveal any unanswered correct ones
+      card.querySelectorAll(".choice-btn").forEach(b => {{
+        b.disabled = true;
+        if (!b.classList.contains("correct") && !b.classList.contains("wrong") && correctIds.includes(b.id)) {{
+          b.classList.add("correct");
+        }}
+      }});
 
-    const exactMatch =
-      selected.length === correctBtnIds.length &&
-      selected.every(id => correctBtnIds.includes(id));
+      const feedback = card.querySelector(".feedback");
+      const nextBtn  = card.querySelector(".next-btn");
 
-    card.querySelectorAll(".choice-btn").forEach(btn => {{
-      const isCorrect = correctBtnIds.includes(btn.id);
-      const isSelected = selected.includes(btn.id);
-      btn.classList.remove("selected");
-      if (isCorrect) {{
-        btn.classList.add("correct");
-      }} else if (isSelected) {{
-        btn.classList.add("wrong");
+      if (countWrong === 0 && countCorrect === required) {{
+        feedback.textContent = "✓ Riktig!";
+        feedback.className   = "feedback correct";
+        score++;
+      }} else {{
+        feedback.textContent = "✗ Feil – riktige svar er vist i grønt";
+        feedback.className   = "feedback wrong";
       }}
-    }});
 
-    if (exactMatch) {{
-      feedback.textContent = "✓ Riktig!";
-      feedback.className   = "feedback correct";
-      score++;
-    }} else {{
-      feedback.textContent = "✗ Feil – riktige svar er vist i grønt";
-      feedback.className   = "feedback wrong";
+      nextBtn.style.display = "inline-block";
     }}
-
-    nextBtn.style.display = "inline-block";
   }}
 
   function nextQuestion(index) {{
@@ -415,12 +394,10 @@ HTML_TEMPLATE = """\
     document.querySelectorAll(".question-card").forEach(card => {{
       card.querySelectorAll(".choice-btn").forEach(b => {{
         b.disabled = false;
-        b.classList.remove("correct", "wrong", "selected");
+        b.classList.remove("correct", "wrong");
       }});
       const fb = card.querySelector(".feedback");
       if (fb) {{ fb.textContent = ""; fb.className = "feedback"; }}
-      const cb = card.querySelector(".check-btn");
-      if (cb) cb.disabled = false;
       const nb = card.querySelector(".next-btn");
       if (nb) nb.style.display = "none";
     }});
@@ -435,17 +412,15 @@ HTML_TEMPLATE = """\
 """
 
 CARD_TEMPLATE = """\
-  <div class="question-card{active}" id="q{index}">
+  <div class="question-card{active}" id="q{index}" data-correct="{correct_ids_csv}" data-required="{required}">
     <div class="question-number">Spørsmål {num} av {total}</div>
     <div class="question-text">{question}</div>
+    {hint}
     <div class="choices">
 {buttons}
     </div>
     <div class="feedback"></div>
     <div class="nav-row">
-      <button class="check-btn" onclick="checkAnswer({index}, {correct_btn_ids})">
-        Sjekk svar
-      </button>
       <button class="next-btn" onclick="nextQuestion({next_index})">
         {next_label} →
       </button>
@@ -473,6 +448,12 @@ def build_html(questions: list[dict]) -> str:
             f"q{i}b{j}" for j, choice in enumerate(q["choices"])
             if choice in q["correct_answers"]
         ]
+        required = len(correct_btn_ids)
+        correct_ids_csv = ",".join(correct_btn_ids)
+        hint = (
+            f'<div class="select-hint">Velg {required} svar</div>'
+            if required > 1 else ""
+        )
 
         buttons_html = ""
         for j, choice in enumerate(q["choices"]):
@@ -493,7 +474,9 @@ def build_html(questions: list[dict]) -> str:
             total=total,
             question=escape(q["question"]),
             buttons=buttons_html.rstrip(),
-            correct_btn_ids=json.dumps(correct_btn_ids),
+            correct_ids_csv=correct_ids_csv,
+            required=required,
+            hint=hint,
             next_index=next_index,
             next_label=next_label,
         )
