@@ -1,7 +1,12 @@
 [
   {
     "question": "Which Palo Alto Networks feature identifies applications regardless of port, protocol, or encryption?",
-    "choices": ["App-ID", "User-ID", "Content-ID", "Device-ID"],
+    "choices": [
+      "App-ID",
+      "User-ID",
+      "Content-ID",
+      "Device-ID"
+    ],
     "correct": "App-ID"
   },
   {
@@ -16,7 +21,12 @@
   },
   {
     "question": "Which zone type in PAN-OS is used for traffic that originates from or is destined for the firewall itself?",
-    "choices": ["External Zone", "Layer 3 Zone", "Tap Zone", "Functional Zone (MGT)"],
+    "choices": [
+      "External Zone",
+      "Layer 3 Zone",
+      "Tap Zone",
+      "Functional Zone (MGT)"
+    ],
     "correct": "Functional Zone (MGT)"
   },
   {
@@ -31,17 +41,32 @@
   },
   {
     "question": "Which PAN-OS feature maps IP addresses to usernames to enforce user-based policies?",
-    "choices": ["User-ID", "App-ID", "Content-ID", "GlobalProtect"],
+    "choices": [
+      "User-ID",
+      "App-ID",
+      "Content-ID",
+      "GlobalProtect"
+    ],
     "correct": "User-ID"
   },
   {
     "question": "What is the default action when no security policy rule matches traffic on a Palo Alto Networks firewall?",
-    "choices": ["Deny", "Allow", "Drop", "Reset"],
+    "choices": [
+      "Deny",
+      "Allow",
+      "Drop",
+      "Reset"
+    ],
     "correct": "Deny"
   },
   {
     "question": "Which interface type in PAN-OS allows traffic inspection without being in the traffic path (passive monitoring)?",
-    "choices": ["Tap interface", "Virtual wire interface", "Layer 3 interface", "Loopback interface"],
+    "choices": [
+      "Tap interface",
+      "Virtual wire interface",
+      "Layer 3 interface",
+      "Loopback interface"
+    ],
     "correct": "Tap interface"
   },
   {
@@ -56,12 +81,42 @@
   },
   {
     "question": "Which Palo Alto Networks subscription service provides DNS-layer security to block malicious domains?",
-    "choices": ["DNS Security", "Threat Prevention", "URL Filtering", "IoT Security"],
+    "choices": [
+      "DNS Security",
+      "Threat Prevention",
+      "URL Filtering",
+      "IoT Security"
+    ],
     "correct": "DNS Security"
   },
   {
     "question": "What protocol does GlobalProtect use to establish secure remote access tunnels?",
-    "choices": ["IPsec/SSL", "PPTP", "L2TP only", "GRE"],
+    "choices": [
+      "IPsec/SSL",
+      "PPTP",
+      "L2TP only",
+      "GRE"
+    ],
     "correct": "IPsec/SSL"
+  },
+  {
+    "question": "Which feature identifies applications?",
+    "choices": [
+      "App-ID",
+      "User-ID",
+      "Content-ID",
+      "Device-ID"
+    ],
+    "correct": ""
+  },
+  {
+    "question": "What does WildFire do?",
+    "choices": [
+      "Malware analysis",
+      "NAT translation",
+      "Route redistribution",
+      "Certificate management"
+    ],
+    "correct": ""
   }
 ]
