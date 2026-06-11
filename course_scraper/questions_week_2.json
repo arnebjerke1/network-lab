@@ -1,0 +1,62 @@
+[
+  {
+    "question": "In the exploitation phase of a cyberattack, what is the primary goal of the attacker?",
+    "choices": [
+      "To take control of the target system",
+      "To install backdoors for future access",
+      "To exfiltrate data from the target system",
+      "To manipulate system vulnerabilities for unauthorized access"
+    ],
+    "correct": "To manipulate system vulnerabilities for unauthorized access"
+  },
+  {
+    "question": "Which two actions during the command-and-control (C2) phase of the cyberattack lifecycle can help prevent the further evolution of an attack? (Choose two.)",
+    "choices": [
+      "Train users to recognize phishing emails",
+      "Implement granular control of applications",
+      "Block outbound traffic that is typical for C2 communication",
+      "Implement sandboxing for all files transferred to or from external networks"
+    ],
+    "correct": "Implement granular control of applications"
+  },
+  {
+    "question": "In the context of cyberattacks, what is an exploit?",
+    "choices": [
+      "A person or group who poses a threat to a computer system",
+      "An attempt by an intelligent threat to bypass security measures",
+      "A malicious software application that a user installs on a computer",
+      "A sequence of actions that take advantage of a software problem or host-system vulnerability"
+    ],
+    "correct": "A sequence of actions that take advantage of a software problem or host-system vulnerability"
+  },
+  {
+    "question": "Which two methods are commonly used by attackers to deliver malicious payloads during the weaponization-and-delivery phase of the cyberattack lifecycle? (Choose two.)",
+    "choices": [
+      "Sinkholing",
+      "Port scanning",
+      "Use of exploit kits",
+      "Spear phishing attacks"
+    ],
+    "correct": "Use of exploit kits"
+  },
+  {
+    "question": "What is the goal of an attacker in the acting-on-objectives phase of the cyberattack lifecycle?",
+    "choices": [
+      "To exfiltrate data or disrupt services",
+      "To install malware on the target system",
+      "To remotely manage compromised systems",
+      "To scan for vulnerabilities in the target system"
+    ],
+    "correct": "To exfiltrate data or disrupt services"
+  },
+  {
+    "question": "Which type of cyberattack involves sending targeted emails that appear credible to the recipients by gathering specific information about them?",
+    "choices": [
+      "Spear phishing",
+      "Whaling",
+      "Watering hole attack",
+      "Pharming"
+    ],
+    "correct": "Spear phishing"
+  }
+]

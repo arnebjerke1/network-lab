@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCNSP Quiz</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0f1923;
+      color: #e8eaf0;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #fa582d;
+      letter-spacing: 1px;
+      margin: 0 0 6px;
+    }
+    header p {
+      color: #8892a4;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    #progress-bar-wrap {
+      background: #1e2b38;
+      border-radius: 8px;
+      height: 8px;
+      margin: 0 auto 32px;
+      max-width: 700px;
+      overflow: hidden;
+    }
+    #progress-bar {
+      height: 100%;
+      background: #fa582d;
+      width: 0%;
+      transition: width 0.4s ease;
+      border-radius: 8px;
+    }
+
+    #quiz-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .question-card {
+      display: none;
+      background: #1a2533;
+      border-radius: 14px;
+      padding: 32px 28px 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      animation: fadeIn 0.3s ease;
+    }
+    .question-card.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .question-number {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #fa582d;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 1.12rem;
+      line-height: 1.6;
+      margin-bottom: 26px;
+      color: #dce3ed;
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .choice-btn {
+      background: #243040;
+      border: 2px solid #2e3f54;
+      color: #dce3ed;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 0.97rem;
+      line-height: 1.4;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
+      word-break: break-word;
+    }
+    .choice-btn:hover:not(:disabled) {
+      background: #2d3f56;
+      border-color: #fa582d;
+      transform: translateY(-2px);
+    }
+
+    .choice-btn.correct {
+      background: #0e4a2a !important;
+      border-color: #27ae60 !important;
+      color: #5ddb96 !important;
+      cursor: default;
+    }
+    .choice-btn.wrong {
+      background: #4a0e0e !important;
+      border-color: #e74c3c !important;
+      color: #f08080 !important;
+      cursor: default;
+    }
+    .choice-btn:disabled {
+      cursor: default;
+    }
+
+    .feedback {
+      margin-top: 18px;
+      min-height: 24px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .feedback.correct { color: #27ae60; }
+    .feedback.wrong   { color: #e74c3c; }
+
+    .nav-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 22px;
+    }
+    .next-btn {
+      background: #fa582d;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 11px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .next-btn:hover { background: #e04420; transform: translateY(-1px); }
+
+    #result-card {
+      display: none;
+      text-align: center;
+      background: #1a2533;
+      border-radius: 14px;
+      padding: 48px 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      animation: fadeIn 0.4s ease;
+    }
+    #result-card h2 {
+      font-size: 2rem;
+      color: #fa582d;
+      margin-bottom: 12px;
+    }
+    #result-card .score-text {
+      font-size: 1.25rem;
+      color: #dce3ed;
+      margin-bottom: 8px;
+    }
+    #result-card .score-pct {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #27ae60;
+      margin: 12px 0 28px;
+    }
+    #restart-btn {
+      background: #fa582d;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 13px 36px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    #restart-btn:hover { background: #e04420; }
+
+    @media (max-width: 520px) {
+      .choices { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔐 PCNSP Quiz</h1>
+  <p>Palo Alto Networks Certified Network Security Professional</p>
+</header>
+
+<div id="progress-bar-wrap"><div id="progress-bar"></div></div>
+
+<div id="quiz-container">
+  <div class="question-card active" id="q0">
+    <div class="question-number">Spørsmål 1 av 3</div>
+    <div class="question-text">What is the purpose of the use of security groups in a virtual private cloud (VPC)?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q0b0" onclick="answer(0, this, false, 'q0b3')">To control traffic between different VPCs</button>
+      <button class="choice-btn" id="q0b1" onclick="answer(0, this, false, 'q0b3')">To control traffic to cloud-provider reserved addresses</button>
+      <button class="choice-btn" id="q0b2" onclick="answer(0, this, false, 'q0b3')">To restrict traffic between subnets within the VPC</button>
+      <button class="choice-btn" id="q0b3" onclick="answer(0, this, true, 'q0b3')">To define explicitly permitted network traffic for virtual machines&#x27; network interfaces</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(1)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q1">
+    <div class="question-number">Spørsmål 2 av 3</div>
+    <div class="question-text">What is cryptojacking?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q1b0" onclick="answer(1, this, false, 'q1b3')">The poisoning of open source cryptographic libraries</button>
+      <button class="choice-btn" id="q1b1" onclick="answer(1, this, false, 'q1b3')">The successful execution of man-in-the-middle (MITM) attacks</button>
+      <button class="choice-btn" id="q1b2" onclick="answer(1, this, false, 'q1b3')">The presentation of insecure crypto protocols for HTTPS communication</button>
+      <button class="choice-btn" id="q1b3" onclick="answer(1, this, true, 'q1b3')">The unauthorized use of a computer to mine cryptocurrency</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(2)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q2">
+    <div class="question-number">Spørsmål 3 av 3</div>
+    <div class="question-text">Which action is typically carried out by an insider with malicious intent?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q2b0" onclick="answer(2, this, true, 'q2b0')">Data exfiltration</button>
+      <button class="choice-btn" id="q2b1" onclick="answer(2, this, false, 'q2b0')">Cryptojacking</button>
+      <button class="choice-btn" id="q2b2" onclick="answer(2, this, false, 'q2b0')">Spear phishing</button>
+      <button class="choice-btn" id="q2b3" onclick="answer(2, this, false, 'q2b0')">DDoS attack</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(3)">
+        Se resultat →
+      </button>
+    </div>
+  </div>
+
+  <div id="result-card">
+    <h2>Quiz fullført! 🎉</h2>
+    <div class="score-text">Du svarte riktig på <span id="correct-count">0</span> av <span id="total-count">0</span> spørsmål</div>
+    <div class="score-pct" id="score-pct">0%</div>
+    <button id="restart-btn" onclick="restartQuiz()">Ta quizen på nytt</button>
+  </div>
+</div>
+
+<script>
+  const TOTAL = 3;
+  let current = 0;
+  let score   = 0;
+
+  function showQuestion(index) {
+    document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active"));
+    const card = document.getElementById("q" + index);
+    if (card) card.classList.add("active");
+    document.getElementById("progress-bar").style.width =
+      (index / TOTAL * 100) + "%";
+  }
+
+  function answer(qIndex, btnEl, isCorrect, correctBtnId) {
+    // Disable all buttons in this question
+    const card = document.getElementById("q" + qIndex);
+    card.querySelectorAll(".choice-btn").forEach(b => b.disabled = true);
+
+    const feedback = card.querySelector(".feedback");
+    const nextBtn  = card.querySelector(".next-btn");
+
+    if (isCorrect) {
+      btnEl.classList.add("correct");
+      feedback.textContent = "✓ Riktig!";
+      feedback.className   = "feedback correct";
+      score++;
+    } else {
+      btnEl.classList.add("wrong");
+      document.getElementById(correctBtnId).classList.add("correct");
+      feedback.textContent = "✗ Feil – riktig svar er vist i grønt";
+      feedback.className   = "feedback wrong";
+    }
+
+    nextBtn.style.display = "inline-block";
+  }
+
+  function nextQuestion(index) {
+    if (index >= TOTAL) {
+      showResult();
+    } else {
+      current = index;
+      showQuestion(current);
+    }
+  }
+
+  function showResult() {
+    document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active"));
+    const rc = document.getElementById("result-card");
+    rc.style.display = "block";
+    document.getElementById("correct-count").textContent = score;
+    document.getElementById("total-count").textContent   = TOTAL;
+    const pct = Math.round(score / TOTAL * 100);
+    const pctEl = document.getElementById("score-pct");
+    pctEl.textContent = pct + "%";
+    pctEl.style.color = pct >= 80 ? "#27ae60" : pct >= 50 ? "#f39c12" : "#e74c3c";
+    document.getElementById("progress-bar").style.width = "100%";
+  }
+
+  function restartQuiz() {
+    score   = 0;
+    current = 0;
+    document.getElementById("result-card").style.display = "none";
+
+    // Reset all cards
+    document.querySelectorAll(".question-card").forEach(card => {
+      card.querySelectorAll(".choice-btn").forEach(b => {
+        b.disabled = false;
+        b.classList.remove("correct", "wrong");
+      });
+      const fb = card.querySelector(".feedback");
+      if (fb) { fb.textContent = ""; fb.className = "feedback"; }
+      const nb = card.querySelector(".next-btn");
+      if (nb) nb.style.display = "none";
+    });
+
+    showQuestion(0);
+  }
+
+  showQuestion(0);
+</script>
+</body>
+</html>

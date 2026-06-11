@@ -1,0 +1,364 @@
+[
+  {
+    "question": "What is the purpose of a network access control list (ACL) for traditional network infrastructure devices?",
+    "choices": [
+      "To correlate user names with IP addresses",
+      "To encrypt data transmitted over the network",
+      "To assign IP addresses to devices on the network",
+      "To control the flow of traffic between network segments or subnets"
+    ],
+    "correct": "To control the flow of traffic between network segments or subnets"
+  },
+  {
+    "question": "What is an Ethernet or IP-based network broadcast domain?",
+    "choices": [
+      "The physical area covered by a wireless network",
+      "The total amount of data that can be transmitted over a network",
+      "The range of IP addresses that can be broadcasted over the internet",
+      "A set of devices connected to the same network segment and can communicate with each other directly"
+    ],
+    "correct": "A set of devices connected to the same network segment and can communicate with each other directly"
+  },
+  {
+    "question": "What is the typical purpose of a network diagram in the context of network security?",
+    "choices": [
+      "To list the security policies in use on the network",
+      "To cost-optimize the organization's cloud infrastructure",
+      "To show the distribution of malware across the network",
+      "To depict the layout of a network and the connections among devices"
+    ],
+    "correct": "To depict the layout of a network and the connections among devices"
+  },
+  {
+    "question": "What is the difference between north-south and east-west traffic flows?",
+    "choices": [
+      "North-south traffic is always faster than east-west traffic",
+      "North-south traffic is always encrypted; east-west traffic is unencrypted",
+      "North-south traffic moves between different networks; east-west traffic is limited to a single network",
+      "North-south traffic enters and leaves the network perimeter; east-west traffic flows among components within the network perimeter"
+    ],
+    "correct": "North-south traffic enters and leaves the network perimeter; east-west traffic flows among components within the network perimeter"
+  },
+  {
+    "question": "What does the term \"network perimeter\" refer to in the context of network security?",
+    "choices": [
+      "The physical boundaries of a data center",
+      "The range of wireless network connections",
+      "The range of IP addresses assigned to a network",
+      "The boundary between an organizationally controlled network and one or more external networks"
+    ],
+    "correct": "The boundary between an organizationally controlled network and one or more external networks"
+  },
+  {
+    "question": "Which two locations do enterprise networks most commonly protect with firewalls? (Choose two.)",
+    "choices": [
+      "Application layer",
+      "Database segment",
+      "Enterprise segment",
+      "Demilitarized zone (DMZ)"
+    ],
+    "correct": "Enterprise segment"
+  },
+  {
+    "question": "What does north-south protection refer to in a virtual data center?",
+    "choices": [
+      "Traffic moving within a private cloud",
+      "Traffic within a single virtual machine",
+      "Traffic in and out of the virtualized environment",
+      "Traffic between VMs and the management infrastructure"
+    ],
+    "correct": "Traffic in and out of the virtualized environment"
+  },
+  {
+    "question": "What type of firewall is typically used for east-west protection in a virtual data center?",
+    "choices": [
+      "Cloud-based firewall service",
+      "Physical perimeter edge firewall",
+      "Virtualized firewall on each hypervisor",
+      "Hardware-based firewall in the data center"
+    ],
+    "correct": "Virtualized firewall on each hypervisor"
+  },
+  {
+    "question": "Which are the benefits of implementing east-west protection in a virtual data center? (Choose two.)",
+    "choices": [
+      "Application authorization",
+      "Increased traffic throughput",
+      "Reduced load on perimeter network firewalls",
+      "Reduction of lateral threat movement"
+    ],
+    "correct": "Application authorization"
+  },
+  {
+    "question": "What advantages does a virtualized security device provide for east-west protection in a virtual data center? (Choose two.)",
+    "choices": [
+      "Traffic and threat visibility",
+      "Policy-based threat protection",
+      "Automatic vulnerability patching",
+      "Highest available throughput speeds"
+    ],
+    "correct": "Traffic and threat visibility"
+  },
+  {
+    "question": "Which type of traffic is typically secured by high-throughput appliances working in high-availability active-passive (or active-active) mode?",
+    "choices": [
+      "East-west",
+      "North-south",
+      "Management",
+      "Application-database"
+    ],
+    "correct": "North-south"
+  },
+  {
+    "question": "What is the primary purpose of network access control lists (ACLs) in a virtual private cloud (VPC)?",
+    "choices": [
+      "To filter traffic between different VPCs",
+      "To control traffic within the same subnet",
+      "To restrict traffic between subnets within the VPC",
+      "To control traffic to cloud-provider reserved addresses"
+    ],
+    "correct": "To restrict traffic between subnets within the VPC"
+  },
+  {
+    "question": "What is the difference between network ACLs and security groups in cloud network security?",
+    "choices": [
+      "ACLs apply to network interfaces; security groups apply to subnets.",
+      "ACLs enforce at Layer 3 and 4; security groups enforce at Layer 3 only",
+      "ACLs allow action rules only; security groups have both allow and deny rules.",
+      "ACLs are stateless and subnet-level; security groups are stateful and instance-level."
+    ],
+    "correct": "ACLs are stateless and subnet-level; security groups are stateful and instance-level."
+  },
+  {
+    "question": "Which of the following are essential security measures for publishing APIs? (Choose three.)",
+    "choices": [
+      "Encryption",
+      "Authorization",
+      "Sufficient authentication",
+      "Compliance with REST API standards",
+      "Comprehensive API-use documentation"
+    ],
+    "correct": "Encryption"
+  },
+  {
+    "question": "What is the primary goal of using a centralized network security console?",
+    "choices": [
+      "To focus on individual security policies",
+      "To increase the number of security tools",
+      "To simplify network security management",
+      "To separate firewall management from other tools"
+    ],
+    "correct": "To simplify network security management"
+  },
+  {
+    "question": "What are the two main objectives of organizations in managing network security? (Choose two.)",
+    "choices": [
+      "To reduce administrative overhead",
+      "To implement a large number of firewalls",
+      "To simplify network security management",
+      "To rely solely on third-party tools for operational efficiency",
+      "To use multiple management consoles for different security tools"
+    ],
+    "correct": "To reduce administrative overhead"
+  },
+  {
+    "question": "Which is the correct term for a Protocol Data Unit (PDU) at Layer 2 of the OSI model?",
+    "choices": [
+      "Bit",
+      "Frame",
+      "Packet",
+      "Segment"
+    ],
+    "correct": "Frame"
+  },
+  {
+    "question": "Which layer of the OSI model is responsible for transparent, reliable data transport and end-to-end transmission control?",
+    "choices": [
+      "Network layer",
+      "Data Link layer",
+      "Transport layer",
+      "Application layer"
+    ],
+    "correct": "Transport layer"
+  },
+  {
+    "question": "Which two protocols function at the Application layer of the OSI model? (Choose two.)",
+    "choices": [
+      "File Transfer Protocol (FTP)",
+      "Transmission Control Protocol (TCP)",
+      "User Datagram Protocol (UDP)",
+      "Hypertext Transfer Protocol (HTTP)"
+    ],
+    "correct": "File Transfer Protocol (FTP)"
+  },
+  {
+    "question": "What is the primary purpose of a subnet mask in IPv4 addressing?",
+    "choices": [
+      "To hide the host portion of an IP address",
+      "To convert IP addresses into binary format",
+      "To provide a one-to-one translation of IP addresses",
+      "To hide the network portion of an IP address"
+    ],
+    "correct": "To hide the network portion of an IP address"
+  },
+  {
+    "question": "In a packet-switched network, what is the main advantage compared to circuit-switched networks?",
+    "choices": [
+      "Higher resilience to error and congestion",
+      "Requires dedicated physical circuit paths",
+      "Faster connection establishment",
+      "Better suited for real-time communication"
+    ],
+    "correct": "Higher resilience to error and congestion"
+  },
+  {
+    "question": "At which layer of the OSI model do routers primarily operate?",
+    "choices": [
+      "Application layer",
+      "Transport layer",
+      "Network layer",
+      "Data Link laye"
+    ],
+    "correct": "Network layer"
+  },
+  {
+    "question": "Which IP address range is reserved for Class A private networks?",
+    "choices": [
+      "10.0.0.0–10.255.255.255",
+      "172.16.0.0–172.31.255.255",
+      "192.168.0.0–192.168.255.255",
+      "127.0.0.1 to 127.255.255.255"
+    ],
+    "correct": "10.0.0.0–10.255.255.255"
+  },
+  {
+    "question": "What is the primary purpose of data encapsulation in the OSI and TCP/IP models?",
+    "choices": [
+      "To wrap protocol information from the layer above in the data section of the layer below",
+      "To translate IP addresses into domain names",
+      "To improve data transfer rates",
+      "To provide error correction mechanisms"
+    ],
+    "correct": "To wrap protocol information from the layer above in the data section of the layer below"
+  },
+  {
+    "question": "In the context of packet lifecycle, which layer of the OSI model is responsible for sending and receiving bits across the network medium?",
+    "choices": [
+      "Application layer",
+      "Transport layer",
+      "Network layer",
+      "Physical layer"
+    ],
+    "correct": "Physical layer"
+  },
+  {
+    "question": "What are the two main reasons for subnetting a network? (Choose two.)",
+    "choices": [
+      "To limit network traffic",
+      "To increase the number of devices visible to each other",
+      "To limit the number of devices visible to each other",
+      "To improve the efficiency of routers"
+    ],
+    "correct": "To limit network traffic"
+  },
+  {
+    "question": "Which troubleshooting technique begins at the Physical layer of the OSI model by verifying network connections and device availability?",
+    "choices": [
+      "Bottom-up approach",
+      "Top-down approach",
+      "Divide-and-conquer approach",
+      "Substitution method"
+    ],
+    "correct": "Bottom-up approach"
+  },
+  {
+    "question": "Which task is part of server and system administration in server management?",
+    "choices": [
+      "Installing security patches",
+      "Analyzing network traffic",
+      "mClearing application caches",
+      "Searching log files for anomalies"
+    ],
+    "correct": "Installing security patches"
+  },
+  {
+    "question": "What type of malware threatens to publish the victim's data or block access to it unless a ransom is paid?",
+    "choices": [
+      "Worm",
+      "Virus",
+      "Ransomware",
+      "Trojan"
+    ],
+    "correct": "Ransomware"
+  },
+  {
+    "question": "Choose one: In the context of troubleshooting host and network connectivity problems, what is the purpose of a network baseline?",
+    "choices": [
+      "To provide a snapshot of normal network operations",
+      "To store warranty and support information",
+      "To encrypt communication between devices",
+      "To detect malware on devices"
+    ],
+    "correct": "To provide a snapshot of normal network operations"
+  },
+  {
+    "question": "Which type of firewall is installed as part of a desktop or mobile operating system?",
+    "choices": [
+      "Network firewall",
+      "Host-based firewall",
+      "Operating system firewall",
+      "Linux firewall"
+    ],
+    "correct": "Host-based firewall"
+  },
+  {
+    "question": "Which type of system does not perform any preventive action to stop an attack?",
+    "choices": [
+      "data loss prevention",
+      "Intrusion Prevention",
+      "Unified Threat Management",
+      "intrusion detection"
+    ],
+    "correct": "intrusion detection"
+  },
+  {
+    "question": "Which next-generation product replaces UTM appliances to reduce traffic inspection latency?",
+    "choices": [
+      "hub",
+      "switch",
+      "firewall",
+      "router"
+    ],
+    "correct": "firewall"
+  },
+  {
+    "question": "Which of the following restrict the internet activity of user on a network by classifying websites into broad categories?",
+    "choices": [
+      "UDP",
+      "IDS",
+      "Web content filter",
+      "VPN"
+    ],
+    "correct": "Web content filter"
+  },
+  {
+    "question": "Which attack tactic allows adversaries to randomly change ports and protocols during a session?",
+    "choices": [
+      "Port Hopping",
+      "Tunneling",
+      "Hiding within SSL Encryption",
+      "Using non-standard ports"
+    ],
+    "correct": "Port Hopping"
+  },
+  {
+    "question": "What technology enables an immersive and interactive physical and digital sensory experience in real time?",
+    "choices": [
+      "Artificial Intelligence (AI)",
+      "Virtual Reality (VR)",
+      "Data Mining",
+      "Natural Language Search"
+    ],
+    "correct": "Virtual Reality (VR)"
+  }
+]

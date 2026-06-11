@@ -1,0 +1,235 @@
+[
+  {
+    "question": "Which three types of cloud architectures are most commonly used today? (Choose three.)",
+    "choices": [
+      "Local Cloud",
+      "Public Cloud",
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Personal Cloud"
+    ],
+    "correct": "Public Cloud"
+  },
+  {
+    "question": "How do public cloud infrastructures impact enterprise expenses compared to traditional data centers?",
+    "choices": [
+      "Increase in OpEx",
+      "Increase in CapEx",
+      "Decrease in CapEx",
+      "Equal expenditure in CapEx and OpEx"
+    ],
+    "correct": "Decrease in CapEx"
+  },
+  {
+    "question": "What is the advantage of implementing CI/CD?",
+    "choices": [
+      "Rapid new-version product releases",
+      "Obfuscation of increased code complexity",
+      "Users typically have six to nine months to adapt to incremental changes",
+      "Discards the now outdated agile framework for application development"
+    ],
+    "correct": "Rapid new-version product releases"
+  },
+  {
+    "question": "What does FaaS stand for in the context of serverless computing?",
+    "choices": [
+      "File-as-a-Service",
+      "Fast-as-a-Service",
+      "Function-as-a-Service",
+      "Framework-as-a-Service"
+    ],
+    "correct": "Function-as-a-Service"
+  },
+  {
+    "question": "What is the role of a hypervisor in virtual machine environments?",
+    "choices": [
+      "To support for serverless functions",
+      "To govern access to cloud infrastructure",
+      "To provide a foundation for container images",
+      "To run emulation services for multiple virtual machines"
+    ],
+    "correct": "To run emulation services for multiple virtual machines"
+  },
+  {
+    "question": "What is the primary advantage of using containers over virtual machines?",
+    "choices": [
+      "Direct access to real hardware",
+      "Support for serverless functions",
+      "Leverage of hypervisors to manage resources",
+      "Direct, efficient use of kernel data and compute structures"
+    ],
+    "correct": "Direct, efficient use of kernel data and compute structures"
+  },
+  {
+    "question": "Which service(s) do the major cloud service providers offer as primary service?",
+    "choices": [
+      "Identity validation",
+      "Corporate governance",
+      "Application development",
+      "Core compute, network, and service infrastructure"
+    ],
+    "correct": "Core compute, network, and service infrastructure"
+  },
+  {
+    "question": "What is the primary function of computer services in cloud-based solutions?",
+    "choices": [
+      "To manage network traffic within cloud environments",
+      "To grant permissions and manage access to cloud resources",
+      "To store data files in a safe, secure, and scalable environment",
+      "To provide the needed components to run application and websites"
+    ],
+    "correct": "To provide the needed components to run application and websites"
+  },
+  {
+    "question": "Which element is essential for effective logging and monitoring outcomes when leveraging the cloud?",
+    "choices": [
+      "Resource and anomaly visibility",
+      "DNS security",
+      "X.500 support",
+      "Identity provider services"
+    ],
+    "correct": "Resource and anomaly visibility"
+  },
+  {
+    "question": "In the context of cloud-based solutions, what is the main function of a security group?",
+    "choices": [
+      "To store and process large volumes of data",
+      "To monitor and manage cloud resource usage",
+      "To define rules for allowed traffic to and from a resource",
+      "To manage cloud-administrator access to cloud resources"
+    ],
+    "correct": "To define rules for allowed traffic to and from a resource"
+  },
+  {
+    "question": "Which cloud service is responsible for isolating cloud infrastructure and controlling access to virtual networks?",
+    "choices": [
+      "Identity services",
+      "Compute services",
+      "Database services",
+      "Networking services"
+    ],
+    "correct": "Networking services"
+  },
+  {
+    "question": "In the shared responsibility model, which aspect of security is the cloud service provider (CSP) responsible for?",
+    "choices": [
+      "Managing the organization's security policies",
+      "Securing the organization's data and applications",
+      "Ensuring the organization's compliance with standards",
+      "Securing hardware, operating system, network, and infrastructure services"
+    ],
+    "correct": "Securing hardware, operating system, network, and infrastructure services"
+  },
+  {
+    "question": "What advantage does a software-defined network (SDN) offer over a conventional network in a data center?",
+    "choices": [
+      "Built-in security features",
+      "Replacement of the need for hypervisors",
+      "Dynamic and automated network provisioning",
+      "Elimination of the need for firewalls in the data center"
+    ],
+    "correct": "Dynamic and automated network provisioning"
+  },
+  {
+    "question": "Which is typically the least significant vulnerability for the use of cloud application use?",
+    "choices": [
+      "Data leaks",
+      "Host hardware",
+      "User negligence",
+      "Administrator error"
+    ],
+    "correct": "Host hardware"
+  },
+  {
+    "question": "Which is an example of a cloud-services or cloud-account security risk?",
+    "choices": [
+      "Regionalization",
+      "Credential theft",
+      "Database partitioning",
+      "Two-factor authentication"
+    ],
+    "correct": "Credential theft"
+  },
+  {
+    "question": "Which cloud-delivered security service provides secure access to the network for the modern mobile workforce?",
+    "choices": [
+      "SD-WAN",
+      "IoT Security",
+      "Prisma SaaS",
+      "GlobalProtect"
+    ],
+    "correct": "GlobalProtect"
+  },
+  {
+    "question": "How does IaaS differ from traditional infrastructure in terms of resource provisioning?",
+    "choices": [
+      "IaaS supports fixed resource allocations only.",
+      "Traditional infrastructure uses a pay-as-you-go model.",
+      "Traditional infrastructure always requires manual resource provisioning.",
+      "IaaS provides on-demand resources that can be scaled up or down as needed."
+    ],
+    "correct": "IaaS provides on-demand resources that can be scaled up or down as needed."
+  },
+  {
+    "question": "In which two ways does IaaS contribute to cost savings for organizations compared to traditional infrastructure?",
+    "choices": [
+      "(Choose two)",
+      "IaaS reduces capital expenditures and optimizes costs.",
+      "IaaS allows for streamlined IT staff as it requires less in-house management.",
+      "IaaS uses a Pay-As-You-Go pricing model, ensuring companies only pay for the resources they use.",
+      "IaaS minimizes downtime and maintenance costs by utilizing the service provider's expertise and infrastructure."
+    ],
+    "correct": "IaaS reduces capital expenditures and optimizes costs."
+  },
+  {
+    "question": "What two key advantages does IaaS offer in terms of scalability compared to traditional infrastructure?",
+    "choices": [
+      "(Choose two)",
+      "IaaS allows the service provider to scale resources as required.",
+      "IaaS allows businesses to scale their resources up based on demand.",
+      "IaaS allows for easy and rapid scalability to accommodate changing needs.",
+      "IaaS allows businesses to scale their resources up or down based on demand."
+    ],
+    "correct": "IaaS allows for easy and rapid scalability to accommodate changing needs."
+  },
+  {
+    "question": "What does IaaS stand for in the context of cloud computing?",
+    "choices": [
+      "Internet as a Service",
+      "Infrastructure as a Service",
+      "International Alliance for Advanced Servers",
+      "Integrated Application and Architecture System"
+    ],
+    "correct": "Infrastructure as a Service"
+  },
+  {
+    "question": "What is a key benefit of IaaS in terms of geographical flexibility for businesses?",
+    "choices": [
+      "IaaS supports rapid scaling of resources, but only within a specific region.",
+      "IaaS primarily focuses on providing local data center options for businesses.",
+      "IaaS enables businesses to deploy resources globally and access them from anywhere.",
+      "IaaS requires businesses to maintain a large in-house IT team for global resource management."
+    ],
+    "correct": "IaaS enables businesses to deploy resources globally and access them from anywhere."
+  },
+  {
+    "question": "Which option is an example of a SaaS application?",
+    "choices": [
+      "Microsoft Azure",
+      "Amazon Web Services",
+      "Oracle Cloud Infrastructure",
+      "Dropbox"
+    ],
+    "correct": "Dropbox"
+  },
+  {
+    "question": "Which cloud computing service model provides consumers with the ability to deploy and run arbitrary software?",
+    "choices": [
+      "Software as a Service (SaaS)",
+      "Platform as a Service (PaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "Managed Security Services (MSS)"
+    ],
+    "correct": "Infrastructure as a Service (IaaS)"
+  }
+]

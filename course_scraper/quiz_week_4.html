@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCNSP Quiz</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0f1923;
+      color: #e8eaf0;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #fa582d;
+      letter-spacing: 1px;
+      margin: 0 0 6px;
+    }
+    header p {
+      color: #8892a4;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    #progress-bar-wrap {
+      background: #1e2b38;
+      border-radius: 8px;
+      height: 8px;
+      margin: 0 auto 32px;
+      max-width: 700px;
+      overflow: hidden;
+    }
+    #progress-bar {
+      height: 100%;
+      background: #fa582d;
+      width: 0%;
+      transition: width 0.4s ease;
+      border-radius: 8px;
+    }
+
+    #quiz-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .question-card {
+      display: none;
+      background: #1a2533;
+      border-radius: 14px;
+      padding: 32px 28px 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      animation: fadeIn 0.3s ease;
+    }
+    .question-card.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .question-number {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #fa582d;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 1.12rem;
+      line-height: 1.6;
+      margin-bottom: 26px;
+      color: #dce3ed;
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .choice-btn {
+      background: #243040;
+      border: 2px solid #2e3f54;
+      color: #dce3ed;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 0.97rem;
+      line-height: 1.4;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
+      word-break: break-word;
+    }
+    .choice-btn:hover:not(:disabled) {
+      background: #2d3f56;
+      border-color: #fa582d;
+      transform: translateY(-2px);
+    }
+
+    .choice-btn.correct {
+      background: #0e4a2a !important;
+      border-color: #27ae60 !important;
+      color: #5ddb96 !important;
+      cursor: default;
+    }
+    .choice-btn.wrong {
+      background: #4a0e0e !important;
+      border-color: #e74c3c !important;
+      color: #f08080 !important;
+      cursor: default;
+    }
+    .choice-btn:disabled {
+      cursor: default;
+    }
+
+    .feedback {
+      margin-top: 18px;
+      min-height: 24px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .feedback.correct { color: #27ae60; }
+    .feedback.wrong   { color: #e74c3c; }
+
+    .nav-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 22px;
+    }
+    .next-btn {
+      background: #fa582d;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 11px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .next-btn:hover { background: #e04420; transform: translateY(-1px); }
+
+    #result-card {
+      display: none;
+      text-align: center;
+      background: #1a2533;
+      border-radius: 14px;
+      padding: 48px 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      animation: fadeIn 0.4s ease;
+    }
+    #result-card h2 {
+      font-size: 2rem;
+      color: #fa582d;
+      margin-bottom: 12px;
+    }
+    #result-card .score-text {
+      font-size: 1.25rem;
+      color: #dce3ed;
+      margin-bottom: 8px;
+    }
+    #result-card .score-pct {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #27ae60;
+      margin: 12px 0 28px;
+    }
+    #restart-btn {
+      background: #fa582d;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 13px 36px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    #restart-btn:hover { background: #e04420; }
+
+    @media (max-width: 520px) {
+      .choices { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔐 PCNSP Quiz</h1>
+  <p>Palo Alto Networks Certified Network Security Professional</p>
+</header>
+
+<div id="progress-bar-wrap"><div id="progress-bar"></div></div>
+
+<div id="quiz-container">
+  <div class="question-card active" id="q0">
+    <div class="question-number">Spørsmål 1 av 23</div>
+    <div class="question-text">Which three types of cloud architectures are most commonly used today? (Choose three.)</div>
+    <div class="choices">
+      <button class="choice-btn" id="q0b0" onclick="answer(0, this, true, 'q0b0')">Public Cloud</button>
+      <button class="choice-btn" id="q0b1" onclick="answer(0, this, false, 'q0b0')">Local Cloud</button>
+      <button class="choice-btn" id="q0b2" onclick="answer(0, this, false, 'q0b0')">Hybrid Cloud</button>
+      <button class="choice-btn" id="q0b3" onclick="answer(0, this, false, 'q0b0')">Private Cloud</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(1)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q1">
+    <div class="question-number">Spørsmål 2 av 23</div>
+    <div class="question-text">How do public cloud infrastructures impact enterprise expenses compared to traditional data centers?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q1b0" onclick="answer(1, this, true, 'q1b0')">Decrease in CapEx</button>
+      <button class="choice-btn" id="q1b1" onclick="answer(1, this, false, 'q1b0')">Increase in CapEx</button>
+      <button class="choice-btn" id="q1b2" onclick="answer(1, this, false, 'q1b0')">Equal expenditure in CapEx and OpEx</button>
+      <button class="choice-btn" id="q1b3" onclick="answer(1, this, false, 'q1b0')">Increase in OpEx</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(2)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q2">
+    <div class="question-number">Spørsmål 3 av 23</div>
+    <div class="question-text">What is the advantage of implementing CI/CD?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q2b0" onclick="answer(2, this, false, 'q2b2')">Users typically have six to nine months to adapt to incremental changes</button>
+      <button class="choice-btn" id="q2b1" onclick="answer(2, this, false, 'q2b2')">Discards the now outdated agile framework for application development</button>
+      <button class="choice-btn" id="q2b2" onclick="answer(2, this, true, 'q2b2')">Rapid new-version product releases</button>
+      <button class="choice-btn" id="q2b3" onclick="answer(2, this, false, 'q2b2')">Obfuscation of increased code complexity</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(3)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q3">
+    <div class="question-number">Spørsmål 4 av 23</div>
+    <div class="question-text">What does FaaS stand for in the context of serverless computing?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q3b0" onclick="answer(3, this, false, 'q3b3')">File-as-a-Service</button>
+      <button class="choice-btn" id="q3b1" onclick="answer(3, this, false, 'q3b3')">Framework-as-a-Service</button>
+      <button class="choice-btn" id="q3b2" onclick="answer(3, this, false, 'q3b3')">Fast-as-a-Service</button>
+      <button class="choice-btn" id="q3b3" onclick="answer(3, this, true, 'q3b3')">Function-as-a-Service</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(4)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q4">
+    <div class="question-number">Spørsmål 5 av 23</div>
+    <div class="question-text">What is the role of a hypervisor in virtual machine environments?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q4b0" onclick="answer(4, this, false, 'q4b2')">To provide a foundation for container images</button>
+      <button class="choice-btn" id="q4b1" onclick="answer(4, this, false, 'q4b2')">To govern access to cloud infrastructure</button>
+      <button class="choice-btn" id="q4b2" onclick="answer(4, this, true, 'q4b2')">To run emulation services for multiple virtual machines</button>
+      <button class="choice-btn" id="q4b3" onclick="answer(4, this, false, 'q4b2')">To support for serverless functions</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(5)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q5">
+    <div class="question-number">Spørsmål 6 av 23</div>
+    <div class="question-text">What is the primary advantage of using containers over virtual machines?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q5b0" onclick="answer(5, this, false, 'q5b1')">Support for serverless functions</button>
+      <button class="choice-btn" id="q5b1" onclick="answer(5, this, true, 'q5b1')">Direct, efficient use of kernel data and compute structures</button>
+      <button class="choice-btn" id="q5b2" onclick="answer(5, this, false, 'q5b1')">Direct access to real hardware</button>
+      <button class="choice-btn" id="q5b3" onclick="answer(5, this, false, 'q5b1')">Leverage of hypervisors to manage resources</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(6)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q6">
+    <div class="question-number">Spørsmål 7 av 23</div>
+    <div class="question-text">Which service(s) do the major cloud service providers offer as primary service?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q6b0" onclick="answer(6, this, false, 'q6b1')">Identity validation</button>
+      <button class="choice-btn" id="q6b1" onclick="answer(6, this, true, 'q6b1')">Core compute, network, and service infrastructure</button>
+      <button class="choice-btn" id="q6b2" onclick="answer(6, this, false, 'q6b1')">Application development</button>
+      <button class="choice-btn" id="q6b3" onclick="answer(6, this, false, 'q6b1')">Corporate governance</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(7)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q7">
+    <div class="question-number">Spørsmål 8 av 23</div>
+    <div class="question-text">What is the primary function of computer services in cloud-based solutions?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q7b0" onclick="answer(7, this, true, 'q7b0')">To provide the needed components to run application and websites</button>
+      <button class="choice-btn" id="q7b1" onclick="answer(7, this, false, 'q7b0')">To store data files in a safe, secure, and scalable environment</button>
+      <button class="choice-btn" id="q7b2" onclick="answer(7, this, false, 'q7b0')">To grant permissions and manage access to cloud resources</button>
+      <button class="choice-btn" id="q7b3" onclick="answer(7, this, false, 'q7b0')">To manage network traffic within cloud environments</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(8)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q8">
+    <div class="question-number">Spørsmål 9 av 23</div>
+    <div class="question-text">Which element is essential for effective logging and monitoring outcomes when leveraging the cloud?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q8b0" onclick="answer(8, this, false, 'q8b2')">X.500 support</button>
+      <button class="choice-btn" id="q8b1" onclick="answer(8, this, false, 'q8b2')">Identity provider services</button>
+      <button class="choice-btn" id="q8b2" onclick="answer(8, this, true, 'q8b2')">Resource and anomaly visibility</button>
+      <button class="choice-btn" id="q8b3" onclick="answer(8, this, false, 'q8b2')">DNS security</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(9)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q9">
+    <div class="question-number">Spørsmål 10 av 23</div>
+    <div class="question-text">In the context of cloud-based solutions, what is the main function of a security group?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q9b0" onclick="answer(9, this, false, 'q9b1')">To monitor and manage cloud resource usage</button>
+      <button class="choice-btn" id="q9b1" onclick="answer(9, this, true, 'q9b1')">To define rules for allowed traffic to and from a resource</button>
+      <button class="choice-btn" id="q9b2" onclick="answer(9, this, false, 'q9b1')">To store and process large volumes of data</button>
+      <button class="choice-btn" id="q9b3" onclick="answer(9, this, false, 'q9b1')">To manage cloud-administrator access to cloud resources</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(10)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q10">
+    <div class="question-number">Spørsmål 11 av 23</div>
+    <div class="question-text">Which cloud service is responsible for isolating cloud infrastructure and controlling access to virtual networks?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q10b0" onclick="answer(10, this, false, 'q10b1')">Database services</button>
+      <button class="choice-btn" id="q10b1" onclick="answer(10, this, true, 'q10b1')">Networking services</button>
+      <button class="choice-btn" id="q10b2" onclick="answer(10, this, false, 'q10b1')">Compute services</button>
+      <button class="choice-btn" id="q10b3" onclick="answer(10, this, false, 'q10b1')">Identity services</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(11)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q11">
+    <div class="question-number">Spørsmål 12 av 23</div>
+    <div class="question-text">In the shared responsibility model, which aspect of security is the cloud service provider (CSP) responsible for?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q11b0" onclick="answer(11, this, true, 'q11b0')">Securing hardware, operating system, network, and infrastructure services</button>
+      <button class="choice-btn" id="q11b1" onclick="answer(11, this, false, 'q11b0')">Securing the organization&#x27;s data and applications</button>
+      <button class="choice-btn" id="q11b2" onclick="answer(11, this, false, 'q11b0')">Ensuring the organization&#x27;s compliance with standards</button>
+      <button class="choice-btn" id="q11b3" onclick="answer(11, this, false, 'q11b0')">Managing the organization&#x27;s security policies</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(12)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q12">
+    <div class="question-number">Spørsmål 13 av 23</div>
+    <div class="question-text">What advantage does a software-defined network (SDN) offer over a conventional network in a data center?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q12b0" onclick="answer(12, this, false, 'q12b1')">Built-in security features</button>
+      <button class="choice-btn" id="q12b1" onclick="answer(12, this, true, 'q12b1')">Dynamic and automated network provisioning</button>
+      <button class="choice-btn" id="q12b2" onclick="answer(12, this, false, 'q12b1')">Replacement of the need for hypervisors</button>
+      <button class="choice-btn" id="q12b3" onclick="answer(12, this, false, 'q12b1')">Elimination of the need for firewalls in the data center</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(13)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q13">
+    <div class="question-number">Spørsmål 14 av 23</div>
+    <div class="question-text">Which is typically the least significant vulnerability for the use of cloud application use?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q13b0" onclick="answer(13, this, false, 'q13b3')">Administrator error</button>
+      <button class="choice-btn" id="q13b1" onclick="answer(13, this, false, 'q13b3')">Data leaks</button>
+      <button class="choice-btn" id="q13b2" onclick="answer(13, this, false, 'q13b3')">User negligence</button>
+      <button class="choice-btn" id="q13b3" onclick="answer(13, this, true, 'q13b3')">Host hardware</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(14)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q14">
+    <div class="question-number">Spørsmål 15 av 23</div>
+    <div class="question-text">Which is an example of a cloud-services or cloud-account security risk?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q14b0" onclick="answer(14, this, false, 'q14b3')">Two-factor authentication</button>
+      <button class="choice-btn" id="q14b1" onclick="answer(14, this, false, 'q14b3')">Database partitioning</button>
+      <button class="choice-btn" id="q14b2" onclick="answer(14, this, false, 'q14b3')">Regionalization</button>
+      <button class="choice-btn" id="q14b3" onclick="answer(14, this, true, 'q14b3')">Credential theft</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(15)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q15">
+    <div class="question-number">Spørsmål 16 av 23</div>
+    <div class="question-text">Which cloud-delivered security service provides secure access to the network for the modern mobile workforce?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q15b0" onclick="answer(15, this, false, 'q15b2')">Prisma SaaS</button>
+      <button class="choice-btn" id="q15b1" onclick="answer(15, this, false, 'q15b2')">SD-WAN</button>
+      <button class="choice-btn" id="q15b2" onclick="answer(15, this, true, 'q15b2')">GlobalProtect</button>
+      <button class="choice-btn" id="q15b3" onclick="answer(15, this, false, 'q15b2')">IoT Security</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(16)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q16">
+    <div class="question-number">Spørsmål 17 av 23</div>
+    <div class="question-text">How does IaaS differ from traditional infrastructure in terms of resource provisioning?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q16b0" onclick="answer(16, this, true, 'q16b0')">IaaS provides on-demand resources that can be scaled up or down as needed.</button>
+      <button class="choice-btn" id="q16b1" onclick="answer(16, this, false, 'q16b0')">IaaS supports fixed resource allocations only.</button>
+      <button class="choice-btn" id="q16b2" onclick="answer(16, this, false, 'q16b0')">Traditional infrastructure uses a pay-as-you-go model.</button>
+      <button class="choice-btn" id="q16b3" onclick="answer(16, this, false, 'q16b0')">Traditional infrastructure always requires manual resource provisioning.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(17)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q17">
+    <div class="question-number">Spørsmål 18 av 23</div>
+    <div class="question-text">In which two ways does IaaS contribute to cost savings for organizations compared to traditional infrastructure?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q17b0" onclick="answer(17, this, false, 'q17b3')">IaaS allows for streamlined IT staff as it requires less in-house management.</button>
+      <button class="choice-btn" id="q17b1" onclick="answer(17, this, false, 'q17b3')">(Choose two)</button>
+      <button class="choice-btn" id="q17b2" onclick="answer(17, this, false, 'q17b3')">IaaS uses a Pay-As-You-Go pricing model, ensuring companies only pay for the resources they use.</button>
+      <button class="choice-btn" id="q17b3" onclick="answer(17, this, true, 'q17b3')">IaaS reduces capital expenditures and optimizes costs.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(18)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q18">
+    <div class="question-number">Spørsmål 19 av 23</div>
+    <div class="question-text">What two key advantages does IaaS offer in terms of scalability compared to traditional infrastructure?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q18b0" onclick="answer(18, this, false, 'q18b3')">IaaS allows businesses to scale their resources up based on demand.</button>
+      <button class="choice-btn" id="q18b1" onclick="answer(18, this, false, 'q18b3')">IaaS allows businesses to scale their resources up or down based on demand.</button>
+      <button class="choice-btn" id="q18b2" onclick="answer(18, this, false, 'q18b3')">(Choose two)</button>
+      <button class="choice-btn" id="q18b3" onclick="answer(18, this, true, 'q18b3')">IaaS allows for easy and rapid scalability to accommodate changing needs.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(19)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q19">
+    <div class="question-number">Spørsmål 20 av 23</div>
+    <div class="question-text">What does IaaS stand for in the context of cloud computing?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q19b0" onclick="answer(19, this, false, 'q19b3')">Internet as a Service</button>
+      <button class="choice-btn" id="q19b1" onclick="answer(19, this, false, 'q19b3')">Integrated Application and Architecture System</button>
+      <button class="choice-btn" id="q19b2" onclick="answer(19, this, false, 'q19b3')">International Alliance for Advanced Servers</button>
+      <button class="choice-btn" id="q19b3" onclick="answer(19, this, true, 'q19b3')">Infrastructure as a Service</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(20)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q20">
+    <div class="question-number">Spørsmål 21 av 23</div>
+    <div class="question-text">What is a key benefit of IaaS in terms of geographical flexibility for businesses?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q20b0" onclick="answer(20, this, false, 'q20b3')">IaaS requires businesses to maintain a large in-house IT team for global resource management.</button>
+      <button class="choice-btn" id="q20b1" onclick="answer(20, this, false, 'q20b3')">IaaS primarily focuses on providing local data center options for businesses.</button>
+      <button class="choice-btn" id="q20b2" onclick="answer(20, this, false, 'q20b3')">IaaS supports rapid scaling of resources, but only within a specific region.</button>
+      <button class="choice-btn" id="q20b3" onclick="answer(20, this, true, 'q20b3')">IaaS enables businesses to deploy resources globally and access them from anywhere.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(21)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q21">
+    <div class="question-number">Spørsmål 22 av 23</div>
+    <div class="question-text">Which option is an example of a SaaS application?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q21b0" onclick="answer(21, this, false, 'q21b3')">Microsoft Azure</button>
+      <button class="choice-btn" id="q21b1" onclick="answer(21, this, false, 'q21b3')">Amazon Web Services</button>
+      <button class="choice-btn" id="q21b2" onclick="answer(21, this, false, 'q21b3')">Oracle Cloud Infrastructure</button>
+      <button class="choice-btn" id="q21b3" onclick="answer(21, this, true, 'q21b3')">Dropbox</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(22)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q22">
+    <div class="question-number">Spørsmål 23 av 23</div>
+    <div class="question-text">Which cloud computing service model provides consumers with the ability to deploy and run arbitrary software?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q22b0" onclick="answer(22, this, false, 'q22b2')">Software as a Service (SaaS)</button>
+      <button class="choice-btn" id="q22b1" onclick="answer(22, this, false, 'q22b2')">Platform as a Service (PaaS)</button>
+      <button class="choice-btn" id="q22b2" onclick="answer(22, this, true, 'q22b2')">Infrastructure as a Service (IaaS)</button>
+      <button class="choice-btn" id="q22b3" onclick="answer(22, this, false, 'q22b2')">Managed Security Services (MSS)</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(23)">
+        Se resultat →
+      </button>
+    </div>
+  </div>
+
+  <div id="result-card">
+    <h2>Quiz fullført! 🎉</h2>
+    <div class="score-text">Du svarte riktig på <span id="correct-count">0</span> av <span id="total-count">0</span> spørsmål</div>
+    <div class="score-pct" id="score-pct">0%</div>
+    <button id="restart-btn" onclick="restartQuiz()">Ta quizen på nytt</button>
+  </div>
+</div>
+
+<script>
+  const TOTAL = 23;
+  let current = 0;
+  let score   = 0;
+
+  function showQuestion(index) {
+    document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active"));
+    const card = document.getElementById("q" + index);
+    if (card) card.classList.add("active");
+    document.getElementById("progress-bar").style.width =
+      (index / TOTAL * 100) + "%";
+  }
+
+  function answer(qIndex, btnEl, isCorrect, correctBtnId) {
+    // Disable all buttons in this question
+    const card = document.getElementById("q" + qIndex);
+    card.querySelectorAll(".choice-btn").forEach(b => b.disabled = true);
+
+    const feedback = card.querySelector(".feedback");
+    const nextBtn  = card.querySelector(".next-btn");
+
+    if (isCorrect) {
+      btnEl.classList.add("correct");
+      feedback.textContent = "✓ Riktig!";
+      feedback.className   = "feedback correct";
+      score++;
+    } else {
+      btnEl.classList.add("wrong");
+      document.getElementById(correctBtnId).classList.add("correct");
+      feedback.textContent = "✗ Feil – riktig svar er vist i grønt";
+      feedback.className   = "feedback wrong";
+    }
+
+    nextBtn.style.display = "inline-block";
+  }
+
+  function nextQuestion(index) {
+    if (index >= TOTAL) {
+      showResult();
+    } else {
+      current = index;
+      showQuestion(current);
+    }
+  }
+
+  function showResult() {
+    document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active"));
+    const rc = document.getElementById("result-card");
+    rc.style.display = "block";
+    document.getElementById("correct-count").textContent = score;
+    document.getElementById("total-count").textContent   = TOTAL;
+    const pct = Math.round(score / TOTAL * 100);
+    const pctEl = document.getElementById("score-pct");
+    pctEl.textContent = pct + "%";
+    pctEl.style.color = pct >= 80 ? "#27ae60" : pct >= 50 ? "#f39c12" : "#e74c3c";
+    document.getElementById("progress-bar").style.width = "100%";
+  }
+
+  function restartQuiz() {
+    score   = 0;
+    current = 0;
+    document.getElementById("result-card").style.display = "none";
+
+    // Reset all cards
+    document.querySelectorAll(".question-card").forEach(card => {
+      card.querySelectorAll(".choice-btn").forEach(b => {
+        b.disabled = false;
+        b.classList.remove("correct", "wrong");
+      });
+      const fb = card.querySelector(".feedback");
+      if (fb) { fb.textContent = ""; fb.className = "feedback"; }
+      const nb = card.querySelector(".next-btn");
+      if (nb) nb.style.display = "none";
+    });
+
+    showQuestion(0);
+  }
+
+  showQuestion(0);
+</script>
+</body>
+</html>

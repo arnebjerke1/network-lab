@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCNSP Quiz</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0f1923;
+      color: #e8eaf0;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #fa582d;
+      letter-spacing: 1px;
+      margin: 0 0 6px;
+    }
+    header p {
+      color: #8892a4;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    #progress-bar-wrap {
+      background: #1e2b38;
+      border-radius: 8px;
+      height: 8px;
+      margin: 0 auto 32px;
+      max-width: 700px;
+      overflow: hidden;
+    }
+    #progress-bar {
+      height: 100%;
+      background: #fa582d;
+      width: 0%;
+      transition: width 0.4s ease;
+      border-radius: 8px;
+    }
+
+    #quiz-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .question-card {
+      display: none;
+      background: #1a2533;
+      border-radius: 14px;
+      padding: 32px 28px 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      animation: fadeIn 0.3s ease;
+    }
+    .question-card.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .question-number {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #fa582d;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 1.12rem;
+      line-height: 1.6;
+      margin-bottom: 26px;
+      color: #dce3ed;
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .choice-btn {
+      background: #243040;
+      border: 2px solid #2e3f54;
+      color: #dce3ed;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 0.97rem;
+      line-height: 1.4;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
+      word-break: break-word;
+    }
+    .choice-btn:hover:not(:disabled) {
+      background: #2d3f56;
+      border-color: #fa582d;
+      transform: translateY(-2px);
+    }
+
+    .choice-btn.correct {
+      background: #0e4a2a !important;
+      border-color: #27ae60 !important;
+      color: #5ddb96 !important;
+      cursor: default;
+    }
+    .choice-btn.wrong {
+      background: #4a0e0e !important;
+      border-color: #e74c3c !important;
+      color: #f08080 !important;
+      cursor: default;
+    }
+    .choice-btn:disabled {
+      cursor: default;
+    }
+
+    .feedback {
+      margin-top: 18px;
+      min-height: 24px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .feedback.correct { color: #27ae60; }
+    .feedback.wrong   { color: #e74c3c; }
+
+    .nav-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 22px;
+    }
+    .next-btn {
+      background: #fa582d;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 11px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .next-btn:hover { background: #e04420; transform: translateY(-1px); }
+
+    #result-card {
+      display: none;
+      text-align: center;
+      background: #1a2533;
+      border-radius: 14px;
+      padding: 48px 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      animation: fadeIn 0.4s ease;
+    }
+    #result-card h2 {
+      font-size: 2rem;
+      color: #fa582d;
+      margin-bottom: 12px;
+    }
+    #result-card .score-text {
+      font-size: 1.25rem;
+      color: #dce3ed;
+      margin-bottom: 8px;
+    }
+    #result-card .score-pct {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #27ae60;
+      margin: 12px 0 28px;
+    }
+    #restart-btn {
+      background: #fa582d;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 13px 36px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    #restart-btn:hover { background: #e04420; }
+
+    @media (max-width: 520px) {
+      .choices { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔐 PCNSP Quiz</h1>
+  <p>Palo Alto Networks Certified Network Security Professional</p>
+</header>
+
+<div id="progress-bar-wrap"><div id="progress-bar"></div></div>
+
+<div id="quiz-container">
+  <div class="question-card active" id="q0">
+    <div class="question-number">Spørsmål 1 av 27</div>
+    <div class="question-text">How does SASE enhance user experience in a remote working environment?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q0b0" onclick="answer(0, this, false, 'q0b3')">Reduces latency</button>
+      <button class="choice-btn" id="q0b1" onclick="answer(0, this, false, 'q0b3')">Increases bandwidth availability</button>
+      <button class="choice-btn" id="q0b2" onclick="answer(0, this, false, 'q0b3')">Provides secure connectivity</button>
+      <button class="choice-btn" id="q0b3" onclick="answer(0, this, true, 'q0b3')">Optimizes performance and security</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(1)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q1">
+    <div class="question-number">Spørsmål 2 av 27</div>
+    <div class="question-text">Which security concept is SASE designed to replace or augment for modern network architectures?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q1b0" onclick="answer(1, this, false, 'q1b2')">Biometric authentication</button>
+      <button class="choice-btn" id="q1b1" onclick="answer(1, this, false, 'q1b2')">Intrusion Detection Systems (IDS)</button>
+      <button class="choice-btn" id="q1b2" onclick="answer(1, this, true, 'q1b2')">Castle-and-Moat perimeter security</button>
+      <button class="choice-btn" id="q1b3" onclick="answer(1, this, false, 'q1b2')">Network Address Translation (NAT)</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(2)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q2">
+    <div class="question-number">Spørsmål 3 av 27</div>
+    <div class="question-text">Which component is a fundamental part of the SASE architecture for secure access to applications and data?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q2b0" onclick="answer(2, this, true, 'q2b0')">Cloud-native security services</button>
+      <button class="choice-btn" id="q2b1" onclick="answer(2, this, false, 'q2b0')">Social media authentication</button>
+      <button class="choice-btn" id="q2b2" onclick="answer(2, this, false, 'q2b0')">Virtual reality integration</button>
+      <button class="choice-btn" id="q2b3" onclick="answer(2, this, false, 'q2b0')">Legacy hardware firewalls</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(3)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q3">
+    <div class="question-number">Spørsmål 4 av 27</div>
+    <div class="question-text">What is the primary advantage of SASE in terms of scalability for businesses?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q3b0" onclick="answer(3, this, false, 'q3b3')">Limited device compatibility</button>
+      <button class="choice-btn" id="q3b1" onclick="answer(3, this, false, 'q3b3')">Predictable IP assignments</button>
+      <button class="choice-btn" id="q3b2" onclick="answer(3, this, false, 'q3b3')">Centralized network control points</button>
+      <button class="choice-btn" id="q3b3" onclick="answer(3, this, true, 'q3b3')">Easily scalable cloud-native architecture</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(4)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q4">
+    <div class="question-number">Spørsmål 5 av 27</div>
+    <div class="question-text">Which accomplishment best describes the primary goal of SASE?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q4b0" onclick="answer(4, this, false, 'q4b2')">Centralized data storage</button>
+      <button class="choice-btn" id="q4b1" onclick="answer(4, this, false, 'q4b2')">Improved user interface</button>
+      <button class="choice-btn" id="q4b2" onclick="answer(4, this, true, 'q4b2')">Converged networking and security</button>
+      <button class="choice-btn" id="q4b3" onclick="answer(4, this, false, 'q4b2')">Enhanced network speed</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(5)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q5">
+    <div class="question-number">Spørsmål 6 av 27</div>
+    <div class="question-text">What does SASE stand for in IT networking?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q5b0" onclick="answer(5, this, false, 'q5b2')">Systematic Authentication and Security Environment</button>
+      <button class="choice-btn" id="q5b1" onclick="answer(5, this, false, 'q5b2')">Simplified Application Security Endpoint</button>
+      <button class="choice-btn" id="q5b2" onclick="answer(5, this, true, 'q5b2')">Secure Access Service Edge</button>
+      <button class="choice-btn" id="q5b3" onclick="answer(5, this, false, 'q5b2')">Strategic Access and Security Enhancement</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(6)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q6">
+    <div class="question-number">Spørsmål 7 av 27</div>
+    <div class="question-text">How does SASE contribute to a seamless and user-friendly mobile access experience?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q6b0" onclick="answer(6, this, true, 'q6b0')">Integrates with Single Sign-On (SSO) solutions.</button>
+      <button class="choice-btn" id="q6b1" onclick="answer(6, this, false, 'q6b0')">Requires complex authentication processes.</button>
+      <button class="choice-btn" id="q6b2" onclick="answer(6, this, false, 'q6b0')">Relies on static IP assignments.</button>
+      <button class="choice-btn" id="q6b3" onclick="answer(6, this, false, 'q6b0')">Implements lengthy authorization delays.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(7)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q7">
+    <div class="question-number">Spørsmål 8 av 27</div>
+    <div class="question-text">How does SASE improve the security posture for mobile users compared to traditional approaches?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q7b0" onclick="answer(7, this, false, 'q7b3')">Uses open guest networks.</button>
+      <button class="choice-btn" id="q7b1" onclick="answer(7, this, false, 'q7b3')">Relies on basic firewall protection.</button>
+      <button class="choice-btn" id="q7b2" onclick="answer(7, this, false, 'q7b3')">Depends on user-based security policies.</button>
+      <button class="choice-btn" id="q7b3" onclick="answer(7, this, true, 'q7b3')">Provides a zero trust security model.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(8)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q8">
+    <div class="question-number">Spørsmål 9 av 27</div>
+    <div class="question-text">What benefit does SASE offer to mobile users in terms of device flexibility and accessibility?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q8b0" onclick="answer(8, this, false, 'q8b3')">Restricts access to corporate devices only.</button>
+      <button class="choice-btn" id="q8b1" onclick="answer(8, this, false, 'q8b3')">Provides improved security via specialized hardware.</button>
+      <button class="choice-btn" id="q8b2" onclick="answer(8, this, false, 'q8b3')">Enforces device-specific access restrictions.</button>
+      <button class="choice-btn" id="q8b3" onclick="answer(8, this, true, 'q8b3')">Supports access from any device, anywhere.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(9)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q9">
+    <div class="question-number">Spørsmål 10 av 27</div>
+    <div class="question-text">In the context of remote access, how does SASE contribute to improved visibility and control for IT administrators?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q9b0" onclick="answer(9, this, true, 'q9b0')">Through comprehensive visibility into user activities.</button>
+      <button class="choice-btn" id="q9b1" onclick="answer(9, this, false, 'q9b0')">Through insights into user activities, focusing specifically on local networks.</button>
+      <button class="choice-btn" id="q9b2" onclick="answer(9, this, false, 'q9b0')">Through prioritizing compatibility with legacy systems.</button>
+      <button class="choice-btn" id="q9b3" onclick="answer(9, this, false, 'q9b0')">Through focusing on enhancing network speed and connectivity.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(10)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q10">
+    <div class="question-number">Spørsmål 11 av 27</div>
+    <div class="question-text">In which two ways does SASE contribute to cost savings for organizations with a mobile workforce?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q10b0" onclick="answer(10, this, false, 'q10b2')">(Choose two)</button>
+      <button class="choice-btn" id="q10b1" onclick="answer(10, this, false, 'q10b2')">By reducing the need for backhaul to data centers.</button>
+      <button class="choice-btn" id="q10b2" onclick="answer(10, this, true, 'q10b2')">By reducing administrative overhead.</button>
+      <button class="choice-btn" id="q10b3" onclick="answer(10, this, false, 'q10b2')">By routing application traffic over dedicated VPN connections.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(11)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q11">
+    <div class="question-number">Spørsmål 12 av 27</div>
+    <div class="question-text">What advantage does SASE offer for branch offices in terms of network management?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q11b0" onclick="answer(11, this, false, 'q11b3')">SASE requires complex manual management for branches.</button>
+      <button class="choice-btn" id="q11b1" onclick="answer(11, this, false, 'q11b3')">SASE supports only large branches, not smaller offices.</button>
+      <button class="choice-btn" id="q11b2" onclick="answer(11, this, false, 'q11b3')">Traditional networks are easier to manage for branch offices.</button>
+      <button class="choice-btn" id="q11b3" onclick="answer(11, this, true, 'q11b3')">SASE centralizes network management, making it simpler to support branches.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(12)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q12">
+    <div class="question-number">Spørsmål 13 av 27</div>
+    <div class="question-text">What role does SASE play in optimizing the performance of applications used by branch offices?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q12b0" onclick="answer(12, this, false, 'q12b1')">SASE relies on branch-specific optimization tools.</button>
+      <button class="choice-btn" id="q12b1" onclick="answer(12, this, true, 'q12b1')">SASE optimizes application performance for branches by providing direct and secure access.</button>
+      <button class="choice-btn" id="q12b2" onclick="answer(12, this, false, 'q12b1')">Traditional networks are more efficient in managing application performance for branches.</button>
+      <button class="choice-btn" id="q12b3" onclick="answer(12, this, false, 'q12b1')">SASE has no impact on application performance.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(13)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q13">
+    <div class="question-number">Spørsmål 14 av 27</div>
+    <div class="question-text">How does SASE support the agility of branch networks in responding to changing business needs?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q13b0" onclick="answer(13, this, false, 'q13b2')">SASE limits the agility of branch networks.</button>
+      <button class="choice-btn" id="q13b1" onclick="answer(13, this, false, 'q13b2')">SASE requires manual reconfiguration for agile branch networks.</button>
+      <button class="choice-btn" id="q13b2" onclick="answer(13, this, true, 'q13b2')">SASE enables branches to scale and adapt quickly to changing requirements.</button>
+      <button class="choice-btn" id="q13b3" onclick="answer(13, this, false, 'q13b2')">Traditional networks are more agile than SASE for branch offices.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(14)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q14">
+    <div class="question-number">Spørsmål 15 av 27</div>
+    <div class="question-text">How does SASE improve connectivity for branches in different locations?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q14b0" onclick="answer(14, this, true, 'q14b0')">SASE enables branches to connect securely and efficiently, regardless of their location.</button>
+      <button class="choice-btn" id="q14b1" onclick="answer(14, this, false, 'q14b0')">SASE requires all branches to be physically close to each other.</button>
+      <button class="choice-btn" id="q14b2" onclick="answer(14, this, false, 'q14b0')">SASE only works well for a single branch.</button>
+      <button class="choice-btn" id="q14b3" onclick="answer(14, this, false, 'q14b0')">Traditional networking is more effective for branch connectivity.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(15)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q15">
+    <div class="question-number">Spørsmål 16 av 27</div>
+    <div class="question-text">How does SASE contribute to the resilience of branch networks in the face of network disruptions?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q15b0" onclick="answer(15, this, false, 'q15b3')">SASE has no impact on branch network resilience.</button>
+      <button class="choice-btn" id="q15b1" onclick="answer(15, this, false, 'q15b3')">Traditional networking offers better resilience for branch offices.</button>
+      <button class="choice-btn" id="q15b2" onclick="answer(15, this, false, 'q15b3')">SASE requires always-on backup connections for branch resilience.</button>
+      <button class="choice-btn" id="q15b3" onclick="answer(15, this, true, 'q15b3')">SASE provides built-in redundancy, improving the resilience of branch networks.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(16)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q16">
+    <div class="question-number">Spørsmål 17 av 27</div>
+    <div class="question-text">How is application performance optimized in SD-WAN networks?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q16b0" onclick="answer(16, this, false, 'q16b2')">Through centralized network control.</button>
+      <button class="choice-btn" id="q16b1" onclick="answer(16, this, false, 'q16b2')">Through decentralized network management.</button>
+      <button class="choice-btn" id="q16b2" onclick="answer(16, this, true, 'q16b2')">Through intelligent traffic routing.</button>
+      <button class="choice-btn" id="q16b3" onclick="answer(16, this, false, 'q16b2')">Through static routing.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(17)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q17">
+    <div class="question-number">Spørsmål 18 av 27</div>
+    <div class="question-text">In which two ways does SD-WAN enhance the resilience of network connections?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q17b0" onclick="answer(17, this, false, 'q17b2')">Uses dynamic path selection to intelligently choose the best path.</button>
+      <button class="choice-btn" id="q17b1" onclick="answer(17, this, false, 'q17b2')">(Choose two)</button>
+      <button class="choice-btn" id="q17b2" onclick="answer(17, this, true, 'q17b2')">Provides built-in redundancy.</button>
+      <button class="choice-btn" id="q17b3" onclick="answer(17, this, false, 'q17b2')">Simplifies bandwidth planning.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(18)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q18">
+    <div class="question-number">Spørsmål 19 av 27</div>
+    <div class="question-text">How does SD-WAN address the need for secure connections among different locations?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q18b0" onclick="answer(18, this, false, 'q18b1')">By forcing convergence on a single cryptographic protocol.</button>
+      <button class="choice-btn" id="q18b1" onclick="answer(18, this, true, 'q18b1')">By embedding security measures into the network.</button>
+      <button class="choice-btn" id="q18b2" onclick="answer(18, this, false, 'q18b1')">By reinforcing perimeter security.</button>
+      <button class="choice-btn" id="q18b3" onclick="answer(18, this, false, 'q18b1')">By introducing complex security appliances.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(19)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q19">
+    <div class="question-number">Spørsmål 20 av 27</div>
+    <div class="question-text">Which network improvement does SD-WAN primarily focus on?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q19b0" onclick="answer(19, this, true, 'q19b0')">User experience</button>
+      <button class="choice-btn" id="q19b1" onclick="answer(19, this, false, 'q19b0')">Device security</button>
+      <button class="choice-btn" id="q19b2" onclick="answer(19, this, false, 'q19b0')">Private connectivity</button>
+      <button class="choice-btn" id="q19b3" onclick="answer(19, this, false, 'q19b0')">Network speed</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(20)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q20">
+    <div class="question-number">Spørsmål 21 av 27</div>
+    <div class="question-text">What does SD-WAN aim to simplify in network management?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q20b0" onclick="answer(20, this, false, 'q20b2')">Security policies</button>
+      <button class="choice-btn" id="q20b1" onclick="answer(20, this, false, 'q20b2')">Hardware procurement</button>
+      <button class="choice-btn" id="q20b2" onclick="answer(20, this, true, 'q20b2')">Network configuration</button>
+      <button class="choice-btn" id="q20b3" onclick="answer(20, this, false, 'q20b2')">Application deployment</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(21)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q21">
+    <div class="question-number">Spørsmål 22 av 27</div>
+    <div class="question-text">How does Digital Experience Monitoring (DEM) contribute to understanding user behavior in digital environments?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q21b0" onclick="answer(21, this, true, 'q21b0')">By analyzing user behavior to improve experiences.</button>
+      <button class="choice-btn" id="q21b1" onclick="answer(21, this, false, 'q21b0')">By examining user disengagement patterns.</button>
+      <button class="choice-btn" id="q21b2" onclick="answer(21, this, false, 'q21b0')">By focusing on non-user-related data sources.</button>
+      <button class="choice-btn" id="q21b3" onclick="answer(21, this, false, 'q21b0')">By monitoring access to user data.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(22)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q22">
+    <div class="question-number">Spørsmål 23 av 27</div>
+    <div class="question-text">What does Digital Experience Monitoring (DEM) seek to achieve in terms of digital interactions for organizations?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q22b0" onclick="answer(22, this, true, 'q22b0')">Optimization and elevation of digital experiences.</button>
+      <button class="choice-btn" id="q22b1" onclick="answer(22, this, false, 'q22b0')">Monitoring of a user&#x27;s online activity.</button>
+      <button class="choice-btn" id="q22b2" onclick="answer(22, this, false, 'q22b0')">Simplification of user feedback.</button>
+      <button class="choice-btn" id="q22b3" onclick="answer(22, this, false, 'q22b0')">Reduction of digital fatigue.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(23)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q23">
+    <div class="question-number">Spørsmål 24 av 27</div>
+    <div class="question-text">What does Digital Experience Monitoring (DEM) focus on when assessing the performance of digital applications?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q23b0" onclick="answer(23, this, false, 'q23b3')">Application usability.</button>
+      <button class="choice-btn" id="q23b1" onclick="answer(23, this, false, 'q23b3')">Network bandwidth availability.</button>
+      <button class="choice-btn" id="q23b2" onclick="answer(23, this, false, 'q23b3')">Physical infrastructure.</button>
+      <button class="choice-btn" id="q23b3" onclick="answer(23, this, true, 'q23b3')">User satisfaction and experience.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(24)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q24">
+    <div class="question-number">Spørsmål 25 av 27</div>
+    <div class="question-text">How does Digital Experience Monitoring (DEM) support the customization of digital experiences for different user segments?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q24b0" onclick="answer(24, this, false, 'q24b3')">By restricting access to personalized content.</button>
+      <button class="choice-btn" id="q24b1" onclick="answer(24, this, false, 'q24b3')">By focusing on standardized digital experiences for all users.</button>
+      <button class="choice-btn" id="q24b2" onclick="answer(24, this, false, 'q24b3')">By prioritizing system stability over customization.</button>
+      <button class="choice-btn" id="q24b3" onclick="answer(24, this, true, 'q24b3')">By analyzing user data and tailoring experiences.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(25)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q25">
+    <div class="question-number">Spørsmål 26 av 27</div>
+    <div class="question-text">Which goal for e-commerce does Digital Experience Monitoring (DEM) aim to help businesses achieve?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q25b0" onclick="answer(25, this, true, 'q25b0')">A seamless and satisfying online shopping experience.</button>
+      <button class="choice-btn" id="q25b1" onclick="answer(25, this, false, 'q25b0')">Reduced checkout complexity.</button>
+      <button class="choice-btn" id="q25b2" onclick="answer(25, this, false, 'q25b0')">Better collection of customer feedback.</button>
+      <button class="choice-btn" id="q25b3" onclick="answer(25, this, false, 'q25b0')">Optimization of future ad campaigns.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(26)">
+        Neste →
+      </button>
+    </div>
+  </div>
+  <div class="question-card" id="q26">
+    <div class="question-number">Spørsmål 27 av 27</div>
+    <div class="question-text">In what way does DEM&#x27;s user feedback mechanism contribute to SASE&#x27;s objectives?</div>
+    <div class="choices">
+      <button class="choice-btn" id="q26b0" onclick="answer(26, this, true, 'q26b0')">By improving the user experience.</button>
+      <button class="choice-btn" id="q26b1" onclick="answer(26, this, false, 'q26b0')">By encrypting internal emails.</button>
+      <button class="choice-btn" id="q26b2" onclick="answer(26, this, false, 'q26b0')">By monitoring network conditions in real-time.</button>
+      <button class="choice-btn" id="q26b3" onclick="answer(26, this, false, 'q26b0')">By enhancing user authentication.</button>
+    </div>
+    <div class="feedback"></div>
+    <div class="nav-row">
+      <button class="next-btn" onclick="nextQuestion(27)">
+        Se resultat →
+      </button>
+    </div>
+  </div>
+
+  <div id="result-card">
+    <h2>Quiz fullført! 🎉</h2>
+    <div class="score-text">Du svarte riktig på <span id="correct-count">0</span> av <span id="total-count">0</span> spørsmål</div>
+    <div class="score-pct" id="score-pct">0%</div>
+    <button id="restart-btn" onclick="restartQuiz()">Ta quizen på nytt</button>
+  </div>
+</div>
+
+<script>
+  const TOTAL = 27;
+  let current = 0;
+  let score   = 0;
+
+  function showQuestion(index) {
+    document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active"));
+    const card = document.getElementById("q" + index);
+    if (card) card.classList.add("active");
+    document.getElementById("progress-bar").style.width =
+      (index / TOTAL * 100) + "%";
+  }
+
+  function answer(qIndex, btnEl, isCorrect, correctBtnId) {
+    // Disable all buttons in this question
+    const card = document.getElementById("q" + qIndex);
+    card.querySelectorAll(".choice-btn").forEach(b => b.disabled = true);
+
+    const feedback = card.querySelector(".feedback");
+    const nextBtn  = card.querySelector(".next-btn");
+
+    if (isCorrect) {
+      btnEl.classList.add("correct");
+      feedback.textContent = "✓ Riktig!";
+      feedback.className   = "feedback correct";
+      score++;
+    } else {
+      btnEl.classList.add("wrong");
+      document.getElementById(correctBtnId).classList.add("correct");
+      feedback.textContent = "✗ Feil – riktig svar er vist i grønt";
+      feedback.className   = "feedback wrong";
+    }
+
+    nextBtn.style.display = "inline-block";
+  }
+
+  function nextQuestion(index) {
+    if (index >= TOTAL) {
+      showResult();
+    } else {
+      current = index;
+      showQuestion(current);
+    }
+  }
+
+  function showResult() {
+    document.querySelectorAll(".question-card").forEach(c => c.classList.remove("active"));
+    const rc = document.getElementById("result-card");
+    rc.style.display = "block";
+    document.getElementById("correct-count").textContent = score;
+    document.getElementById("total-count").textContent   = TOTAL;
+    const pct = Math.round(score / TOTAL * 100);
+    const pctEl = document.getElementById("score-pct");
+    pctEl.textContent = pct + "%";
+    pctEl.style.color = pct >= 80 ? "#27ae60" : pct >= 50 ? "#f39c12" : "#e74c3c";
+    document.getElementById("progress-bar").style.width = "100%";
+  }
+
+  function restartQuiz() {
+    score   = 0;
+    current = 0;
+    document.getElementById("result-card").style.display = "none";
+
+    // Reset all cards
+    document.querySelectorAll(".question-card").forEach(card => {
+      card.querySelectorAll(".choice-btn").forEach(b => {
+        b.disabled = false;
+        b.classList.remove("correct", "wrong");
+      });
+      const fb = card.querySelector(".feedback");
+      if (fb) { fb.textContent = ""; fb.className = "feedback"; }
+      const nb = card.querySelector(".next-btn");
+      if (nb) nb.style.display = "none";
+    });
+
+    showQuestion(0);
+  }
+
+  showQuestion(0);
+</script>
+</body>
+</html>

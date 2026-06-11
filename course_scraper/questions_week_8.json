@@ -1,0 +1,274 @@
+[
+  {
+    "question": "How does SASE enhance user experience in a remote working environment?",
+    "choices": [
+      "Reduces latency",
+      "Increases bandwidth availability",
+      "Provides secure connectivity",
+      "Optimizes performance and security"
+    ],
+    "correct": "Optimizes performance and security"
+  },
+  {
+    "question": "Which security concept is SASE designed to replace or augment for modern network architectures?",
+    "choices": [
+      "Biometric authentication",
+      "Intrusion Detection Systems (IDS)",
+      "Network Address Translation (NAT)",
+      "Castle-and-Moat perimeter security"
+    ],
+    "correct": "Castle-and-Moat perimeter security"
+  },
+  {
+    "question": "Which component is a fundamental part of the SASE architecture for secure access to applications and data?",
+    "choices": [
+      "Virtual reality integration",
+      "Legacy hardware firewalls",
+      "Social media authentication",
+      "Cloud-native security services"
+    ],
+    "correct": "Cloud-native security services"
+  },
+  {
+    "question": "What is the primary advantage of SASE in terms of scalability for businesses?",
+    "choices": [
+      "Predictable IP assignments",
+      "Limited device compatibility",
+      "Centralized network control points",
+      "Easily scalable cloud-native architecture"
+    ],
+    "correct": "Easily scalable cloud-native architecture"
+  },
+  {
+    "question": "Which accomplishment best describes the primary goal of SASE?",
+    "choices": [
+      "Improved user interface",
+      "Centralized data storage",
+      "Enhanced network speed",
+      "Converged networking and security"
+    ],
+    "correct": "Converged networking and security"
+  },
+  {
+    "question": "What does SASE stand for in IT networking?",
+    "choices": [
+      "Secure Access Service Edge",
+      "Simplified Application Security Endpoint",
+      "Strategic Access and Security Enhancement",
+      "Systematic Authentication and Security Environment"
+    ],
+    "correct": "Secure Access Service Edge"
+  },
+  {
+    "question": "How does SASE contribute to a seamless and user-friendly mobile access experience?",
+    "choices": [
+      "Relies on static IP assignments.",
+      "Implements lengthy authorization delays.",
+      "Requires complex authentication processes.",
+      "Integrates with Single Sign-On (SSO) solutions."
+    ],
+    "correct": "Integrates with Single Sign-On (SSO) solutions."
+  },
+  {
+    "question": "How does SASE improve the security posture for mobile users compared to traditional approaches?",
+    "choices": [
+      "Uses open guest networks.",
+      "Relies on basic firewall protection.",
+      "Provides a zero trust security model.",
+      "Depends on user-based security policies."
+    ],
+    "correct": "Provides a zero trust security model."
+  },
+  {
+    "question": "What benefit does SASE offer to mobile users in terms of device flexibility and accessibility?",
+    "choices": [
+      "Restricts access to corporate devices only.",
+      "Supports access from any device, anywhere.",
+      "Enforces device-specific access restrictions.",
+      "Provides improved security via specialized hardware."
+    ],
+    "correct": "Supports access from any device, anywhere."
+  },
+  {
+    "question": "In the context of remote access, how does SASE contribute to improved visibility and control for IT administrators?",
+    "choices": [
+      "Through comprehensive visibility into user activities.",
+      "Through prioritizing compatibility with legacy systems.",
+      "Through focusing on enhancing network speed and connectivity.",
+      "Through insights into user activities, focusing specifically on local networks."
+    ],
+    "correct": "Through comprehensive visibility into user activities."
+  },
+  {
+    "question": "In which two ways does SASE contribute to cost savings for organizations with a mobile workforce?",
+    "choices": [
+      "(Choose two)",
+      "By reducing administrative overhead.",
+      "By reducing the need for backhaul to data centers.",
+      "By routing application traffic over dedicated VPN connections.",
+      "By connecting users directly to the service, regardless of their location."
+    ],
+    "correct": "By reducing administrative overhead."
+  },
+  {
+    "question": "What advantage does SASE offer for branch offices in terms of network management?",
+    "choices": [
+      "SASE supports only large branches, not smaller offices.",
+      "SASE requires complex manual management for branches.",
+      "Traditional networks are easier to manage for branch offices.",
+      "SASE centralizes network management, making it simpler to support branches."
+    ],
+    "correct": "SASE centralizes network management, making it simpler to support branches."
+  },
+  {
+    "question": "What role does SASE play in optimizing the performance of applications used by branch offices?",
+    "choices": [
+      "SASE has no impact on application performance.",
+      "SASE relies on branch-specific optimization tools.",
+      "Traditional networks are more efficient in managing application performance for branches.",
+      "SASE optimizes application performance for branches by providing direct and secure access."
+    ],
+    "correct": "SASE optimizes application performance for branches by providing direct and secure access."
+  },
+  {
+    "question": "How does SASE support the agility of branch networks in responding to changing business needs?",
+    "choices": [
+      "SASE limits the agility of branch networks.",
+      "SASE requires manual reconfiguration for agile branch networks.",
+      "Traditional networks are more agile than SASE for branch offices.",
+      "SASE enables branches to scale and adapt quickly to changing requirements."
+    ],
+    "correct": "SASE enables branches to scale and adapt quickly to changing requirements."
+  },
+  {
+    "question": "How does SASE improve connectivity for branches in different locations?",
+    "choices": [
+      "SASE only works well for a single branch.",
+      "Traditional networking is more effective for branch connectivity.",
+      "SASE requires all branches to be physically close to each other.",
+      "SASE enables branches to connect securely and efficiently, regardless of their location."
+    ],
+    "correct": "SASE enables branches to connect securely and efficiently, regardless of their location."
+  },
+  {
+    "question": "How does SASE contribute to the resilience of branch networks in the face of network disruptions?",
+    "choices": [
+      "SASE has no impact on branch network resilience.",
+      "Traditional networking offers better resilience for branch offices.",
+      "SASE requires always-on backup connections for branch resilience.",
+      "SASE provides built-in redundancy, improving the resilience of branch networks."
+    ],
+    "correct": "SASE provides built-in redundancy, improving the resilience of branch networks."
+  },
+  {
+    "question": "How is application performance optimized in SD-WAN networks?",
+    "choices": [
+      "Through static routing.",
+      "Through intelligent traffic routing.",
+      "Through centralized network control.",
+      "Through decentralized network management."
+    ],
+    "correct": "Through intelligent traffic routing."
+  },
+  {
+    "question": "In which two ways does SD-WAN enhance the resilience of network connections?",
+    "choices": [
+      "(Choose two)",
+      "Provides built-in redundancy.",
+      "Simplifies bandwidth planning.",
+      "Provides improved visibility into network failures.",
+      "Uses dynamic path selection to intelligently choose the best path."
+    ],
+    "correct": "Provides built-in redundancy."
+  },
+  {
+    "question": "How does SD-WAN address the need for secure connections among different locations?",
+    "choices": [
+      "By reinforcing perimeter security.",
+      "By introducing complex security appliances.",
+      "By embedding security measures into the network.",
+      "By forcing convergence on a single cryptographic protocol."
+    ],
+    "correct": "By embedding security measures into the network."
+  },
+  {
+    "question": "Which network improvement does SD-WAN primarily focus on?",
+    "choices": [
+      "Network speed",
+      "Device security",
+      "User experience",
+      "Private connectivity"
+    ],
+    "correct": "User experience"
+  },
+  {
+    "question": "What does SD-WAN aim to simplify in network management?",
+    "choices": [
+      "Security policies",
+      "Network configuration",
+      "Hardware procurement",
+      "Application deployment"
+    ],
+    "correct": "Network configuration"
+  },
+  {
+    "question": "How does Digital Experience Monitoring (DEM) contribute to understanding user behavior in digital environments?",
+    "choices": [
+      "By monitoring access to user data.",
+      "By examining user disengagement patterns.",
+      "By focusing on non-user-related data sources.",
+      "By analyzing user behavior to improve experiences."
+    ],
+    "correct": "By analyzing user behavior to improve experiences."
+  },
+  {
+    "question": "What does Digital Experience Monitoring (DEM) seek to achieve in terms of digital interactions for organizations?",
+    "choices": [
+      "Reduction of digital fatigue.",
+      "Simplification of user feedback.",
+      "Monitoring of a user's online activity.",
+      "Optimization and elevation of digital experiences."
+    ],
+    "correct": "Optimization and elevation of digital experiences."
+  },
+  {
+    "question": "What does Digital Experience Monitoring (DEM) focus on when assessing the performance of digital applications?",
+    "choices": [
+      "Application usability.",
+      "Physical infrastructure.",
+      "Network bandwidth availability.",
+      "User satisfaction and experience."
+    ],
+    "correct": "User satisfaction and experience."
+  },
+  {
+    "question": "How does Digital Experience Monitoring (DEM) support the customization of digital experiences for different user segments?",
+    "choices": [
+      "By restricting access to personalized content.",
+      "By analyzing user data and tailoring experiences.",
+      "By prioritizing system stability over customization.",
+      "By focusing on standardized digital experiences for all users."
+    ],
+    "correct": "By analyzing user data and tailoring experiences."
+  },
+  {
+    "question": "Which goal for e-commerce does Digital Experience Monitoring (DEM) aim to help businesses achieve?",
+    "choices": [
+      "Reduced checkout complexity.",
+      "Optimization of future ad campaigns.",
+      "Better collection of customer feedback.",
+      "A seamless and satisfying online shopping experience."
+    ],
+    "correct": "A seamless and satisfying online shopping experience."
+  },
+  {
+    "question": "In what way does DEM's user feedback mechanism contribute to SASE's objectives?",
+    "choices": [
+      "By encrypting internal emails.",
+      "By enhancing user authentication.",
+      "By improving the user experience.",
+      "By monitoring network conditions in real-time."
+    ],
+    "correct": "By improving the user experience."
+  }
+]

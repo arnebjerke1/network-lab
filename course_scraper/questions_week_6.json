@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is a major issue caused by disconnected solutions and tools in network security management?",
+    "choices": [
+      "Improved integration and automation",
+      "Increased visibility into network security",
+      "Simplified management of complex security policies",
+      "Difficulty administering and managing firewalls and security capabilities"
+    ],
+    "correct": "Difficulty administering and managing firewalls and security capabilities"
+  },
+  {
+    "question": "What does \"single-pane-of-glass management\" refer to in network security?",
+    "choices": [
+      "Focusing on one specific security threat at a time",
+      "Implementing a single firewall for the entire network",
+      "Concentrating on a single security policy for the network",
+      "Using a single management console for all security tools"
+    ],
+    "correct": "Using a single management console for all security tools"
+  },
+  {
+    "question": "Why do organizations prefer integrating firewall management with other third-party tools?",
+    "choices": [
+      "To improve operational efficiency",
+      "To increase the complexity of the security system",
+      "To focus on maintaining individual security policies",
+      "To reduce the need for a single-pane-of-glass management"
+    ],
+    "correct": "To improve operational efficiency"
+  },
+  {
+    "question": "Where in Panorama can you access summarized log information?",
+    "choices": [
+      "Monitor",
+      "Templates",
+      "Device Groups",
+      "Application Command Center"
+    ],
+    "correct": "Application Command Center"
+  },
+  {
+    "question": "What are the two main reasons for deploying a Panorama server? (Choose two.)",
+    "choices": [
+      "To streamline the management of NGFWs",
+      "To provide a web interface for log collectors",
+      "To process offloaded decryption tasks for NGFWs",
+      "To provide centralized visibility into network traffic"
+    ],
+    "correct": "To streamline the management of NGFWs"
+  },
+  {
+    "question": "What is a key advantage of using Panorama management server?",
+    "choices": [
+      "Elimination of repetitive firewall deployment tasks",
+      "Bypass of license validation for registered firewalls",
+      "Enablement of direct internet access for all firewalls",
+      "Access to a web interface for Dedicated Log Collectors"
+    ],
+    "correct": "Elimination of repetitive firewall deployment tasks"
+  },
+  {
+    "question": "Which two data sources does Panorama use for generating reports? (Choose two.)",
+    "choices": [
+      "External dynamic lists",
+      "The local Panorama database",
+      "The Application Command Center (ACC)",
+      "The remote firewalls managed by Panorama"
+    ],
+    "correct": "The local Panorama database"
+  },
+  {
+    "question": "Which is a key function of Panorama?",
+    "choices": [
+      "To provide on-premises sandbox analysis",
+      "To aggregate logging data from multiple NGFWs",
+      "To automate local-area and wide-area network mapping",
+      "To perform offloaded decryption and encryption tasks for NGFWs"
+    ],
+    "correct": "To aggregate logging data from multiple NGFWs"
+  }
+]

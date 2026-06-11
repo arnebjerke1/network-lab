@@ -1,0 +1,93 @@
+[
+  {
+    "question": "Which cloud-delivered security service provides the features of an advanced intrusion prevention system (IPS)?",
+    "choices": [
+      "Prisma SaaS",
+      "GlobalProtect",
+      "Advanced DLP",
+      "Advanced Threat Prevention"
+    ],
+    "correct": "Advanced Threat Prevention"
+  },
+  {
+    "question": "Which concept provides a framework for describing how Cloud-Delivered Security Services (CDSS) fits in with the Palo Alto Networks strategic approach comprehensive security?",
+    "choices": [
+      "Security as a Service (SECaaS)",
+      "Firewall as a Platform (FWaaP)",
+      "Code, Build, Deploy, Run (CBDR)",
+      "Next-Generation Firewall (NGFW)"
+    ],
+    "correct": "Firewall as a Platform (FWaaP)"
+  },
+  {
+    "question": "How does Palo Alto Networks' WildFire service help security teams?",
+    "choices": [
+      "By automatically analyzing files for threats",
+      "By using machine learning for accurate device discovery",
+      "By providing visibility into unsanctioned SaaS applications",
+      "By offering in-line machine learning-based detection of malicious domains"
+    ],
+    "correct": "By automatically analyzing files for threats"
+  },
+  {
+    "question": "What is the goal of Palo Alto Networks' cloud-delivered security services (CDSS) offerings?",
+    "choices": [
+      "To replace on-box and Panorama-server-based policy management",
+      "To provide feature parity for hardware firewalls and software firewalls",
+      "To scan your infrastructure as code (IaC) scripts and cloud-based VMs for threats",
+      "To help ensure that customers can confidently secure all traffic that traverses any network"
+    ],
+    "correct": "To help ensure that customers can confidently secure all traffic that traverses any network"
+  },
+  {
+    "question": "Which two technologies are foundational elements of the Advanced URL Filtering service? (Choose two.)",
+    "choices": [
+      "PAN-DB",
+      "Exfiltration detection",
+      "Inline machine learning models",
+      "Fuzzy hashing"
+    ],
+    "correct": "PAN-DB"
+  },
+  {
+    "question": "What is the primary purpose of Advanced URL Filtering?",
+    "choices": [
+      "To provide anonymous browsing",
+      "To categorize websites as benign or malicious",
+      "To provide local, highly compressed caches of website category data",
+      "To block specific IP addresses"
+    ],
+    "correct": "To categorize websites as benign or malicious"
+  },
+  {
+    "question": "Which three risk categories are used in PAN-DB to classify websites? (Choose three.)",
+    "choices": [
+      "Medium",
+      "Low",
+      "High",
+      "Unknown",
+      "Critical"
+    ],
+    "correct": "Low"
+  },
+  {
+    "question": "What is the first step in Advanced URL Filtering's category lookup and policy evaluation process?",
+    "choices": [
+      "Firewall inspection of the URL request",
+      "Inline ML detection",
+      "PAN-DB URL lookup",
+      "Policy lookup for overrides to default settings"
+    ],
+    "correct": "Firewall inspection of the URL request"
+  },
+  {
+    "question": "How does Advanced URL Filtering compensate for coverage gaps in database solutions?",
+    "choices": [
+      "By use of aggressive fuzzy hashing",
+      "By use of Safe Search Enforcement",
+      "By providing real-time URL analysis on a per-request basis",
+      "By leveraging DNS inspection"
+    ],
+    "correct": "By providing real-time URL analysis on a per-request basis"
+  }
+]

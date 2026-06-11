@@ -1,0 +1,689 @@
+{
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Networking Foundations",
+      "theme_desc": "Core network concepts: diagrams, traffic flows, IP addressing, OSI model, and perimeter architecture.",
+      "content_minutes": 100,
+      "recap_minutes": 30,
+      "total_minutes": 130,
+      "courses": [
+        {
+          "title": "Networking Basics",
+          "duration_minutes": 20,
+          "status": "Completed",
+          "objectives": [
+            "Use network diagram components to create visual collaboration aids",
+            "Describe north-south and east-west traffic flows",
+            "Identify router boundaries in creating network segments",
+            "Describe packet contents"
+          ],
+          "lessons": [
+            "Lesson 1: Network Diagrams",
+            "Lesson 2: Traffic Flows",
+            "Lesson 3: Router Boundaries",
+            "Lesson 4: Packet Contents"
+          ],
+          "id": "networking_basics"
+        },
+        {
+          "title": "Traffic Flow Concepts",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Explain inbound and outbound traffic flows",
+            "Describe how traffic is inspected at network boundaries",
+            "Identify traffic flow patterns in enterprise networks"
+          ],
+          "lessons": [
+            "Lesson 1: Inbound Traffic",
+            "Lesson 2: Outbound Traffic",
+            "Lesson 3: Traffic Inspection"
+          ],
+          "id": "traffic_flow_concepts"
+        },
+        {
+          "title": "Networking and Addressing",
+          "duration_minutes": 30,
+          "status": "Not started",
+          "objectives": [
+            "Describe OSI and TCP/IP model layers",
+            "Explain IPv4 addressing and subnetting",
+            "Identify packet-switched vs circuit-switched networks",
+            "Describe data encapsulation across OSI layers"
+          ],
+          "lessons": [
+            "Lesson 1: OSI Model",
+            "Lesson 2: TCP/IP Model",
+            "Lesson 3: IP Addressing",
+            "Lesson 4: Subnetting",
+            "Lesson 5: Encapsulation"
+          ],
+          "id": "networking_and_addressing"
+        },
+        {
+          "title": "Network Security",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe traditional network security architecture",
+            "Explain the role of DMZ and perimeter firewalls",
+            "Identify security zones and trust levels"
+          ],
+          "lessons": [
+            "Lesson 1: Network Security Architecture",
+            "Lesson 2: DMZ Design",
+            "Lesson 3: Security Zones"
+          ],
+          "id": "network_security"
+        }
+      ],
+      "question_indices": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        16,
+        20,
+        21,
+        22,
+        23,
+        24,
+        36,
+        39,
+        41,
+        47,
+        49,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        112,
+        113,
+        114,
+        116,
+        117,
+        119,
+        120,
+        121
+      ],
+      "question_count": 36
+    },
+    {
+      "week": 2,
+      "title": "Threat Landscape & Cybersecurity Basics",
+      "theme_desc": "Understand the attack lifecycle, threat actors, attacker motivations, and the full cybersecurity landscape.",
+      "content_minutes": 80,
+      "recap_minutes": 30,
+      "total_minutes": 110,
+      "courses": [
+        {
+          "title": "Cybersecurity Landscape",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe the modern cybersecurity threat landscape",
+            "Identify motivations and types of threat actors",
+            "Explain emerging attack trends"
+          ],
+          "lessons": [
+            "Lesson 1: Threat Landscape Overview",
+            "Lesson 2: Threat Actors",
+            "Lesson 3: Attack Trends"
+          ],
+          "id": "cybersecurity_landscape"
+        },
+        {
+          "title": "Analyzing the Threat Lifecycle",
+          "duration_minutes": 30,
+          "status": "Not started",
+          "objectives": [
+            "Describe the cyberattack lifecycle phases",
+            "Explain attacker goals at each phase",
+            "Identify defensive controls for each lifecycle phase"
+          ],
+          "lessons": [
+            "Lesson 1: Reconnaissance",
+            "Lesson 2: Weaponization and Delivery",
+            "Lesson 3: Exploitation",
+            "Lesson 4: Command and Control",
+            "Lesson 5: Acting on Objectives"
+          ],
+          "id": "analyzing_the_threat_lifecycle"
+        },
+        {
+          "title": "Attack Techniques",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Identify common network attack techniques",
+            "Describe phishing, spear-phishing, and APT campaigns",
+            "Explain ransomware and cryptojacking"
+          ],
+          "lessons": [
+            "Lesson 1: Social Engineering",
+            "Lesson 2: Phishing and Spear Phishing",
+            "Lesson 3: Ransomware",
+            "Lesson 4: Advanced Persistent Threats"
+          ],
+          "id": "attack_techniques"
+        }
+      ],
+      "question_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        127
+      ],
+      "question_count": 6
+    },
+    {
+      "week": 3,
+      "title": "Network-Based Attacks & Asset Protection",
+      "theme_desc": "Common network attacks (DoS, DDoS, MitM, botnets) and strategies for protecting network assets.",
+      "content_minutes": 55,
+      "recap_minutes": 30,
+      "total_minutes": 85,
+      "courses": [
+        {
+          "title": "Network-Based Attacks",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe DoS and DDoS attack mechanics",
+            "Explain man-in-the-middle attacks",
+            "Identify botnet structures and usage"
+          ],
+          "lessons": [
+            "Lesson 1: DoS and DDoS",
+            "Lesson 2: Man-in-the-Middle",
+            "Lesson 3: Botnets"
+          ],
+          "id": "network_based_attacks"
+        },
+        {
+          "title": "Network Asset Protection",
+          "duration_minutes": 30,
+          "status": "In progress",
+          "objectives": [
+            "Describe strategies for protecting network assets",
+            "Identify firewall types and deployment patterns",
+            "Explain IDS and IPS differences"
+          ],
+          "lessons": [
+            "Lesson 1: Asset Inventory",
+            "Lesson 2: Firewall Deployment",
+            "Lesson 3: IDS vs IPS",
+            "Lesson 4: Segmentation"
+          ],
+          "id": "network_asset_protection"
+        }
+      ],
+      "question_indices": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        129
+      ],
+      "question_count": 8
+    },
+    {
+      "week": 4,
+      "title": "Cloud Infrastructure & Workflows",
+      "theme_desc": "Cloud service models (IaaS/PaaS/SaaS/FaaS), containers, hypervisors, CI/CD, and cloud-native architectures.",
+      "content_minutes": 55,
+      "recap_minutes": 30,
+      "total_minutes": 85,
+      "courses": [
+        {
+          "title": "Cloud-Native Workflows",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe CI/CD pipelines and DevOps concepts",
+            "Explain containerisation and microservices",
+            "Identify cloud-native security challenges"
+          ],
+          "lessons": [
+            "Lesson 1: CI/CD Overview",
+            "Lesson 2: Containers and Microservices",
+            "Lesson 3: FaaS and Serverless"
+          ],
+          "id": "cloud_native_workflows"
+        },
+        {
+          "title": "Elements of Cloud-Based Solutions",
+          "duration_minutes": 30,
+          "status": "Not started",
+          "objectives": [
+            "Identify IaaS, PaaS, SaaS, and FaaS service models",
+            "Describe hypervisors and virtual machines",
+            "Explain logging and monitoring in cloud environments"
+          ],
+          "lessons": [
+            "Lesson 1: Cloud Service Models",
+            "Lesson 2: Virtualisation",
+            "Lesson 3: Logging and Monitoring",
+            "Lesson 4: SDN Concepts"
+          ],
+          "id": "elements_of_cloud_based_solutions"
+        }
+      ],
+      "question_indices": [
+        17,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37,
+        42,
+        43,
+        58,
+        71,
+        72,
+        73,
+        74,
+        75,
+        122,
+        124
+      ],
+      "question_count": 23
+    },
+    {
+      "week": 5,
+      "title": "Cloud Security Controls",
+      "theme_desc": "Shared responsibility model, VPC security groups, network ACLs, cloud threats, cryptojacking, and insider risks.",
+      "content_minutes": 45,
+      "recap_minutes": 30,
+      "total_minutes": 75,
+      "courses": [
+        {
+          "title": "Shared Security Model",
+          "duration_minutes": 20,
+          "status": "Not started",
+          "objectives": [
+            "Describe the cloud shared responsibility model",
+            "Identify provider vs customer security responsibilities",
+            "Explain VPC and network ACL concepts"
+          ],
+          "lessons": [
+            "Lesson 1: Shared Responsibility",
+            "Lesson 2: VPC Security",
+            "Lesson 3: Security Groups vs ACLs"
+          ],
+          "id": "shared_security_model"
+        },
+        {
+          "title": "Threats in the Cloud",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Identify cloud-specific security risks",
+            "Describe cryptojacking and insider threats",
+            "Explain API security risks"
+          ],
+          "lessons": [
+            "Lesson 1: Cloud Risk Categories",
+            "Lesson 2: Cryptojacking",
+            "Lesson 3: Insider Threats",
+            "Lesson 4: API Security"
+          ],
+          "id": "threats_in_the_cloud"
+        }
+      ],
+      "question_indices": [
+        38,
+        40,
+        44
+      ],
+      "question_count": 3
+    },
+    {
+      "week": 6,
+      "title": "Security Management & Panorama",
+      "theme_desc": "Centralised management challenges, Panorama deployment, single-pane-of-glass operations, and NGFW management.",
+      "content_minutes": 55,
+      "recap_minutes": 30,
+      "total_minutes": 85,
+      "courses": [
+        {
+          "title": "Network Security Management Challenges",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe challenges of managing disconnected security tools",
+            "Explain single-pane-of-glass management benefits",
+            "Identify goals of centralised security management"
+          ],
+          "lessons": [
+            "Lesson 1: Management Challenges",
+            "Lesson 2: Centralised Management",
+            "Lesson 3: Tool Integration"
+          ],
+          "id": "network_security_management_challenges"
+        },
+        {
+          "title": "NGFW Device Management Using Panorama",
+          "duration_minutes": 30,
+          "status": "Not started",
+          "objectives": [
+            "Describe Panorama deployment options",
+            "Explain Panorama log sources and reporting",
+            "Identify benefits of Panorama vs per-device management"
+          ],
+          "lessons": [
+            "Lesson 1: Panorama Overview",
+            "Lesson 2: Device Groups and Templates",
+            "Lesson 3: Logging and Reporting"
+          ],
+          "id": "ngfw_device_management_using_panorama"
+        }
+      ],
+      "question_indices": [
+        45,
+        46,
+        48,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "question_count": 8
+    },
+    {
+      "week": 7,
+      "title": "Cloud-Delivered Security Services & URL Filtering",
+      "theme_desc": "WildFire, Advanced Threat Prevention, CDSS framework, Advanced URL Filtering, and PAN-DB categories.",
+      "content_minutes": 70,
+      "recap_minutes": 30,
+      "total_minutes": 100,
+      "courses": [
+        {
+          "title": "Cloud-Delivered Security Services (CDSS) Overview",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe the CDSS framework",
+            "Explain WildFire threat intelligence",
+            "Identify CDSS service components"
+          ],
+          "lessons": [
+            "Lesson 1: CDSS Framework",
+            "Lesson 2: WildFire",
+            "Lesson 3: Advanced Threat Prevention"
+          ],
+          "id": "cdss_overview"
+        },
+        {
+          "title": "Advanced URL Filtering",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe Advanced URL Filtering capabilities",
+            "Explain PAN-DB URL category classifications",
+            "Identify URL filtering policy evaluation steps"
+          ],
+          "lessons": [
+            "Lesson 1: URL Filtering Overview",
+            "Lesson 2: PAN-DB Categories",
+            "Lesson 3: Policy Evaluation"
+          ],
+          "id": "advanced_url_filtering"
+        },
+        {
+          "title": "Advanced URL Filtering Security",
+          "duration_minutes": 20,
+          "status": "Completed",
+          "objectives": [
+            "Describe inline ML for URL classification",
+            "Explain how URL filtering compensates for database gaps"
+          ],
+          "lessons": [
+            "Lesson 1: ML-Based Classification",
+            "Lesson 2: Inline Analysis"
+          ],
+          "id": "advanced_url_filtering_security"
+        }
+      ],
+      "question_indices": [
+        55,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "question_count": 9
+    },
+    {
+      "week": 8,
+      "title": "SASE, SD-WAN & Digital Experience",
+      "theme_desc": "SASE architecture, mobile user protection, remote networks, SD-WAN resilience, and Autonomous DEM.",
+      "content_minutes": 130,
+      "recap_minutes": 30,
+      "total_minutes": 160,
+      "courses": [
+        {
+          "title": "Protection Challenges for Mobile Users and Remote Networks",
+          "duration_minutes": 20,
+          "status": "Not started",
+          "objectives": [
+            "Describe mobile user protection challenges",
+            "Identify remote network connectivity issues",
+            "Explain how traditional VPN falls short for modern workforces"
+          ],
+          "lessons": [
+            "Lesson 1: Mobile User Challenges",
+            "Lesson 2: Remote Network Challenges"
+          ],
+          "id": "protection_challenges_mobile_remote"
+        },
+        {
+          "title": "SASE as a Cloud Infrastructure-Based Services Solution",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Define SASE and its core components",
+            "Explain how SASE replaces legacy perimeter security",
+            "Describe SASE scalability and cost benefits"
+          ],
+          "lessons": [
+            "Lesson 1: SASE Overview",
+            "Lesson 2: SASE Architecture",
+            "Lesson 3: SASE vs Traditional Security"
+          ],
+          "id": "sase_cloud_infrastructure"
+        },
+        {
+          "title": "SASE for Mobile Users",
+          "duration_minutes": 20,
+          "status": "Not started",
+          "objectives": [
+            "Describe how SASE improves mobile user security",
+            "Explain seamless and transparent mobile access",
+            "Identify device flexibility benefits of SASE"
+          ],
+          "lessons": [
+            "Lesson 1: Mobile User Security",
+            "Lesson 2: Transparent Access"
+          ],
+          "id": "sase_for_mobile_users"
+        },
+        {
+          "title": "SASE for Remote Networks",
+          "duration_minutes": 20,
+          "status": "Not started",
+          "objectives": [
+            "Describe how SASE secures branch offices",
+            "Explain SASE performance optimization for branches",
+            "Identify resilience features for branch connectivity"
+          ],
+          "lessons": [
+            "Lesson 1: Branch Office Security",
+            "Lesson 2: Branch Performance",
+            "Lesson 3: Branch Resilience"
+          ],
+          "id": "sase_for_remote_networks"
+        },
+        {
+          "title": "Software-Defined Wide Area Networking (SD-WAN)",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe SD-WAN functionality and benefits",
+            "Explain application performance optimization in SD-WAN",
+            "Identify SD-WAN resilience and failover features"
+          ],
+          "lessons": [
+            "Lesson 1: SD-WAN Overview",
+            "Lesson 2: Performance Optimization",
+            "Lesson 3: Resilience and Failover",
+            "Lesson 4: Secure Connectivity"
+          ],
+          "id": "sdwan"
+        },
+        {
+          "title": "Autonomous Digital Experience Management",
+          "duration_minutes": 20,
+          "status": "Not started",
+          "objectives": [
+            "Describe Autonomous DEM and its purpose",
+            "Explain how DEM measures user experience",
+            "Identify DEM feedback integration with SASE"
+          ],
+          "lessons": [
+            "Lesson 1: DEM Overview",
+            "Lesson 2: Experience Metrics",
+            "Lesson 3: DEM and SASE"
+          ],
+          "id": "autonomous_digital_experience_management"
+        }
+      ],
+      "question_indices": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "question_count": 27
+    },
+    {
+      "week": 9,
+      "title": "Endpoint Security, Security Models & Final Review",
+      "theme_desc": "Endpoint protection, malware detection, MDM, DLP, IDS/IPS, Zero Trust, security models, and a full course review.",
+      "content_minutes": 55,
+      "recap_minutes": 30,
+      "total_minutes": 85,
+      "courses": [
+        {
+          "title": "Endpoint Security",
+          "duration_minutes": 30,
+          "status": "Not started",
+          "objectives": [
+            "Describe endpoint security components",
+            "Explain malware detection techniques",
+            "Identify MDM features and DLP capabilities",
+            "Describe host-based IDS/IPS"
+          ],
+          "lessons": [
+            "Lesson 1: Endpoint Protection Overview",
+            "Lesson 2: Malware Detection",
+            "Lesson 3: Mobile Device Management",
+            "Lesson 4: DLP"
+          ],
+          "id": "endpoint_security"
+        },
+        {
+          "title": "Security Models",
+          "duration_minutes": 25,
+          "status": "Not started",
+          "objectives": [
+            "Describe the Zero Trust security model",
+            "Explain the protect surface and trust zones",
+            "Identify least privilege access principles",
+            "Describe incremental Zero Trust adoption"
+          ],
+          "lessons": [
+            "Lesson 1: Zero Trust Overview",
+            "Lesson 2: Protect Surface",
+            "Lesson 3: Least Privilege",
+            "Lesson 4: Implementation Steps"
+          ],
+          "id": "security_models"
+        }
+      ],
+      "question_indices": [
+        19,
+        109,
+        110,
+        111,
+        115,
+        118,
+        123,
+        125,
+        126,
+        128,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "question_count": 18
+    }
+  ],
+  "total_courses": 26,
+  "total_questions": 138
+}

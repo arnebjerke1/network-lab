@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the purpose of the use of security groups in a virtual private cloud (VPC)?",
+    "choices": [
+      "To control traffic between different VPCs",
+      "To restrict traffic between subnets within the VPC",
+      "To control traffic to cloud-provider reserved addresses",
+      "To define explicitly permitted network traffic for virtual machines' network interfaces"
+    ],
+    "correct": "To define explicitly permitted network traffic for virtual machines' network interfaces"
+  },
+  {
+    "question": "What is cryptojacking?",
+    "choices": [
+      "The poisoning of open source cryptographic libraries",
+      "The unauthorized use of a computer to mine cryptocurrency",
+      "The successful execution of man-in-the-middle (MITM) attacks",
+      "The presentation of insecure crypto protocols for HTTPS communication"
+    ],
+    "correct": "The unauthorized use of a computer to mine cryptocurrency"
+  },
+  {
+    "question": "Which action is typically carried out by an insider with malicious intent?",
+    "choices": [
+      "DDoS attack",
+      "Cryptojacking",
+      "Spear phishing",
+      "Data exfiltration"
+    ],
+    "correct": "Data exfiltration"
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "weeks": {
+    "1": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 36,
+      "weak_topics": []
+    },
+    "2": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 6,
+      "weak_topics": []
+    },
+    "3": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 8,
+      "weak_topics": []
+    },
+    "4": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 23,
+      "weak_topics": []
+    },
+    "5": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 3,
+      "weak_topics": []
+    },
+    "6": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 8,
+      "weak_topics": []
+    },
+    "7": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 9,
+      "weak_topics": []
+    },
+    "8": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 27,
+      "weak_topics": []
+    },
+    "9": {
+      "completed_courses": [],
+      "quiz_attempts": [],
+      "latest_score": null,
+      "latest_total": 18,
+      "weak_topics": []
+    }
+  }
+}

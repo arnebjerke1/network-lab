@@ -1,0 +1,182 @@
+[
+  {
+    "question": "What is the function of a network Intrusion Detection Systems (IDS)?",
+    "choices": [
+      "To store sensitive data securely",
+      "To manage user access and authentication",
+      "To scan traffic for suspicious activity and alert security analysts",
+      "To isolate internet-facing services and protect them with a firewall"
+    ],
+    "correct": "To scan traffic for suspicious activity and alert security analysts"
+  },
+  {
+    "question": "Which malware detection technique is based on evaluating an object's intended actions before it can execute them?",
+    "choices": [
+      "Heuristic-based",
+      "Signature-based",
+      "Behavior-based",
+      "Container-based"
+    ],
+    "correct": "Behavior-based"
+  },
+  {
+    "question": "In Mobile Device Management (MDM), what feature restricts specific functionality in a device based on its physical location?",
+    "choices": [
+      "Data Loss Prevention (DLP)",
+      "Policy Enforcement",
+      "Malware Protection",
+      "Geofencing and Location Services"
+    ],
+    "correct": "Geofencing and Location Services"
+  },
+  {
+    "question": "Which option is an essential element of endpoint security?",
+    "choices": [
+      "Patch management",
+      "Signature-based detection",
+      "Data compression",
+      "Data translation"
+    ],
+    "correct": "Patch management"
+  },
+  {
+    "question": "Which IDS/IPS system uses a database of known vulnerabilities and attack profiles to identify intrusion attempts?",
+    "choices": [
+      "knowledge-based",
+      "behavior-based",
+      "intuitive-based",
+      "standards-based"
+    ],
+    "correct": "knowledge-based"
+  },
+  {
+    "question": "Which of the following is considered sensitive data that a DLP security solution aims to protect?",
+    "choices": [
+      "Publicly available information",
+      "Marketing materials",
+      "Personally identifiable information",
+      "General company announcements"
+    ],
+    "correct": "Personally identifiable information"
+  },
+  {
+    "question": "What is the main objective of cybercrime vendors who offer their services on the dark web?",
+    "choices": [
+      "Political disruption",
+      "Financial gain",
+      "Social recognition",
+      "Providing malware and exploits as a service"
+    ],
+    "correct": "Providing malware and exploits as a service"
+  },
+  {
+    "question": "What is the main characteristic of an APT?",
+    "choices": [
+      "It is a deliberate and focused attack",
+      "It is an opportunistic attack",
+      "It is a random and untargeted attack",
+      "It is a type of malware that spreads quickly"
+    ],
+    "correct": "It is a deliberate and focused attack"
+  },
+  {
+    "question": "Which security standard is considered the most secure for Wi-Fi networks?",
+    "choices": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "correct": "WPA3"
+  },
+  {
+    "question": "What is an advanced persistent threat (APT)?",
+    "choices": [
+      "A cyberattack that is opportunistic and random",
+      "A coordinated event associated with cybercriminal groups",
+      "A type of malware that targets mobile devices",
+      "A security measure to protect Wi-Fi networks"
+    ],
+    "correct": "A coordinated event associated with cybercriminal groups"
+  },
+  {
+    "question": "In the Zero Trust security model, what is the purpose of trust zones?",
+    "choices": [
+      "To create pockets of trust for free communication",
+      "To compartmentalize resources with similar functionality and trust levels",
+      "To eliminate the need for security functionality",
+      "To allow unrestricted access to resources"
+    ],
+    "correct": "To compartmentalize resources with similar functionality and trust levels"
+  },
+  {
+    "question": "What is the primary issue with a perimeter-based network security strategy?",
+    "choices": [
+      "Relies too heavily on physical security",
+      "Assumes trust on the internal network",
+      "Focuses solely on external threats",
+      "Ignores modern business conditions"
+    ],
+    "correct": "Assumes trust on the internal network"
+  },
+  {
+    "question": "What is the main purpose of a Zero Trust segmentation platform?",
+    "choices": [
+      "To define internal trust boundaries and provide security functionality",
+      "To allow unrestricted access to resources",
+      "To eliminate the need for trust zones",
+      "To grant default trust to all entities"
+    ],
+    "correct": "To define internal trust boundaries and provide security functionality"
+  },
+  {
+    "question": "In the context of implementing a Zero Trust model, what is the purpose of configuring a segmentation platform in listen-only mode?",
+    "choices": [
+      "To obtain a detailed picture of traffic flows throughout the network",
+      "To establish trust boundaries and zones immediately",
+      "To grant default trust to all entities",
+      "To eliminate the need for trust zones"
+    ],
+    "correct": "To obtain a detailed picture of traffic flows throughout the network"
+  },
+  {
+    "question": "In a Zero Trust least privilege access model, what is the importance of having visibility of and control over the applications and their functionality in the traffic?",
+    "choices": [
+      "It ensures that all users have equal access to resources",
+      "It allows unrestricted communication within trust zones",
+      "It enables precise control over application use beyond port and protocol definitions",
+      "It allows risky file types to be transferred more efficiently"
+    ],
+    "correct": "It enables precise control over application use beyond port and protocol definitions"
+  },
+  {
+    "question": "How does the Zero Trust model improve effectiveness in mitigating data loss?",
+    "choices": [
+      "By granting default trust to all entities",
+      "By enabling essential business applications while preventing cyberthreats",
+      "By focusing solely on perimeter defenses",
+      "By allowing all traffic without inspection"
+    ],
+    "correct": "By enabling essential business applications while preventing cyberthreats"
+  },
+  {
+    "question": "What is the main difference between the protect surface in a Zero Trust model and the attack surface in traditional security models?",
+    "choices": [
+      "Protect surface is larger than the attack surface",
+      "Protect surface is smaller and contains critical resources",
+      "Protect surface is focused on external threats",
+      "Protect surface is not unique to each organization"
+    ],
+    "correct": "Protect surface is smaller and contains critical resources"
+  },
+  {
+    "question": "What is a key benefit of implementing a Zero Trust model with incremental modifications to the existing network?",
+    "choices": [
+      "It requires a major overhaul of the network infrastructure",
+      "It minimizes potential impact on operations and spreads investment over time",
+      "It disrupts user experience and requires extensive training",
+      "It relies on the existing trust model for security"
+    ],
+    "correct": "It minimizes potential impact on operations and spreads investment over time"
+  }
+]

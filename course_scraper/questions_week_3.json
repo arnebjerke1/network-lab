@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the main difference between a denial-of-service (DoS) attack and a distributed denial-of-service (DDoS) attack?",
+    "choices": [
+      "The method used to launch the attack",
+      "The number of systems used to attack the target",
+      "The geographical dispersion of the target systems",
+      "The variability in packet sizes used to attack the target"
+    ],
+    "correct": "The number of systems used to attack the target"
+  },
+  {
+    "question": "What is a botnet?",
+    "choices": [
+      "A packet-intercept system",
+      "A network of attacker-controlled endpoints",
+      "A web crawler that facilitates reconnaissance",
+      "A method of scanning for open network services"
+    ],
+    "correct": "A network of attacker-controlled endpoints"
+  },
+  {
+    "question": "In a man-in-the-middle attack, what is the attacker's tactical goal?",
+    "choices": [
+      "To flood the target with traffic",
+      "To install malware on the victim's machine",
+      "To create a botnet for launching DDoS attacks",
+      "To intercept or manipulate data transferred between two devices"
+    ],
+    "correct": "To intercept or manipulate data transferred between two devices"
+  },
+  {
+    "question": "What is the tactical goal of a denial-of-service (DoS) attack?",
+    "choices": [
+      "To install malware on a target system",
+      "To intercept one or more IP addresses",
+      "To hinder or block access to a system or service",
+      "To steal sensitive information from a target system"
+    ],
+    "correct": "To hinder or block access to a system or service"
+  },
+  {
+    "question": "Which is a primary risk to organizations targeted by DDoS attacks?",
+    "choices": [
+      "IP spoofing",
+      "Theft of sensitive information",
+      "Downtime and lost productivity",
+      "Installation of malware on their systems"
+    ],
+    "correct": "Downtime and lost productivity"
+  },
+  {
+    "question": "What is the main function of a demilitarized zone (DMZ) within a network design?",
+    "choices": [
+      "To store sensitive data securely",
+      "To isolate internet-facing services",
+      "To manage user access and authentication",
+      "To monitor network traffic for suspicious activity"
+    ],
+    "correct": "To isolate internet-facing services"
+  },
+  {
+    "question": "Which two practices most directly protect sensitive data from network-based attacks? (Choose two.)",
+    "choices": [
+      "Data encryption",
+      "Physical security",
+      "Regular patching",
+      "Strong passwords"
+    ],
+    "correct": "Data encryption"
+  },
+  {
+    "question": "What is the primary objective of a DDoS attack?",
+    "choices": [
+      "Direct theft of funds from enterprises",
+      "Infecting computers and creating a botnet",
+      "Shutting down a machine or network",
+      "Sending targeted emails to deceive recipients"
+    ],
+    "correct": "Shutting down a machine or network"
+  }
+]
