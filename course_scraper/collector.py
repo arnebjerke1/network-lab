@@ -1,57 +1,47 @@
 """
-Question Collector – paste-and-record CLI
-==========================================
-Go through the course page by page and paste each question block here.
+Question Collector – browser-driven mode
+=========================================
+Opens a real browser window so YOU navigate the course.
+The script watches the page and records questions automatically.
 
-How it works
+Usage
+-----
+    python course_scraper/collector.py
+
+Workflow
+--------
+1. A browser window opens and goes to the Palo Alto login page.
+2. Log in with your credentials (the browser is fully interactive).
+3. Navigate to the first question page.
+4. Press Enter in the terminal → the script reads the current page,
+   records any questions it finds, and prints a live count.
+5. Go to the next question page in the browser.
+6. Press Enter again → records again.
+7. Repeat until all pages are done.
+8. Type  done  and press Enter (or press Ctrl-C) → saves to questions.json.
+
+Correct answers
+---------------
+The course does not reveal correct answers, so they are stored as "".
+You can fill them in questions.json later.
+
+Requirements
 ------------
-1. Paste the question text and all its choices (one line at a time).
-2. Press Enter on a **blank line** → the question is recorded automatically.
-   You will see a live count of how many questions have been collected.
-3. Keep going until you have entered all questions.
-4. When you are completely finished, press Enter on a blank line when
-   nothing has been pasted (i.e. two blank lines in a row, or blank line
-   right after the previous question was saved) → saves to questions.json.
-
-Ctrl-C also saves whatever has been collected so far and exits.
-
-Parsing rules
--------------
-The script auto-detects question vs. choice lines:
-  • Lines that look like  "A. ...",  "B) ...",  "1. ...",  "- ..." etc.
-    are treated as choices (the prefix is stripped).
-  • The remaining lines (before the first choice line) form the question text.
-  • Lines with only a question/page number (e.g. "1", "Question 1") are skipped.
-
-Correct answers are stored as "" – fill them in questions.json later.
+    pip install playwright
+    playwright install chromium
 """
 
 import json
 import os
-import re
 import sys
 
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
-
-# Regex that matches typical choice prefixes:  A.  A)  a.  1.  1)  -
-_CHOICE_PREFIX = re.compile(
-    r"^(?:[A-Da-d][.)]\s+|[1-9]\d*[.)]\s+|-\s+)"
-)
-# Lines that are only a standalone number or "Question N" – skip them
-_SKIP_LINE = re.compile(r"^\s*(?:question\s+)?\d+\.?\s*$", re.IGNORECASE)
+LOGIN_URL = "https://learn.paloaltonetworks.com/learn/signin"
 
 
 # ---------------------------------------------------------------------------
-# Helpers
+# Persistence
 # ---------------------------------------------------------------------------
-
-def _read_line(prompt: str = "") -> str:
-    """Read one line from stdin.  Returns empty string on blank line."""
-    try:
-        return input(prompt)
-    except (EOFError, KeyboardInterrupt):
-        raise KeyboardInterrupt
-
 
 def load_existing() -> list[dict]:
     if not os.path.exists(OUTPUT_FILE):
@@ -72,94 +62,168 @@ def save(questions: list[dict]) -> None:
     print(f"\n✔  Saved {len(questions)} total question(s) → {OUTPUT_FILE}")
 
 
-def parse_block(lines: list[str]) -> dict | None:
-    """
-    Split a list of raw lines into a question dict.
-    Returns None if the block has no usable content.
-    """
-    # Remove leading/trailing blank lines
-    lines = [l.rstrip() for l in lines if l.strip()]
-    if not lines:
-        return None
+# ---------------------------------------------------------------------------
+# Page scraping (reused from scraper.py logic)
+# ---------------------------------------------------------------------------
 
-    question_lines: list[str] = []
-    choices: list[str] = []
-    in_choices = False
+def extract_questions_from_page(page) -> list[dict]:
+    """
+    Try several common quiz markup patterns.
+    Returns a list of dicts with keys: question, choices, correct.
+    'correct' is always "" because the LMS hides the answer.
+    """
+    questions: list[dict] = []
 
-    for line in lines:
-        if _SKIP_LINE.match(line):
+    # Pattern 1 – DOM blocks with data/class markers
+    q_blocks = page.query_selector_all(
+        "[data-question], .quiz-question, .question-block, "
+        ".assessment-question, [class*='question']"
+    )
+    for block in q_blocks:
+        question_text = ""
+        for sel in ["h2", "h3", "h4", "p.question", "[class*='question-text']",
+                    "[class*='stem']", "legend"]:
+            el = block.query_selector(sel)
+            if el:
+                question_text = el.inner_text().strip()
+                if question_text:
+                    break
+        if not question_text:
             continue
-        m = _CHOICE_PREFIX.match(line)
-        if m:
-            in_choices = True
-            # Strip the prefix (e.g. "A. ", "1) ", "- ")
-            choices.append(line[m.end():].strip())
-        elif not in_choices:
-            question_lines.append(line.strip())
-        # Lines after choices started but without a prefix are continuations of
-        # the last choice (rare, but handle gracefully)
-        elif choices:
-            choices[-1] += " " + line.strip()
 
-    question_text = " ".join(question_lines).strip()
-    if not question_text or not choices:
-        return None
+        choices: list[str] = []
+        answer_els = block.query_selector_all(
+            "li, label, [role='radio'], [role='checkbox'], "
+            "[class*='answer'], [class*='choice'], [class*='option']"
+        )
+        for ans in answer_els:
+            text = ans.inner_text().strip()
+            if text:
+                choices.append(text)
 
-    return {
-        "question": question_text,
-        "choices": choices,
-        "correct": "",  # unknown – fill in later
-    }
+        if question_text and choices:
+            questions.append({
+                "question": question_text,
+                "choices": choices,
+                "correct": "",
+            })
+
+    # Pattern 2 – JSON embedded in <script type="application/json">
+    scripts = page.query_selector_all('script[type="application/json"]')
+    for s in scripts:
+        try:
+            data = json.loads(s.inner_text())
+        except Exception:
+            continue
+        _extract_from_json(data, questions)
+
+    return questions
+
+
+def _extract_from_json(obj, out: list, depth: int = 0) -> None:
+    if depth > 10:
+        return
+    if isinstance(obj, dict):
+        q = obj.get("question") or obj.get("questionText") or obj.get("stem")
+        choices_raw = obj.get("choices") or obj.get("answers") or obj.get("options") or []
+        if q and choices_raw:
+            choice_texts: list[str] = []
+            for c in choices_raw:
+                if isinstance(c, str):
+                    choice_texts.append(c)
+                elif isinstance(c, dict):
+                    t = c.get("text") or c.get("label") or c.get("value") or ""
+                    choice_texts.append(t)
+            out.append({
+                "question": str(q),
+                "choices": choice_texts,
+                "correct": "",
+            })
+        for v in obj.values():
+            _extract_from_json(v, out, depth + 1)
+    elif isinstance(obj, list):
+        for item in obj:
+            _extract_from_json(item, out, depth + 1)
+
+
+def question_key(text: str) -> str:
+    return " ".join(text.split()).strip().lower()
 
 
 # ---------------------------------------------------------------------------
-# Main loop
+# Main
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("[!] Playwright is not installed.")
+        print("    Run:  pip install playwright && playwright install chromium")
+        sys.exit(1)
+
     print("=" * 60)
-    print("  Palo Alto Course – Question Collector")
+    print("  Palo Alto Course – Browser Question Collector")
     print("=" * 60)
-    print("Paste a question + its choices, then press Enter on a blank")
-    print("line to record it.  Press Enter again (blank) when done.\n")
+    print()
+    print("A browser will open. Log in, navigate to the first question,")
+    print("then come back here and press Enter to record it.")
+    print("Type  done  to finish and save.\n")
 
     existing = load_existing()
     new_questions: list[dict] = []
+    seen_keys: set[str] = {question_key(q["question"]) for q in existing}
     total = len(existing)
 
     if total:
         print(f"[*] Loaded {total} existing question(s) from questions.json\n")
 
-    current_block: list[str] = []
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(headless=False)
+        context = browser.new_context(viewport={"width": 1280, "height": 900})
+        page = context.new_page()
 
-    try:
-        while True:
-            line = _read_line()
+        print(f"[*] Opening login page: {LOGIN_URL}")
+        try:
+            page.goto(LOGIN_URL, wait_until="domcontentloaded", timeout=15000)
+        except Exception as e:
+            print(f"[!] Could not open login page: {e}")
 
-            if line.strip() == "":
-                # Blank line = end of current block
-                if current_block:
-                    q = parse_block(current_block)
-                    current_block = []
-                    if q:
+        print("[*] Log in to the course in the browser window, then navigate")
+        print("    to the first question page.\n")
+
+        try:
+            while True:
+                cmd = input("Press Enter to record current page  (or type 'done' to finish): ").strip().lower()
+                if cmd in ("done", "quit", "exit", "q"):
+                    break
+
+                # Give the page a moment to settle after navigation
+                try:
+                    page.wait_for_load_state("networkidle", timeout=8000)
+                except Exception:
+                    pass
+
+                found = extract_questions_from_page(page)
+                added = 0
+                for q in found:
+                    key = question_key(q["question"])
+                    if key not in seen_keys:
+                        seen_keys.add(key)
                         new_questions.append(q)
                         total += 1
-                        print(f"  ✔  Recorded  [{total} total]  {q['question'][:65]}{'…' if len(q['question']) > 65 else ''}")
-                    else:
-                        print("  ⚠  Could not parse that block – skipped.")
-                else:
-                    # Second blank in a row with nothing pending → done
-                    break
-            else:
-                current_block.append(line)
+                        added += 1
+                        print(f"  ✔  [{total} total]  {q['question'][:65]}{'…' if len(q['question']) > 65 else ''}")
 
-    except KeyboardInterrupt:
-        # Also save whatever is buffered
-        if current_block:
-            q = parse_block(current_block)
-            if q:
-                new_questions.append(q)
-                total += 1
+                if added == 0:
+                    print(f"  ⚠  No new questions found on this page (URL: {page.url[:80]})")
+                else:
+                    print(f"  → {added} question(s) recorded from this page.\n")
+
+        except KeyboardInterrupt:
+            print("\n[!] Interrupted.")
+
+        browser.close()
 
     if new_questions:
         all_questions = existing + new_questions
