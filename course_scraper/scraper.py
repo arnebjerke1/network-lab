@@ -41,9 +41,17 @@ PASSWORD = os.environ.get("PALO_PASSWORD", "")
 HEADLESS = os.environ.get("HEADLESS", "false").lower() == "true"
 
 LEARNING_PLAN_URL = (
-    "https://learn.paloaltonetworks.com/learn/learning-plans"
+    "https://learn.paloaltonetworks.com/learn/learning-plans/341"
     "/palo-alto-networks-certified-network-security-professional"
 )
+# First course in the learning plan – used as an additional seed URL
+COURSE_URL = (
+    "https://learn.paloaltonetworks.com/learn/learning-plans/341"
+    "/palo-alto-networks-certified-network-security-professional"
+    "/courses/2297/network-security-netsec-professional"
+)
+# Only follow links that stay within this learning plan
+COURSE_URL_PREFIX = "https://learn.paloaltonetworks.com/learn/learning-plans/341/"
 LOGIN_URL = "https://learn.paloaltonetworks.com/learn/signin"
 
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
@@ -178,7 +186,8 @@ def collect_course_links(page) -> list[str]:
 
     out = []
     for href in links:
-        if not href.startswith("https://learn.paloaltonetworks.com/learn/"):
+        # Only follow links that stay within the specific learning plan (plan ID 341)
+        if not href.startswith(COURSE_URL_PREFIX):
             continue
         if "/learn/sign" in href:
             continue
@@ -292,7 +301,8 @@ def scrape_course() -> list[dict]:
             print(f"[!] networkidle wait failed (continuing anyway): {e}")
             time.sleep(5)
 
-        queue = deque([normalize_url(page.url)])
+        # Seed the queue with the learning plan page and the first course URL
+        queue = deque([normalize_url(page.url), normalize_url(COURSE_URL)])
         for link in collect_course_links(page):
             queue.append(link)
 
