@@ -328,18 +328,30 @@ HTML_TEMPLATE = """\
     const correctIds = card.dataset.correct.split(",");
     const required   = parseInt(card.dataset.required, 10);
 
-    // Mark the clicked button immediately green or red
     const isCorrect = correctIds.includes(btnEl.id);
     btnEl.disabled = true;
-    btnEl.classList.add(isCorrect ? "correct" : "wrong");
+    btnEl.dataset.userSelected = "1";
 
-    // Count how many have been answered so far
-    const answered     = card.querySelectorAll(".choice-btn.correct, .choice-btn.wrong");
-    const countCorrect = card.querySelectorAll(".choice-btn.correct").length;
-    const countWrong   = card.querySelectorAll(".choice-btn.wrong").length;
+    // Always show wrong answers immediately in red.
+    // For multi-choice questions, defer showing correct answers as green
+    // until all required selections have been made.
+    if (!isCorrect) {{
+      btnEl.classList.add("wrong");
+    }} else if (required === 1) {{
+      btnEl.classList.add("correct");
+    }}
 
-    if (answered.length >= required) {{
-      // Lock all remaining buttons and reveal any unanswered correct ones
+    const userSelected = card.querySelectorAll(".choice-btn[data-user-selected]");
+
+    if (userSelected.length >= required) {{
+      // Reveal green for all user-selected correct answers
+      userSelected.forEach(b => {{
+        if (!b.classList.contains("wrong")) {{
+          b.classList.add("correct");
+        }}
+      }});
+
+      // Lock remaining buttons and reveal any unselected correct answers
       card.querySelectorAll(".choice-btn").forEach(b => {{
         b.disabled = true;
         if (!b.classList.contains("correct") && !b.classList.contains("wrong") && correctIds.includes(b.id)) {{
@@ -347,6 +359,8 @@ HTML_TEMPLATE = """\
         }}
       }});
 
+      const countWrong   = card.querySelectorAll(".choice-btn[data-user-selected].wrong").length;
+      const countCorrect = userSelected.length - countWrong;
       const feedback = card.querySelector(".feedback");
       const nextBtn  = card.querySelector(".next-btn");
 
@@ -395,6 +409,7 @@ HTML_TEMPLATE = """\
       card.querySelectorAll(".choice-btn").forEach(b => {{
         b.disabled = false;
         b.classList.remove("correct", "wrong");
+        delete b.dataset.userSelected;
       }});
       const fb = card.querySelector(".feedback");
       if (fb) {{ fb.textContent = ""; fb.className = "feedback"; }}
