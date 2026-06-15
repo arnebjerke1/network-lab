@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="theme-color" content="#fa582d" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="NetSec-Pro" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" href="./icon-192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./icon-192.png" />
+<title>NetSec-Pro Study</title>
+<style>
+  :root{
+    --bg:#0f1419; --card:#1a212b; --card2:#222c38; --accent:#fa582d;
+    --accent2:#ff8a5c; --text:#e8edf2; --muted:#8b97a5; --good:#2ecc71; --bad:#e74c3c;
+    --line:#2c3744;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);color:var(--text);padding-bottom:88px;line-height:1.5}
+  header{padding:16px 16px 10px;display:flex;justify-content:space-between;align-items:center;
+    position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 78%,transparent);z-index:10}
+  h1{font-size:16px;margin:0;font-weight:700}
+  h1 span{color:var(--accent)}
+  main{padding:0 16px}
+  .streak{background:var(--card);border:1px solid var(--line);border-radius:20px;
+    padding:6px 12px;font-size:13px;font-weight:600;white-space:nowrap}
+  .streak b{color:var(--accent2)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+  .label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent2);font-weight:700;margin-bottom:8px}
+  .fact{font-size:16px}
+  .btn{width:100%;border:none;border-radius:12px;padding:14px 15px;font-size:15px;font-weight:700;
+    cursor:pointer;background:var(--accent);color:#fff;margin-top:8px}
+  .btn:active{transform:scale(.985)}
+  .btn.ghost{background:var(--card2);color:var(--text);border:1px solid var(--line)}
+  .btn.sm{padding:10px 12px;font-size:13px;width:auto;display:inline-flex;align-items:center;justify-content:center;margin:4px 6px 0 0}
+  .btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+  .q{font-size:17px;font-weight:600;margin:4px 0 16px}
+  .opt{display:block;width:100%;text-align:left;background:var(--card2);border:2px solid var(--line);
+    color:var(--text);border-radius:12px;padding:14px 15px;margin-bottom:10px;font-size:15px;cursor:pointer;
+    transition:background .15s,border-color .15s;position:relative}
+  .opt:active,.opt.selected{border-color:var(--accent)}
+  .opt.correct{background:rgba(46,204,113,.22);border-color:var(--good);color:#eafff2}
+  .opt.wrong{background:rgba(231,76,60,.18);border-color:var(--bad)}
+  .opt.missed{border-color:#f7c948;background:rgba(247,201,72,.12)}
+  .opt .mk{position:absolute;right:13px;top:50%;transform:translateY(-50%);font-weight:800}
+  .opt[disabled]{cursor:default;opacity:1}
+  .explain{font-size:14px;color:#cfd8e2;background:var(--card2);border-radius:12px;
+    padding:13px;margin-top:10px;border-left:3px solid var(--accent)}
+  .verdict{font-weight:800;margin:6px 0 10px;font-size:15px}
+  .verdict.ok{color:var(--good)} .verdict.no{color:var(--bad)}
+  .cat{display:inline-block;font-size:11px;color:var(--muted);background:var(--card2);
+    padding:3px 9px;border-radius:8px;margin-bottom:10px}
+  .progress{height:6px;background:var(--card2);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .progress > i{display:block;height:100%;background:var(--accent);transition:width .3s}
+  .factrow,.reviewrow{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .factrow:last-child,.reviewrow:last-child{border:none}
+  .stat{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+  .stat:last-child{border:none}
+  .stat b{font-size:18px}
+  .domwrap{margin-top:8px}
+  .domrow{margin:12px 0}
+  .domrow .top{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin-bottom:5px}
+  .bar{height:8px;background:var(--card2);border-radius:6px;overflow:hidden}
+  .bar > i{display:block;height:100%;background:var(--good)}
+  .domain-card{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:10px}
+  .domain-card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .domain-card h3{margin:0 0 4px;font-size:15px}
+  .domain-card .meta{font-size:13px;color:var(--muted);margin:6px 0 10px}
+  .domain-card .rounds{display:flex;flex-wrap:wrap;gap:6px}
+  .resume{background:rgba(250,88,45,.12);border:1px solid var(--accent);border-radius:12px;
+    padding:12px 14px;margin-bottom:12px;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .resume button{flex:none}
+  .pill{display:inline-flex;align-items:center;gap:6px;background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:12px;color:var(--muted);margin:4px 6px 0 0}
+  .inline-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .done{text-align:center;padding:14px 0}
+  .done .big{font-size:44px;font-weight:800;color:var(--accent);margin:8px 0}
+  .muted{color:var(--muted);font-size:13px}
+  .subtle{font-size:12px;color:var(--muted)}
+  nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);
+    border-top:1px solid var(--line);padding:8px 0 calc(8px + env(safe-area-inset-bottom));z-index:20}
+  nav button{flex:1;background:none;border:none;color:var(--muted);font-size:11px;
+    font-weight:600;padding:6px 4px;cursor:pointer}
+  nav button.on{color:var(--accent)}
+  nav button div{font-size:19px;margin-bottom:2px}
+  .hide{display:none}
+  .toast{position:fixed;left:50%;bottom:98px;transform:translateX(-50%);background:#000;color:#fff;
+    padding:9px 16px;border-radius:20px;font-size:13px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:50}
+  .toast.show{opacity:.92}
+  @media (max-width: 380px){
+    .resume{flex-direction:column;align-items:flex-start}
+    .domain-card .top{flex-direction:column}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>NetSec-<span>Pro</span> Study</h1>
+  <div class="streak">🔥 <b id="streak">0</b>d &nbsp;·&nbsp; ⭐ <b id="pts">0</b></div>
+</header>
+
+<main>
+  <section id="view-today">
+    <div id="resumeBox"></div>
+    <div class="card">
+      <div class="label">💡 Dagens fun fact</div>
+      <div class="fact" id="todayFact"></div>
+    </div>
+    <div class="card">
+      <div class="label">▶️ Start øving</div>
+      <button class="btn" onclick="startMixed(5)">Quick round · 5 spørsmål</button>
+      <button class="btn ghost" onclick="startMixed(10)">Mixed round · 10 spørsmål</button>
+      <button class="btn ghost" onclick="show('domains')">Øv per seksjon ▸</button>
+      <button class="btn ghost" onclick="show('review')">Review-listen ▸</button>
+      <div class="inline-actions">
+        <span class="pill">📚 <b id="homeCount">0</b> spørsmål</span>
+        <span class="pill">💡 <b id="homeFacts">0</b> facts</span>
+        <span class="pill">🔁 <b id="homeReview">0</b> til review</span>
+      </div>
+      <p class="muted" style="text-align:center;margin-top:12px" id="bankInfo"></p>
+    </div>
+  </section>
+
+  <section id="view-domains" class="hide">
+    <div class="card">
+      <div class="label">🎯 Practice by exam domain</div>
+      <p class="muted">Velg en seksjon og hvor stor del du vil ta nå. Domenene vises i rekkefølgen D1 → D6.</p>
+      <div id="domainPicker"></div>
+    </div>
+  </section>
+
+  <section id="view-review" class="hide">
+    <div class="card">
+      <div class="label">🔁 Questions to do again</div>
+      <div class="stat"><span>Spørsmål i review-listen</span><b id="reviewCount">0</b></div>
+      <div class="inline-actions" id="reviewActions"></div>
+      <p class="muted" id="reviewHint" style="margin-top:12px"></p>
+    </div>
+    <div class="card">
+      <div class="label">📌 Review per domain</div>
+      <div id="reviewList"></div>
+    </div>
+  </section>
+
+  <section id="view-quiz" class="hide">
+    <div class="progress"><i id="bar" style="width:0"></i></div>
+    <div class="card" id="quizCard"></div>
+    <button class="btn ghost" onclick="quitSession()">Save &amp; exit round</button>
+  </section>
+
+  <section id="view-facts" class="hide">
+    <div class="card"><div class="label">📚 All fun facts (<span id="factCount">0</span>)</div><div id="factList"></div></div>
+  </section>
+
+  <section id="view-stats" class="hide">
+    <div class="card">
+      <div class="label">📊 Your progress</div>
+      <div class="stat"><span>⭐ Total points</span><b id="sPts">0</b></div>
+      <div class="stat"><span>Questions answered</span><b id="sAnswered">0</b></div>
+      <div class="stat"><span>Overall accuracy</span><b id="sAcc">0%</b></div>
+      <div class="stat"><span>Best answer streak</span><b id="sBest">0</b></div>
+      <div class="stat"><span>Mastered (3+ correct in a row)</span><b id="sMastered">0</b></div>
+      <div class="stat"><span>Day streak</span><b id="sStreak">0</b></div>
+      <div class="stat"><span>Unique questions seen</span><b id="sSeen">0</b></div>
+      <div class="stat"><span>Questions to review</span><b id="sReview">0</b></div>
+      <div class="stat"><span>Total in bank</span><b id="sTotal">0</b></div>
+    </div>
+    <div class="card">
+      <div class="label">📈 Mastery by domain</div>
+      <div class="domwrap" id="domStats"></div>
+    </div>
+    <button class="btn ghost" onclick="exportProgress()">Export progress (backup)</button>
+    <button class="btn ghost" onclick="resetAll()">Reset all progress</button>
+  </section>
+</main>
+
+<nav>
+  <button id="nav-today" class="on" onclick="show('today')"><div>🏠</div>Today</button>
+  <button id="nav-domains" onclick="show('domains')"><div>🧩</div>Sections</button>
+  <button id="nav-review" onclick="show('review')"><div>🔁</div>Review</button>
+  <button id="nav-facts" onclick="show('facts')"><div>💡</div>Facts</button>
+  <button id="nav-stats" onclick="show('stats')"><div>📊</div>Stats</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script src="./questions.js"></script>
+<script>
+const KEY = 'pan_study_netsec_pro_app_v1';
+const LEGACY_KEYS = ['pan_study_netsec_v2'];
+const REVIEW_CORRECT_TO_CLEAR = 1;
+const DOMAIN_SEQUENCE = ['D1','D2','D3','D4','D5','D6'];
+const DOMAIN_NAMES = {
+  D1:'Network Security Fundamentals',
+  D2:'NGFW & SASE Solution Functionality',
+  D3:'Platform Solutions, Services & Tools',
+  D4:'NGFW & SASE Maintenance & Configuration',
+  D5:'Infrastructure Management & CDSS',
+  D6:'Connectivity & Security',
+  Other:'Other'
+};
+const QUESTION_MAP = new Map((window.QUESTIONS || []).map(q => [q.id, q]));
+let state = load();
+let session = null;
+
+(function integrityCheck(){
+  const seen = new Set();
+  const dupes = [];
+  const malformed = [];
+  (window.QUESTIONS || []).forEach(q => {
+    if (seen.has(q.id)) dupes.push(q.id);
+    else seen.add(q.id);
+    const answers = Array.isArray(q.a) ? q.a : [q.a];
+    const valid = Number.isInteger(q.id)
+      && typeof q.cat === 'string' && /^D[1-6]:/.test(q.cat)
+      && typeof q.q === 'string' && q.q.trim()
+      && Array.isArray(q.opts) && q.opts.length >= 2
+      && answers.length > 0 && answers.every(a => Number.isInteger(a) && a >= 0 && a < q.opts.length)
+      && typeof q.why === 'string' && q.why.trim();
+    if (!valid) malformed.push(q.id);
+  });
+  console.info(`[NetSec-Pro] Integrity check: ${dupes.length} duplicate ids, ${malformed.length} malformed questions`);
+  if (dupes.length) console.warn('Duplicate question IDs found:', [...new Set(dupes)]);
+  if (malformed.length) console.warn('Malformed question IDs found:', malformed);
+})();
+
+function defaults(){
+  return {streak:0,lastVisit:null,answered:0,correct:0,points:0,bestRun:0,run:0,q:{},factDay:null,factIdx:0,saved:null,review:{}};
+}
+function parseStored(key){
+  try{ return JSON.parse(localStorage.getItem(key) || 'null'); }catch(e){ return null; }
+}
+function sanitizeQuestionStats(raw){
+  const cleaned = {};
+  Object.entries(raw || {}).forEach(([id, val])=>{
+    if(!QUESTION_MAP.has(Number(id))) return;
+    const entry = { box: Number(val?.box)||0, seen: Number(val?.seen)||0, correct: Number(val?.correct)||0 };
+    if(!entry.box && !entry.seen && !entry.correct) return;
+    cleaned[id] = entry;
+  });
+  return cleaned;
+}
+function sanitizeReview(raw){
+  const cleaned = {};
+  Object.entries(raw || {}).forEach(([id, val])=>{
+    if(!QUESTION_MAP.has(Number(id))) return;
+    const remaining = Math.max(1, Number(val?.remaining ?? val ?? REVIEW_CORRECT_TO_CLEAR) || REVIEW_CORRECT_TO_CLEAR);
+    cleaned[id] = { remaining };
+  });
+  return cleaned;
+}
+function sanitizeOrder(order, item){
+  if(!item || !Array.isArray(order) || order.length !== item.opts.length) return null;
+  const indexes = order.map(x=>x && x.i).slice().sort((a,b)=>a-b);
+  const expected = item.opts.map((_,i)=>i);
+  for(let i=0;i<expected.length;i++) if(indexes[i] !== expected[i]) return null;
+  return order;
+}
+function sanitizePicked(picked, item){
+  if(picked === null || picked === undefined) return null;
+  if(isMulti(item)){
+    if(!Array.isArray(picked)) return [];
+    return [...new Set(picked.filter(x=>Number.isInteger(x) && x>=0 && x<item.opts.length))].sort((a,b)=>a-b);
+  }
+  return Number.isInteger(picked) && picked>=0 && picked<item.opts.length ? picked : null;
+}
+function sanitizeSaved(raw){
+  if(!raw || !Array.isArray(raw.ids) || !raw.ids.length) return null;
+  const ids = raw.ids.filter(id => QUESTION_MAP.has(id));
+  if(!ids.length) return null;
+  const idx = Math.min(Math.max(Number(raw.idx)||0, 0), ids.length-1);
+  const item = QUESTION_MAP.get(ids[idx]);
+  return {
+    ids,
+    idx,
+    correct:Number(raw.correct)||0,
+    answered:Number(raw.answered)||0,
+    label:String(raw.label||'Saved round'),
+    domain:raw.domain || null,
+    mode:raw.mode || 'mixed',
+    roundSize:Number(raw.roundSize)||ids.length,
+    order:sanitizeOrder(raw.order, item),
+    picked:sanitizePicked(raw.picked, item),
+    submitted:!!raw.submitted
+  };
+}
+function load(){
+  const current = parseStored(KEY);
+  const legacy = current ? null : LEGACY_KEYS.map(parseStored).find(Boolean);
+  const data = current || legacy || defaults();
+  const base = defaults();
+  return {
+    ...base,
+    streak:Number(data.streak)||0,
+    lastVisit:data.lastVisit||null,
+    answered:Number(data.answered)||0,
+    correct:Number(data.correct)||0,
+    points:Number(data.points)||0,
+    bestRun:Number(data.bestRun)||0,
+    run:Number(data.run)||0,
+    q:sanitizeQuestionStats(data.q),
+    factDay:data.factDay||null,
+    factIdx:Number(data.factIdx)||0,
+    saved:sanitizeSaved(data.saved),
+    review:sanitizeReview(data.review)
+  };
+}
+function save(){ localStorage.setItem(KEY, JSON.stringify(state)); }
+function persistSession(){ state.saved = session ? {...session} : null; save(); }
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1400); }
+function today(){ return new Date().toISOString().slice(0,10); }
+function updateStreak(){
+  const t=today();
+  if(state.lastVisit!==t){
+    const yest=new Date(Date.now()-864e5).toISOString().slice(0,10);
+    state.streak=(state.lastVisit===yest)?state.streak+1:1;
+    state.lastVisit=t; save();
+  }
+}
+function dailyFact(){
+  const t=today();
+  if(state.factDay!==t || state.factIdx>=FACTS.length){
+    state.factDay=t; state.factIdx=Math.floor(Math.random()*FACTS.length); save();
+  }
+  return FACTS[state.factIdx];
+}
+function qStat(id){ return state.q[id] || {box:0,seen:0,correct:0}; }
+function ensureQStat(id){ return state.q[id] || (state.q[id]={box:0,seen:0,correct:0}); }
+function reviewCount(){ return Object.keys(state.review).length; }
+function reviewIds(){ return Object.keys(state.review).map(Number).filter(id => QUESTION_MAP.has(id)); }
+function addToReview(id){ state.review[id] = { remaining: REVIEW_CORRECT_TO_CLEAR }; }
+function markReviewCorrect(id){
+  if(!state.review[id]) return;
+  state.review[id].remaining -= 1;
+  if(state.review[id].remaining <= 0) delete state.review[id];
+}
+function clearReview(){
+  if(reviewCount() && confirm('Clear the entire review list?')){
+    state.review = {}; save(); renderReview(); renderToday(); renderStats(); toast('Review list cleared');
+  }
+}
+function domainKey(cat){ const m=(cat||'').match(/^(D\d)/); return m?m[1]:'Other'; }
+function compareDomains(a,b){
+  const da = DOMAIN_SEQUENCE.indexOf(a), db = DOMAIN_SEQUENCE.indexOf(b);
+  if(da === -1 && db === -1) return a.localeCompare(b);
+  if(da === -1) return 1;
+  if(db === -1) return -1;
+  return da-db;
+}
+function domainsList(){
+  const set={}; QUESTIONS.forEach(q=>{ const k=domainKey(q.cat); if(k==='Other') return; set[k]=(set[k]||0)+1; });
+  return Object.keys(set).sort(compareDomains).map(k=>({key:k,count:set[k],name:DOMAIN_NAMES[k]||k}));
+}
+function statsForQuestions(list){
+  const totals = {count:list.length, seen:0, mastered:0, correct:0, answered:0};
+  list.forEach(q=>{
+    const s = state.q[q.id];
+    if(s){
+      if(s.seen) totals.seen += 1;
+      if(s.box >= 3) totals.mastered += 1;
+      totals.correct += s.correct || 0;
+      totals.answered += s.seen || 0;
+    }
+  });
+  return totals;
+}
+function isMulti(item){ return Array.isArray(item.a); }
+function correctAnswers(item){ return (Array.isArray(item.a) ? item.a.slice() : [item.a]).slice().sort((a,b)=>a-b); }
+function arraysEqual(a,b){ return a.length===b.length && a.every((v,i)=>v===b[i]); }
+function shuffleOptions(item){ return item.opts.map((t,i)=>({t,i})).sort(()=>Math.random()-0.5); }
+function pickPool(domain){
+  const base = domain ? QUESTIONS.filter(q=>domainKey(q.cat)===domain) : QUESTIONS.slice();
+  return base.sort((a,b)=>{
+    const A=qStat(a.id),B=qStat(b.id);
+    if(A.box!==B.box) return A.box-B.box;
+    if(A.seen!==B.seen) return A.seen-B.seen;
+    return Math.random()-0.5;
+  });
+}
+function startRound(ids, label, mode, domain, roundSize){
+  if(!ids.length){ toast('No questions available for that round'); return; }
+  session = { ids, idx:0, correct:0, answered:0, label, mode, domain:domain||null, roundSize:roundSize||ids.length, order:null, picked:null, submitted:false };
+  persistSession();
+  show('quiz');
+  renderQ();
+}
+function startMixed(count){
+  const pool = pickPool(null);
+  startRound(pool.slice(0, Math.min(count, pool.length)).map(q=>q.id), `Mixed round · ${Math.min(count, pool.length)} Q`, 'mixed', null, count);
+}
+function startDomainRound(domain, count){
+  const pool = pickPool(domain);
+  const size = count === 'all' ? pool.length : Math.min(Number(count)||pool.length, pool.length);
+  startRound(pool.slice(0, size).map(q=>q.id), `${DOMAIN_NAMES[domain]} · ${size} Q`, 'domain', domain, size);
+}
+function startReviewRound(count){
+  const pool = reviewIds().map(id=>QUESTION_MAP.get(id)).filter(Boolean).sort((a,b)=>{
+    const A=qStat(a.id), B=qStat(b.id);
+    if(A.seen!==B.seen) return A.seen-B.seen;
+    return compareDomains(domainKey(a.cat), domainKey(b.cat)) || a.id-b.id;
+  });
+  const size = count === 'all' ? pool.length : Math.min(Number(count)||pool.length, pool.length);
+  startRound(pool.slice(0, size).map(q=>q.id), `Review round · ${size} Q`, 'review', null, size);
+}
+function resumeOrStart(){
+  if(state.saved){ session={...state.saved}; show('quiz'); renderQ(); }
+  else { show('today'); toast('Pick a round to start'); }
+}
+function quitSession(){
+  persistSession();
+  toast('Round saved — resume anytime');
+  show('today');
+  renderToday();
+}
+function byId(id){ return QUESTION_MAP.get(id); }
+function currentItem(){ return session ? byId(session.ids[session.idx]) : null; }
+function ensureOrder(item){
+  if(!session.order || !sanitizeOrder(session.order, item)){
+    session.order = shuffleOptions(item);
+    session.picked = isMulti(item) ? [] : null;
+    session.submitted = false;
+    persistSession();
+  }
+}
+function renderQ(){
+  if(!session){ return goHome(); }
+  const c=document.getElementById('quizCard');
+  document.getElementById('bar').style.width=(session.idx/session.ids.length*100)+'%';
+  if(session.idx >= session.ids.length){
+    const pct=Math.round(session.correct/session.ids.length*100);
+    c.innerHTML = `<div class="done"><div class="muted">${escapeHtml(session.label)} complete</div>
+      <div class="big">${session.correct}/${session.ids.length}</div>
+      <div class="muted">${pct}% correct this round</div>
+      <button class="btn" style="margin-top:18px" onclick="show('today')">Back home</button>
+      <button class="btn ghost" onclick="${session.mode==='review' ? "show('review')" : "show('domains')"}">${session.mode==='review' ? 'Open review list' : 'Choose next section'}</button></div>`;
+    document.getElementById('bar').style.width='100%';
+    session = null;
+    state.saved = null;
+    save();
+    renderToday();
+    renderStats();
+    renderReview();
+    return;
+  }
+  const item = currentItem();
+  if(!item){ session.idx++; persistSession(); return renderQ(); }
+  ensureOrder(item);
+  c.innerHTML = `<span class="cat">${escapeHtml(item.cat)} · Q${session.idx+1}/${session.ids.length}${isMulti(item) ? ' · Multi-select' : ''}</span>
+    <div class="q">${escapeHtml(item.q)}</div>
+    ${isMulti(item) ? '<div class="subtle">Velg alle riktige alternativer før du trykker Check answer.</div>' : ''}
+    <div id="opts"></div>`;
+  const ob=document.getElementById('opts');
+  session.order.forEach((o,k)=>{
+    const b=document.createElement('button');
+    b.className='opt';
+    b.innerHTML=escapeHtml(o.t);
+    if(isMulti(item)){
+      if(Array.isArray(session.picked) && session.picked.includes(k)) b.classList.add('selected');
+      if(session.submitted) b.disabled = true;
+      b.onclick=()=>togglePick(k);
+    } else {
+      b.onclick=()=>answerSingle(k);
+      if(session.submitted) b.disabled = true;
+    }
+    ob.appendChild(b);
+  });
+  if(isMulti(item) && !session.submitted){
+    const submit=document.createElement('button');
+    submit.className='btn';
+    submit.textContent='Check answer';
+    submit.disabled=!Array.isArray(session.picked) || !session.picked.length;
+    submit.onclick=submitMulti;
+    ob.appendChild(submit);
+  }
+  if(session.submitted) revealAnswer(item, session.picked, true);
+}
+function togglePick(k){
+  const item=currentItem();
+  if(!item || session.submitted) return;
+  const picked = new Set(Array.isArray(session.picked) ? session.picked : []);
+  if(picked.has(k)) picked.delete(k); else picked.add(k);
+  session.picked = [...picked].sort((a,b)=>a-b);
+  persistSession();
+  renderQ();
+}
+function answerSingle(k){
+  const item=currentItem();
+  if(!item || session.submitted) return;
+  session.picked=k;
+  session.submitted=true;
+  applyAnswer(item, [session.order[k].i], false);
+}
+function submitMulti(){
+  const item=currentItem();
+  if(!item || session.submitted || !Array.isArray(session.picked) || !session.picked.length) return;
+  session.submitted=true;
+  applyAnswer(item, session.picked.map(pos => session.order[pos].i).sort((a,b)=>a-b), false);
+}
+function applyAnswer(item, selectedOriginalIndexes, silent){
+  const correct = correctAnswers(item);
+  const isCorrect = arraysEqual(selectedOriginalIndexes.slice().sort((a,b)=>a-b), correct);
+  const st=ensureQStat(item.id); st.seen++; session.answered++; state.answered++;
+  if(isCorrect){
+    st.correct++; st.box=Math.min(st.box+1,5);
+    session.correct++; state.correct++; state.points+=10; state.run++;
+    if(state.run>state.bestRun) state.bestRun=state.run;
+    markReviewCorrect(item.id);
+  } else {
+    st.box=0; state.run=0; addToReview(item.id);
+  }
+  persistSession();
+  renderHeader();
+  if(!silent) revealAnswer(item, session.picked, false);
+}
+function revealAnswer(item, pickedDisplay, silent){
+  const ob=document.getElementById('opts');
+  const correct = new Set(correctAnswers(item));
+  const selectedDisplay = new Set(Array.isArray(pickedDisplay) ? pickedDisplay : [pickedDisplay]);
+  const selectedOriginal = new Set([...selectedDisplay].map(pos => session.order[pos]?.i).filter(x => x !== undefined));
+  const isCorrect = arraysEqual([...selectedOriginal].sort((a,b)=>a-b), [...correct].sort((a,b)=>a-b));
+  [...ob.querySelectorAll('.opt')].forEach((b,i)=>{
+    b.disabled=true;
+    const originalIndex = session.order[i].i;
+    const isAnswer = correct.has(originalIndex);
+    const isPicked = selectedDisplay.has(i);
+    if(isAnswer){ b.classList.add('correct'); b.insertAdjacentHTML('beforeend','<span class="mk">✓</span>'); }
+    if(isPicked && !isAnswer){ b.classList.add('wrong'); b.insertAdjacentHTML('beforeend','<span class="mk">✗</span>'); }
+    if(!isPicked && isAnswer && selectedDisplay.size){ b.classList.add('missed'); }
+  });
+  const existingAction = ob.querySelector('.btn.next-action');
+  if(existingAction) return;
+  const v=document.createElement('div');
+  v.className='verdict '+(isCorrect?'ok':'no');
+  v.textContent=isCorrect?'✓ Correct  (+10)':(isMulti(item)?'✗ Not quite — exact set required':'✗ Not quite');
+  ob.appendChild(v);
+  const e=document.createElement('div'); e.className='explain'; e.innerHTML=escapeHtml(item.why); ob.appendChild(e);
+  const last = session.idx+1>=session.ids.length;
+  const nx=document.createElement('button'); nx.className='btn next-action'; nx.textContent=last?'See results':'Next question'; nx.style.marginTop='12px';
+  nx.onclick=()=>{ session.idx++; session.order=null; session.picked=null; session.submitted=false; persistSession(); renderQ(); };
+  ob.appendChild(nx);
+  if(!silent){ renderReview(); renderToday(); renderStats(); }
+}
+function renderHeader(){ document.getElementById('streak').textContent=state.streak; document.getElementById('pts').textContent=state.points; }
+function renderToday(){
+  const box=document.getElementById('resumeBox');
+  if(state.saved && state.saved.idx < state.saved.ids.length){
+    box.innerHTML=`<div class="resume"><span>▶️ Resume <b>${escapeHtml(state.saved.label)}</b> — Q${state.saved.idx+1}/${state.saved.ids.length}</span>
+      <button class="btn sm" onclick="resumeOrStart()">Resume</button></div>`;
+  } else box.innerHTML='';
+  document.getElementById('todayFact').textContent=dailyFact();
+  document.getElementById('bankInfo').textContent=`${QUESTIONS.length} questions · ${FACTS.length} fun facts loaded · review clears after ${REVIEW_CORRECT_TO_CLEAR} correct answer`;
+  document.getElementById('homeCount').textContent=QUESTIONS.length;
+  document.getElementById('homeFacts').textContent=FACTS.length;
+  document.getElementById('homeReview').textContent=reviewCount();
+}
+function renderDomains(){
+  const p=document.getElementById('domainPicker');
+  const mixedStats = statsForQuestions(QUESTIONS);
+  let html = `<div class="domain-card"><div class="top"><div><h3>Mixed round</h3><div class="muted">All domains together</div></div><div><b>${QUESTIONS.length}</b> Q</div></div>
+    <div class="meta">Mastered ${mixedStats.mastered}/${QUESTIONS.length} · Seen ${mixedStats.seen}/${QUESTIONS.length}</div>
+    <div class="bar"><i style="width:${QUESTIONS.length ? Math.round(mixedStats.mastered/QUESTIONS.length*100) : 0}%"></i></div>
+    <div class="rounds"><button class="btn sm" onclick="startMixed(5)">5</button><button class="btn sm ghost" onclick="startMixed(10)">10</button><button class="btn sm ghost" onclick="startMixed(QUESTIONS.length)">All</button></div></div>`;
+  domainsList().forEach(d=>{
+    const items = QUESTIONS.filter(q=>domainKey(q.cat)===d.key);
+    const stats = statsForQuestions(items);
+    const accuracy = stats.answered ? Math.round(stats.correct / stats.answered * 100) : 0;
+    html += `<div class="domain-card"><div class="top"><div><h3>${d.key}: ${escapeHtml(d.name)}</h3><div class="muted">${d.count} questions</div></div><div><b>${stats.mastered}</b>/<span>${d.count}</span></div></div>
+      <div class="meta">Mastery ${stats.mastered}/${d.count} · Accuracy ${accuracy}% · Seen ${stats.seen}/${d.count}</div>
+      <div class="bar"><i style="width:${Math.round(stats.mastered/d.count*100)}%"></i></div>
+      <div class="rounds"><button class="btn sm" onclick="startDomainRound('${d.key}',5)">5</button><button class="btn sm ghost" onclick="startDomainRound('${d.key}',10)">10</button><button class="btn sm ghost" onclick="startDomainRound('${d.key}','all')">All</button></div></div>`;
+  });
+  p.innerHTML=html;
+}
+function renderReview(){
+  const count = reviewCount();
+  document.getElementById('reviewCount').textContent = count;
+  const actions = document.getElementById('reviewActions');
+  actions.innerHTML = `
+    <button class="btn sm" ${count ? '' : 'disabled'} onclick="startReviewRound(5)">Review 5</button>
+    <button class="btn sm ghost" ${count ? '' : 'disabled'} onclick="startReviewRound(10)">Review 10</button>
+    <button class="btn sm ghost" ${count ? '' : 'disabled'} onclick="startReviewRound('all')">Review all</button>
+    <button class="btn sm ghost" ${count ? '' : 'disabled'} onclick="clearReview()">Clear review list</button>`;
+  document.getElementById('reviewHint').textContent = count
+    ? 'Spørsmål blir liggende her til du svarer riktig på dem igjen. Du kan også tømme listen manuelt.'
+    : 'Ingen spørsmål i review-listen akkurat nå.';
+  const wrap = document.getElementById('reviewList');
+  if(!count){ wrap.innerHTML = '<div class="muted">Alt er ryddet opp. Bra jobbet! 🎉</div>'; return; }
+  const grouped = {};
+  reviewIds().forEach(id=>{
+    const item = QUESTION_MAP.get(id);
+    const key = domainKey(item.cat);
+    (grouped[key]=grouped[key]||[]).push(item);
+  });
+  wrap.innerHTML = Object.keys(grouped).sort(compareDomains).map(key=>`
+    <div class="reviewrow"><b>${key}: ${escapeHtml(DOMAIN_NAMES[key]||key)}</b><div class="muted">${grouped[key].length} spørsmål til review</div></div>`).join('');
+}
+function renderFacts(){ document.getElementById('factCount').textContent=FACTS.length; document.getElementById('factList').innerHTML=FACTS.map(f=>`<div class="factrow">💡 ${escapeHtml(f)}</div>`).join(''); }
+function renderStats(){
+  document.getElementById('sPts').textContent=state.points;
+  document.getElementById('sAnswered').textContent=state.answered;
+  document.getElementById('sAcc').textContent=(state.answered?Math.round(state.correct/state.answered*100):0)+'%';
+  document.getElementById('sBest').textContent=state.bestRun;
+  document.getElementById('sMastered').textContent=Object.values(state.q).filter(x=>x.box>=3).length;
+  document.getElementById('sStreak').textContent=state.streak+'d';
+  document.getElementById('sSeen').textContent=Object.keys(state.q).length;
+  document.getElementById('sReview').textContent=reviewCount();
+  document.getElementById('sTotal').textContent=QUESTIONS.length;
+  const agg={};
+  QUESTIONS.forEach(q=>{ const k=domainKey(q.cat); (agg[k]=agg[k]||{tot:0,mast:0,review:0}).tot++; if((state.q[q.id]||{}).box>=3) agg[k].mast++; if(state.review[q.id]) agg[k].review++; });
+  document.getElementById('domStats').innerHTML=Object.keys(agg).sort(compareDomains).map(k=>{
+    const a=agg[k], pct=Math.round(a.mast/a.tot*100);
+    return `<div class="domrow"><div class="top"><span>${k}: ${escapeHtml(DOMAIN_NAMES[k]||k)}</span><span>${a.mast}/${a.tot} mastered · ${a.review} review</span></div>
+      <div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  }).join('');
+}
+function exportProgress(){
+  const data=JSON.stringify({points:state.points,answered:state.answered,correct:state.correct,streak:state.streak,bestRun:state.bestRun,q:state.q,review:state.review,saved:state.saved});
+  navigator.clipboard?.writeText(data).then(()=>toast('Progress copied to clipboard'),()=>toast('Copy failed — long-press to select'));
+}
+function resetAll(){
+  if(confirm('Erase ALL progress, review items, and saved rounds?')){
+    localStorage.removeItem(KEY); LEGACY_KEYS.forEach(k=>localStorage.removeItem(k)); state=load(); session=null; init(); show('today'); toast('Progress reset');
+  }
+}
+function goHome(){ show('today'); renderToday(); }
+function show(v){
+  ['today','domains','review','quiz','facts','stats'].forEach(x=>{ const el=document.getElementById('view-'+x); if(el) el.classList.toggle('hide',x!==v); });
+  ['today','domains','review','facts','stats'].forEach(x=>{ const b=document.getElementById('nav-'+x); if(b) b.classList.toggle('on', x===v); });
+  if(v==='today') renderToday();
+  if(v==='domains') renderDomains();
+  if(v==='review') renderReview();
+  if(v==='facts') renderFacts();
+  if(v==='stats') renderStats();
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function init(){
+  if(!window.QUESTIONS || !window.FACTS){
+    document.querySelector('main').innerHTML='<div class="card">⚠️ Could not load <b>questions.js</b>. Make sure it is saved in the same folder as this file.</div>';
+    return;
+  }
+  updateStreak();
+  if(state.saved) session = {...state.saved};
+  renderHeader();
+  renderToday();
+  renderReview();
+  if(session && !document.getElementById('view-quiz').classList.contains('hide')) renderQ();
+}
+if('serviceWorker' in navigator && location.protocol !== 'file:'){
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('./service-worker.js').catch(err=>console.warn('Service worker registration failed', err));
+  });
+}
+init();
+</script>
+</body>
+</html>
