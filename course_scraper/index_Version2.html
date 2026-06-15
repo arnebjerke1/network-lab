@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="theme-color" content="#fa582d" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>PAN Study — Network Security Pro</title>
+<style>
+  :root{
+    --bg:#0f1419; --card:#1a212b; --card2:#222c38; --accent:#fa582d;
+    --accent2:#ff8a5c; --text:#e8edf2; --muted:#8b97a5; --good:#2ecc71; --bad:#e74c3c;
+    --line:#2c3744;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);color:var(--text);padding-bottom:84px;line-height:1.5}
+  header{padding:16px 16px 10px;display:flex;justify-content:space-between;align-items:center;
+    position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 75%,transparent);z-index:10}
+  h1{font-size:16px;margin:0;font-weight:700}
+  h1 span{color:var(--accent)}
+  .streak{background:var(--card);border:1px solid var(--line);border-radius:20px;
+    padding:6px 12px;font-size:13px;font-weight:600;white-space:nowrap}
+  .streak b{color:var(--accent2)}
+  main{padding:0 16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+  .label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent2);
+    font-weight:700;margin-bottom:8px}
+  .fact{font-size:16px}
+  .btn{width:100%;border:none;border-radius:12px;padding:15px;font-size:15px;font-weight:700;
+    cursor:pointer;background:var(--accent);color:#fff;margin-top:6px}
+  .btn:active{transform:scale(.985)}
+  .btn.ghost{background:var(--card2);color:var(--text);border:1px solid var(--line)}
+  .btn.sm{padding:11px;font-size:13px;width:auto;display:inline-block;margin:4px 4px 0 0}
+  .q{font-size:17px;font-weight:600;margin:4px 0 16px}
+  .opt{display:block;width:100%;text-align:left;background:var(--card2);border:2px solid var(--line);
+    color:var(--text);border-radius:12px;padding:14px 15px;margin-bottom:10px;font-size:15px;cursor:pointer;
+    transition:background .15s,border-color .15s;position:relative}
+  .opt:active{border-color:var(--accent)}
+  .opt.correct{background:rgba(46,204,113,.22);border-color:var(--good);color:#eafff2}
+  .opt.wrong{background:rgba(231,76,60,.18);border-color:var(--bad)}
+  .opt .mk{position:absolute;right:13px;top:50%;transform:translateY(-50%);font-weight:800}
+  .opt[disabled]{cursor:default;opacity:1}
+  .explain{font-size:14px;color:#cfd8e2;background:var(--card2);border-radius:12px;
+    padding:13px;margin-top:6px;border-left:3px solid var(--accent)}
+  .verdict{font-weight:800;margin:2px 0 10px;font-size:15px}
+  .verdict.ok{color:var(--good)} .verdict.no{color:var(--bad)}
+  .cat{display:inline-block;font-size:11px;color:var(--muted);background:var(--card2);
+    padding:3px 9px;border-radius:8px;margin-bottom:10px}
+  .progress{height:6px;background:var(--card2);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .progress > i{display:block;height:100%;background:var(--accent);transition:width .3s}
+  .factrow{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .factrow:last-child{border:none}
+  .stat{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+  .stat:last-child{border:none}
+  .stat b{font-size:18px}
+  .domwrap{margin-top:8px}
+  .domrow{margin:10px 0}
+  .domrow .top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px}
+  .bar{height:8px;background:var(--card2);border-radius:6px;overflow:hidden}
+  .bar > i{display:block;height:100%;background:var(--good)}
+  nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);
+    border-top:1px solid var(--line);padding:8px 0 calc(8px + env(safe-area-inset-bottom))}
+  nav button{flex:1;background:none;border:none;color:var(--muted);font-size:11px;
+    font-weight:600;padding:6px;cursor:pointer}
+  nav button.on{color:var(--accent)}
+  nav button div{font-size:20px;margin-bottom:2px}
+  .hide{display:none}
+  .done{text-align:center;padding:14px 0}
+  .done .big{font-size:44px;font-weight:800;color:var(--accent);margin:8px 0}
+  .muted{color:var(--muted);font-size:13px}
+  .pick{display:block;width:100%;text-align:left;background:var(--card2);border:1px solid var(--line);
+    color:var(--text);border-radius:10px;padding:12px 14px;margin-bottom:8px;font-size:14px;cursor:pointer}
+  .pick.on{border-color:var(--accent);color:#fff}
+  .pick small{color:var(--muted);float:right}
+  .resume{background:rgba(250,88,45,.12);border:1px solid var(--accent);border-radius:12px;
+    padding:12px 14px;margin-bottom:12px;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .resume button{flex:none}
+  .toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:#000;color:#fff;
+    padding:9px 16px;border-radius:20px;font-size:13px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:50}
+  .toast.show{opacity:.92}
+</style>
+</head>
+<body>
+<header>
+  <h1>PAN<span>Study</span> · NetSec Pro</h1>
+  <div class="streak">🔥 <b id="streak">0</b>d &nbsp;·&nbsp; ⭐ <b id="pts">0</b></div>
+</header>
+
+<main>
+  <!-- TODAY -->
+  <section id="view-today">
+    <div id="resumeBox"></div>
+    <div class="card">
+      <div class="label">💡 Fun fact</div>
+      <div class="fact" id="todayFact"></div>
+    </div>
+    <button class="btn" onclick="startSession(5,null)">Quick round · 5 questions</button>
+    <button class="btn ghost" onclick="startSession(10,null)">Longer round · 10 questions</button>
+    <button class="btn ghost" onclick="show('domains')">Practice by exam domain ▸</button>
+    <p class="muted" style="text-align:center;margin-top:12px" id="bankInfo"></p>
+  </section>
+
+  <!-- DOMAINS -->
+  <section id="view-domains" class="hide">
+    <div class="card">
+      <div class="label">🎯 Choose a domain</div>
+      <div id="domainPicker"></div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="view-quiz" class="hide">
+    <div class="progress"><i id="bar" style="width:0"></i></div>
+    <div class="card" id="quizCard"></div>
+    <button class="btn ghost" onclick="quitSession()">Save &amp; exit round</button>
+  </section>
+
+  <!-- FACTS -->
+  <section id="view-facts" class="hide">
+    <div class="card"><div class="label">📚 All fun facts (<span id="factCount">0</span>)</div><div id="factList"></div></div>
+  </section>
+
+  <!-- STATS -->
+  <section id="view-stats" class="hide">
+    <div class="card">
+      <div class="label">📊 Your progress</div>
+      <div class="stat"><span>⭐ Total points</span><b id="sPts">0</b></div>
+      <div class="stat"><span>Questions answered</span><b id="sAnswered">0</b></div>
+      <div class="stat"><span>Overall accuracy</span><b id="sAcc">0%</b></div>
+      <div class="stat"><span>Best answer streak</span><b id="sBest">0</b></div>
+      <div class="stat"><span>Mastered (3+ correct in a row)</span><b id="sMastered">0</b></div>
+      <div class="stat"><span>Day streak</span><b id="sStreak">0</b></div>
+      <div class="stat"><span>Unique questions seen</span><b id="sSeen">0</b></div>
+      <div class="stat"><span>Total in bank</span><b id="sTotal">0</b></div>
+    </div>
+    <div class="card">
+      <div class="label">📈 Mastery by domain</div>
+      <div class="domwrap" id="domStats"></div>
+    </div>
+    <button class="btn ghost" onclick="exportProgress()">Export progress (backup)</button>
+    <button class="btn ghost" onclick="resetAll()">Reset all progress</button>
+  </section>
+</main>
+
+<nav>
+  <button id="nav-today" class="on" onclick="show('today')"><div>🏠</div>Today</button>
+  <button id="nav-quiz" onclick="resumeOrStart()"><div>✏️</div>Quiz</button>
+  <button id="nav-facts" onclick="show('facts')"><div>💡</div>Facts</button>
+  <button id="nav-stats" onclick="show('stats')"><div>📊</div>Stats</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<!-- Question bank loads from questions.js -->
+<script src="questions.js"></script>
+<script>
+/* ===================== ENGINE ===================== */
+const KEY = 'pan_study_netsec_v2';
+let state = load();
+let session = null;          // {ids:[], idx, correct, answered, label, order, picked}
+
+/* ---- integrity check: warn on duplicate IDs ---- */
+(function checkDupes(){
+  const seen = {}, dupes = [];
+  (window.QUESTIONS||[]).forEach(q=>{ if(seen[q.id]) dupes.push(q.id); else seen[q.id]=1; });
+  if(dupes.length) console.warn('DUPLICATE question IDs found:', [...new Set(dupes)]);
+})();
+
+function load(){
+  try{
+    const d = JSON.parse(localStorage.getItem(KEY)||'{}');
+    return {
+      streak:d.streak||0, lastVisit:d.lastVisit||null,
+      answered:d.answered||0, correct:d.correct||0, points:d.points||0,
+      bestRun:d.bestRun||0, run:d.run||0,
+      q:d.q||{}, factDay:d.factDay||null, factIdx:d.factIdx||0,
+      saved:d.saved||null
+    };
+  }catch(e){ return {streak:0,answered:0,correct:0,points:0,bestRun:0,run:0,q:{},factDay:null,factIdx:0,saved:null}; }
+}
+function save(){ localStorage.setItem(KEY, JSON.stringify(state)); }
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1400); }
+
+function today(){ return new Date().toISOString().slice(0,10); }
+function updateStreak(){
+  const t=today();
+  if(state.lastVisit!==t){
+    const yest=new Date(Date.now()-864e5).toISOString().slice(0,10);
+    state.streak=(state.lastVisit===yest)?state.streak+1:1;
+    state.lastVisit=t; save();
+  }
+}
+function dailyFact(){
+  const t=today();
+  if(state.factDay!==t || state.factIdx>=FACTS.length){
+    state.factDay=t; state.factIdx=Math.floor(Math.random()*FACTS.length); save();
+  }
+  return FACTS[state.factIdx];
+}
+function qStat(id){ return state.q[id] || (state.q[id]={box:0,seen:0,correct:0}); }
+
+/* ---- domain grouping from category prefix "D1: ..." ---- */
+function domainKey(cat){ const m=(cat||'').match(/^(D\d)/); return m?m[1]:'Other'; }
+const DOMAIN_NAMES = {
+  D1:'Network Security Fundamentals', D2:'NGFW & SASE Functionality',
+  D3:'Platform Solutions & Services', D4:'NGFW & SASE Maintenance',
+  D5:'Infrastructure Mgmt & CDSS', D6:'Connectivity & Security', Other:'Other'
+};
+function domainsList(){
+  const set={}; QUESTIONS.forEach(q=>{ const k=domainKey(q.cat); set[k]=(set[k]||0)+1; });
+  return Object.keys(set).sort().map(k=>({key:k,count:set[k],name:DOMAIN_NAMES[k]||k}));
+}
+
+/* ===================== SESSION ===================== */
+function pickPool(domain){
+  const base = domain ? QUESTIONS.filter(q=>domainKey(q.cat)===domain) : QUESTIONS.slice();
+  // weakest-first: lower mastery box, fewer times seen, then random
+  return base.sort((a,b)=>{
+    const A=qStat(a.id),B=qStat(b.id);
+    if(A.box!==B.box) return A.box-B.box;
+    if(A.seen!==B.seen) return A.seen-B.seen;
+    return Math.random()-0.5;
+  });
+}
+function startSession(n, domain){
+  const pool = pickPool(domain);
+  const ids = pool.slice(0, Math.min(n, pool.length)).map(q=>q.id);
+  session = { ids, idx:0, correct:0, answered:0,
+    label: domain?DOMAIN_NAMES[domain]:'Mixed round',
+    order:null, picked:null };
+  persistSession();
+  show('quiz'); renderQ();
+}
+function persistSession(){ state.saved = session ? {...session} : null; save(); }
+function resumeOrStart(){ if(state.saved){ session={...state.saved}; show('quiz'); renderQ(); } else { show('today'); toast('Pick a round to start'); } }
+function quitSession(){ persistSession(); toast('Round saved — resume anytime'); show('today'); renderToday(); }
+
+function byId(id){ return QUESTIONS.find(q=>q.id===id); }
+
+function renderQ(){
+  const c=document.getElementById('quizCard');
+  document.getElementById('bar').style.width=(session.idx/session.ids.length*100)+'%';
+
+  if(session.idx >= session.ids.length){
+    const pct=Math.round(session.correct/session.ids.length*100);
+    c.innerHTML = `<div class="done"><div class="muted">${session.label} complete</div>
+      <div class="big">${session.correct}/${session.ids.length}</div>
+      <div class="muted">${pct}% correct this round</div>
+      <button class="btn" style="margin-top:18px" onclick="startSession(${session.ids.length},null)">New mixed round</button>
+      <button class="btn ghost" onclick="goHome()">Back home</button></div>`;
+    document.getElementById('bar').style.width='100%';
+    state.saved=null; save();
+    return;
+  }
+
+  const item = byId(session.ids[session.idx]);
+  if(!item){ session.idx++; return renderQ(); }
+
+  // stable shuffle per question (so leaving/returning keeps same layout)
+  if(!session.order || session.order._for!==item.id){
+    const ord = item.opts.map((t,i)=>({t,i})).sort(()=>Math.random()-0.5);
+    ord._for=item.id; session.order=ord; session.picked=null; persistSession();
+  }
+
+  c.innerHTML = `<span class="cat">${item.cat} · Q${session.idx+1}/${session.ids.length}</span>
+    <div class="q">${escapeHtml(item.q)}</div><div id="opts"></div>`;
+  const ob=document.getElementById('opts');
+  session.order.forEach((o,k)=>{
+    const b=document.createElement('button');
+    b.className='opt'; b.innerHTML=escapeHtml(o.t);
+    b.onclick=()=>answer(k);
+    ob.appendChild(b);
+  });
+
+  // if already answered (returned mid-question), re-show result
+  if(session.picked!==null) revealAnswer(item, session.picked, true);
+}
+
+function answer(k){
+  const item=byId(session.ids[session.idx]);
+  if(session.picked!==null) return;
+  session.picked=k;
+  revealAnswer(item, k, false);
+
+  const isCorrect = session.order[k].i===item.a;
+  const st=qStat(item.id); st.seen++;
+  session.answered++;
+  if(isCorrect){
+    st.correct++; st.box=Math.min(st.box+1,5);
+    session.correct++;
+    state.correct++; state.points+=10; state.run++;
+    if(state.run>state.bestRun) state.bestRun=state.run;
+  } else {
+    st.box=0; state.run=0;
+  }
+  state.answered++;
+  persistSession();           // keeps you exactly where you are
+  renderHeader();
+}
+
+function revealAnswer(item, k, silent){
+  const ob=document.getElementById('opts');
+  const correctPos = session.order.findIndex(o=>o.i===item.a);
+  const isCorrect = session.order[k].i===item.a;
+
+  [...ob.children].forEach((b,i)=>{
+    b.disabled=true;
+    if(i===correctPos){ b.classList.add('correct'); b.insertAdjacentHTML('beforeend','<span class="mk">✓</span>'); }
+    if(i===k && !isCorrect){ b.classList.add('wrong'); b.insertAdjacentHTML('beforeend','<span class="mk">✗</span>'); }
+  });
+
+  const v=document.createElement('div');
+  v.className='verdict '+(isCorrect?'ok':'no');
+  v.textContent=isCorrect?'✓ Correct  (+10)':'✗ Not quite';
+  ob.appendChild(v);
+
+  const e=document.createElement('div'); e.className='explain'; e.innerHTML=escapeHtml(item.why);
+  ob.appendChild(e);
+
+  const last = session.idx+1>=session.ids.length;
+  const nx=document.createElement('button'); nx.className='btn';
+  nx.textContent=last?'See results':'Next question';
+  nx.style.marginTop='12px';
+  nx.onclick=()=>{ session.idx++; session.order=null; session.picked=null; persistSession(); renderQ(); };
+  ob.appendChild(nx);
+}
+
+/* ===================== VIEWS ===================== */
+function renderHeader(){
+  document.getElementById('streak').textContent=state.streak;
+  document.getElementById('pts').textContent=state.points;
+}
+function renderToday(){
+  const box=document.getElementById('resumeBox');
+  if(state.saved && state.saved.idx < state.saved.ids.length){
+    box.innerHTML=`<div class="resume"><span>▶️ Resume <b>${escapeHtml(state.saved.label)}</b> — Q${state.saved.idx+1}/${state.saved.ids.length}</span>
+      <button class="btn sm" onclick="resumeOrStart()">Resume</button></div>`;
+  } else box.innerHTML='';
+  document.getElementById('todayFact').textContent=dailyFact();
+  document.getElementById('bankInfo').textContent=`${QUESTIONS.length} questions · ${FACTS.length} fun facts loaded`;
+}
+function renderDomains(){
+  const p=document.getElementById('domainPicker');
+  let html = `<button class="pick" onclick="startSession(10,null)">🎲 Mixed (all domains)<small>${QUESTIONS.length} Q</small></button>`;
+  domainsList().forEach(d=>{
+    html += `<button class="pick" onclick="startDomainChoose('${d.key}')">${d.key}: ${escapeHtml(d.name)}<small>${d.count} Q</small></button>`;
+  });
+  p.innerHTML=html;
+}
+function startDomainChoose(key){ startSession(10, key); }
+
+function renderFacts(){
+  document.getElementById('factCount').textContent=FACTS.length;
+  document.getElementById('factList').innerHTML=FACTS.map(f=>`<div class="factrow">💡 ${escapeHtml(f)}</div>`).join('');
+}
+function renderStats(){
+  document.getElementById('sPts').textContent=state.points;
+  document.getElementById('sAnswered').textContent=state.answered;
+  document.getElementById('sAcc').textContent=(state.answered?Math.round(state.correct/state.answered*100):0)+'%';
+  document.getElementById('sBest').textContent=state.bestRun;
+  document.getElementById('sMastered').textContent=Object.values(state.q).filter(x=>x.box>=3).length;
+  document.getElementById('sStreak').textContent=state.streak+'d';
+  document.getElementById('sSeen').textContent=Object.keys(state.q).length;
+  document.getElementById('sTotal').textContent=QUESTIONS.length;
+
+  // mastery per domain
+  const agg={};
+  QUESTIONS.forEach(q=>{ const k=domainKey(q.cat); (agg[k]=agg[k]||{tot:0,mast:0}).tot++;
+    if((state.q[q.id]||{}).box>=3) agg[k].mast++; });
+  const wrap=document.getElementById('domStats');
+  wrap.innerHTML=Object.keys(agg).sort().map(k=>{
+    const a=agg[k], pct=Math.round(a.mast/a.tot*100);
+    return `<div class="domrow"><div class="top"><span>${k}: ${escapeHtml(DOMAIN_NAMES[k]||k)}</span><span>${a.mast}/${a.tot}</span></div>
+      <div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  }).join('');
+}
+
+function exportProgress(){
+  const data=JSON.stringify({points:state.points,answered:state.answered,correct:state.correct,
+    streak:state.streak,bestRun:state.bestRun,q:state.q});
+  navigator.clipboard?.writeText(data).then(
+    ()=>toast('Progress copied to clipboard'),
+    ()=>toast('Copy failed — long-press to select')
+  );
+}
+function resetAll(){ if(confirm('Erase ALL progress and points?')){ localStorage.removeItem(KEY); state=load(); init(); show('today'); toast('Progress reset'); } }
+
+function goHome(){ show('today'); renderToday(); }
+function show(v){
+  ['today','domains','quiz','facts','stats'].forEach(x=>{
+    const el=document.getElementById('view-'+x); if(el) el.classList.toggle('hide',x!==v);
+  });
+  ['today','quiz','facts','stats'].forEach(x=>{
+    const b=document.getElementById('nav-'+x); if(b) b.classList.toggle('on', x===v || (v==='domains'&&x==='today'));
+  });
+  if(v==='today') renderToday();
+  if(v==='domains') renderDomains();
+  if(v==='facts') renderFacts();
+  if(v==='stats') renderStats();
+}
+
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function init(){
+  if(!window.QUESTIONS || !window.FACTS){
+    document.querySelector('main').innerHTML='<div class="card">⚠️ Could not load <b>questions.js</b>. Make sure it is saved in the same folder as this file.</div>';
+    return;
+  }
+  updateStreak();
+  renderHeader();
+  renderToday();
+}
+init();
+</script>
+</body>
+</html>
