@@ -58,6 +58,19 @@
   .progress > i{display:block;height:100%;background:var(--accent);transition:width .3s}
   .factrow,.reviewrow{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
   .factrow:last-child,.reviewrow:last-child{border:none}
+  .flashcard-wrap{position:relative;overflow:hidden;touch-action:pan-y;user-select:none;margin-bottom:14px}
+  .flashcard{background:linear-gradient(145deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:20px;
+    min-height:180px;display:flex;flex-direction:column;justify-content:space-between;padding:22px 20px 16px;transition:transform .25s ease,opacity .25s ease}
+  .flashcard.slide-out-left{transform:translateX(-110%);opacity:0}
+  .flashcard.slide-out-right{transform:translateX(110%);opacity:0}
+  .flashcard.slide-in-left{transform:translateX(110%);opacity:0;transition:none}
+  .flashcard.slide-in-right{transform:translateX(-110%);opacity:0;transition:none}
+  .flashcard-body{font-size:16px;line-height:1.6;color:var(--text);flex:1}
+  .flashcard-footer{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+  .fc-counter{font-size:12px;color:var(--muted);font-weight:600}
+  .fc-nav{display:flex;gap:8px}
+  .fc-btn{background:var(--card);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:7px 14px;font-size:15px;cursor:pointer;transition:background .15s,border-color .15s}
+  .fc-btn:active{background:var(--accent);border-color:var(--accent)}
   .stat{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
   .stat:last-child{border:none}
   .stat b{font-size:18px}
@@ -105,9 +118,18 @@
 <main>
   <section id="view-today">
     <div id="resumeBox"></div>
-    <div class="card">
-      <div class="label">💡 Dagens fun fact</div>
-      <div class="fact" id="todayFact"></div>
+    <div class="flashcard-wrap" id="fcWrap">
+      <div class="flashcard" id="fcCard">
+        <div class="label" style="margin-bottom:12px">💡 Dagens fun fact</div>
+        <div class="flashcard-body" id="todayFact"></div>
+        <div class="flashcard-footer">
+          <span class="fc-counter" id="fcCounter"></span>
+          <div class="fc-nav">
+            <button class="fc-btn" id="fcPrev" onclick="fcNav(-1)" aria-label="Forrige fact">◀</button>
+            <button class="fc-btn" id="fcNext" onclick="fcNav(1)" aria-label="Neste fact">▶</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="card">
       <div class="label">▶️ Start øving</div>
@@ -550,12 +572,66 @@ function renderToday(){
     box.innerHTML=`<div class="resume"><span>▶️ Resume <b>${escapeHtml(state.saved.label)}</b> — Q${state.saved.idx+1}/${state.saved.ids.length}</span>
       <button class="btn sm" onclick="resumeOrStart()">Resume</button></div>`;
   } else box.innerHTML='';
-  document.getElementById('todayFact').textContent=dailyFact();
+  fcRender();
   document.getElementById('bankInfo').textContent=`${QUESTIONS.length} questions · ${FACTS.length} fun facts loaded · review clears after ${REVIEW_CORRECT_TO_CLEAR} correct answer`;
   document.getElementById('homeCount').textContent=QUESTIONS.length;
   document.getElementById('homeFacts').textContent=FACTS.length;
   document.getElementById('homeReview').textContent=reviewCount();
 }
+function fcRender(dir){
+  const card=document.getElementById('fcCard');
+  const factEl=document.getElementById('todayFact');
+  const counter=document.getElementById('fcCounter');
+  if(!card || !factEl || !counter || !FACTS || !FACTS.length){
+    if(factEl) factEl.textContent='Ingen facts tilgjengelig.';
+    if(counter) counter.textContent='0 / 0';
+    return;
+  }
+  if(!dir){
+    factEl.textContent=dailyFact();
+    counter.textContent=(state.factIdx+1)+' / '+FACTS.length;
+    return;
+  }
+  if(state.factIdx<0) state.factIdx=FACTS.length-1;
+  if(state.factIdx>=FACTS.length) state.factIdx=0;
+  const outClass = dir>0 ? 'slide-out-left' : 'slide-out-right';
+  const inClass  = dir>0 ? 'slide-in-left'  : 'slide-in-right';
+  card.classList.add(outClass);
+  setTimeout(()=>{
+    card.classList.remove(outClass);
+    card.classList.add(inClass);
+    factEl.textContent=FACTS[state.factIdx];
+    counter.textContent=(state.factIdx+1)+' / '+FACTS.length;
+    card.getBoundingClientRect();
+    card.classList.remove(inClass);
+  },250);
+}
+function fcNav(dir){
+  if(!FACTS || !FACTS.length) return;
+  state.factIdx = ((state.factIdx + dir) % FACTS.length + FACTS.length) % FACTS.length;
+  state.factDay = today();
+  save();
+  fcRender(dir);
+}
+(function(){
+  let sx=0, sy=0;
+  function onStart(e){ const t=e.touches?e.touches[0]:e; sx=t.clientX; sy=t.clientY; }
+  function onEnd(e){
+    const t=e.changedTouches?e.changedTouches[0]:e;
+    const dx=t.clientX-sx, dy=t.clientY-sy;
+    if(Math.abs(dx)>40 && Math.abs(dx)>Math.abs(dy)*1.5) fcNav(dx<0?1:-1);
+  }
+  function attachSwipe(){
+    const w=document.getElementById('fcWrap');
+    if(!w) return;
+    w.addEventListener('touchstart',onStart,{passive:true});
+    w.addEventListener('touchend',onEnd,{passive:true});
+    w.addEventListener('mousedown',onStart);
+    w.addEventListener('mouseup',onEnd);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',attachSwipe);
+  else attachSwipe();
+})();
 function renderDomains(){
   const p=document.getElementById('domainPicker');
   const mixedStats = statsForQuestions(QUESTIONS);
