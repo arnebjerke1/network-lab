@@ -2,13 +2,19 @@
 
 Dette er en mobilvennlig PWA for å øve til Palo Alto Networks **NetSec-Pro** på telefon.
 
-## Slik åpner du appen på Samsung / Android
+## 📲 Installer som Android-app
 
-1. Åpne `index.html` i denne mappen via en nettadresse (for eksempel GitHub Pages senere) eller en lokal enkel webserver.
-2. Åpne siden i **Chrome** på telefonen.
-3. Trykk **⋮** øverst til høyre.
-4. Velg **Legg til på startskjerm** / **Add to Home screen**.
-5. Start appen fra ikonet på startskjermen. Den åpner i egen app-visning.
+> **Direkte link:** [https://arnebjerke1.github.io/network-lab/](https://arnebjerke1.github.io/network-lab/)
+
+### Steg-for-steg på Android (Chrome)
+
+1. Åpne linken over i **Chrome** på Android-telefonen din.
+2. Chrome viser automatisk en banner nederst: **"Legg til NetSec-Pro på startskjermen"** – trykk på den.  
+   *(Hvis banneren ikke dukker opp: trykk **⋮** øverst til høyre → **Legg til på startskjerm** / **Add to Home screen**.)*
+3. Bekreft med **Legg til** / **Add**.
+4. Appen vises nå som et eget ikon på startskjermen og åpner **uten** nettleser-UI – akkurat som en vanlig app.
+
+> Appen lastes ned lokalt via service worker og **fungerer offline** etter første åpning.
 
 ## Offline og lagring
 
@@ -35,10 +41,6 @@ Kildematerialet er tagget som **D1–D6** for å gjøre øvingen mer finfordelt:
 - D6: Connectivity & Security
 
 Den offisielle blueprinten er nyere og mer komprimert, men appen beholder D5 og D6 som egne studiedeler fordi spørsmålsbanken allerede bruker disse taggene.
-
-## Senere på GitHub Pages
-
-Denne mappen er laget slik at den også kan hostes direkte på **GitHub Pages** senere. Når du har en URL, åpner du bare den på telefonen og gjør samme **Legg til på startskjerm**-prosess.
 
 ## Innhold i denne byggingen
 

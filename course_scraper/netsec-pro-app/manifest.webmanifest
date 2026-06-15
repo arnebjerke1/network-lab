@@ -1,11 +1,16 @@
 {
   "name": "NetSec-Pro Study",
   "short_name": "NetSec-Pro",
+  "description": "Øv til Palo Alto Networks NetSec-Pro eksamen – quiz, review og statistikk. Fungerer offline.",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "start_url": "./index.html",
   "scope": "./",
   "theme_color": "#fa582d",
   "background_color": "#0f1419",
+  "orientation": "portrait",
+  "categories": ["education", "productivity"],
+  "lang": "no",
   "icons": [
     {
       "src": "./icon-192.png",
