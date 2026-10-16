@@ -1,8 +1,9 @@
-const CACHE_NAME = 'netsec-pro-study-v2';
+const CACHE_NAME = 'netsec-pro-study-v3';
 const ASSETS = [
   './',
   './index.html',
   './questions.js',
+  './scor-questions.js',
   './manifest.webmanifest',
   './icon-192.png',
   './icon-512.png',
@@ -10,7 +11,13 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
+  event.waitUntil(
+    fetch('./scor-questions.js')
+      .then(response => response.text())
+      .then(script => [...new Set(script.match(/"\.\/scor-exhibits\/[^"]+"/g) || [])].map(path => path.slice(1, -1)))
+      .then(exhibits => caches.open(CACHE_NAME).then(cache => cache.addAll([...ASSETS, ...exhibits])))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', event => {
