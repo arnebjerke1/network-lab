@@ -563,6 +563,7 @@ def _parse_block(topic: str, number: int, block: str, page_number: int) -> dict:
         "answer_image": None,
         "needs_review": False,
         "source_question": number,
+        "pdf_page": page_number + 1,
     }
     if dragdrop:
         assignment_index, answer_index = DRAGDROP_IMAGE_PAIRS.get(number, (1, 2))
@@ -668,6 +669,15 @@ def write_outputs(questions: list[dict], output: Path = OUTPUT_PATH, report: Pat
              and question["answer_image"])
         for question in questions
     )
+    image_pairs = [
+        f"- Q{question['source_question']} (PDF page {question['pdf_page']}): "
+        f"`{Path(question['assignment_image']).name}` = assignment; "
+        f"`{Path(question['answer_image']).name}` = answer"
+        for question in questions
+        if question["type"] == "dragdrop"
+        and question["assignment_image"]
+        and question["answer_image"]
+    ]
     report.write_text(
         "# SCOR PDF parse report\n\n"
         f"- PDF pages: {_PAGE_COUNT}\n- Questions parsed: {len(questions)}\n"
@@ -675,6 +685,10 @@ def write_outputs(questions: list[dict], output: Path = OUTPUT_PATH, report: Pat
         f"- Drag and drop: {counts['dragdrop']} ({mapped} with transcribed mappings; "
         f"{paired_images} with separate assignment and answer images)\n"
         f"- Questions needing review: {len(review)}\n\n"
+        "## Drag-and-drop image pairs\n\n"
+        "Each page image filename ends in `-01`, `-02`, etc. "
+        "For drag-and-drop items, the assignment and answer image are labelled separately:\n\n"
+        + "\n".join(image_pairs) + "\n\n"
         "## Questions needing review\n\n"
         + ("\n".join(f"- Q{q['source_question']}: {q.get('review_reason', 'Needs manual verification.')}"
                      for q in review) if review else "- None.")

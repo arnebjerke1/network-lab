@@ -856,7 +856,7 @@ function scorRenderQuestion(){
   if(item.needs_review)body+='<div class="scor-banner">Oppgaven inneholder materiale som ikke kunne tolkes sikkert. Sjekk bildet før du svarer.</div>';
   if(item.type==='dragdrop'){
     const items=item.items||[],targets=item.targets||[];
-    if(item.assignment_image)body+=`<div class="scor-image-label">Drag-and-drop-oppgave · PDF-side ${item.source_question}</div><img class="scor-exhibit" src="${scorEscape(item.assignment_image)}" alt="Drag-and-drop-oppgaven fra PDF-en">`;
+    if(item.assignment_image)body+=`<div class="scor-image-label">Drag-and-drop-oppgave · PDF-side ${item.pdf_page}</div><img class="scor-exhibit" src="${scorEscape(item.assignment_image)}" alt="Drag-and-drop-oppgaven fra PDF-en">`;
     body+=items.map(entry=>`<button class="scor-item ${scorSession.selectedItem===entry.id?'selected':''}" draggable="true" ondragstart="scorDragStart(event,'${scorEscape(entry.id)}')" onclick="scorSelectItem('${scorEscape(entry.id)}')">${scorEscape(entry.text)}</button>`).join('');
     body+=targets.map(target=>{const assigned=items.filter(entry=>scorSession.matches[entry.id]===target.id),result=assigned.length&&assigned.every(entry=>item.mapping?.[entry.id]===target.id);return `<button class="scor-target ${scorSession.submitted?(result?'correct':'wrong'):''}" ondragover="event.preventDefault()" ondrop="scorDrop(event,'${scorEscape(target.id)}')" onclick="scorPlace('${scorEscape(target.id)}')">${scorEscape(target.text)}<br><small>${assigned.length?assigned.map(entry=>scorEscape(entry.text)).join('<br>'):'Trykk eller dra et element hit'}</small></button>`;}).join('');
     if(items.length&&targets.length)body+=`<button class="btn" ${Object.keys(scorSession.matches||{}).length!==items.length||scorSession.submitted?'disabled':''} onclick="scorSubmitDrag()">Sjekk svar</button>`;
@@ -867,7 +867,7 @@ function scorRenderQuestion(){
     if(multi)body+=`<button class="btn" ${scorSession.picked.length!==required||scorSession.submitted?'disabled':''} onclick="scorSubmitMulti()">Sjekk svar · Choose ${required}</button>`;
   }
   if(scorSession.submitted){
-    if(item.type==='dragdrop'&&item.answer_image)body+=`<div class="scor-image-label">Fasit · PDF-side ${item.source_question}</div><img class="scor-exhibit" src="${scorEscape(item.answer_image)}" alt="Fasiten til drag-and-drop-oppgaven">`;
+    if(item.type==='dragdrop'&&item.answer_image)body+=`<div class="scor-image-label">Fasit · PDF-side ${item.pdf_page}</div><img class="scor-exhibit" src="${scorEscape(item.answer_image)}" alt="Fasiten til drag-and-drop-oppgaven">`;
     body+=`<div class="verdict ${scorSession.lastCorrect?'ok':'no'}">${scorSession.lastCorrect?'✓ Riktig':'✗ Feil — riktig svar er vist'}</div>${item.explanation?`<div class="explain">${scorEscape(item.explanation)}</div>`:''}<button class="btn next-action" onclick="scorNext()">${scorSession.idx+1===scorSession.ids.length?'Se resultat':'Neste spørsmål'} →</button>`;
   }
   document.getElementById('scor-content').innerHTML=`<div class="progress"><i style="width:${Math.round(scorSession.idx/scorSession.ids.length*100)}%"></i></div><div class="card"><span class="cat">${scorEscape(item.topic)} · Q${scorSession.idx+1}/${scorSession.ids.length} · ${scorEscape(item.type)}</span><div class="q">${scorEscape(item.question)}</div>${body}<button class="btn ghost" onclick="scorQuit()">Lagre og avslutt</button></div>`;

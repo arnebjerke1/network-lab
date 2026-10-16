@@ -1,4 +1,4 @@
-const CACHE_NAME = 'netsec-pro-study-v3';
+const CACHE_NAME = 'netsec-pro-study-v4';
 const ASSETS = [
   './',
   './index.html',

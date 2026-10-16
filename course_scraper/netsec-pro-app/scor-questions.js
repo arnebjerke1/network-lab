@@ -34,7 +34,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 1
+    "source_question": 1,
+    "pdf_page": 1
   },
   {
     "id": "scor-002",
@@ -75,7 +76,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 2
+    "source_question": 2,
+    "pdf_page": 1
   },
   {
     "id": "scor-003",
@@ -111,7 +113,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 3
+    "source_question": 3,
+    "pdf_page": 1
   },
   {
     "id": "scor-004",
@@ -147,7 +150,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 4
+    "source_question": 4,
+    "pdf_page": 2
   },
   {
     "id": "scor-005",
@@ -185,7 +189,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 5
+    "source_question": 5,
+    "pdf_page": 2
   },
   {
     "id": "scor-006",
@@ -221,7 +226,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 6
+    "source_question": 6,
+    "pdf_page": 3
   },
   {
     "id": "scor-007",
@@ -257,7 +263,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 7
+    "source_question": 7,
+    "pdf_page": 3
   },
   {
     "id": "scor-008",
@@ -293,7 +300,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 8
+    "source_question": 8,
+    "pdf_page": 3
   },
   {
     "id": "scor-009",
@@ -329,7 +337,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 9
+    "source_question": 9,
+    "pdf_page": 4
   },
   {
     "id": "scor-010",
@@ -370,7 +379,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 10
+    "source_question": 10,
+    "pdf_page": 4
   },
   {
     "id": "scor-011",
@@ -411,7 +421,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 11
+    "source_question": 11,
+    "pdf_page": 4
   },
   {
     "id": "scor-012",
@@ -447,7 +458,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 12
+    "source_question": 12,
+    "pdf_page": 5
   },
   {
     "id": "scor-013",
@@ -488,7 +500,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 13
+    "source_question": 13,
+    "pdf_page": 5
   },
   {
     "id": "scor-014",
@@ -529,7 +542,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 14
+    "source_question": 14,
+    "pdf_page": 5
   },
   {
     "id": "scor-015",
@@ -570,7 +584,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 15
+    "source_question": 15,
+    "pdf_page": 6
   },
   {
     "id": "scor-016",
@@ -606,7 +621,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 16
+    "source_question": 16,
+    "pdf_page": 6
   },
   {
     "id": "scor-017",
@@ -642,7 +658,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 17
+    "source_question": 17,
+    "pdf_page": 6
   },
   {
     "id": "scor-018",
@@ -683,7 +700,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 18
+    "source_question": 18,
+    "pdf_page": 7
   },
   {
     "id": "scor-019",
@@ -719,7 +737,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 19
+    "source_question": 19,
+    "pdf_page": 7
   },
   {
     "id": "scor-020",
@@ -755,7 +774,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 20
+    "source_question": 20,
+    "pdf_page": 7
   },
   {
     "id": "scor-021",
@@ -791,7 +811,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 21
+    "source_question": 21,
+    "pdf_page": 8
   },
   {
     "id": "scor-022",
@@ -827,7 +848,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 22
+    "source_question": 22,
+    "pdf_page": 8
   },
   {
     "id": "scor-023",
@@ -863,7 +885,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 23
+    "source_question": 23,
+    "pdf_page": 8
   },
   {
     "id": "scor-024",
@@ -904,7 +927,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 24
+    "source_question": 24,
+    "pdf_page": 9
   },
   {
     "id": "scor-025",
@@ -940,7 +964,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 25
+    "source_question": 25,
+    "pdf_page": 9
   },
   {
     "id": "scor-026",
@@ -981,7 +1006,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 26
+    "source_question": 26,
+    "pdf_page": 9
   },
   {
     "id": "scor-027",
@@ -1022,7 +1048,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 27
+    "source_question": 27,
+    "pdf_page": 10
   },
   {
     "id": "scor-028",
@@ -1058,7 +1085,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 28
+    "source_question": 28,
+    "pdf_page": 10
   },
   {
     "id": "scor-029",
@@ -1114,7 +1142,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-011-01.png",
     "answer_image": "./scor-exhibits/page-011-02.png",
     "needs_review": false,
-    "source_question": 29
+    "source_question": 29,
+    "pdf_page": 11
   },
   {
     "id": "scor-030",
@@ -1155,7 +1184,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 30
+    "source_question": 30,
+    "pdf_page": 11
   },
   {
     "id": "scor-031",
@@ -1196,7 +1226,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 31
+    "source_question": 31,
+    "pdf_page": 12
   },
   {
     "id": "scor-032",
@@ -1232,7 +1263,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 32
+    "source_question": 32,
+    "pdf_page": 12
   },
   {
     "id": "scor-033",
@@ -1285,7 +1317,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-013-01.png",
     "answer_image": "./scor-exhibits/page-013-02.png",
     "needs_review": false,
-    "source_question": 33
+    "source_question": 33,
+    "pdf_page": 13
   },
   {
     "id": "scor-034",
@@ -1321,7 +1354,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 34
+    "source_question": 34,
+    "pdf_page": 13
   },
   {
     "id": "scor-035",
@@ -1357,7 +1391,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 35
+    "source_question": 35,
+    "pdf_page": 14
   },
   {
     "id": "scor-036",
@@ -1393,7 +1428,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 36
+    "source_question": 36,
+    "pdf_page": 14
   },
   {
     "id": "scor-037",
@@ -1429,7 +1465,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 37
+    "source_question": 37,
+    "pdf_page": 14
   },
   {
     "id": "scor-038",
@@ -1465,7 +1502,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 38
+    "source_question": 38,
+    "pdf_page": 15
   },
   {
     "id": "scor-039",
@@ -1501,7 +1539,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 39
+    "source_question": 39,
+    "pdf_page": 15
   },
   {
     "id": "scor-040",
@@ -1542,7 +1581,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 40
+    "source_question": 40,
+    "pdf_page": 15
   },
   {
     "id": "scor-041",
@@ -1578,7 +1618,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 41
+    "source_question": 41,
+    "pdf_page": 16
   },
   {
     "id": "scor-042",
@@ -1614,7 +1655,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 42
+    "source_question": 42,
+    "pdf_page": 16
   },
   {
     "id": "scor-043",
@@ -1655,7 +1697,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 43
+    "source_question": 43,
+    "pdf_page": 16
   },
   {
     "id": "scor-044",
@@ -1691,7 +1734,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 44
+    "source_question": 44,
+    "pdf_page": 17
   },
   {
     "id": "scor-045",
@@ -1727,7 +1771,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 45
+    "source_question": 45,
+    "pdf_page": 17
   },
   {
     "id": "scor-046",
@@ -1763,7 +1808,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 46
+    "source_question": 46,
+    "pdf_page": 17
   },
   {
     "id": "scor-047",
@@ -1799,7 +1845,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 47
+    "source_question": 47,
+    "pdf_page": 18
   },
   {
     "id": "scor-048",
@@ -1855,7 +1902,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-018-01.png",
     "answer_image": "./scor-exhibits/page-018-02.png",
     "needs_review": false,
-    "source_question": 48
+    "source_question": 48,
+    "pdf_page": 18
   },
   {
     "id": "scor-049",
@@ -1891,7 +1939,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 49
+    "source_question": 49,
+    "pdf_page": 19
   },
   {
     "id": "scor-050",
@@ -1947,7 +1996,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-019-01.png",
     "answer_image": "./scor-exhibits/page-019-02.png",
     "needs_review": false,
-    "source_question": 50
+    "source_question": 50,
+    "pdf_page": 19
   },
   {
     "id": "scor-451",
@@ -1983,7 +2033,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 451
+    "source_question": 451,
+    "pdf_page": 20
   },
   {
     "id": "scor-452",
@@ -2019,7 +2070,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 452
+    "source_question": 452,
+    "pdf_page": 20
   },
   {
     "id": "scor-453",
@@ -2055,7 +2107,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 453
+    "source_question": 453,
+    "pdf_page": 20
   },
   {
     "id": "scor-454",
@@ -2091,7 +2144,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 454
+    "source_question": 454,
+    "pdf_page": 21
   },
   {
     "id": "scor-455",
@@ -2127,7 +2181,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 455
+    "source_question": 455,
+    "pdf_page": 21
   },
   {
     "id": "scor-456",
@@ -2163,7 +2218,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 456
+    "source_question": 456,
+    "pdf_page": 21
   },
   {
     "id": "scor-457",
@@ -2199,7 +2255,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 457
+    "source_question": 457,
+    "pdf_page": 22
   },
   {
     "id": "scor-458",
@@ -2240,7 +2297,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 458
+    "source_question": 458,
+    "pdf_page": 22
   },
   {
     "id": "scor-459",
@@ -2276,7 +2334,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 459
+    "source_question": 459,
+    "pdf_page": 22
   },
   {
     "id": "scor-460",
@@ -2312,7 +2371,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 460
+    "source_question": 460,
+    "pdf_page": 23
   },
   {
     "id": "scor-461",
@@ -2348,7 +2408,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 461
+    "source_question": 461,
+    "pdf_page": 23
   },
   {
     "id": "scor-462",
@@ -2384,7 +2445,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 462
+    "source_question": 462,
+    "pdf_page": 23
   },
   {
     "id": "scor-463",
@@ -2449,7 +2511,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-024-01.png",
     "answer_image": "./scor-exhibits/page-024-02.png",
     "needs_review": false,
-    "source_question": 463
+    "source_question": 463,
+    "pdf_page": 24
   },
   {
     "id": "scor-464",
@@ -2487,7 +2550,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 464
+    "source_question": 464,
+    "pdf_page": 25
   },
   {
     "id": "scor-465",
@@ -2523,7 +2587,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 465
+    "source_question": 465,
+    "pdf_page": 25
   },
   {
     "id": "scor-466",
@@ -2579,7 +2644,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-026-01.png",
     "answer_image": "./scor-exhibits/page-026-02.png",
     "needs_review": false,
-    "source_question": 466
+    "source_question": 466,
+    "pdf_page": 26
   },
   {
     "id": "scor-467",
@@ -2615,7 +2681,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 467
+    "source_question": 467,
+    "pdf_page": 26
   },
   {
     "id": "scor-468",
@@ -2651,7 +2718,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 468
+    "source_question": 468,
+    "pdf_page": 26
   },
   {
     "id": "scor-469",
@@ -2687,7 +2755,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 469
+    "source_question": 469,
+    "pdf_page": 27
   },
   {
     "id": "scor-470",
@@ -2723,7 +2792,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 470
+    "source_question": 470,
+    "pdf_page": 27
   },
   {
     "id": "scor-471",
@@ -2759,7 +2829,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 471
+    "source_question": 471,
+    "pdf_page": 27
   },
   {
     "id": "scor-472",
@@ -2797,7 +2868,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 472
+    "source_question": 472,
+    "pdf_page": 28
   },
   {
     "id": "scor-473",
@@ -2838,7 +2910,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 473
+    "source_question": 473,
+    "pdf_page": 28
   },
   {
     "id": "scor-474",
@@ -2874,7 +2947,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 474
+    "source_question": 474,
+    "pdf_page": 29
   },
   {
     "id": "scor-475",
@@ -2910,7 +2984,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 475
+    "source_question": 475,
+    "pdf_page": 29
   },
   {
     "id": "scor-476",
@@ -2946,7 +3021,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 476
+    "source_question": 476,
+    "pdf_page": 29
   },
   {
     "id": "scor-477",
@@ -2982,7 +3058,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 477
+    "source_question": 477,
+    "pdf_page": 30
   },
   {
     "id": "scor-478",
@@ -3018,7 +3095,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 478
+    "source_question": 478,
+    "pdf_page": 30
   },
   {
     "id": "scor-479",
@@ -3054,7 +3132,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 479
+    "source_question": 479,
+    "pdf_page": 30
   },
   {
     "id": "scor-480",
@@ -3090,7 +3169,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 480
+    "source_question": 480,
+    "pdf_page": 31
   },
   {
     "id": "scor-481",
@@ -3126,7 +3206,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 481
+    "source_question": 481,
+    "pdf_page": 31
   },
   {
     "id": "scor-482",
@@ -3162,7 +3243,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 482
+    "source_question": 482,
+    "pdf_page": 31
   },
   {
     "id": "scor-483",
@@ -3198,7 +3280,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 483
+    "source_question": 483,
+    "pdf_page": 32
   },
   {
     "id": "scor-484",
@@ -3234,7 +3317,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 484
+    "source_question": 484,
+    "pdf_page": 32
   },
   {
     "id": "scor-485",
@@ -3275,7 +3359,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 485
+    "source_question": 485,
+    "pdf_page": 32
   },
   {
     "id": "scor-486",
@@ -3311,7 +3396,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 486
+    "source_question": 486,
+    "pdf_page": 33
   },
   {
     "id": "scor-487",
@@ -3347,7 +3433,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 487
+    "source_question": 487,
+    "pdf_page": 33
   },
   {
     "id": "scor-488",
@@ -3383,7 +3470,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 488
+    "source_question": 488,
+    "pdf_page": 34
   },
   {
     "id": "scor-489",
@@ -3419,7 +3507,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 489
+    "source_question": 489,
+    "pdf_page": 34
   },
   {
     "id": "scor-490",
@@ -3455,7 +3544,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 490
+    "source_question": 490,
+    "pdf_page": 34
   },
   {
     "id": "scor-491",
@@ -3512,6 +3602,7 @@ window.SCOR_QUESTIONS = [
     "answer_image": "./scor-exhibits/page-035-02.png",
     "needs_review": true,
     "source_question": 491,
+    "pdf_page": 35,
     "review_reason": "One transcribed source label (NGFW) is uncertain in the exhibit image."
   },
   {
@@ -3548,7 +3639,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 492
+    "source_question": 492,
+    "pdf_page": 35
   },
   {
     "id": "scor-493",
@@ -3589,7 +3681,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 493
+    "source_question": 493,
+    "pdf_page": 36
   },
   {
     "id": "scor-494",
@@ -3625,7 +3718,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 494
+    "source_question": 494,
+    "pdf_page": 36
   },
   {
     "id": "scor-495",
@@ -3661,7 +3755,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 495
+    "source_question": 495,
+    "pdf_page": 36
   },
   {
     "id": "scor-496",
@@ -3697,7 +3792,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 496
+    "source_question": 496,
+    "pdf_page": 37
   },
   {
     "id": "scor-497",
@@ -3733,7 +3829,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 497
+    "source_question": 497,
+    "pdf_page": 37
   },
   {
     "id": "scor-498",
@@ -3769,7 +3866,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 498
+    "source_question": 498,
+    "pdf_page": 37
   },
   {
     "id": "scor-499",
@@ -3805,7 +3903,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 499
+    "source_question": 499,
+    "pdf_page": 38
   },
   {
     "id": "scor-500",
@@ -3841,7 +3940,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 500
+    "source_question": 500,
+    "pdf_page": 38
   },
   {
     "id": "scor-051",
@@ -3877,7 +3977,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 51
+    "source_question": 51,
+    "pdf_page": 39
   },
   {
     "id": "scor-052",
@@ -3916,7 +4017,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 52
+    "source_question": 52,
+    "pdf_page": 39
   },
   {
     "id": "scor-053",
@@ -3954,7 +4056,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 53
+    "source_question": 53,
+    "pdf_page": 40
   },
   {
     "id": "scor-054",
@@ -3990,7 +4093,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 54
+    "source_question": 54,
+    "pdf_page": 40
   },
   {
     "id": "scor-055",
@@ -4026,7 +4130,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 55
+    "source_question": 55,
+    "pdf_page": 40
   },
   {
     "id": "scor-056",
@@ -4067,7 +4172,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 56
+    "source_question": 56,
+    "pdf_page": 41
   },
   {
     "id": "scor-057",
@@ -4103,7 +4209,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 57
+    "source_question": 57,
+    "pdf_page": 41
   },
   {
     "id": "scor-058",
@@ -4141,7 +4248,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 58
+    "source_question": 58,
+    "pdf_page": 42
   },
   {
     "id": "scor-059",
@@ -4177,7 +4285,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 59
+    "source_question": 59,
+    "pdf_page": 42
   },
   {
     "id": "scor-060",
@@ -4213,7 +4322,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 60
+    "source_question": 60,
+    "pdf_page": 43
   },
   {
     "id": "scor-061",
@@ -4249,7 +4359,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 61
+    "source_question": 61,
+    "pdf_page": 43
   },
   {
     "id": "scor-062",
@@ -4285,7 +4396,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 62
+    "source_question": 62,
+    "pdf_page": 43
   },
   {
     "id": "scor-063",
@@ -4326,7 +4438,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 63
+    "source_question": 63,
+    "pdf_page": 44
   },
   {
     "id": "scor-064",
@@ -4362,7 +4475,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 64
+    "source_question": 64,
+    "pdf_page": 44
   },
   {
     "id": "scor-065",
@@ -4398,7 +4512,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 65
+    "source_question": 65,
+    "pdf_page": 44
   },
   {
     "id": "scor-066",
@@ -4436,7 +4551,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 66
+    "source_question": 66,
+    "pdf_page": 45
   },
   {
     "id": "scor-067",
@@ -4472,7 +4588,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 67
+    "source_question": 67,
+    "pdf_page": 45
   },
   {
     "id": "scor-068",
@@ -4508,7 +4625,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 68
+    "source_question": 68,
+    "pdf_page": 45
   },
   {
     "id": "scor-069",
@@ -4547,7 +4665,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 69
+    "source_question": 69,
+    "pdf_page": 46
   },
   {
     "id": "scor-070",
@@ -4586,7 +4705,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 70
+    "source_question": 70,
+    "pdf_page": 46
   },
   {
     "id": "scor-071",
@@ -4622,7 +4742,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 71
+    "source_question": 71,
+    "pdf_page": 47
   },
   {
     "id": "scor-072",
@@ -4658,7 +4779,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 72
+    "source_question": 72,
+    "pdf_page": 47
   },
   {
     "id": "scor-073",
@@ -4694,7 +4816,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 73
+    "source_question": 73,
+    "pdf_page": 47
   },
   {
     "id": "scor-074",
@@ -4730,7 +4853,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 74
+    "source_question": 74,
+    "pdf_page": 48
   },
   {
     "id": "scor-075",
@@ -4771,7 +4895,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 75
+    "source_question": 75,
+    "pdf_page": 48
   },
   {
     "id": "scor-076",
@@ -4807,7 +4932,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 76
+    "source_question": 76,
+    "pdf_page": 48
   },
   {
     "id": "scor-077",
@@ -4848,7 +4974,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 77
+    "source_question": 77,
+    "pdf_page": 49
   },
   {
     "id": "scor-078",
@@ -4884,7 +5011,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 78
+    "source_question": 78,
+    "pdf_page": 49
   },
   {
     "id": "scor-079",
@@ -4922,7 +5050,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 79
+    "source_question": 79,
+    "pdf_page": 50
   },
   {
     "id": "scor-080",
@@ -4958,7 +5087,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 80
+    "source_question": 80,
+    "pdf_page": 50
   },
   {
     "id": "scor-081",
@@ -4994,7 +5124,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 81
+    "source_question": 81,
+    "pdf_page": 51
   },
   {
     "id": "scor-082",
@@ -5030,7 +5161,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 82
+    "source_question": 82,
+    "pdf_page": 51
   },
   {
     "id": "scor-083",
@@ -5071,7 +5203,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 83
+    "source_question": 83,
+    "pdf_page": 51
   },
   {
     "id": "scor-084",
@@ -5109,7 +5242,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 84
+    "source_question": 84,
+    "pdf_page": 52
   },
   {
     "id": "scor-085",
@@ -5145,7 +5279,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 85
+    "source_question": 85,
+    "pdf_page": 52
   },
   {
     "id": "scor-086",
@@ -5181,7 +5316,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 86
+    "source_question": 86,
+    "pdf_page": 52
   },
   {
     "id": "scor-087",
@@ -5217,7 +5353,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 87
+    "source_question": 87,
+    "pdf_page": 53
   },
   {
     "id": "scor-088",
@@ -5253,7 +5390,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 88
+    "source_question": 88,
+    "pdf_page": 53
   },
   {
     "id": "scor-089",
@@ -5311,7 +5449,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-054-01.png",
     "answer_image": "./scor-exhibits/page-054-02.png",
     "needs_review": false,
-    "source_question": 89
+    "source_question": 89,
+    "pdf_page": 54
   },
   {
     "id": "scor-090",
@@ -5347,7 +5486,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 90
+    "source_question": 90,
+    "pdf_page": 55
   },
   {
     "id": "scor-091",
@@ -5383,7 +5523,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 91
+    "source_question": 91,
+    "pdf_page": 55
   },
   {
     "id": "scor-092",
@@ -5421,7 +5562,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 92
+    "source_question": 92,
+    "pdf_page": 55
   },
   {
     "id": "scor-093",
@@ -5459,7 +5601,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 93
+    "source_question": 93,
+    "pdf_page": 56
   },
   {
     "id": "scor-094",
@@ -5497,7 +5640,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 94
+    "source_question": 94,
+    "pdf_page": 57
   },
   {
     "id": "scor-095",
@@ -5535,7 +5679,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 95
+    "source_question": 95,
+    "pdf_page": 58
   },
   {
     "id": "scor-096",
@@ -5571,7 +5716,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 96
+    "source_question": 96,
+    "pdf_page": 59
   },
   {
     "id": "scor-097",
@@ -5607,7 +5753,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 97
+    "source_question": 97,
+    "pdf_page": 59
   },
   {
     "id": "scor-098",
@@ -5648,7 +5795,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 98
+    "source_question": 98,
+    "pdf_page": 59
   },
   {
     "id": "scor-099",
@@ -5684,7 +5832,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 99
+    "source_question": 99,
+    "pdf_page": 60
   },
   {
     "id": "scor-100",
@@ -5720,7 +5869,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 100
+    "source_question": 100,
+    "pdf_page": 60
   },
   {
     "id": "scor-101",
@@ -5756,7 +5906,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 101
+    "source_question": 101,
+    "pdf_page": 61
   },
   {
     "id": "scor-102",
@@ -5792,7 +5943,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 102
+    "source_question": 102,
+    "pdf_page": 61
   },
   {
     "id": "scor-103",
@@ -5828,7 +5980,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 103
+    "source_question": 103,
+    "pdf_page": 61
   },
   {
     "id": "scor-104",
@@ -5864,7 +6017,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 104
+    "source_question": 104,
+    "pdf_page": 62
   },
   {
     "id": "scor-105",
@@ -5900,7 +6054,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 105
+    "source_question": 105,
+    "pdf_page": 62
   },
   {
     "id": "scor-106",
@@ -5936,7 +6091,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 106
+    "source_question": 106,
+    "pdf_page": 62
   },
   {
     "id": "scor-107",
@@ -5972,7 +6128,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 107
+    "source_question": 107,
+    "pdf_page": 63
   },
   {
     "id": "scor-108",
@@ -6008,7 +6165,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 108
+    "source_question": 108,
+    "pdf_page": 63
   },
   {
     "id": "scor-109",
@@ -6044,7 +6202,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 109
+    "source_question": 109,
+    "pdf_page": 63
   },
   {
     "id": "scor-110",
@@ -6100,7 +6259,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-064-01.png",
     "answer_image": "./scor-exhibits/page-064-02.png",
     "needs_review": false,
-    "source_question": 110
+    "source_question": 110,
+    "pdf_page": 64
   },
   {
     "id": "scor-111",
@@ -6136,7 +6296,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 111
+    "source_question": 111,
+    "pdf_page": 64
   },
   {
     "id": "scor-112",
@@ -6172,7 +6333,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 112
+    "source_question": 112,
+    "pdf_page": 64
   },
   {
     "id": "scor-113",
@@ -6213,7 +6375,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 113
+    "source_question": 113,
+    "pdf_page": 65
   },
   {
     "id": "scor-114",
@@ -6249,7 +6412,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 114
+    "source_question": 114,
+    "pdf_page": 65
   },
   {
     "id": "scor-115",
@@ -6290,7 +6454,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 115
+    "source_question": 115,
+    "pdf_page": 65
   },
   {
     "id": "scor-116",
@@ -6326,7 +6491,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 116
+    "source_question": 116,
+    "pdf_page": 66
   },
   {
     "id": "scor-117",
@@ -6362,7 +6528,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 117
+    "source_question": 117,
+    "pdf_page": 66
   },
   {
     "id": "scor-118",
@@ -6398,7 +6565,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 118
+    "source_question": 118,
+    "pdf_page": 66
   },
   {
     "id": "scor-119",
@@ -6434,7 +6602,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 119
+    "source_question": 119,
+    "pdf_page": 67
   },
   {
     "id": "scor-120",
@@ -6470,7 +6639,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 120
+    "source_question": 120,
+    "pdf_page": 67
   },
   {
     "id": "scor-121",
@@ -6506,7 +6676,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 121
+    "source_question": 121,
+    "pdf_page": 67
   },
   {
     "id": "scor-122",
@@ -6542,7 +6713,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 122
+    "source_question": 122,
+    "pdf_page": 68
   },
   {
     "id": "scor-123",
@@ -6598,7 +6770,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-068-01.png",
     "answer_image": "./scor-exhibits/page-068-02.png",
     "needs_review": false,
-    "source_question": 123
+    "source_question": 123,
+    "pdf_page": 68
   },
   {
     "id": "scor-124",
@@ -6636,7 +6809,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 124
+    "source_question": 124,
+    "pdf_page": 69
   },
   {
     "id": "scor-125",
@@ -6672,7 +6846,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 125
+    "source_question": 125,
+    "pdf_page": 70
   },
   {
     "id": "scor-126",
@@ -6708,7 +6883,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 126
+    "source_question": 126,
+    "pdf_page": 70
   },
   {
     "id": "scor-127",
@@ -6749,7 +6925,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 127
+    "source_question": 127,
+    "pdf_page": 70
   },
   {
     "id": "scor-128",
@@ -6787,7 +6964,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 128
+    "source_question": 128,
+    "pdf_page": 71
   },
   {
     "id": "scor-129",
@@ -6823,7 +7001,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 129
+    "source_question": 129,
+    "pdf_page": 71
   },
   {
     "id": "scor-130",
@@ -6859,7 +7038,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 130
+    "source_question": 130,
+    "pdf_page": 72
   },
   {
     "id": "scor-131",
@@ -6895,7 +7075,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 131
+    "source_question": 131,
+    "pdf_page": 72
   },
   {
     "id": "scor-132",
@@ -6931,7 +7112,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 132
+    "source_question": 132,
+    "pdf_page": 72
   },
   {
     "id": "scor-133",
@@ -6967,7 +7149,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 133
+    "source_question": 133,
+    "pdf_page": 73
   },
   {
     "id": "scor-134",
@@ -7003,7 +7186,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 134
+    "source_question": 134,
+    "pdf_page": 73
   },
   {
     "id": "scor-135",
@@ -7041,7 +7225,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 135
+    "source_question": 135,
+    "pdf_page": 73
   },
   {
     "id": "scor-136",
@@ -7077,7 +7262,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 136
+    "source_question": 136,
+    "pdf_page": 74
   },
   {
     "id": "scor-137",
@@ -7113,7 +7299,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 137
+    "source_question": 137,
+    "pdf_page": 74
   },
   {
     "id": "scor-138",
@@ -7149,7 +7336,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 138
+    "source_question": 138,
+    "pdf_page": 74
   },
   {
     "id": "scor-139",
@@ -7185,7 +7373,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 139
+    "source_question": 139,
+    "pdf_page": 75
   },
   {
     "id": "scor-140",
@@ -7221,7 +7410,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 140
+    "source_question": 140,
+    "pdf_page": 75
   },
   {
     "id": "scor-141",
@@ -7257,7 +7447,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 141
+    "source_question": 141,
+    "pdf_page": 75
   },
   {
     "id": "scor-142",
@@ -7293,7 +7484,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 142
+    "source_question": 142,
+    "pdf_page": 76
   },
   {
     "id": "scor-143",
@@ -7329,7 +7521,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 143
+    "source_question": 143,
+    "pdf_page": 76
   },
   {
     "id": "scor-144",
@@ -7365,7 +7558,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 144
+    "source_question": 144,
+    "pdf_page": 76
   },
   {
     "id": "scor-145",
@@ -7401,7 +7595,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 145
+    "source_question": 145,
+    "pdf_page": 77
   },
   {
     "id": "scor-146",
@@ -7437,7 +7632,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 146
+    "source_question": 146,
+    "pdf_page": 77
   },
   {
     "id": "scor-147",
@@ -7473,7 +7669,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 147
+    "source_question": 147,
+    "pdf_page": 77
   },
   {
     "id": "scor-148",
@@ -7509,7 +7706,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 148
+    "source_question": 148,
+    "pdf_page": 78
   },
   {
     "id": "scor-149",
@@ -7565,7 +7763,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-078-01.png",
     "answer_image": "./scor-exhibits/page-078-02.png",
     "needs_review": false,
-    "source_question": 149
+    "source_question": 149,
+    "pdf_page": 78
   },
   {
     "id": "scor-150",
@@ -7603,7 +7802,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 150
+    "source_question": 150,
+    "pdf_page": 79
   },
   {
     "id": "scor-151",
@@ -7639,7 +7839,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 151
+    "source_question": 151,
+    "pdf_page": 80
   },
   {
     "id": "scor-152",
@@ -7675,7 +7876,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 152
+    "source_question": 152,
+    "pdf_page": 80
   },
   {
     "id": "scor-153",
@@ -7711,7 +7913,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 153
+    "source_question": 153,
+    "pdf_page": 80
   },
   {
     "id": "scor-154",
@@ -7747,7 +7950,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 154
+    "source_question": 154,
+    "pdf_page": 81
   },
   {
     "id": "scor-155",
@@ -7783,7 +7987,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 155
+    "source_question": 155,
+    "pdf_page": 81
   },
   {
     "id": "scor-156",
@@ -7819,7 +8024,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 156
+    "source_question": 156,
+    "pdf_page": 81
   },
   {
     "id": "scor-157",
@@ -7855,7 +8061,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 157
+    "source_question": 157,
+    "pdf_page": 82
   },
   {
     "id": "scor-158",
@@ -7891,7 +8098,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 158
+    "source_question": 158,
+    "pdf_page": 82
   },
   {
     "id": "scor-159",
@@ -7927,7 +8135,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 159
+    "source_question": 159,
+    "pdf_page": 82
   },
   {
     "id": "scor-160",
@@ -7963,7 +8172,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 160
+    "source_question": 160,
+    "pdf_page": 83
   },
   {
     "id": "scor-161",
@@ -8004,7 +8214,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 161
+    "source_question": 161,
+    "pdf_page": 83
   },
   {
     "id": "scor-162",
@@ -8040,7 +8251,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 162
+    "source_question": 162,
+    "pdf_page": 83
   },
   {
     "id": "scor-163",
@@ -8076,7 +8288,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 163
+    "source_question": 163,
+    "pdf_page": 84
   },
   {
     "id": "scor-164",
@@ -8112,7 +8325,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 164
+    "source_question": 164,
+    "pdf_page": 84
   },
   {
     "id": "scor-165",
@@ -8148,7 +8362,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 165
+    "source_question": 165,
+    "pdf_page": 84
   },
   {
     "id": "scor-166",
@@ -8189,7 +8404,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 166
+    "source_question": 166,
+    "pdf_page": 85
   },
   {
     "id": "scor-167",
@@ -8245,7 +8461,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-085-01.png",
     "answer_image": "./scor-exhibits/page-085-02.png",
     "needs_review": false,
-    "source_question": 167
+    "source_question": 167,
+    "pdf_page": 85
   },
   {
     "id": "scor-168",
@@ -8281,7 +8498,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 168
+    "source_question": 168,
+    "pdf_page": 85
   },
   {
     "id": "scor-169",
@@ -8317,7 +8535,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 169
+    "source_question": 169,
+    "pdf_page": 86
   },
   {
     "id": "scor-170",
@@ -8358,7 +8577,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 170
+    "source_question": 170,
+    "pdf_page": 86
   },
   {
     "id": "scor-171",
@@ -8394,7 +8614,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 171
+    "source_question": 171,
+    "pdf_page": 86
   },
   {
     "id": "scor-172",
@@ -8430,7 +8651,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 172
+    "source_question": 172,
+    "pdf_page": 87
   },
   {
     "id": "scor-173",
@@ -8466,7 +8688,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 173
+    "source_question": 173,
+    "pdf_page": 87
   },
   {
     "id": "scor-174",
@@ -8502,7 +8725,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 174
+    "source_question": 174,
+    "pdf_page": 87
   },
   {
     "id": "scor-175",
@@ -8538,7 +8762,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 175
+    "source_question": 175,
+    "pdf_page": 88
   },
   {
     "id": "scor-176",
@@ -8574,7 +8799,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 176
+    "source_question": 176,
+    "pdf_page": 88
   },
   {
     "id": "scor-177",
@@ -8630,7 +8856,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-089-01.png",
     "answer_image": "./scor-exhibits/page-089-02.png",
     "needs_review": false,
-    "source_question": 177
+    "source_question": 177,
+    "pdf_page": 89
   },
   {
     "id": "scor-178",
@@ -8666,7 +8893,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 178
+    "source_question": 178,
+    "pdf_page": 89
   },
   {
     "id": "scor-179",
@@ -8702,7 +8930,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 179
+    "source_question": 179,
+    "pdf_page": 90
   },
   {
     "id": "scor-180",
@@ -8738,7 +8967,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 180
+    "source_question": 180,
+    "pdf_page": 90
   },
   {
     "id": "scor-181",
@@ -8774,7 +9004,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 181
+    "source_question": 181,
+    "pdf_page": 90
   },
   {
     "id": "scor-182",
@@ -8810,7 +9041,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 182
+    "source_question": 182,
+    "pdf_page": 91
   },
   {
     "id": "scor-183",
@@ -8846,7 +9078,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 183
+    "source_question": 183,
+    "pdf_page": 91
   },
   {
     "id": "scor-184",
@@ -8882,7 +9115,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 184
+    "source_question": 184,
+    "pdf_page": 91
   },
   {
     "id": "scor-185",
@@ -8923,7 +9157,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 185
+    "source_question": 185,
+    "pdf_page": 92
   },
   {
     "id": "scor-186",
@@ -8959,7 +9194,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 186
+    "source_question": 186,
+    "pdf_page": 92
   },
   {
     "id": "scor-187",
@@ -8995,7 +9231,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 187
+    "source_question": 187,
+    "pdf_page": 92
   },
   {
     "id": "scor-188",
@@ -9031,7 +9268,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 188
+    "source_question": 188,
+    "pdf_page": 93
   },
   {
     "id": "scor-189",
@@ -9067,7 +9305,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 189
+    "source_question": 189,
+    "pdf_page": 93
   },
   {
     "id": "scor-190",
@@ -9103,7 +9342,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 190
+    "source_question": 190,
+    "pdf_page": 93
   },
   {
     "id": "scor-191",
@@ -9139,7 +9379,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 191
+    "source_question": 191,
+    "pdf_page": 94
   },
   {
     "id": "scor-192",
@@ -9175,7 +9416,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 192
+    "source_question": 192,
+    "pdf_page": 94
   },
   {
     "id": "scor-193",
@@ -9216,7 +9458,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 193
+    "source_question": 193,
+    "pdf_page": 94
   },
   {
     "id": "scor-194",
@@ -9252,7 +9495,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 194
+    "source_question": 194,
+    "pdf_page": 95
   },
   {
     "id": "scor-195",
@@ -9290,7 +9534,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 195
+    "source_question": 195,
+    "pdf_page": 95
   },
   {
     "id": "scor-196",
@@ -9326,7 +9571,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 196
+    "source_question": 196,
+    "pdf_page": 96
   },
   {
     "id": "scor-197",
@@ -9367,7 +9613,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 197
+    "source_question": 197,
+    "pdf_page": 96
   },
   {
     "id": "scor-198",
@@ -9403,7 +9650,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 198
+    "source_question": 198,
+    "pdf_page": 96
   },
   {
     "id": "scor-199",
@@ -9439,7 +9687,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 199
+    "source_question": 199,
+    "pdf_page": 97
   },
   {
     "id": "scor-200",
@@ -9475,7 +9724,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 200
+    "source_question": 200,
+    "pdf_page": 97
   },
   {
     "id": "scor-201",
@@ -9511,7 +9761,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 201
+    "source_question": 201,
+    "pdf_page": 98
   },
   {
     "id": "scor-202",
@@ -9547,7 +9798,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 202
+    "source_question": 202,
+    "pdf_page": 98
   },
   {
     "id": "scor-203",
@@ -9583,7 +9835,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 203
+    "source_question": 203,
+    "pdf_page": 98
   },
   {
     "id": "scor-204",
@@ -9624,7 +9877,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 204
+    "source_question": 204,
+    "pdf_page": 99
   },
   {
     "id": "scor-205",
@@ -9660,7 +9914,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 205
+    "source_question": 205,
+    "pdf_page": 99
   },
   {
     "id": "scor-206",
@@ -9696,7 +9951,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 206
+    "source_question": 206,
+    "pdf_page": 99
   },
   {
     "id": "scor-207",
@@ -9737,7 +9993,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 207
+    "source_question": 207,
+    "pdf_page": 100
   },
   {
     "id": "scor-208",
@@ -9773,7 +10030,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 208
+    "source_question": 208,
+    "pdf_page": 100
   },
   {
     "id": "scor-209",
@@ -9809,7 +10067,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 209
+    "source_question": 209,
+    "pdf_page": 100
   },
   {
     "id": "scor-210",
@@ -9845,7 +10104,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 210
+    "source_question": 210,
+    "pdf_page": 101
   },
   {
     "id": "scor-211",
@@ -9881,7 +10141,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 211
+    "source_question": 211,
+    "pdf_page": 101
   },
   {
     "id": "scor-212",
@@ -9922,7 +10183,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 212
+    "source_question": 212,
+    "pdf_page": 101
   },
   {
     "id": "scor-213",
@@ -9958,7 +10220,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 213
+    "source_question": 213,
+    "pdf_page": 102
   },
   {
     "id": "scor-214",
@@ -9994,7 +10257,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 214
+    "source_question": 214,
+    "pdf_page": 102
   },
   {
     "id": "scor-215",
@@ -10030,7 +10294,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 215
+    "source_question": 215,
+    "pdf_page": 102
   },
   {
     "id": "scor-216",
@@ -10066,7 +10331,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 216
+    "source_question": 216,
+    "pdf_page": 103
   },
   {
     "id": "scor-217",
@@ -10102,7 +10368,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 217
+    "source_question": 217,
+    "pdf_page": 103
   },
   {
     "id": "scor-218",
@@ -10138,7 +10405,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 218
+    "source_question": 218,
+    "pdf_page": 103
   },
   {
     "id": "scor-219",
@@ -10174,7 +10442,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 219
+    "source_question": 219,
+    "pdf_page": 104
   },
   {
     "id": "scor-220",
@@ -10210,7 +10479,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 220
+    "source_question": 220,
+    "pdf_page": 104
   },
   {
     "id": "scor-221",
@@ -10246,7 +10516,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 221
+    "source_question": 221,
+    "pdf_page": 104
   },
   {
     "id": "scor-222",
@@ -10282,7 +10553,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 222
+    "source_question": 222,
+    "pdf_page": 105
   },
   {
     "id": "scor-223",
@@ -10318,7 +10590,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 223
+    "source_question": 223,
+    "pdf_page": 105
   },
   {
     "id": "scor-224",
@@ -10354,7 +10627,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 224
+    "source_question": 224,
+    "pdf_page": 105
   },
   {
     "id": "scor-225",
@@ -10390,7 +10664,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 225
+    "source_question": 225,
+    "pdf_page": 106
   },
   {
     "id": "scor-226",
@@ -10428,7 +10703,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 226
+    "source_question": 226,
+    "pdf_page": 107
   },
   {
     "id": "scor-227",
@@ -10464,7 +10740,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 227
+    "source_question": 227,
+    "pdf_page": 108
   },
   {
     "id": "scor-228",
@@ -10500,7 +10777,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 228
+    "source_question": 228,
+    "pdf_page": 108
   },
   {
     "id": "scor-229",
@@ -10536,7 +10814,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 229
+    "source_question": 229,
+    "pdf_page": 108
   },
   {
     "id": "scor-230",
@@ -10572,7 +10851,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 230
+    "source_question": 230,
+    "pdf_page": 109
   },
   {
     "id": "scor-231",
@@ -10608,7 +10888,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 231
+    "source_question": 231,
+    "pdf_page": 109
   },
   {
     "id": "scor-232",
@@ -10644,7 +10925,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 232
+    "source_question": 232,
+    "pdf_page": 109
   },
   {
     "id": "scor-233",
@@ -10685,7 +10967,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 233
+    "source_question": 233,
+    "pdf_page": 110
   },
   {
     "id": "scor-234",
@@ -10726,7 +11009,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 234
+    "source_question": 234,
+    "pdf_page": 110
   },
   {
     "id": "scor-235",
@@ -10762,7 +11046,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 235
+    "source_question": 235,
+    "pdf_page": 110
   },
   {
     "id": "scor-236",
@@ -10803,7 +11088,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 236
+    "source_question": 236,
+    "pdf_page": 111
   },
   {
     "id": "scor-237",
@@ -10844,7 +11130,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 237
+    "source_question": 237,
+    "pdf_page": 111
   },
   {
     "id": "scor-238",
@@ -10880,7 +11167,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 238
+    "source_question": 238,
+    "pdf_page": 111
   },
   {
     "id": "scor-239",
@@ -10916,7 +11204,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 239
+    "source_question": 239,
+    "pdf_page": 112
   },
   {
     "id": "scor-240",
@@ -10952,7 +11241,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 240
+    "source_question": 240,
+    "pdf_page": 112
   },
   {
     "id": "scor-241",
@@ -10993,7 +11283,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 241
+    "source_question": 241,
+    "pdf_page": 112
   },
   {
     "id": "scor-242",
@@ -11029,7 +11320,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 242
+    "source_question": 242,
+    "pdf_page": 113
   },
   {
     "id": "scor-243",
@@ -11065,7 +11357,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 243
+    "source_question": 243,
+    "pdf_page": 113
   },
   {
     "id": "scor-244",
@@ -11101,7 +11394,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 244
+    "source_question": 244,
+    "pdf_page": 113
   },
   {
     "id": "scor-245",
@@ -11137,7 +11431,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 245
+    "source_question": 245,
+    "pdf_page": 114
   },
   {
     "id": "scor-246",
@@ -11173,7 +11468,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 246
+    "source_question": 246,
+    "pdf_page": 114
   },
   {
     "id": "scor-247",
@@ -11209,7 +11505,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 247
+    "source_question": 247,
+    "pdf_page": 114
   },
   {
     "id": "scor-248",
@@ -11250,7 +11547,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 248
+    "source_question": 248,
+    "pdf_page": 115
   },
   {
     "id": "scor-249",
@@ -11291,7 +11589,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 249
+    "source_question": 249,
+    "pdf_page": 115
   },
   {
     "id": "scor-250",
@@ -11332,7 +11631,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 250
+    "source_question": 250,
+    "pdf_page": 115
   },
   {
     "id": "scor-251",
@@ -11373,7 +11673,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 251
+    "source_question": 251,
+    "pdf_page": 117
   },
   {
     "id": "scor-252",
@@ -11409,7 +11710,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 252
+    "source_question": 252,
+    "pdf_page": 117
   },
   {
     "id": "scor-253",
@@ -11445,7 +11747,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 253
+    "source_question": 253,
+    "pdf_page": 117
   },
   {
     "id": "scor-254",
@@ -11486,7 +11789,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 254
+    "source_question": 254,
+    "pdf_page": 118
   },
   {
     "id": "scor-255",
@@ -11522,7 +11826,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 255
+    "source_question": 255,
+    "pdf_page": 118
   },
   {
     "id": "scor-256",
@@ -11558,7 +11863,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 256
+    "source_question": 256,
+    "pdf_page": 118
   },
   {
     "id": "scor-257",
@@ -11594,7 +11900,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 257
+    "source_question": 257,
+    "pdf_page": 119
   },
   {
     "id": "scor-258",
@@ -11630,7 +11937,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 258
+    "source_question": 258,
+    "pdf_page": 119
   },
   {
     "id": "scor-259",
@@ -11666,7 +11974,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 259
+    "source_question": 259,
+    "pdf_page": 119
   },
   {
     "id": "scor-260",
@@ -11702,7 +12011,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 260
+    "source_question": 260,
+    "pdf_page": 120
   },
   {
     "id": "scor-261",
@@ -11738,7 +12048,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 261
+    "source_question": 261,
+    "pdf_page": 120
   },
   {
     "id": "scor-262",
@@ -11774,7 +12085,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 262
+    "source_question": 262,
+    "pdf_page": 120
   },
   {
     "id": "scor-263",
@@ -11810,7 +12122,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 263
+    "source_question": 263,
+    "pdf_page": 121
   },
   {
     "id": "scor-264",
@@ -11846,7 +12159,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 264
+    "source_question": 264,
+    "pdf_page": 121
   },
   {
     "id": "scor-265",
@@ -11882,7 +12196,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 265
+    "source_question": 265,
+    "pdf_page": 121
   },
   {
     "id": "scor-266",
@@ -11918,7 +12233,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 266
+    "source_question": 266,
+    "pdf_page": 122
   },
   {
     "id": "scor-267",
@@ -11954,7 +12270,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 267
+    "source_question": 267,
+    "pdf_page": 122
   },
   {
     "id": "scor-268",
@@ -11990,7 +12307,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 268
+    "source_question": 268,
+    "pdf_page": 122
   },
   {
     "id": "scor-269",
@@ -12026,7 +12344,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 269
+    "source_question": 269,
+    "pdf_page": 123
   },
   {
     "id": "scor-270",
@@ -12062,7 +12381,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 270
+    "source_question": 270,
+    "pdf_page": 123
   },
   {
     "id": "scor-271",
@@ -12098,7 +12418,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 271
+    "source_question": 271,
+    "pdf_page": 123
   },
   {
     "id": "scor-272",
@@ -12134,7 +12455,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 272
+    "source_question": 272,
+    "pdf_page": 124
   },
   {
     "id": "scor-273",
@@ -12170,7 +12492,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 273
+    "source_question": 273,
+    "pdf_page": 124
   },
   {
     "id": "scor-274",
@@ -12211,7 +12534,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 274
+    "source_question": 274,
+    "pdf_page": 124
   },
   {
     "id": "scor-275",
@@ -12247,7 +12571,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 275
+    "source_question": 275,
+    "pdf_page": 125
   },
   {
     "id": "scor-276",
@@ -12283,7 +12608,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 276
+    "source_question": 276,
+    "pdf_page": 125
   },
   {
     "id": "scor-277",
@@ -12319,7 +12645,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 277
+    "source_question": 277,
+    "pdf_page": 125
   },
   {
     "id": "scor-278",
@@ -12357,7 +12684,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 278
+    "source_question": 278,
+    "pdf_page": 126
   },
   {
     "id": "scor-279",
@@ -12393,7 +12721,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 279
+    "source_question": 279,
+    "pdf_page": 126
   },
   {
     "id": "scor-280",
@@ -12434,7 +12763,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 280
+    "source_question": 280,
+    "pdf_page": 126
   },
   {
     "id": "scor-281",
@@ -12470,7 +12800,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 281
+    "source_question": 281,
+    "pdf_page": 127
   },
   {
     "id": "scor-282",
@@ -12506,7 +12837,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 282
+    "source_question": 282,
+    "pdf_page": 127
   },
   {
     "id": "scor-283",
@@ -12542,7 +12874,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 283
+    "source_question": 283,
+    "pdf_page": 127
   },
   {
     "id": "scor-284",
@@ -12578,7 +12911,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 284
+    "source_question": 284,
+    "pdf_page": 128
   },
   {
     "id": "scor-285",
@@ -12614,7 +12948,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 285
+    "source_question": 285,
+    "pdf_page": 128
   },
   {
     "id": "scor-286",
@@ -12670,7 +13005,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-129-01.png",
     "answer_image": "./scor-exhibits/page-129-02.png",
     "needs_review": false,
-    "source_question": 286
+    "source_question": 286,
+    "pdf_page": 129
   },
   {
     "id": "scor-287",
@@ -12706,7 +13042,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 287
+    "source_question": 287,
+    "pdf_page": 129
   },
   {
     "id": "scor-288",
@@ -12742,7 +13079,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 288
+    "source_question": 288,
+    "pdf_page": 130
   },
   {
     "id": "scor-289",
@@ -12778,7 +13116,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 289
+    "source_question": 289,
+    "pdf_page": 130
   },
   {
     "id": "scor-290",
@@ -12814,7 +13153,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 290
+    "source_question": 290,
+    "pdf_page": 130
   },
   {
     "id": "scor-291",
@@ -12850,7 +13190,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 291
+    "source_question": 291,
+    "pdf_page": 131
   },
   {
     "id": "scor-292",
@@ -12888,7 +13229,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 292
+    "source_question": 292,
+    "pdf_page": 131
   },
   {
     "id": "scor-293",
@@ -12924,7 +13266,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 293
+    "source_question": 293,
+    "pdf_page": 132
   },
   {
     "id": "scor-294",
@@ -12962,7 +13305,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 294
+    "source_question": 294,
+    "pdf_page": 132
   },
   {
     "id": "scor-295",
@@ -12998,7 +13342,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 295
+    "source_question": 295,
+    "pdf_page": 133
   },
   {
     "id": "scor-296",
@@ -13034,7 +13379,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 296
+    "source_question": 296,
+    "pdf_page": 133
   },
   {
     "id": "scor-297",
@@ -13075,7 +13421,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 297
+    "source_question": 297,
+    "pdf_page": 133
   },
   {
     "id": "scor-298",
@@ -13111,7 +13458,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 298
+    "source_question": 298,
+    "pdf_page": 134
   },
   {
     "id": "scor-299",
@@ -13147,7 +13495,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 299
+    "source_question": 299,
+    "pdf_page": 134
   },
   {
     "id": "scor-300",
@@ -13183,7 +13532,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 300
+    "source_question": 300,
+    "pdf_page": 134
   },
   {
     "id": "scor-301",
@@ -13224,7 +13574,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 301
+    "source_question": 301,
+    "pdf_page": 136
   },
   {
     "id": "scor-302",
@@ -13260,7 +13611,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 302
+    "source_question": 302,
+    "pdf_page": 136
   },
   {
     "id": "scor-303",
@@ -13296,7 +13648,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 303
+    "source_question": 303,
+    "pdf_page": 136
   },
   {
     "id": "scor-304",
@@ -13337,7 +13690,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 304
+    "source_question": 304,
+    "pdf_page": 137
   },
   {
     "id": "scor-305",
@@ -13402,7 +13756,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-137-01.png",
     "answer_image": "./scor-exhibits/page-137-02.png",
     "needs_review": false,
-    "source_question": 305
+    "source_question": 305,
+    "pdf_page": 137
   },
   {
     "id": "scor-306",
@@ -13440,7 +13795,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 306
+    "source_question": 306,
+    "pdf_page": 138
   },
   {
     "id": "scor-307",
@@ -13476,7 +13832,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 307
+    "source_question": 307,
+    "pdf_page": 138
   },
   {
     "id": "scor-308",
@@ -13512,7 +13869,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 308
+    "source_question": 308,
+    "pdf_page": 138
   },
   {
     "id": "scor-309",
@@ -13548,7 +13906,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 309
+    "source_question": 309,
+    "pdf_page": 139
   },
   {
     "id": "scor-310",
@@ -13584,7 +13943,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 310
+    "source_question": 310,
+    "pdf_page": 139
   },
   {
     "id": "scor-311",
@@ -13620,7 +13980,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 311
+    "source_question": 311,
+    "pdf_page": 139
   },
   {
     "id": "scor-312",
@@ -13656,7 +14017,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 312
+    "source_question": 312,
+    "pdf_page": 140
   },
   {
     "id": "scor-313",
@@ -13692,7 +14054,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 313
+    "source_question": 313,
+    "pdf_page": 140
   },
   {
     "id": "scor-314",
@@ -13728,7 +14091,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 314
+    "source_question": 314,
+    "pdf_page": 140
   },
   {
     "id": "scor-315",
@@ -13764,7 +14128,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 315
+    "source_question": 315,
+    "pdf_page": 141
   },
   {
     "id": "scor-316",
@@ -13800,7 +14165,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 316
+    "source_question": 316,
+    "pdf_page": 141
   },
   {
     "id": "scor-317",
@@ -13841,7 +14207,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 317
+    "source_question": 317,
+    "pdf_page": 141
   },
   {
     "id": "scor-318",
@@ -13877,7 +14244,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 318
+    "source_question": 318,
+    "pdf_page": 142
   },
   {
     "id": "scor-319",
@@ -13913,7 +14281,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 319
+    "source_question": 319,
+    "pdf_page": 142
   },
   {
     "id": "scor-320",
@@ -13954,7 +14323,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 320
+    "source_question": 320,
+    "pdf_page": 142
   },
   {
     "id": "scor-321",
@@ -13990,7 +14360,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 321
+    "source_question": 321,
+    "pdf_page": 143
   },
   {
     "id": "scor-322",
@@ -14026,7 +14397,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 322
+    "source_question": 322,
+    "pdf_page": 143
   },
   {
     "id": "scor-323",
@@ -14067,7 +14439,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 323
+    "source_question": 323,
+    "pdf_page": 143
   },
   {
     "id": "scor-324",
@@ -14103,7 +14476,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 324
+    "source_question": 324,
+    "pdf_page": 144
   },
   {
     "id": "scor-325",
@@ -14144,7 +14518,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 325
+    "source_question": 325,
+    "pdf_page": 144
   },
   {
     "id": "scor-326",
@@ -14180,7 +14555,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 326
+    "source_question": 326,
+    "pdf_page": 144
   },
   {
     "id": "scor-327",
@@ -14216,7 +14592,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 327
+    "source_question": 327,
+    "pdf_page": 145
   },
   {
     "id": "scor-328",
@@ -14254,7 +14631,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 328
+    "source_question": 328,
+    "pdf_page": 145
   },
   {
     "id": "scor-329",
@@ -14290,7 +14668,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 329
+    "source_question": 329,
+    "pdf_page": 145
   },
   {
     "id": "scor-330",
@@ -14331,7 +14710,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 330
+    "source_question": 330,
+    "pdf_page": 146
   },
   {
     "id": "scor-331",
@@ -14367,7 +14747,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 331
+    "source_question": 331,
+    "pdf_page": 146
   },
   {
     "id": "scor-332",
@@ -14403,7 +14784,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 332
+    "source_question": 332,
+    "pdf_page": 146
   },
   {
     "id": "scor-333",
@@ -14439,7 +14821,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 333
+    "source_question": 333,
+    "pdf_page": 147
   },
   {
     "id": "scor-334",
@@ -14475,7 +14858,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 334
+    "source_question": 334,
+    "pdf_page": 147
   },
   {
     "id": "scor-335",
@@ -14516,7 +14900,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 335
+    "source_question": 335,
+    "pdf_page": 147
   },
   {
     "id": "scor-336",
@@ -14554,7 +14939,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 336
+    "source_question": 336,
+    "pdf_page": 148
   },
   {
     "id": "scor-337",
@@ -14610,7 +14996,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-149-01.png",
     "answer_image": "./scor-exhibits/page-149-02.png",
     "needs_review": false,
-    "source_question": 337
+    "source_question": 337,
+    "pdf_page": 149
   },
   {
     "id": "scor-338",
@@ -14651,7 +15038,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 338
+    "source_question": 338,
+    "pdf_page": 150
   },
   {
     "id": "scor-339",
@@ -14689,7 +15077,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 339
+    "source_question": 339,
+    "pdf_page": 150
   },
   {
     "id": "scor-340",
@@ -14725,7 +15114,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 340
+    "source_question": 340,
+    "pdf_page": 151
   },
   {
     "id": "scor-341",
@@ -14761,7 +15151,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 341
+    "source_question": 341,
+    "pdf_page": 151
   },
   {
     "id": "scor-342",
@@ -14797,7 +15188,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 342
+    "source_question": 342,
+    "pdf_page": 151
   },
   {
     "id": "scor-343",
@@ -14833,7 +15225,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 343
+    "source_question": 343,
+    "pdf_page": 152
   },
   {
     "id": "scor-344",
@@ -14869,7 +15262,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 344
+    "source_question": 344,
+    "pdf_page": 152
   },
   {
     "id": "scor-345",
@@ -14905,7 +15299,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 345
+    "source_question": 345,
+    "pdf_page": 152
   },
   {
     "id": "scor-346",
@@ -14941,7 +15336,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 346
+    "source_question": 346,
+    "pdf_page": 153
   },
   {
     "id": "scor-347",
@@ -14977,7 +15373,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 347
+    "source_question": 347,
+    "pdf_page": 153
   },
   {
     "id": "scor-348",
@@ -15013,7 +15410,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 348
+    "source_question": 348,
+    "pdf_page": 153
   },
   {
     "id": "scor-349",
@@ -15049,7 +15447,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 349
+    "source_question": 349,
+    "pdf_page": 154
   },
   {
     "id": "scor-350",
@@ -15090,7 +15489,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 350
+    "source_question": 350,
+    "pdf_page": 154
   },
   {
     "id": "scor-351",
@@ -15131,7 +15531,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 351
+    "source_question": 351,
+    "pdf_page": 155
   },
   {
     "id": "scor-352",
@@ -15167,7 +15568,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 352
+    "source_question": 352,
+    "pdf_page": 155
   },
   {
     "id": "scor-353",
@@ -15203,7 +15605,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 353
+    "source_question": 353,
+    "pdf_page": 155
   },
   {
     "id": "scor-354",
@@ -15239,7 +15642,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 354
+    "source_question": 354,
+    "pdf_page": 156
   },
   {
     "id": "scor-355",
@@ -15275,7 +15679,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 355
+    "source_question": 355,
+    "pdf_page": 156
   },
   {
     "id": "scor-356",
@@ -15311,7 +15716,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 356
+    "source_question": 356,
+    "pdf_page": 156
   },
   {
     "id": "scor-357",
@@ -15347,7 +15753,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 357
+    "source_question": 357,
+    "pdf_page": 157
   },
   {
     "id": "scor-358",
@@ -15383,7 +15790,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 358
+    "source_question": 358,
+    "pdf_page": 157
   },
   {
     "id": "scor-359",
@@ -15424,7 +15832,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 359
+    "source_question": 359,
+    "pdf_page": 157
   },
   {
     "id": "scor-360",
@@ -15462,7 +15871,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 360
+    "source_question": 360,
+    "pdf_page": 158
   },
   {
     "id": "scor-361",
@@ -15500,7 +15910,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 361
+    "source_question": 361,
+    "pdf_page": 159
   },
   {
     "id": "scor-362",
@@ -15536,7 +15947,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 362
+    "source_question": 362,
+    "pdf_page": 159
   },
   {
     "id": "scor-363",
@@ -15577,7 +15989,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 363
+    "source_question": 363,
+    "pdf_page": 160
   },
   {
     "id": "scor-364",
@@ -15613,7 +16026,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 364
+    "source_question": 364,
+    "pdf_page": 160
   },
   {
     "id": "scor-365",
@@ -15649,7 +16063,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 365
+    "source_question": 365,
+    "pdf_page": 160
   },
   {
     "id": "scor-366",
@@ -15692,7 +16107,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 366
+    "source_question": 366,
+    "pdf_page": 161
   },
   {
     "id": "scor-367",
@@ -15733,7 +16149,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 367
+    "source_question": 367,
+    "pdf_page": 161
   },
   {
     "id": "scor-368",
@@ -15769,7 +16186,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 368
+    "source_question": 368,
+    "pdf_page": 162
   },
   {
     "id": "scor-369",
@@ -15805,7 +16223,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 369
+    "source_question": 369,
+    "pdf_page": 162
   },
   {
     "id": "scor-370",
@@ -15846,7 +16265,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 370
+    "source_question": 370,
+    "pdf_page": 162
   },
   {
     "id": "scor-371",
@@ -15882,7 +16302,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 371
+    "source_question": 371,
+    "pdf_page": 163
   },
   {
     "id": "scor-372",
@@ -15918,7 +16339,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 372
+    "source_question": 372,
+    "pdf_page": 163
   },
   {
     "id": "scor-373",
@@ -15954,7 +16376,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 373
+    "source_question": 373,
+    "pdf_page": 163
   },
   {
     "id": "scor-374",
@@ -15990,7 +16413,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 374
+    "source_question": 374,
+    "pdf_page": 164
   },
   {
     "id": "scor-375",
@@ -16026,7 +16450,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 375
+    "source_question": 375,
+    "pdf_page": 164
   },
   {
     "id": "scor-376",
@@ -16062,7 +16487,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 376
+    "source_question": 376,
+    "pdf_page": 164
   },
   {
     "id": "scor-377",
@@ -16098,7 +16524,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 377
+    "source_question": 377,
+    "pdf_page": 165
   },
   {
     "id": "scor-378",
@@ -16134,7 +16561,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 378
+    "source_question": 378,
+    "pdf_page": 165
   },
   {
     "id": "scor-379",
@@ -16175,7 +16603,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 379
+    "source_question": 379,
+    "pdf_page": 165
   },
   {
     "id": "scor-380",
@@ -16211,7 +16640,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 380
+    "source_question": 380,
+    "pdf_page": 166
   },
   {
     "id": "scor-381",
@@ -16247,7 +16677,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 381
+    "source_question": 381,
+    "pdf_page": 166
   },
   {
     "id": "scor-382",
@@ -16283,7 +16714,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 382
+    "source_question": 382,
+    "pdf_page": 166
   },
   {
     "id": "scor-383",
@@ -16319,7 +16751,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 383
+    "source_question": 383,
+    "pdf_page": 167
   },
   {
     "id": "scor-384",
@@ -16355,7 +16788,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 384
+    "source_question": 384,
+    "pdf_page": 167
   },
   {
     "id": "scor-385",
@@ -16391,7 +16825,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 385
+    "source_question": 385,
+    "pdf_page": 167
   },
   {
     "id": "scor-386",
@@ -16427,7 +16862,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 386
+    "source_question": 386,
+    "pdf_page": 168
   },
   {
     "id": "scor-387",
@@ -16463,7 +16899,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 387
+    "source_question": 387,
+    "pdf_page": 168
   },
   {
     "id": "scor-388",
@@ -16499,7 +16936,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 388
+    "source_question": 388,
+    "pdf_page": 168
   },
   {
     "id": "scor-389",
@@ -16535,7 +16973,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 389
+    "source_question": 389,
+    "pdf_page": 169
   },
   {
     "id": "scor-390",
@@ -16571,7 +17010,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 390
+    "source_question": 390,
+    "pdf_page": 169
   },
   {
     "id": "scor-391",
@@ -16607,7 +17047,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 391
+    "source_question": 391,
+    "pdf_page": 169
   },
   {
     "id": "scor-392",
@@ -16643,7 +17084,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 392
+    "source_question": 392,
+    "pdf_page": 170
   },
   {
     "id": "scor-393",
@@ -16679,7 +17121,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 393
+    "source_question": 393,
+    "pdf_page": 170
   },
   {
     "id": "scor-394",
@@ -16735,7 +17178,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-171-01.png",
     "answer_image": "./scor-exhibits/page-171-02.png",
     "needs_review": false,
-    "source_question": 394
+    "source_question": 394,
+    "pdf_page": 171
   },
   {
     "id": "scor-395",
@@ -16771,7 +17215,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 395
+    "source_question": 395,
+    "pdf_page": 171
   },
   {
     "id": "scor-396",
@@ -16807,7 +17252,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 396
+    "source_question": 396,
+    "pdf_page": 172
   },
   {
     "id": "scor-397",
@@ -16843,7 +17289,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 397
+    "source_question": 397,
+    "pdf_page": 172
   },
   {
     "id": "scor-398",
@@ -16879,7 +17326,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 398
+    "source_question": 398,
+    "pdf_page": 172
   },
   {
     "id": "scor-399",
@@ -16915,7 +17363,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 399
+    "source_question": 399,
+    "pdf_page": 173
   },
   {
     "id": "scor-400",
@@ -16951,7 +17400,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 400
+    "source_question": 400,
+    "pdf_page": 173
   },
   {
     "id": "scor-401",
@@ -16987,7 +17437,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 401
+    "source_question": 401,
+    "pdf_page": 174
   },
   {
     "id": "scor-402",
@@ -17043,7 +17494,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-174-02.png",
     "answer_image": "./scor-exhibits/page-174-03.png",
     "needs_review": false,
-    "source_question": 402
+    "source_question": 402,
+    "pdf_page": 174
   },
   {
     "id": "scor-403",
@@ -17084,7 +17536,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 403
+    "source_question": 403,
+    "pdf_page": 175
   },
   {
     "id": "scor-404",
@@ -17125,7 +17578,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 404
+    "source_question": 404,
+    "pdf_page": 175
   },
   {
     "id": "scor-405",
@@ -17161,7 +17615,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 405
+    "source_question": 405,
+    "pdf_page": 175
   },
   {
     "id": "scor-406",
@@ -17197,7 +17652,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 406
+    "source_question": 406,
+    "pdf_page": 176
   },
   {
     "id": "scor-407",
@@ -17245,7 +17701,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-176-01.png",
     "answer_image": "./scor-exhibits/page-176-02.png",
     "needs_review": false,
-    "source_question": 407
+    "source_question": 407,
+    "pdf_page": 176
   },
   {
     "id": "scor-408",
@@ -17281,7 +17738,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 408
+    "source_question": 408,
+    "pdf_page": 177
   },
   {
     "id": "scor-409",
@@ -17317,7 +17775,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 409
+    "source_question": 409,
+    "pdf_page": 177
   },
   {
     "id": "scor-410",
@@ -17353,7 +17812,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 410
+    "source_question": 410,
+    "pdf_page": 177
   },
   {
     "id": "scor-411",
@@ -17394,7 +17854,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 411
+    "source_question": 411,
+    "pdf_page": 178
   },
   {
     "id": "scor-412",
@@ -17430,7 +17891,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 412
+    "source_question": 412,
+    "pdf_page": 178
   },
   {
     "id": "scor-413",
@@ -17466,7 +17928,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 413
+    "source_question": 413,
+    "pdf_page": 178
   },
   {
     "id": "scor-414",
@@ -17507,7 +17970,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 414
+    "source_question": 414,
+    "pdf_page": 179
   },
   {
     "id": "scor-415",
@@ -17543,7 +18007,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 415
+    "source_question": 415,
+    "pdf_page": 179
   },
   {
     "id": "scor-416",
@@ -17579,7 +18044,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 416
+    "source_question": 416,
+    "pdf_page": 179
   },
   {
     "id": "scor-417",
@@ -17635,7 +18101,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-180-01.png",
     "answer_image": "./scor-exhibits/page-180-02.png",
     "needs_review": false,
-    "source_question": 417
+    "source_question": 417,
+    "pdf_page": 180
   },
   {
     "id": "scor-418",
@@ -17671,7 +18138,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 418
+    "source_question": 418,
+    "pdf_page": 180
   },
   {
     "id": "scor-419",
@@ -17707,7 +18175,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 419
+    "source_question": 419,
+    "pdf_page": 181
   },
   {
     "id": "scor-420",
@@ -17743,7 +18212,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 420
+    "source_question": 420,
+    "pdf_page": 181
   },
   {
     "id": "scor-421",
@@ -17779,7 +18249,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 421
+    "source_question": 421,
+    "pdf_page": 181
   },
   {
     "id": "scor-422",
@@ -17815,7 +18286,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 422
+    "source_question": 422,
+    "pdf_page": 182
   },
   {
     "id": "scor-423",
@@ -17851,7 +18323,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 423
+    "source_question": 423,
+    "pdf_page": 182
   },
   {
     "id": "scor-424",
@@ -17887,7 +18360,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 424
+    "source_question": 424,
+    "pdf_page": 182
   },
   {
     "id": "scor-425",
@@ -17923,7 +18397,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 425
+    "source_question": 425,
+    "pdf_page": 183
   },
   {
     "id": "scor-426",
@@ -17959,7 +18434,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 426
+    "source_question": 426,
+    "pdf_page": 183
   },
   {
     "id": "scor-427",
@@ -17995,7 +18471,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 427
+    "source_question": 427,
+    "pdf_page": 183
   },
   {
     "id": "scor-428",
@@ -18031,7 +18508,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 428
+    "source_question": 428,
+    "pdf_page": 184
   },
   {
     "id": "scor-429",
@@ -18067,7 +18545,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 429
+    "source_question": 429,
+    "pdf_page": 184
   },
   {
     "id": "scor-430",
@@ -18108,7 +18587,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 430
+    "source_question": 430,
+    "pdf_page": 184
   },
   {
     "id": "scor-431",
@@ -18144,7 +18624,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 431
+    "source_question": 431,
+    "pdf_page": 185
   },
   {
     "id": "scor-432",
@@ -18185,7 +18666,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 432
+    "source_question": 432,
+    "pdf_page": 185
   },
   {
     "id": "scor-433",
@@ -18221,7 +18703,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 433
+    "source_question": 433,
+    "pdf_page": 185
   },
   {
     "id": "scor-434",
@@ -18257,7 +18740,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 434
+    "source_question": 434,
+    "pdf_page": 186
   },
   {
     "id": "scor-435",
@@ -18293,7 +18777,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 435
+    "source_question": 435,
+    "pdf_page": 186
   },
   {
     "id": "scor-436",
@@ -18334,7 +18819,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 436
+    "source_question": 436,
+    "pdf_page": 186
   },
   {
     "id": "scor-437",
@@ -18370,7 +18856,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 437
+    "source_question": 437,
+    "pdf_page": 187
   },
   {
     "id": "scor-438",
@@ -18406,7 +18893,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 438
+    "source_question": 438,
+    "pdf_page": 187
   },
   {
     "id": "scor-439",
@@ -18442,7 +18930,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 439
+    "source_question": 439,
+    "pdf_page": 187
   },
   {
     "id": "scor-440",
@@ -18478,7 +18967,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 440
+    "source_question": 440,
+    "pdf_page": 188
   },
   {
     "id": "scor-441",
@@ -18514,7 +19004,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 441
+    "source_question": 441,
+    "pdf_page": 188
   },
   {
     "id": "scor-442",
@@ -18555,7 +19046,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 442
+    "source_question": 442,
+    "pdf_page": 188
   },
   {
     "id": "scor-443",
@@ -18596,7 +19088,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 443
+    "source_question": 443,
+    "pdf_page": 189
   },
   {
     "id": "scor-444",
@@ -18637,7 +19130,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 444
+    "source_question": 444,
+    "pdf_page": 189
   },
   {
     "id": "scor-445",
@@ -18673,7 +19167,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 445
+    "source_question": 445,
+    "pdf_page": 189
   },
   {
     "id": "scor-446",
@@ -18709,7 +19204,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 446
+    "source_question": 446,
+    "pdf_page": 190
   },
   {
     "id": "scor-447",
@@ -18750,7 +19246,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 447
+    "source_question": 447,
+    "pdf_page": 190
   },
   {
     "id": "scor-448",
@@ -18786,7 +19283,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 448
+    "source_question": 448,
+    "pdf_page": 190
   },
   {
     "id": "scor-449",
@@ -18822,7 +19320,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 449
+    "source_question": 449,
+    "pdf_page": 191
   },
   {
     "id": "scor-450",
@@ -18858,7 +19357,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 450
+    "source_question": 450,
+    "pdf_page": 191
   },
   {
     "id": "scor-501",
@@ -18899,7 +19399,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 501
+    "source_question": 501,
+    "pdf_page": 192
   },
   {
     "id": "scor-502",
@@ -18940,7 +19441,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 502
+    "source_question": 502,
+    "pdf_page": 192
   },
   {
     "id": "scor-503",
@@ -18976,7 +19478,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 503
+    "source_question": 503,
+    "pdf_page": 192
   },
   {
     "id": "scor-504",
@@ -19012,7 +19515,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 504
+    "source_question": 504,
+    "pdf_page": 193
   },
   {
     "id": "scor-505",
@@ -19048,7 +19552,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 505
+    "source_question": 505,
+    "pdf_page": 193
   },
   {
     "id": "scor-506",
@@ -19084,7 +19589,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 506
+    "source_question": 506,
+    "pdf_page": 193
   },
   {
     "id": "scor-507",
@@ -19120,7 +19626,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 507
+    "source_question": 507,
+    "pdf_page": 194
   },
   {
     "id": "scor-508",
@@ -19156,7 +19663,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 508
+    "source_question": 508,
+    "pdf_page": 194
   },
   {
     "id": "scor-509",
@@ -19203,7 +19711,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-195-01.png",
     "answer_image": "./scor-exhibits/page-195-02.png",
     "needs_review": false,
-    "source_question": 509
+    "source_question": 509,
+    "pdf_page": 195
   },
   {
     "id": "scor-510",
@@ -19239,7 +19748,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 510
+    "source_question": 510,
+    "pdf_page": 195
   },
   {
     "id": "scor-511",
@@ -19275,7 +19785,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 511
+    "source_question": 511,
+    "pdf_page": 196
   },
   {
     "id": "scor-512",
@@ -19311,7 +19822,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 512
+    "source_question": 512,
+    "pdf_page": 196
   },
   {
     "id": "scor-513",
@@ -19347,7 +19859,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 513
+    "source_question": 513,
+    "pdf_page": 196
   },
   {
     "id": "scor-514",
@@ -19383,7 +19896,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 514
+    "source_question": 514,
+    "pdf_page": 197
   },
   {
     "id": "scor-515",
@@ -19424,7 +19938,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 515
+    "source_question": 515,
+    "pdf_page": 197
   },
   {
     "id": "scor-516",
@@ -19465,7 +19980,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 516
+    "source_question": 516,
+    "pdf_page": 197
   },
   {
     "id": "scor-517",
@@ -19501,7 +20017,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 517
+    "source_question": 517,
+    "pdf_page": 198
   },
   {
     "id": "scor-518",
@@ -19537,7 +20054,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 518
+    "source_question": 518,
+    "pdf_page": 198
   },
   {
     "id": "scor-519",
@@ -19578,7 +20096,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 519
+    "source_question": 519,
+    "pdf_page": 198
   },
   {
     "id": "scor-520",
@@ -19614,7 +20133,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 520
+    "source_question": 520,
+    "pdf_page": 199
   },
   {
     "id": "scor-521",
@@ -19652,7 +20172,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 521
+    "source_question": 521,
+    "pdf_page": 199
   },
   {
     "id": "scor-522",
@@ -19688,7 +20209,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 522
+    "source_question": 522,
+    "pdf_page": 200
   },
   {
     "id": "scor-523",
@@ -19724,7 +20246,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 523
+    "source_question": 523,
+    "pdf_page": 200
   },
   {
     "id": "scor-524",
@@ -19760,7 +20283,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 524
+    "source_question": 524,
+    "pdf_page": 200
   },
   {
     "id": "scor-525",
@@ -19796,7 +20320,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 525
+    "source_question": 525,
+    "pdf_page": 201
   },
   {
     "id": "scor-526",
@@ -19832,7 +20357,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 526
+    "source_question": 526,
+    "pdf_page": 201
   },
   {
     "id": "scor-527",
@@ -19868,7 +20394,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 527
+    "source_question": 527,
+    "pdf_page": 201
   },
   {
     "id": "scor-528",
@@ -19904,7 +20431,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 528
+    "source_question": 528,
+    "pdf_page": 202
   },
   {
     "id": "scor-529",
@@ -19940,7 +20468,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 529
+    "source_question": 529,
+    "pdf_page": 202
   },
   {
     "id": "scor-530",
@@ -19978,7 +20507,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 530
+    "source_question": 530,
+    "pdf_page": 203
   },
   {
     "id": "scor-531",
@@ -20019,7 +20549,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 531
+    "source_question": 531,
+    "pdf_page": 204
   },
   {
     "id": "scor-532",
@@ -20055,7 +20586,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 532
+    "source_question": 532,
+    "pdf_page": 204
   },
   {
     "id": "scor-533",
@@ -20096,7 +20628,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 533
+    "source_question": 533,
+    "pdf_page": 204
   },
   {
     "id": "scor-534",
@@ -20132,7 +20665,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 534
+    "source_question": 534,
+    "pdf_page": 205
   },
   {
     "id": "scor-535",
@@ -20168,7 +20702,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 535
+    "source_question": 535,
+    "pdf_page": 205
   },
   {
     "id": "scor-536",
@@ -20204,7 +20739,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 536
+    "source_question": 536,
+    "pdf_page": 205
   },
   {
     "id": "scor-537",
@@ -20240,7 +20776,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 537
+    "source_question": 537,
+    "pdf_page": 206
   },
   {
     "id": "scor-538",
@@ -20276,7 +20813,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 538
+    "source_question": 538,
+    "pdf_page": 206
   },
   {
     "id": "scor-539",
@@ -20312,7 +20850,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 539
+    "source_question": 539,
+    "pdf_page": 206
   },
   {
     "id": "scor-540",
@@ -20353,7 +20892,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 540
+    "source_question": 540,
+    "pdf_page": 207
   },
   {
     "id": "scor-541",
@@ -20389,7 +20929,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 541
+    "source_question": 541,
+    "pdf_page": 207
   },
   {
     "id": "scor-542",
@@ -20445,7 +20986,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-208-01.png",
     "answer_image": "./scor-exhibits/page-208-02.png",
     "needs_review": false,
-    "source_question": 542
+    "source_question": 542,
+    "pdf_page": 208
   },
   {
     "id": "scor-543",
@@ -20481,7 +21023,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 543
+    "source_question": 543,
+    "pdf_page": 208
   },
   {
     "id": "scor-544",
@@ -20517,7 +21060,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 544
+    "source_question": 544,
+    "pdf_page": 209
   },
   {
     "id": "scor-545",
@@ -20553,7 +21097,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 545
+    "source_question": 545,
+    "pdf_page": 209
   },
   {
     "id": "scor-546",
@@ -20594,7 +21139,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 546
+    "source_question": 546,
+    "pdf_page": 209
   },
   {
     "id": "scor-547",
@@ -20630,7 +21176,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 547
+    "source_question": 547,
+    "pdf_page": 210
   },
   {
     "id": "scor-548",
@@ -20666,7 +21213,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 548
+    "source_question": 548,
+    "pdf_page": 210
   },
   {
     "id": "scor-549",
@@ -20707,7 +21255,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 549
+    "source_question": 549,
+    "pdf_page": 210
   },
   {
     "id": "scor-550",
@@ -20765,7 +21314,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-211-02.png",
     "answer_image": "./scor-exhibits/page-211-03.png",
     "needs_review": false,
-    "source_question": 550
+    "source_question": 550,
+    "pdf_page": 211
   },
   {
     "id": "scor-551",
@@ -20801,7 +21351,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 551
+    "source_question": 551,
+    "pdf_page": 212
   },
   {
     "id": "scor-552",
@@ -20842,7 +21393,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 552
+    "source_question": 552,
+    "pdf_page": 212
   },
   {
     "id": "scor-553",
@@ -20878,7 +21430,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 553
+    "source_question": 553,
+    "pdf_page": 212
   },
   {
     "id": "scor-554",
@@ -20914,7 +21467,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 554
+    "source_question": 554,
+    "pdf_page": 213
   },
   {
     "id": "scor-555",
@@ -20955,7 +21509,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 555
+    "source_question": 555,
+    "pdf_page": 213
   },
   {
     "id": "scor-556",
@@ -20991,7 +21546,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 556
+    "source_question": 556,
+    "pdf_page": 213
   },
   {
     "id": "scor-557",
@@ -21027,7 +21583,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 557
+    "source_question": 557,
+    "pdf_page": 214
   },
   {
     "id": "scor-558",
@@ -21063,7 +21620,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 558
+    "source_question": 558,
+    "pdf_page": 214
   },
   {
     "id": "scor-559",
@@ -21104,7 +21662,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 559
+    "source_question": 559,
+    "pdf_page": 214
   },
   {
     "id": "scor-560",
@@ -21140,7 +21699,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 560
+    "source_question": 560,
+    "pdf_page": 215
   },
   {
     "id": "scor-561",
@@ -21178,7 +21738,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 561
+    "source_question": 561,
+    "pdf_page": 216
   },
   {
     "id": "scor-562",
@@ -21214,7 +21775,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 562
+    "source_question": 562,
+    "pdf_page": 216
   },
   {
     "id": "scor-563",
@@ -21250,7 +21812,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 563
+    "source_question": 563,
+    "pdf_page": 217
   },
   {
     "id": "scor-564",
@@ -21291,7 +21854,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 564
+    "source_question": 564,
+    "pdf_page": 217
   },
   {
     "id": "scor-565",
@@ -21327,7 +21891,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 565
+    "source_question": 565,
+    "pdf_page": 217
   },
   {
     "id": "scor-566",
@@ -21363,7 +21928,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 566
+    "source_question": 566,
+    "pdf_page": 218
   },
   {
     "id": "scor-567",
@@ -21399,7 +21965,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 567
+    "source_question": 567,
+    "pdf_page": 218
   },
   {
     "id": "scor-568",
@@ -21442,7 +22009,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 568
+    "source_question": 568,
+    "pdf_page": 218
   },
   {
     "id": "scor-569",
@@ -21478,7 +22046,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 569
+    "source_question": 569,
+    "pdf_page": 219
   },
   {
     "id": "scor-570",
@@ -21519,7 +22088,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 570
+    "source_question": 570,
+    "pdf_page": 219
   },
   {
     "id": "scor-571",
@@ -21555,7 +22125,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 571
+    "source_question": 571,
+    "pdf_page": 219
   },
   {
     "id": "scor-572",
@@ -21596,7 +22167,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 572
+    "source_question": 572,
+    "pdf_page": 220
   },
   {
     "id": "scor-573",
@@ -21632,7 +22204,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 573
+    "source_question": 573,
+    "pdf_page": 220
   },
   {
     "id": "scor-574",
@@ -21668,7 +22241,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 574
+    "source_question": 574,
+    "pdf_page": 220
   },
   {
     "id": "scor-575",
@@ -21704,7 +22278,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 575
+    "source_question": 575,
+    "pdf_page": 221
   },
   {
     "id": "scor-576",
@@ -21740,7 +22315,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 576
+    "source_question": 576,
+    "pdf_page": 221
   },
   {
     "id": "scor-577",
@@ -21776,7 +22352,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 577
+    "source_question": 577,
+    "pdf_page": 221
   },
   {
     "id": "scor-578",
@@ -21812,7 +22389,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 578
+    "source_question": 578,
+    "pdf_page": 222
   },
   {
     "id": "scor-579",
@@ -21848,7 +22426,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 579
+    "source_question": 579,
+    "pdf_page": 222
   },
   {
     "id": "scor-580",
@@ -21884,7 +22463,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 580
+    "source_question": 580,
+    "pdf_page": 222
   },
   {
     "id": "scor-581",
@@ -21920,7 +22500,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 581
+    "source_question": 581,
+    "pdf_page": 222
   },
   {
     "id": "scor-582",
@@ -21956,7 +22537,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 582
+    "source_question": 582,
+    "pdf_page": 223
   },
   {
     "id": "scor-583",
@@ -21992,7 +22574,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 583
+    "source_question": 583,
+    "pdf_page": 223
   },
   {
     "id": "scor-584",
@@ -22033,7 +22616,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 584
+    "source_question": 584,
+    "pdf_page": 223
   },
   {
     "id": "scor-585",
@@ -22069,7 +22653,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 585
+    "source_question": 585,
+    "pdf_page": 224
   },
   {
     "id": "scor-586",
@@ -22105,7 +22690,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 586
+    "source_question": 586,
+    "pdf_page": 224
   },
   {
     "id": "scor-587",
@@ -22141,7 +22727,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 587
+    "source_question": 587,
+    "pdf_page": 224
   },
   {
     "id": "scor-588",
@@ -22177,7 +22764,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 588
+    "source_question": 588,
+    "pdf_page": 224
   },
   {
     "id": "scor-589",
@@ -22218,7 +22806,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 589
+    "source_question": 589,
+    "pdf_page": 225
   },
   {
     "id": "scor-590",
@@ -22259,7 +22848,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 590
+    "source_question": 590,
+    "pdf_page": 225
   },
   {
     "id": "scor-591",
@@ -22295,7 +22885,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 591
+    "source_question": 591,
+    "pdf_page": 225
   },
   {
     "id": "scor-592",
@@ -22336,7 +22927,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 592
+    "source_question": 592,
+    "pdf_page": 226
   },
   {
     "id": "scor-593",
@@ -22372,7 +22964,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 593
+    "source_question": 593,
+    "pdf_page": 226
   },
   {
     "id": "scor-594",
@@ -22408,7 +23001,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 594
+    "source_question": 594,
+    "pdf_page": 226
   },
   {
     "id": "scor-595",
@@ -22449,7 +23043,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 595
+    "source_question": 595,
+    "pdf_page": 227
   },
   {
     "id": "scor-596",
@@ -22485,7 +23080,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 596
+    "source_question": 596,
+    "pdf_page": 227
   },
   {
     "id": "scor-597",
@@ -22521,7 +23117,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 597
+    "source_question": 597,
+    "pdf_page": 227
   },
   {
     "id": "scor-598",
@@ -22562,7 +23159,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 598
+    "source_question": 598,
+    "pdf_page": 228
   },
   {
     "id": "scor-599",
@@ -22603,7 +23201,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 599
+    "source_question": 599,
+    "pdf_page": 228
   },
   {
     "id": "scor-600",
@@ -22639,7 +23238,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 600
+    "source_question": 600,
+    "pdf_page": 228
   },
   {
     "id": "scor-601",
@@ -22678,7 +23278,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 601
+    "source_question": 601,
+    "pdf_page": 229
   },
   {
     "id": "scor-602",
@@ -22714,7 +23315,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 602
+    "source_question": 602,
+    "pdf_page": 229
   },
   {
     "id": "scor-603",
@@ -22750,7 +23352,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 603
+    "source_question": 603,
+    "pdf_page": 230
   },
   {
     "id": "scor-604",
@@ -22786,7 +23389,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 604
+    "source_question": 604,
+    "pdf_page": 230
   },
   {
     "id": "scor-605",
@@ -22822,7 +23426,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 605
+    "source_question": 605,
+    "pdf_page": 230
   },
   {
     "id": "scor-606",
@@ -22858,7 +23463,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 606
+    "source_question": 606,
+    "pdf_page": 231
   },
   {
     "id": "scor-607",
@@ -22894,7 +23500,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 607
+    "source_question": 607,
+    "pdf_page": 231
   },
   {
     "id": "scor-608",
@@ -22930,7 +23537,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 608
+    "source_question": 608,
+    "pdf_page": 231
   },
   {
     "id": "scor-609",
@@ -22966,7 +23574,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 609
+    "source_question": 609,
+    "pdf_page": 232
   },
   {
     "id": "scor-610",
@@ -23002,7 +23611,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 610
+    "source_question": 610,
+    "pdf_page": 232
   },
   {
     "id": "scor-611",
@@ -23040,6 +23650,7 @@ window.SCOR_QUESTIONS = [
     "answer_image": null,
     "needs_review": true,
     "source_question": 611,
+    "pdf_page": 233,
     "review_reason": "Correct option is inferred from the exhibit; verify the image-based answer key."
   },
   {
@@ -23088,7 +23699,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 612
+    "source_question": 612,
+    "pdf_page": 234
   },
   {
     "id": "scor-613",
@@ -23124,7 +23736,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 613
+    "source_question": 613,
+    "pdf_page": 234
   },
   {
     "id": "scor-614",
@@ -23160,7 +23773,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 614
+    "source_question": 614,
+    "pdf_page": 235
   },
   {
     "id": "scor-615",
@@ -23198,7 +23812,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 615
+    "source_question": 615,
+    "pdf_page": 235
   },
   {
     "id": "scor-616",
@@ -23234,7 +23849,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 616
+    "source_question": 616,
+    "pdf_page": 236
   },
   {
     "id": "scor-617",
@@ -23270,7 +23886,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 617
+    "source_question": 617,
+    "pdf_page": 236
   },
   {
     "id": "scor-618",
@@ -23306,7 +23923,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 618
+    "source_question": 618,
+    "pdf_page": 236
   },
   {
     "id": "scor-619",
@@ -23347,7 +23965,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 619
+    "source_question": 619,
+    "pdf_page": 237
   },
   {
     "id": "scor-620",
@@ -23385,7 +24004,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 620
+    "source_question": 620,
+    "pdf_page": 237
   },
   {
     "id": "scor-621",
@@ -23421,7 +24041,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 621
+    "source_question": 621,
+    "pdf_page": 238
   },
   {
     "id": "scor-622",
@@ -23457,7 +24078,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 622
+    "source_question": 622,
+    "pdf_page": 238
   },
   {
     "id": "scor-623",
@@ -23498,7 +24120,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 623
+    "source_question": 623,
+    "pdf_page": 238
   },
   {
     "id": "scor-624",
@@ -23534,7 +24157,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 624
+    "source_question": 624,
+    "pdf_page": 239
   },
   {
     "id": "scor-625",
@@ -23570,7 +24194,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 625
+    "source_question": 625,
+    "pdf_page": 239
   },
   {
     "id": "scor-626",
@@ -23606,7 +24231,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 626
+    "source_question": 626,
+    "pdf_page": 239
   },
   {
     "id": "scor-627",
@@ -23642,7 +24268,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 627
+    "source_question": 627,
+    "pdf_page": 240
   },
   {
     "id": "scor-628",
@@ -23683,7 +24310,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 628
+    "source_question": 628,
+    "pdf_page": 240
   },
   {
     "id": "scor-629",
@@ -23719,7 +24347,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 629
+    "source_question": 629,
+    "pdf_page": 240
   },
   {
     "id": "scor-630",
@@ -23755,7 +24384,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 630
+    "source_question": 630,
+    "pdf_page": 241
   },
   {
     "id": "scor-631",
@@ -23791,7 +24421,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 631
+    "source_question": 631,
+    "pdf_page": 241
   },
   {
     "id": "scor-632",
@@ -23827,7 +24458,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 632
+    "source_question": 632,
+    "pdf_page": 241
   },
   {
     "id": "scor-633",
@@ -23863,7 +24495,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 633
+    "source_question": 633,
+    "pdf_page": 242
   },
   {
     "id": "scor-634",
@@ -23904,7 +24537,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 634
+    "source_question": 634,
+    "pdf_page": 242
   },
   {
     "id": "scor-635",
@@ -23940,7 +24574,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 635
+    "source_question": 635,
+    "pdf_page": 242
   },
   {
     "id": "scor-636",
@@ -23983,6 +24618,7 @@ window.SCOR_QUESTIONS = [
     "answer_image": null,
     "needs_review": true,
     "source_question": 636,
+    "pdf_page": 243,
     "review_reason": "Choice text was transcribed from an image and needs verification."
   },
   {
@@ -24019,7 +24655,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 637
+    "source_question": 637,
+    "pdf_page": 243
   },
   {
     "id": "scor-638",
@@ -24055,7 +24692,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 638
+    "source_question": 638,
+    "pdf_page": 243
   },
   {
     "id": "scor-639",
@@ -24091,7 +24729,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 639
+    "source_question": 639,
+    "pdf_page": 244
   },
   {
     "id": "scor-640",
@@ -24127,7 +24766,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 640
+    "source_question": 640,
+    "pdf_page": 244
   },
   {
     "id": "scor-641",
@@ -24163,7 +24803,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 641
+    "source_question": 641,
+    "pdf_page": 244
   },
   {
     "id": "scor-642",
@@ -24199,7 +24840,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 642
+    "source_question": 642,
+    "pdf_page": 245
   },
   {
     "id": "scor-643",
@@ -24247,7 +24889,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-245-01.png",
     "answer_image": "./scor-exhibits/page-245-02.png",
     "needs_review": false,
-    "source_question": 643
+    "source_question": 643,
+    "pdf_page": 245
   },
   {
     "id": "scor-644",
@@ -24283,7 +24926,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 644
+    "source_question": 644,
+    "pdf_page": 246
   },
   {
     "id": "scor-645",
@@ -24319,7 +24963,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 645
+    "source_question": 645,
+    "pdf_page": 246
   },
   {
     "id": "scor-646",
@@ -24355,7 +25000,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 646
+    "source_question": 646,
+    "pdf_page": 246
   },
   {
     "id": "scor-647",
@@ -24391,7 +25037,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 647
+    "source_question": 647,
+    "pdf_page": 247
   },
   {
     "id": "scor-648",
@@ -24427,7 +25074,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 648
+    "source_question": 648,
+    "pdf_page": 247
   },
   {
     "id": "scor-649",
@@ -24468,7 +25116,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 649
+    "source_question": 649,
+    "pdf_page": 247
   },
   {
     "id": "scor-650",
@@ -24504,7 +25153,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 650
+    "source_question": 650,
+    "pdf_page": 248
   },
   {
     "id": "scor-651",
@@ -24540,7 +25190,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 651
+    "source_question": 651,
+    "pdf_page": 249
   },
   {
     "id": "scor-652",
@@ -24576,7 +25227,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 652
+    "source_question": 652,
+    "pdf_page": 249
   },
   {
     "id": "scor-653",
@@ -24612,7 +25264,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 653
+    "source_question": 653,
+    "pdf_page": 249
   },
   {
     "id": "scor-654",
@@ -24648,7 +25301,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 654
+    "source_question": 654,
+    "pdf_page": 250
   },
   {
     "id": "scor-655",
@@ -24684,7 +25338,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 655
+    "source_question": 655,
+    "pdf_page": 250
   },
   {
     "id": "scor-656",
@@ -24720,7 +25375,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 656
+    "source_question": 656,
+    "pdf_page": 250
   },
   {
     "id": "scor-657",
@@ -24756,7 +25412,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 657
+    "source_question": 657,
+    "pdf_page": 251
   },
   {
     "id": "scor-658",
@@ -24792,7 +25449,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 658
+    "source_question": 658,
+    "pdf_page": 251
   },
   {
     "id": "scor-659",
@@ -24834,7 +25492,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 659
+    "source_question": 659,
+    "pdf_page": 252
   },
   {
     "id": "scor-660",
@@ -24870,7 +25529,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 660
+    "source_question": 660,
+    "pdf_page": 252
   },
   {
     "id": "scor-661",
@@ -24906,7 +25566,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 661
+    "source_question": 661,
+    "pdf_page": 252
   },
   {
     "id": "scor-662",
@@ -24942,7 +25603,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 662
+    "source_question": 662,
+    "pdf_page": 253
   },
   {
     "id": "scor-663",
@@ -24978,7 +25640,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 663
+    "source_question": 663,
+    "pdf_page": 253
   },
   {
     "id": "scor-664",
@@ -25014,7 +25677,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 664
+    "source_question": 664,
+    "pdf_page": 253
   },
   {
     "id": "scor-665",
@@ -25050,7 +25714,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 665
+    "source_question": 665,
+    "pdf_page": 254
   },
   {
     "id": "scor-666",
@@ -25086,7 +25751,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 666
+    "source_question": 666,
+    "pdf_page": 254
   },
   {
     "id": "scor-667",
@@ -25122,7 +25788,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 667
+    "source_question": 667,
+    "pdf_page": 254
   },
   {
     "id": "scor-668",
@@ -25158,7 +25825,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 668
+    "source_question": 668,
+    "pdf_page": 255
   },
   {
     "id": "scor-669",
@@ -25205,7 +25873,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 669
+    "source_question": 669,
+    "pdf_page": 255
   },
   {
     "id": "scor-670",
@@ -25246,7 +25915,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 670
+    "source_question": 670,
+    "pdf_page": 256
   },
   {
     "id": "scor-671",
@@ -25294,7 +25964,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-256-05.png",
     "answer_image": "./scor-exhibits/page-256-06.png",
     "needs_review": false,
-    "source_question": 671
+    "source_question": 671,
+    "pdf_page": 256
   },
   {
     "id": "scor-672",
@@ -25330,7 +26001,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 672
+    "source_question": 672,
+    "pdf_page": 257
   },
   {
     "id": "scor-673",
@@ -25366,7 +26038,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 673
+    "source_question": 673,
+    "pdf_page": 257
   },
   {
     "id": "scor-674",
@@ -25402,7 +26075,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 674
+    "source_question": 674,
+    "pdf_page": 257
   },
   {
     "id": "scor-675",
@@ -25440,7 +26114,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 675
+    "source_question": 675,
+    "pdf_page": 258
   },
   {
     "id": "scor-676",
@@ -25476,7 +26151,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 676
+    "source_question": 676,
+    "pdf_page": 258
   },
   {
     "id": "scor-677",
@@ -25512,7 +26188,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 677
+    "source_question": 677,
+    "pdf_page": 258
   },
   {
     "id": "scor-678",
@@ -25550,7 +26227,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 678
+    "source_question": 678,
+    "pdf_page": 259
   },
   {
     "id": "scor-679",
@@ -25594,6 +26272,7 @@ window.SCOR_QUESTIONS = [
     "answer_image": null,
     "needs_review": true,
     "source_question": 679,
+    "pdf_page": 260,
     "review_reason": "Choice text was reconstructed from exhibit images and needs verification."
   },
   {
@@ -25637,7 +26316,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 680
+    "source_question": 680,
+    "pdf_page": 260
   },
   {
     "id": "scor-681",
@@ -25673,7 +26353,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 681
+    "source_question": 681,
+    "pdf_page": 261
   },
   {
     "id": "scor-682",
@@ -25709,7 +26390,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 682
+    "source_question": 682,
+    "pdf_page": 261
   },
   {
     "id": "scor-683",
@@ -25745,7 +26427,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 683
+    "source_question": 683,
+    "pdf_page": 261
   },
   {
     "id": "scor-684",
@@ -25781,7 +26464,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 684
+    "source_question": 684,
+    "pdf_page": 262
   },
   {
     "id": "scor-685",
@@ -25817,7 +26501,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 685
+    "source_question": 685,
+    "pdf_page": 262
   },
   {
     "id": "scor-686",
@@ -25865,7 +26550,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": "./scor-exhibits/page-263-01.png",
     "answer_image": "./scor-exhibits/page-263-02.png",
     "needs_review": false,
-    "source_question": 686
+    "source_question": 686,
+    "pdf_page": 263
   },
   {
     "id": "scor-687",
@@ -25906,7 +26592,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 687
+    "source_question": 687,
+    "pdf_page": 264
   },
   {
     "id": "scor-688",
@@ -25942,7 +26629,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 688
+    "source_question": 688,
+    "pdf_page": 264
   },
   {
     "id": "scor-689",
@@ -25978,7 +26666,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 689
+    "source_question": 689,
+    "pdf_page": 264
   },
   {
     "id": "scor-690",
@@ -26014,7 +26703,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 690
+    "source_question": 690,
+    "pdf_page": 265
   },
   {
     "id": "scor-691",
@@ -26050,7 +26740,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 691
+    "source_question": 691,
+    "pdf_page": 265
   },
   {
     "id": "scor-692",
@@ -26086,7 +26777,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 692
+    "source_question": 692,
+    "pdf_page": 265
   },
   {
     "id": "scor-693",
@@ -26122,7 +26814,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 693
+    "source_question": 693,
+    "pdf_page": 266
   },
   {
     "id": "scor-694",
@@ -26158,7 +26851,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 694
+    "source_question": 694,
+    "pdf_page": 266
   },
   {
     "id": "scor-695",
@@ -26199,7 +26893,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 695
+    "source_question": 695,
+    "pdf_page": 266
   },
   {
     "id": "scor-696",
@@ -26235,7 +26930,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 696
+    "source_question": 696,
+    "pdf_page": 267
   },
   {
     "id": "scor-697",
@@ -26273,7 +26969,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 697
+    "source_question": 697,
+    "pdf_page": 267
   },
   {
     "id": "scor-698",
@@ -26309,7 +27006,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 698
+    "source_question": 698,
+    "pdf_page": 268
   },
   {
     "id": "scor-699",
@@ -26347,7 +27045,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 699
+    "source_question": 699,
+    "pdf_page": 268
   },
   {
     "id": "scor-700",
@@ -26383,7 +27082,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 700
+    "source_question": 700,
+    "pdf_page": 269
   },
   {
     "id": "scor-701",
@@ -26424,7 +27124,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 701
+    "source_question": 701,
+    "pdf_page": 270
   },
   {
     "id": "scor-702",
@@ -26460,7 +27161,8 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 702
+    "source_question": 702,
+    "pdf_page": 270
   },
   {
     "id": "scor-703",
@@ -26501,6 +27203,7 @@ window.SCOR_QUESTIONS = [
     "assignment_image": null,
     "answer_image": null,
     "needs_review": false,
-    "source_question": 703
+    "source_question": 703,
+    "pdf_page": 271
   }
 ];
