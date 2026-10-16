@@ -4,7 +4,7 @@
 - Questions parsed: 703
 - Single choice: 566
 - Multiple choice: 111
-- Drag and drop: 26 (26 with transcribed mappings)
+- Drag and drop: 26 (26 with transcribed mappings; 26 with separate assignment and answer images)
 - Questions needing review: 4
 
 ## Questions needing review

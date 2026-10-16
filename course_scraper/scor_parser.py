@@ -389,6 +389,21 @@ IMAGE_OPTION_TRANSCRIPTIONS = {
     },
 }
 
+# Image-object indexes are one-based. Most drag-and-drop pages contain the
+# assignment image followed by its answer image; these pages also contain
+# unrelated/preceding question images.
+DRAGDROP_IMAGE_PAIRS = {
+    402: (2, 3),
+    550: (2, 3),
+    671: (5, 6),
+}
+DRAGDROP_SUPPORTING_IMAGES = {
+    550: (1,),
+}
+IMAGE_OPTION_PAGE_INDEXES = {
+    670: (1, 2, 3, 4),
+}
+
 _CURRENT_PAGES = []
 _PAGE_COUNT = 0
 
@@ -468,7 +483,7 @@ def _page_images(page, page_number: int) -> list[str]:
         png = _image_png(image)
         if png is None:
             continue
-        name = f"page-{page_number + 1:03d}-{index}.png"
+        name = f"page-{page_number + 1:03d}-{index:02d}.png"
         (EXHIBITS_PATH / name).write_bytes(png)
         paths.append(f"./scor-exhibits/{name}")
     return paths
@@ -527,9 +542,10 @@ def _parse_block(topic: str, number: int, block: str, page_number: int) -> dict:
                if any(c["id"] == letter for c in choices)]
     dragdrop = not choices and ("DRAG DROP" in block.upper() or "DRAG AND DROP" in block.upper())
     has_exhibit = "refer to the exhibit" in question.lower()
-    exhibit_paths = _page_images(_CURRENT_PAGES[page_number], page_number) if (
+    page_images = _page_images(_CURRENT_PAGES[page_number], page_number) if (
         dragdrop or has_exhibit or any(not choice["text"] for choice in choices)
     ) else []
+    exhibit_paths = page_images
 
     record = {
         "id": f"scor-{number:03d}",
@@ -543,9 +559,30 @@ def _parse_block(topic: str, number: int, block: str, page_number: int) -> dict:
         "targets": [],
         "mapping": {},
         "exhibits": exhibit_paths,
+        "assignment_image": None,
+        "answer_image": None,
         "needs_review": False,
         "source_question": number,
     }
+    if dragdrop:
+        assignment_index, answer_index = DRAGDROP_IMAGE_PAIRS.get(number, (1, 2))
+        if len(page_images) >= answer_index:
+            record["assignment_image"] = page_images[assignment_index - 1]
+            record["answer_image"] = page_images[answer_index - 1]
+            record["exhibits"] = [
+                page_images[index - 1]
+                for index in DRAGDROP_SUPPORTING_IMAGES.get(number, ())
+                if index <= len(page_images)
+            ]
+        else:
+            record["needs_review"] = True
+            record["review_reason"] = "Could not find both drag-and-drop assignment and answer images."
+    elif number in IMAGE_OPTION_PAGE_INDEXES:
+        record["exhibits"] = [
+            page_images[index - 1]
+            for index in IMAGE_OPTION_PAGE_INDEXES[number]
+            if index <= len(page_images)
+        ]
     image_options = IMAGE_OPTION_TRANSCRIPTIONS.get(number)
     if image_options:
         record["choices"] = [
@@ -625,11 +662,18 @@ def write_outputs(questions: list[dict], output: Path = OUTPUT_PATH, report: Pat
     counts = Counter(question["type"] for question in questions)
     review = [question for question in questions if question["needs_review"]]
     mapped = sum(question["type"] == "dragdrop" and bool(question["mapping"]) for question in questions)
+    paired_images = sum(
+        bool(question["type"] == "dragdrop"
+             and question["assignment_image"]
+             and question["answer_image"])
+        for question in questions
+    )
     report.write_text(
         "# SCOR PDF parse report\n\n"
         f"- PDF pages: {_PAGE_COUNT}\n- Questions parsed: {len(questions)}\n"
         f"- Single choice: {counts['single']}\n- Multiple choice: {counts['multiple']}\n"
-        f"- Drag and drop: {counts['dragdrop']} ({mapped} with transcribed mappings)\n"
+        f"- Drag and drop: {counts['dragdrop']} ({mapped} with transcribed mappings; "
+        f"{paired_images} with separate assignment and answer images)\n"
         f"- Questions needing review: {len(review)}\n\n"
         "## Questions needing review\n\n"
         + ("\n".join(f"- Q{q['source_question']}: {q.get('review_reason', 'Needs manual verification.')}"

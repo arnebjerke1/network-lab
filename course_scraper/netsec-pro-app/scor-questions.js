@@ -31,6 +31,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 1
   },
@@ -70,6 +72,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 2
   },
@@ -104,6 +108,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 3
   },
@@ -138,6 +144,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 4
   },
@@ -172,8 +180,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-002-1.png"
+      "./scor-exhibits/page-002-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 5
   },
@@ -208,6 +218,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 6
   },
@@ -242,6 +254,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 7
   },
@@ -276,6 +290,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 8
   },
@@ -310,6 +326,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 9
   },
@@ -349,6 +367,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 10
   },
@@ -388,6 +408,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 11
   },
@@ -422,6 +444,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 12
   },
@@ -461,6 +485,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 13
   },
@@ -500,6 +526,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 14
   },
@@ -539,6 +567,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 15
   },
@@ -573,6 +603,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 16
   },
@@ -607,6 +639,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 17
   },
@@ -646,6 +680,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 18
   },
@@ -680,6 +716,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 19
   },
@@ -714,6 +752,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 20
   },
@@ -748,6 +788,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 21
   },
@@ -782,6 +824,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 22
   },
@@ -816,6 +860,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 23
   },
@@ -855,6 +901,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 24
   },
@@ -889,6 +937,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 25
   },
@@ -928,6 +978,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 26
   },
@@ -967,6 +1019,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 27
   },
@@ -1001,6 +1055,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 28
   },
@@ -1054,10 +1110,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-3",
       "item-4": "target-4"
     },
-    "exhibits": [
-      "./scor-exhibits/page-011-1.png",
-      "./scor-exhibits/page-011-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-011-01.png",
+    "answer_image": "./scor-exhibits/page-011-02.png",
     "needs_review": false,
     "source_question": 29
   },
@@ -1097,6 +1152,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 30
   },
@@ -1136,6 +1193,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 31
   },
@@ -1170,6 +1229,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 32
   },
@@ -1220,10 +1281,9 @@ window.SCOR_QUESTIONS = [
       "item-4": "target-1",
       "item-5": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-013-1.png",
-      "./scor-exhibits/page-013-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-013-01.png",
+    "answer_image": "./scor-exhibits/page-013-02.png",
     "needs_review": false,
     "source_question": 33
   },
@@ -1258,6 +1318,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 34
   },
@@ -1292,6 +1354,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 35
   },
@@ -1326,6 +1390,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 36
   },
@@ -1360,6 +1426,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 37
   },
@@ -1394,6 +1462,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 38
   },
@@ -1428,6 +1498,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 39
   },
@@ -1467,6 +1539,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 40
   },
@@ -1501,6 +1575,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 41
   },
@@ -1535,6 +1611,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 42
   },
@@ -1574,6 +1652,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 43
   },
@@ -1608,6 +1688,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 44
   },
@@ -1642,6 +1724,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 45
   },
@@ -1676,6 +1760,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 46
   },
@@ -1710,6 +1796,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 47
   },
@@ -1763,10 +1851,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-018-1.png",
-      "./scor-exhibits/page-018-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-018-01.png",
+    "answer_image": "./scor-exhibits/page-018-02.png",
     "needs_review": false,
     "source_question": 48
   },
@@ -1801,6 +1888,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 49
   },
@@ -1854,10 +1943,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-2",
       "item-4": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-019-1.png",
-      "./scor-exhibits/page-019-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-019-01.png",
+    "answer_image": "./scor-exhibits/page-019-02.png",
     "needs_review": false,
     "source_question": 50
   },
@@ -1892,6 +1980,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 451
   },
@@ -1926,6 +2016,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 452
   },
@@ -1960,6 +2052,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 453
   },
@@ -1994,6 +2088,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 454
   },
@@ -2028,6 +2124,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 455
   },
@@ -2062,6 +2160,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 456
   },
@@ -2096,6 +2196,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 457
   },
@@ -2135,6 +2237,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 458
   },
@@ -2169,6 +2273,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 459
   },
@@ -2203,6 +2309,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 460
   },
@@ -2237,6 +2345,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 461
   },
@@ -2271,6 +2381,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 462
   },
@@ -2333,10 +2445,9 @@ window.SCOR_QUESTIONS = [
       "item-4": "target-4",
       "item-5": "target-3"
     },
-    "exhibits": [
-      "./scor-exhibits/page-024-1.png",
-      "./scor-exhibits/page-024-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-024-01.png",
+    "answer_image": "./scor-exhibits/page-024-02.png",
     "needs_review": false,
     "source_question": 463
   },
@@ -2371,8 +2482,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-025-1.png"
+      "./scor-exhibits/page-025-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 464
   },
@@ -2407,6 +2520,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 465
   },
@@ -2460,10 +2575,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-4",
       "item-4": "target-3"
     },
-    "exhibits": [
-      "./scor-exhibits/page-026-1.png",
-      "./scor-exhibits/page-026-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-026-01.png",
+    "answer_image": "./scor-exhibits/page-026-02.png",
     "needs_review": false,
     "source_question": 466
   },
@@ -2498,6 +2612,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 467
   },
@@ -2532,6 +2648,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 468
   },
@@ -2566,6 +2684,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 469
   },
@@ -2600,6 +2720,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 470
   },
@@ -2634,6 +2756,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 471
   },
@@ -2668,8 +2792,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-028-1.png"
+      "./scor-exhibits/page-028-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 472
   },
@@ -2709,6 +2835,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 473
   },
@@ -2743,6 +2871,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 474
   },
@@ -2777,6 +2907,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 475
   },
@@ -2811,6 +2943,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 476
   },
@@ -2845,6 +2979,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 477
   },
@@ -2879,6 +3015,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 478
   },
@@ -2913,6 +3051,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 479
   },
@@ -2947,6 +3087,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 480
   },
@@ -2981,6 +3123,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 481
   },
@@ -3015,6 +3159,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 482
   },
@@ -3049,6 +3195,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 483
   },
@@ -3083,6 +3231,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 484
   },
@@ -3122,6 +3272,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 485
   },
@@ -3156,6 +3308,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 486
   },
@@ -3190,6 +3344,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 487
   },
@@ -3224,6 +3380,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 488
   },
@@ -3258,6 +3416,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 489
   },
@@ -3292,6 +3452,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 490
   },
@@ -3345,10 +3507,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-3",
       "item-4": "target-4"
     },
-    "exhibits": [
-      "./scor-exhibits/page-035-1.png",
-      "./scor-exhibits/page-035-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-035-01.png",
+    "answer_image": "./scor-exhibits/page-035-02.png",
     "needs_review": true,
     "source_question": 491,
     "review_reason": "One transcribed source label (NGFW) is uncertain in the exhibit image."
@@ -3384,6 +3545,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 492
   },
@@ -3423,6 +3586,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 493
   },
@@ -3457,6 +3622,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 494
   },
@@ -3491,6 +3658,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 495
   },
@@ -3525,6 +3694,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 496
   },
@@ -3559,6 +3730,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 497
   },
@@ -3593,6 +3766,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 498
   },
@@ -3627,6 +3802,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 499
   },
@@ -3661,6 +3838,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 500
   },
@@ -3695,6 +3874,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 51
   },
@@ -3729,9 +3910,11 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-039-1.png",
-      "./scor-exhibits/page-039-2.png"
+      "./scor-exhibits/page-039-01.png",
+      "./scor-exhibits/page-039-02.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 52
   },
@@ -3766,8 +3949,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-040-1.png"
+      "./scor-exhibits/page-040-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 53
   },
@@ -3802,6 +3987,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 54
   },
@@ -3836,6 +4023,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 55
   },
@@ -3875,6 +4064,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 56
   },
@@ -3909,6 +4100,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 57
   },
@@ -3943,8 +4136,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-042-1.png"
+      "./scor-exhibits/page-042-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 58
   },
@@ -3979,6 +4174,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 59
   },
@@ -4013,6 +4210,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 60
   },
@@ -4047,6 +4246,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 61
   },
@@ -4081,6 +4282,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 62
   },
@@ -4120,6 +4323,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 63
   },
@@ -4154,6 +4359,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 64
   },
@@ -4188,6 +4395,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 65
   },
@@ -4222,8 +4431,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-045-1.png"
+      "./scor-exhibits/page-045-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 66
   },
@@ -4258,6 +4469,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 67
   },
@@ -4292,6 +4505,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 68
   },
@@ -4326,9 +4541,11 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-046-1.png",
-      "./scor-exhibits/page-046-2.png"
+      "./scor-exhibits/page-046-01.png",
+      "./scor-exhibits/page-046-02.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 69
   },
@@ -4363,9 +4580,11 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-046-1.png",
-      "./scor-exhibits/page-046-2.png"
+      "./scor-exhibits/page-046-01.png",
+      "./scor-exhibits/page-046-02.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 70
   },
@@ -4400,6 +4619,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 71
   },
@@ -4434,6 +4655,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 72
   },
@@ -4468,6 +4691,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 73
   },
@@ -4502,6 +4727,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 74
   },
@@ -4541,6 +4768,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 75
   },
@@ -4575,6 +4804,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 76
   },
@@ -4614,6 +4845,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 77
   },
@@ -4648,6 +4881,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 78
   },
@@ -4682,8 +4917,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-050-1.png"
+      "./scor-exhibits/page-050-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 79
   },
@@ -4718,6 +4955,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 80
   },
@@ -4752,6 +4991,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 81
   },
@@ -4786,6 +5027,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 82
   },
@@ -4825,6 +5068,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 83
   },
@@ -4859,8 +5104,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-052-1.png"
+      "./scor-exhibits/page-052-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 84
   },
@@ -4895,6 +5142,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 85
   },
@@ -4929,6 +5178,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 86
   },
@@ -4963,6 +5214,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 87
   },
@@ -4997,6 +5250,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 88
   },
@@ -5052,10 +5307,9 @@ window.SCOR_QUESTIONS = [
       "item-5": "target-1",
       "item-6": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-054-1.png",
-      "./scor-exhibits/page-054-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-054-01.png",
+    "answer_image": "./scor-exhibits/page-054-02.png",
     "needs_review": false,
     "source_question": 89
   },
@@ -5090,6 +5344,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 90
   },
@@ -5124,6 +5380,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 91
   },
@@ -5158,8 +5416,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-055-1.png"
+      "./scor-exhibits/page-055-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 92
   },
@@ -5194,8 +5454,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-056-1.png"
+      "./scor-exhibits/page-056-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 93
   },
@@ -5230,8 +5492,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-057-1.png"
+      "./scor-exhibits/page-057-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 94
   },
@@ -5266,8 +5530,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-058-1.png"
+      "./scor-exhibits/page-058-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 95
   },
@@ -5302,6 +5568,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 96
   },
@@ -5336,6 +5604,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 97
   },
@@ -5375,6 +5645,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 98
   },
@@ -5409,6 +5681,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 99
   },
@@ -5443,6 +5717,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 100
   },
@@ -5477,6 +5753,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 101
   },
@@ -5511,6 +5789,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 102
   },
@@ -5545,6 +5825,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 103
   },
@@ -5579,6 +5861,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 104
   },
@@ -5613,6 +5897,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 105
   },
@@ -5647,6 +5933,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 106
   },
@@ -5681,6 +5969,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 107
   },
@@ -5715,6 +6005,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 108
   },
@@ -5749,6 +6041,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 109
   },
@@ -5802,10 +6096,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-2",
       "item-4": "target-4"
     },
-    "exhibits": [
-      "./scor-exhibits/page-064-1.png",
-      "./scor-exhibits/page-064-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-064-01.png",
+    "answer_image": "./scor-exhibits/page-064-02.png",
     "needs_review": false,
     "source_question": 110
   },
@@ -5840,6 +6133,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 111
   },
@@ -5874,6 +6169,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 112
   },
@@ -5913,6 +6210,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 113
   },
@@ -5947,6 +6246,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 114
   },
@@ -5986,6 +6287,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 115
   },
@@ -6020,6 +6323,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 116
   },
@@ -6054,6 +6359,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 117
   },
@@ -6088,6 +6395,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 118
   },
@@ -6122,6 +6431,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 119
   },
@@ -6156,6 +6467,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 120
   },
@@ -6190,6 +6503,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 121
   },
@@ -6224,6 +6539,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 122
   },
@@ -6277,10 +6594,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-4",
       "item-4": "target-3"
     },
-    "exhibits": [
-      "./scor-exhibits/page-068-1.png",
-      "./scor-exhibits/page-068-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-068-01.png",
+    "answer_image": "./scor-exhibits/page-068-02.png",
     "needs_review": false,
     "source_question": 123
   },
@@ -6315,8 +6631,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-069-1.png"
+      "./scor-exhibits/page-069-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 124
   },
@@ -6351,6 +6669,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 125
   },
@@ -6385,6 +6705,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 126
   },
@@ -6424,6 +6746,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 127
   },
@@ -6458,8 +6782,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-071-1.png"
+      "./scor-exhibits/page-071-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 128
   },
@@ -6494,6 +6820,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 129
   },
@@ -6528,6 +6856,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 130
   },
@@ -6562,6 +6892,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 131
   },
@@ -6596,6 +6928,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 132
   },
@@ -6630,6 +6964,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 133
   },
@@ -6664,6 +7000,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 134
   },
@@ -6698,8 +7036,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-073-1.png"
+      "./scor-exhibits/page-073-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 135
   },
@@ -6734,6 +7074,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 136
   },
@@ -6768,6 +7110,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 137
   },
@@ -6802,6 +7146,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 138
   },
@@ -6836,6 +7182,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 139
   },
@@ -6870,6 +7218,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 140
   },
@@ -6904,6 +7254,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 141
   },
@@ -6938,6 +7290,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 142
   },
@@ -6972,6 +7326,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 143
   },
@@ -7006,6 +7362,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 144
   },
@@ -7040,6 +7398,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 145
   },
@@ -7074,6 +7434,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 146
   },
@@ -7108,6 +7470,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 147
   },
@@ -7142,6 +7506,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 148
   },
@@ -7195,10 +7561,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-2",
       "item-4": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-078-1.png",
-      "./scor-exhibits/page-078-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-078-01.png",
+    "answer_image": "./scor-exhibits/page-078-02.png",
     "needs_review": false,
     "source_question": 149
   },
@@ -7233,8 +7598,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-079-1.png"
+      "./scor-exhibits/page-079-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 150
   },
@@ -7269,6 +7636,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 151
   },
@@ -7303,6 +7672,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 152
   },
@@ -7337,6 +7708,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 153
   },
@@ -7371,6 +7744,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 154
   },
@@ -7405,6 +7780,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 155
   },
@@ -7439,6 +7816,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 156
   },
@@ -7473,6 +7852,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 157
   },
@@ -7507,6 +7888,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 158
   },
@@ -7541,6 +7924,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 159
   },
@@ -7575,6 +7960,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 160
   },
@@ -7614,6 +8001,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 161
   },
@@ -7648,6 +8037,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 162
   },
@@ -7682,6 +8073,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 163
   },
@@ -7716,6 +8109,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 164
   },
@@ -7750,6 +8145,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 165
   },
@@ -7789,6 +8186,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 166
   },
@@ -7842,10 +8241,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-3",
       "item-4": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-085-1.png",
-      "./scor-exhibits/page-085-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-085-01.png",
+    "answer_image": "./scor-exhibits/page-085-02.png",
     "needs_review": false,
     "source_question": 167
   },
@@ -7880,6 +8278,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 168
   },
@@ -7914,6 +8314,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 169
   },
@@ -7953,6 +8355,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 170
   },
@@ -7987,6 +8391,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 171
   },
@@ -8021,6 +8427,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 172
   },
@@ -8055,6 +8463,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 173
   },
@@ -8089,6 +8499,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 174
   },
@@ -8123,6 +8535,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 175
   },
@@ -8157,6 +8571,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 176
   },
@@ -8210,10 +8626,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-089-1.png",
-      "./scor-exhibits/page-089-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-089-01.png",
+    "answer_image": "./scor-exhibits/page-089-02.png",
     "needs_review": false,
     "source_question": 177
   },
@@ -8248,6 +8663,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 178
   },
@@ -8282,6 +8699,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 179
   },
@@ -8316,6 +8735,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 180
   },
@@ -8350,6 +8771,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 181
   },
@@ -8384,6 +8807,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 182
   },
@@ -8418,6 +8843,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 183
   },
@@ -8452,6 +8879,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 184
   },
@@ -8491,6 +8920,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 185
   },
@@ -8525,6 +8956,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 186
   },
@@ -8559,6 +8992,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 187
   },
@@ -8593,6 +9028,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 188
   },
@@ -8627,6 +9064,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 189
   },
@@ -8661,6 +9100,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 190
   },
@@ -8695,6 +9136,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 191
   },
@@ -8729,6 +9172,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 192
   },
@@ -8768,6 +9213,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 193
   },
@@ -8802,6 +9249,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 194
   },
@@ -8836,8 +9285,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-095-1.png"
+      "./scor-exhibits/page-095-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 195
   },
@@ -8872,6 +9323,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 196
   },
@@ -8911,6 +9364,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 197
   },
@@ -8945,6 +9400,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 198
   },
@@ -8979,6 +9436,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 199
   },
@@ -9013,6 +9472,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 200
   },
@@ -9047,6 +9508,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 201
   },
@@ -9081,6 +9544,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 202
   },
@@ -9115,6 +9580,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 203
   },
@@ -9154,6 +9621,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 204
   },
@@ -9188,6 +9657,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 205
   },
@@ -9222,6 +9693,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 206
   },
@@ -9261,6 +9734,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 207
   },
@@ -9295,6 +9770,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 208
   },
@@ -9329,6 +9806,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 209
   },
@@ -9363,6 +9842,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 210
   },
@@ -9397,6 +9878,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 211
   },
@@ -9436,6 +9919,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 212
   },
@@ -9470,6 +9955,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 213
   },
@@ -9504,6 +9991,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 214
   },
@@ -9538,6 +10027,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 215
   },
@@ -9572,6 +10063,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 216
   },
@@ -9606,6 +10099,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 217
   },
@@ -9640,6 +10135,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 218
   },
@@ -9674,6 +10171,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 219
   },
@@ -9708,6 +10207,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 220
   },
@@ -9742,6 +10243,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 221
   },
@@ -9776,6 +10279,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 222
   },
@@ -9810,6 +10315,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 223
   },
@@ -9844,6 +10351,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 224
   },
@@ -9878,6 +10387,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 225
   },
@@ -9912,8 +10423,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-107-1.png"
+      "./scor-exhibits/page-107-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 226
   },
@@ -9948,6 +10461,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 227
   },
@@ -9982,6 +10497,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 228
   },
@@ -10016,6 +10533,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 229
   },
@@ -10050,6 +10569,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 230
   },
@@ -10084,6 +10605,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 231
   },
@@ -10118,6 +10641,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 232
   },
@@ -10157,6 +10682,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 233
   },
@@ -10196,6 +10723,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 234
   },
@@ -10230,6 +10759,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 235
   },
@@ -10269,6 +10800,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 236
   },
@@ -10308,6 +10841,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 237
   },
@@ -10342,6 +10877,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 238
   },
@@ -10376,6 +10913,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 239
   },
@@ -10410,6 +10949,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 240
   },
@@ -10449,6 +10990,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 241
   },
@@ -10483,6 +11026,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 242
   },
@@ -10517,6 +11062,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 243
   },
@@ -10551,6 +11098,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 244
   },
@@ -10585,6 +11134,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 245
   },
@@ -10619,6 +11170,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 246
   },
@@ -10653,6 +11206,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 247
   },
@@ -10692,6 +11247,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 248
   },
@@ -10731,6 +11288,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 249
   },
@@ -10770,6 +11329,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 250
   },
@@ -10809,6 +11370,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 251
   },
@@ -10843,6 +11406,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 252
   },
@@ -10877,6 +11442,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 253
   },
@@ -10916,6 +11483,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 254
   },
@@ -10950,6 +11519,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 255
   },
@@ -10984,6 +11555,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 256
   },
@@ -11018,6 +11591,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 257
   },
@@ -11052,6 +11627,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 258
   },
@@ -11086,6 +11663,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 259
   },
@@ -11120,6 +11699,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 260
   },
@@ -11154,6 +11735,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 261
   },
@@ -11188,6 +11771,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 262
   },
@@ -11222,6 +11807,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 263
   },
@@ -11256,6 +11843,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 264
   },
@@ -11290,6 +11879,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 265
   },
@@ -11324,6 +11915,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 266
   },
@@ -11358,6 +11951,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 267
   },
@@ -11392,6 +11987,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 268
   },
@@ -11426,6 +12023,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 269
   },
@@ -11460,6 +12059,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 270
   },
@@ -11494,6 +12095,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 271
   },
@@ -11528,6 +12131,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 272
   },
@@ -11562,6 +12167,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 273
   },
@@ -11601,6 +12208,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 274
   },
@@ -11635,6 +12244,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 275
   },
@@ -11669,6 +12280,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 276
   },
@@ -11703,6 +12316,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 277
   },
@@ -11737,8 +12352,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-126-1.png"
+      "./scor-exhibits/page-126-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 278
   },
@@ -11773,6 +12390,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 279
   },
@@ -11812,6 +12431,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 280
   },
@@ -11846,6 +12467,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 281
   },
@@ -11880,6 +12503,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 282
   },
@@ -11914,6 +12539,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 283
   },
@@ -11948,6 +12575,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 284
   },
@@ -11982,6 +12611,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 285
   },
@@ -12035,10 +12666,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-2",
       "item-4": "target-4"
     },
-    "exhibits": [
-      "./scor-exhibits/page-129-1.png",
-      "./scor-exhibits/page-129-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-129-01.png",
+    "answer_image": "./scor-exhibits/page-129-02.png",
     "needs_review": false,
     "source_question": 286
   },
@@ -12073,6 +12703,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 287
   },
@@ -12107,6 +12739,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 288
   },
@@ -12141,6 +12775,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 289
   },
@@ -12175,6 +12811,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 290
   },
@@ -12209,6 +12847,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 291
   },
@@ -12243,8 +12883,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-131-1.png"
+      "./scor-exhibits/page-131-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 292
   },
@@ -12279,6 +12921,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 293
   },
@@ -12313,8 +12957,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-132-1.png"
+      "./scor-exhibits/page-132-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 294
   },
@@ -12349,6 +12995,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 295
   },
@@ -12383,6 +13031,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 296
   },
@@ -12422,6 +13072,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 297
   },
@@ -12456,6 +13108,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 298
   },
@@ -12490,6 +13144,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 299
   },
@@ -12524,6 +13180,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 300
   },
@@ -12563,6 +13221,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 301
   },
@@ -12597,6 +13257,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 302
   },
@@ -12631,6 +13293,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 303
   },
@@ -12670,6 +13334,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 304
   },
@@ -12732,10 +13398,9 @@ window.SCOR_QUESTIONS = [
       "item-4": "target-4",
       "item-5": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-137-1.png",
-      "./scor-exhibits/page-137-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-137-01.png",
+    "answer_image": "./scor-exhibits/page-137-02.png",
     "needs_review": false,
     "source_question": 305
   },
@@ -12770,8 +13435,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-138-1.png"
+      "./scor-exhibits/page-138-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 306
   },
@@ -12806,6 +13473,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 307
   },
@@ -12840,6 +13509,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 308
   },
@@ -12874,6 +13545,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 309
   },
@@ -12908,6 +13581,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 310
   },
@@ -12942,6 +13617,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 311
   },
@@ -12976,6 +13653,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 312
   },
@@ -13010,6 +13689,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 313
   },
@@ -13044,6 +13725,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 314
   },
@@ -13078,6 +13761,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 315
   },
@@ -13112,6 +13797,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 316
   },
@@ -13151,6 +13838,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 317
   },
@@ -13185,6 +13874,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 318
   },
@@ -13219,6 +13910,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 319
   },
@@ -13258,6 +13951,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 320
   },
@@ -13292,6 +13987,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 321
   },
@@ -13326,6 +14023,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 322
   },
@@ -13365,6 +14064,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 323
   },
@@ -13399,6 +14100,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 324
   },
@@ -13438,6 +14141,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 325
   },
@@ -13472,6 +14177,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 326
   },
@@ -13506,6 +14213,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 327
   },
@@ -13540,8 +14249,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-145-1.png"
+      "./scor-exhibits/page-145-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 328
   },
@@ -13576,6 +14287,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 329
   },
@@ -13615,6 +14328,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 330
   },
@@ -13649,6 +14364,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 331
   },
@@ -13683,6 +14400,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 332
   },
@@ -13717,6 +14436,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 333
   },
@@ -13751,6 +14472,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 334
   },
@@ -13790,6 +14513,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 335
   },
@@ -13824,8 +14549,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-148-1.png"
+      "./scor-exhibits/page-148-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 336
   },
@@ -13879,10 +14606,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-3"
     },
-    "exhibits": [
-      "./scor-exhibits/page-149-1.png",
-      "./scor-exhibits/page-149-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-149-01.png",
+    "answer_image": "./scor-exhibits/page-149-02.png",
     "needs_review": false,
     "source_question": 337
   },
@@ -13922,6 +14648,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 338
   },
@@ -13956,8 +14684,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-150-1.png"
+      "./scor-exhibits/page-150-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 339
   },
@@ -13992,6 +14722,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 340
   },
@@ -14026,6 +14758,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 341
   },
@@ -14060,6 +14794,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 342
   },
@@ -14094,6 +14830,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 343
   },
@@ -14128,6 +14866,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 344
   },
@@ -14162,6 +14902,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 345
   },
@@ -14196,6 +14938,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 346
   },
@@ -14230,6 +14974,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 347
   },
@@ -14264,6 +15010,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 348
   },
@@ -14298,6 +15046,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 349
   },
@@ -14337,6 +15087,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 350
   },
@@ -14376,6 +15128,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 351
   },
@@ -14410,6 +15164,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 352
   },
@@ -14444,6 +15200,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 353
   },
@@ -14478,6 +15236,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 354
   },
@@ -14512,6 +15272,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 355
   },
@@ -14546,6 +15308,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 356
   },
@@ -14580,6 +15344,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 357
   },
@@ -14614,6 +15380,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 358
   },
@@ -14653,6 +15421,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 359
   },
@@ -14687,8 +15457,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-158-1.png"
+      "./scor-exhibits/page-158-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 360
   },
@@ -14723,8 +15495,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-159-1.png"
+      "./scor-exhibits/page-159-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 361
   },
@@ -14759,6 +15533,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 362
   },
@@ -14798,6 +15574,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 363
   },
@@ -14832,6 +15610,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 364
   },
@@ -14866,6 +15646,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 365
   },
@@ -14905,8 +15687,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-161-1.png"
+      "./scor-exhibits/page-161-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 366
   },
@@ -14946,6 +15730,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 367
   },
@@ -14980,6 +15766,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 368
   },
@@ -15014,6 +15802,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 369
   },
@@ -15053,6 +15843,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 370
   },
@@ -15087,6 +15879,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 371
   },
@@ -15121,6 +15915,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 372
   },
@@ -15155,6 +15951,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 373
   },
@@ -15189,6 +15987,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 374
   },
@@ -15223,6 +16023,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 375
   },
@@ -15257,6 +16059,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 376
   },
@@ -15291,6 +16095,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 377
   },
@@ -15325,6 +16131,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 378
   },
@@ -15364,6 +16172,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 379
   },
@@ -15398,6 +16208,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 380
   },
@@ -15432,6 +16244,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 381
   },
@@ -15466,6 +16280,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 382
   },
@@ -15500,6 +16316,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 383
   },
@@ -15534,6 +16352,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 384
   },
@@ -15568,6 +16388,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 385
   },
@@ -15602,6 +16424,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 386
   },
@@ -15636,6 +16460,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 387
   },
@@ -15670,6 +16496,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 388
   },
@@ -15704,6 +16532,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 389
   },
@@ -15738,6 +16568,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 390
   },
@@ -15772,6 +16604,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 391
   },
@@ -15806,6 +16640,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 392
   },
@@ -15840,6 +16676,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 393
   },
@@ -15893,10 +16731,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-4",
       "item-4": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-171-1.png",
-      "./scor-exhibits/page-171-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-171-01.png",
+    "answer_image": "./scor-exhibits/page-171-02.png",
     "needs_review": false,
     "source_question": 394
   },
@@ -15931,6 +16768,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 395
   },
@@ -15965,6 +16804,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 396
   },
@@ -15999,6 +16840,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 397
   },
@@ -16033,6 +16876,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 398
   },
@@ -16067,6 +16912,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 399
   },
@@ -16101,6 +16948,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 400
   },
@@ -16135,6 +16984,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 401
   },
@@ -16188,11 +17039,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-174-1.png",
-      "./scor-exhibits/page-174-2.png",
-      "./scor-exhibits/page-174-3.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-174-02.png",
+    "answer_image": "./scor-exhibits/page-174-03.png",
     "needs_review": false,
     "source_question": 402
   },
@@ -16232,6 +17081,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 403
   },
@@ -16271,6 +17122,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 404
   },
@@ -16305,6 +17158,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 405
   },
@@ -16339,6 +17194,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 406
   },
@@ -16384,10 +17241,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-176-1.png",
-      "./scor-exhibits/page-176-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-176-01.png",
+    "answer_image": "./scor-exhibits/page-176-02.png",
     "needs_review": false,
     "source_question": 407
   },
@@ -16422,6 +17278,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 408
   },
@@ -16456,6 +17314,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 409
   },
@@ -16490,6 +17350,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 410
   },
@@ -16529,6 +17391,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 411
   },
@@ -16563,6 +17427,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 412
   },
@@ -16597,6 +17463,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 413
   },
@@ -16636,6 +17504,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 414
   },
@@ -16670,6 +17540,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 415
   },
@@ -16704,6 +17576,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 416
   },
@@ -16757,10 +17631,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-3"
     },
-    "exhibits": [
-      "./scor-exhibits/page-180-1.png",
-      "./scor-exhibits/page-180-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-180-01.png",
+    "answer_image": "./scor-exhibits/page-180-02.png",
     "needs_review": false,
     "source_question": 417
   },
@@ -16795,6 +17668,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 418
   },
@@ -16829,6 +17704,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 419
   },
@@ -16863,6 +17740,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 420
   },
@@ -16897,6 +17776,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 421
   },
@@ -16931,6 +17812,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 422
   },
@@ -16965,6 +17848,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 423
   },
@@ -16999,6 +17884,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 424
   },
@@ -17033,6 +17920,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 425
   },
@@ -17067,6 +17956,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 426
   },
@@ -17101,6 +17992,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 427
   },
@@ -17135,6 +18028,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 428
   },
@@ -17169,6 +18064,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 429
   },
@@ -17208,6 +18105,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 430
   },
@@ -17242,6 +18141,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 431
   },
@@ -17281,6 +18182,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 432
   },
@@ -17315,6 +18218,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 433
   },
@@ -17349,6 +18254,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 434
   },
@@ -17383,6 +18290,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 435
   },
@@ -17422,6 +18331,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 436
   },
@@ -17456,6 +18367,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 437
   },
@@ -17490,6 +18403,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 438
   },
@@ -17524,6 +18439,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 439
   },
@@ -17558,6 +18475,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 440
   },
@@ -17592,6 +18511,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 441
   },
@@ -17631,6 +18552,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 442
   },
@@ -17670,6 +18593,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 443
   },
@@ -17709,6 +18634,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 444
   },
@@ -17743,6 +18670,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 445
   },
@@ -17777,6 +18706,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 446
   },
@@ -17816,6 +18747,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 447
   },
@@ -17850,6 +18783,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 448
   },
@@ -17884,6 +18819,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 449
   },
@@ -17918,6 +18855,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 450
   },
@@ -17957,6 +18896,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 501
   },
@@ -17996,6 +18937,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 502
   },
@@ -18030,6 +18973,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 503
   },
@@ -18064,6 +19009,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 504
   },
@@ -18098,6 +19045,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 505
   },
@@ -18132,6 +19081,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 506
   },
@@ -18166,6 +19117,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 507
   },
@@ -18200,6 +19153,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 508
   },
@@ -18244,10 +19199,9 @@ window.SCOR_QUESTIONS = [
       "item-2": "target-3",
       "item-3": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-195-1.png",
-      "./scor-exhibits/page-195-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-195-01.png",
+    "answer_image": "./scor-exhibits/page-195-02.png",
     "needs_review": false,
     "source_question": 509
   },
@@ -18282,6 +19236,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 510
   },
@@ -18316,6 +19272,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 511
   },
@@ -18350,6 +19308,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 512
   },
@@ -18384,6 +19344,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 513
   },
@@ -18418,6 +19380,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 514
   },
@@ -18457,6 +19421,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 515
   },
@@ -18496,6 +19462,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 516
   },
@@ -18530,6 +19498,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 517
   },
@@ -18564,6 +19534,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 518
   },
@@ -18603,6 +19575,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 519
   },
@@ -18637,6 +19611,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 520
   },
@@ -18671,8 +19647,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-199-1.png"
+      "./scor-exhibits/page-199-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 521
   },
@@ -18707,6 +19685,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 522
   },
@@ -18741,6 +19721,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 523
   },
@@ -18775,6 +19757,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 524
   },
@@ -18809,6 +19793,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 525
   },
@@ -18843,6 +19829,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 526
   },
@@ -18877,6 +19865,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 527
   },
@@ -18911,6 +19901,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 528
   },
@@ -18945,6 +19937,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 529
   },
@@ -18979,8 +19973,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-203-1.png"
+      "./scor-exhibits/page-203-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 530
   },
@@ -19020,6 +20016,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 531
   },
@@ -19054,6 +20052,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 532
   },
@@ -19093,6 +20093,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 533
   },
@@ -19127,6 +20129,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 534
   },
@@ -19161,6 +20165,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 535
   },
@@ -19195,6 +20201,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 536
   },
@@ -19229,6 +20237,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 537
   },
@@ -19263,6 +20273,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 538
   },
@@ -19297,6 +20309,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 539
   },
@@ -19336,6 +20350,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 540
   },
@@ -19370,6 +20386,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 541
   },
@@ -19423,10 +20441,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-208-1.png",
-      "./scor-exhibits/page-208-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-208-01.png",
+    "answer_image": "./scor-exhibits/page-208-02.png",
     "needs_review": false,
     "source_question": 542
   },
@@ -19461,6 +20478,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 543
   },
@@ -19495,6 +20514,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 544
   },
@@ -19529,6 +20550,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 545
   },
@@ -19568,6 +20591,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 546
   },
@@ -19602,6 +20627,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 547
   },
@@ -19636,6 +20663,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 548
   },
@@ -19675,6 +20704,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 549
   },
@@ -19729,10 +20760,10 @@ window.SCOR_QUESTIONS = [
       "item-4": "target-3"
     },
     "exhibits": [
-      "./scor-exhibits/page-211-1.png",
-      "./scor-exhibits/page-211-2.png",
-      "./scor-exhibits/page-211-3.png"
+      "./scor-exhibits/page-211-01.png"
     ],
+    "assignment_image": "./scor-exhibits/page-211-02.png",
+    "answer_image": "./scor-exhibits/page-211-03.png",
     "needs_review": false,
     "source_question": 550
   },
@@ -19767,6 +20798,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 551
   },
@@ -19806,6 +20839,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 552
   },
@@ -19840,6 +20875,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 553
   },
@@ -19874,6 +20911,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 554
   },
@@ -19913,6 +20952,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 555
   },
@@ -19947,6 +20988,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 556
   },
@@ -19981,6 +21024,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 557
   },
@@ -20015,6 +21060,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 558
   },
@@ -20054,6 +21101,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 559
   },
@@ -20088,6 +21137,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 560
   },
@@ -20122,8 +21173,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-216-1.png"
+      "./scor-exhibits/page-216-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 561
   },
@@ -20158,6 +21211,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 562
   },
@@ -20192,6 +21247,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 563
   },
@@ -20231,6 +21288,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 564
   },
@@ -20265,6 +21324,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 565
   },
@@ -20299,6 +21360,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 566
   },
@@ -20333,6 +21396,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 567
   },
@@ -20372,8 +21437,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-218-1.png"
+      "./scor-exhibits/page-218-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 568
   },
@@ -20408,6 +21475,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 569
   },
@@ -20447,6 +21516,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 570
   },
@@ -20481,6 +21552,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 571
   },
@@ -20520,6 +21593,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 572
   },
@@ -20554,6 +21629,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 573
   },
@@ -20588,6 +21665,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 574
   },
@@ -20622,6 +21701,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 575
   },
@@ -20656,6 +21737,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 576
   },
@@ -20690,6 +21773,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 577
   },
@@ -20724,6 +21809,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 578
   },
@@ -20758,6 +21845,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 579
   },
@@ -20792,6 +21881,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 580
   },
@@ -20826,6 +21917,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 581
   },
@@ -20860,6 +21953,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 582
   },
@@ -20894,6 +21989,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 583
   },
@@ -20933,6 +22030,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 584
   },
@@ -20967,6 +22066,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 585
   },
@@ -21001,6 +22102,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 586
   },
@@ -21035,6 +22138,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 587
   },
@@ -21069,6 +22174,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 588
   },
@@ -21108,6 +22215,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 589
   },
@@ -21147,6 +22256,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 590
   },
@@ -21181,6 +22292,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 591
   },
@@ -21220,6 +22333,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 592
   },
@@ -21254,6 +22369,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 593
   },
@@ -21288,6 +22405,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 594
   },
@@ -21327,6 +22446,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 595
   },
@@ -21361,6 +22482,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 596
   },
@@ -21395,6 +22518,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 597
   },
@@ -21434,6 +22559,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 598
   },
@@ -21473,6 +22600,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 599
   },
@@ -21507,6 +22636,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 600
   },
@@ -21541,9 +22672,11 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-229-1.png",
-      "./scor-exhibits/page-229-2.png"
+      "./scor-exhibits/page-229-01.png",
+      "./scor-exhibits/page-229-02.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 601
   },
@@ -21578,6 +22711,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 602
   },
@@ -21612,6 +22747,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 603
   },
@@ -21646,6 +22783,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 604
   },
@@ -21680,6 +22819,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 605
   },
@@ -21714,6 +22855,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 606
   },
@@ -21748,6 +22891,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 607
   },
@@ -21782,6 +22927,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 608
   },
@@ -21816,6 +22963,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 609
   },
@@ -21850,6 +22999,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 610
   },
@@ -21880,11 +23031,13 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-233-1.png",
-      "./scor-exhibits/page-233-2.png",
-      "./scor-exhibits/page-233-3.png",
-      "./scor-exhibits/page-233-4.png"
+      "./scor-exhibits/page-233-01.png",
+      "./scor-exhibits/page-233-02.png",
+      "./scor-exhibits/page-233-03.png",
+      "./scor-exhibits/page-233-04.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": true,
     "source_question": 611,
     "review_reason": "Correct option is inferred from the exhibit; verify the image-based answer key."
@@ -21925,13 +23078,15 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-234-1.png",
-      "./scor-exhibits/page-234-2.png",
-      "./scor-exhibits/page-234-3.png",
-      "./scor-exhibits/page-234-4.png",
-      "./scor-exhibits/page-234-5.png",
-      "./scor-exhibits/page-234-6.png"
+      "./scor-exhibits/page-234-01.png",
+      "./scor-exhibits/page-234-02.png",
+      "./scor-exhibits/page-234-03.png",
+      "./scor-exhibits/page-234-04.png",
+      "./scor-exhibits/page-234-05.png",
+      "./scor-exhibits/page-234-06.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 612
   },
@@ -21966,6 +23121,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 613
   },
@@ -22000,6 +23157,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 614
   },
@@ -22034,8 +23193,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-235-1.png"
+      "./scor-exhibits/page-235-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 615
   },
@@ -22070,6 +23231,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 616
   },
@@ -22104,6 +23267,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 617
   },
@@ -22138,6 +23303,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 618
   },
@@ -22177,6 +23344,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 619
   },
@@ -22211,8 +23380,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-237-1.png"
+      "./scor-exhibits/page-237-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 620
   },
@@ -22247,6 +23418,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 621
   },
@@ -22281,6 +23454,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 622
   },
@@ -22320,6 +23495,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 623
   },
@@ -22354,6 +23531,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 624
   },
@@ -22388,6 +23567,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 625
   },
@@ -22422,6 +23603,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 626
   },
@@ -22456,6 +23639,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 627
   },
@@ -22495,6 +23680,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 628
   },
@@ -22529,6 +23716,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 629
   },
@@ -22563,6 +23752,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 630
   },
@@ -22597,6 +23788,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 631
   },
@@ -22631,6 +23824,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 632
   },
@@ -22665,6 +23860,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 633
   },
@@ -22704,6 +23901,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 634
   },
@@ -22738,6 +23937,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 635
   },
@@ -22772,12 +23973,14 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-243-1.png",
-      "./scor-exhibits/page-243-2.png",
-      "./scor-exhibits/page-243-3.png",
-      "./scor-exhibits/page-243-4.png",
-      "./scor-exhibits/page-243-5.png"
+      "./scor-exhibits/page-243-01.png",
+      "./scor-exhibits/page-243-02.png",
+      "./scor-exhibits/page-243-03.png",
+      "./scor-exhibits/page-243-04.png",
+      "./scor-exhibits/page-243-05.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": true,
     "source_question": 636,
     "review_reason": "Choice text was transcribed from an image and needs verification."
@@ -22813,6 +24016,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 637
   },
@@ -22847,6 +24052,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 638
   },
@@ -22881,6 +24088,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 639
   },
@@ -22915,6 +24124,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 640
   },
@@ -22949,6 +24160,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 641
   },
@@ -22983,6 +24196,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 642
   },
@@ -23028,10 +24243,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-2",
       "item-4": "target-1"
     },
-    "exhibits": [
-      "./scor-exhibits/page-245-1.png",
-      "./scor-exhibits/page-245-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-245-01.png",
+    "answer_image": "./scor-exhibits/page-245-02.png",
     "needs_review": false,
     "source_question": 643
   },
@@ -23066,6 +24280,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 644
   },
@@ -23100,6 +24316,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 645
   },
@@ -23134,6 +24352,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 646
   },
@@ -23168,6 +24388,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 647
   },
@@ -23202,6 +24424,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 648
   },
@@ -23241,6 +24465,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 649
   },
@@ -23275,6 +24501,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 650
   },
@@ -23309,6 +24537,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 651
   },
@@ -23343,6 +24573,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 652
   },
@@ -23377,6 +24609,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 653
   },
@@ -23411,6 +24645,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 654
   },
@@ -23445,6 +24681,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 655
   },
@@ -23479,6 +24717,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 656
   },
@@ -23513,6 +24753,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 657
   },
@@ -23547,6 +24789,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 658
   },
@@ -23581,12 +24825,14 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-252-1.png",
-      "./scor-exhibits/page-252-2.png",
-      "./scor-exhibits/page-252-3.png",
-      "./scor-exhibits/page-252-4.png",
-      "./scor-exhibits/page-252-5.png"
+      "./scor-exhibits/page-252-01.png",
+      "./scor-exhibits/page-252-02.png",
+      "./scor-exhibits/page-252-03.png",
+      "./scor-exhibits/page-252-04.png",
+      "./scor-exhibits/page-252-05.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 659
   },
@@ -23621,6 +24867,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 660
   },
@@ -23655,6 +24903,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 661
   },
@@ -23689,6 +24939,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 662
   },
@@ -23723,6 +24975,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 663
   },
@@ -23757,6 +25011,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 664
   },
@@ -23791,6 +25047,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 665
   },
@@ -23825,6 +25083,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 666
   },
@@ -23859,6 +25119,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 667
   },
@@ -23893,6 +25155,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 668
   },
@@ -23932,12 +25196,14 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-255-1.png",
-      "./scor-exhibits/page-255-2.png",
-      "./scor-exhibits/page-255-3.png",
-      "./scor-exhibits/page-255-4.png",
-      "./scor-exhibits/page-255-5.png"
+      "./scor-exhibits/page-255-01.png",
+      "./scor-exhibits/page-255-02.png",
+      "./scor-exhibits/page-255-03.png",
+      "./scor-exhibits/page-255-04.png",
+      "./scor-exhibits/page-255-05.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 669
   },
@@ -23972,13 +25238,13 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-256-1.png",
-      "./scor-exhibits/page-256-2.png",
-      "./scor-exhibits/page-256-3.png",
-      "./scor-exhibits/page-256-4.png",
-      "./scor-exhibits/page-256-5.png",
-      "./scor-exhibits/page-256-6.png"
+      "./scor-exhibits/page-256-01.png",
+      "./scor-exhibits/page-256-02.png",
+      "./scor-exhibits/page-256-03.png",
+      "./scor-exhibits/page-256-04.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 670
   },
@@ -24024,14 +25290,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-256-1.png",
-      "./scor-exhibits/page-256-2.png",
-      "./scor-exhibits/page-256-3.png",
-      "./scor-exhibits/page-256-4.png",
-      "./scor-exhibits/page-256-5.png",
-      "./scor-exhibits/page-256-6.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-256-05.png",
+    "answer_image": "./scor-exhibits/page-256-06.png",
     "needs_review": false,
     "source_question": 671
   },
@@ -24066,6 +25327,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 672
   },
@@ -24100,6 +25363,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 673
   },
@@ -24134,6 +25399,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 674
   },
@@ -24168,8 +25435,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-258-1.png"
+      "./scor-exhibits/page-258-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 675
   },
@@ -24204,6 +25473,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 676
   },
@@ -24238,6 +25509,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 677
   },
@@ -24272,8 +25545,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-259-1.png"
+      "./scor-exhibits/page-259-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 678
   },
@@ -24308,13 +25583,15 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-260-1.png",
-      "./scor-exhibits/page-260-2.png",
-      "./scor-exhibits/page-260-3.png",
-      "./scor-exhibits/page-260-4.png",
-      "./scor-exhibits/page-260-5.png",
-      "./scor-exhibits/page-260-6.png"
+      "./scor-exhibits/page-260-01.png",
+      "./scor-exhibits/page-260-02.png",
+      "./scor-exhibits/page-260-03.png",
+      "./scor-exhibits/page-260-04.png",
+      "./scor-exhibits/page-260-05.png",
+      "./scor-exhibits/page-260-06.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": true,
     "source_question": 679,
     "review_reason": "Choice text was reconstructed from exhibit images and needs verification."
@@ -24350,13 +25627,15 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-260-1.png",
-      "./scor-exhibits/page-260-2.png",
-      "./scor-exhibits/page-260-3.png",
-      "./scor-exhibits/page-260-4.png",
-      "./scor-exhibits/page-260-5.png",
-      "./scor-exhibits/page-260-6.png"
+      "./scor-exhibits/page-260-01.png",
+      "./scor-exhibits/page-260-02.png",
+      "./scor-exhibits/page-260-03.png",
+      "./scor-exhibits/page-260-04.png",
+      "./scor-exhibits/page-260-05.png",
+      "./scor-exhibits/page-260-06.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 680
   },
@@ -24391,6 +25670,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 681
   },
@@ -24425,6 +25706,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 682
   },
@@ -24459,6 +25742,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 683
   },
@@ -24493,6 +25778,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 684
   },
@@ -24527,6 +25814,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 685
   },
@@ -24572,10 +25861,9 @@ window.SCOR_QUESTIONS = [
       "item-3": "target-1",
       "item-4": "target-2"
     },
-    "exhibits": [
-      "./scor-exhibits/page-263-1.png",
-      "./scor-exhibits/page-263-2.png"
-    ],
+    "exhibits": [],
+    "assignment_image": "./scor-exhibits/page-263-01.png",
+    "answer_image": "./scor-exhibits/page-263-02.png",
     "needs_review": false,
     "source_question": 686
   },
@@ -24610,11 +25898,13 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-264-1.png",
-      "./scor-exhibits/page-264-2.png",
-      "./scor-exhibits/page-264-3.png",
-      "./scor-exhibits/page-264-4.png"
+      "./scor-exhibits/page-264-01.png",
+      "./scor-exhibits/page-264-02.png",
+      "./scor-exhibits/page-264-03.png",
+      "./scor-exhibits/page-264-04.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 687
   },
@@ -24649,6 +25939,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 688
   },
@@ -24683,6 +25975,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 689
   },
@@ -24717,6 +26011,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 690
   },
@@ -24751,6 +26047,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 691
   },
@@ -24785,6 +26083,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 692
   },
@@ -24819,6 +26119,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 693
   },
@@ -24853,6 +26155,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 694
   },
@@ -24892,6 +26196,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 695
   },
@@ -24926,6 +26232,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 696
   },
@@ -24960,8 +26268,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-267-1.png"
+      "./scor-exhibits/page-267-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 697
   },
@@ -24996,6 +26306,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 698
   },
@@ -25030,8 +26342,10 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [
-      "./scor-exhibits/page-268-1.png"
+      "./scor-exhibits/page-268-01.png"
     ],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 699
   },
@@ -25066,6 +26380,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 700
   },
@@ -25105,6 +26421,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 701
   },
@@ -25139,6 +26457,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 702
   },
@@ -25178,6 +26498,8 @@ window.SCOR_QUESTIONS = [
     "targets": [],
     "mapping": {},
     "exhibits": [],
+    "assignment_image": null,
+    "answer_image": null,
     "needs_review": false,
     "source_question": 703
   }

@@ -52,7 +52,7 @@ SCOR-banken inneholder **703 spørsmål** fra PDF-en:
 - **111** multiple-choice (med krav om riktig antall valg)
 - **26** drag-and-drop
 
-Du kan starte en tilfeldig runde på 5 eller 10 spørsmål, ta hele banken, øve per seksjon, fortsette en lagret runde, gå gjennom feilsvarte spørsmål og se statistikk. Drag-and-drop kan brukes med dra/slipp eller ved å trykke på et element og deretter en kategori. Oppgaver der PDF-bildet ikke kunne tolkes sikkert er merket for gjennomgang og kan hoppes over til review.
+Du kan starte en tilfeldig runde på 5 eller 10 spørsmål, ta hele banken, øve per seksjon, fortsette en lagret runde, gå gjennom feilsvarte spørsmål og se statistikk. Drag-and-drop kan brukes med dra/slipp eller ved å trykke på et element og deretter en kategori. For hver slik oppgave skilles PDF-bildet av selve oppgaven fra neste bilde med fasiten; fasitbildet vises etter at du har svart. Oppgaver der bildet ikke kunne tolkes sikkert er merket for gjennomgang og kan hoppes over til review.
 
 Alle spørsmål med teksten «Refer to the exhibit» viser bildeutdrag fra PDF-en i appen; bildene følger også med i offline-cachen.
 
