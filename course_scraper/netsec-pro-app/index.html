@@ -109,8 +109,16 @@
   .scor-choice.selected,.scor-item.selected{border-color:var(--accent);background:rgba(250,88,45,.14)}
   .scor-choice.correct,.scor-target.correct{border-color:var(--good);background:rgba(46,204,113,.2)}
   .scor-choice.wrong,.scor-target.wrong{border-color:var(--bad);background:rgba(231,76,60,.18)}
-  .scor-target{min-height:48px;border-style:dashed}
+  .scor-dnd-board{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:12px;margin:12px 0}
+  .scor-dnd-bank,.scor-dnd-slots{min-width:0}
+  .scor-dnd-heading{font-size:12px;font-weight:700;color:var(--accent2);margin:0 0 6px}
+  .scor-dnd-bank{min-height:80px;padding:10px;border:1px solid var(--line);border-radius:12px;background:rgba(0,0,0,.12)}
+  .scor-dnd-hint,.scor-target small{font-size:12px;color:var(--muted)}
+  .scor-target{min-height:72px;border:2px dashed var(--line);border-radius:12px;padding:10px;margin:7px 0;background:var(--card2);color:var(--text);text-align:left}
+  .scor-target-label{display:block;font-size:13px;font-weight:700;margin-bottom:5px}
+  .scor-target .scor-item{margin:0}
   .scor-item[draggable="true"]{cursor:grab}
+  .scor-item[draggable="true"]:active{cursor:grabbing}
   .scor-exhibit{max-width:100%;height:auto;border-radius:8px;margin:8px 0}
   .scor-image-label{font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent2);font-weight:700;margin:12px 0 4px}
   .scor-banner{padding:10px 12px;border-radius:10px;background:rgba(247,201,72,.12);color:#f7d979;margin:10px 0}
@@ -120,6 +128,9 @@
   @media (max-width: 380px){
     .resume{flex-direction:column;align-items:flex-start}
     .domain-card .top{flex-direction:column}
+    .scor-dnd-board{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:8px}
+    .scor-dnd-bank{padding:7px}
+    .scor-target{padding:8px}
   }
 </style>
 </head>
@@ -857,8 +868,8 @@ function scorRenderQuestion(){
   if(item.type==='dragdrop'){
     const items=item.items||[],targets=item.targets||[];
     if(item.assignment_image)body+=`<div class="scor-image-label">Drag-and-drop-oppgave · PDF-side ${item.pdf_page}</div><img class="scor-exhibit" src="${scorEscape(item.assignment_image)}" alt="Drag-and-drop-oppgaven fra PDF-en">`;
-    body+=items.map(entry=>`<button class="scor-item ${scorSession.selectedItem===entry.id?'selected':''}" draggable="true" ondragstart="scorDragStart(event,'${scorEscape(entry.id)}')" onclick="scorSelectItem('${scorEscape(entry.id)}')">${scorEscape(entry.text)}</button>`).join('');
-    body+=targets.map(target=>{const assigned=items.filter(entry=>scorSession.matches[entry.id]===target.id),result=assigned.length&&assigned.every(entry=>item.mapping?.[entry.id]===target.id);return `<button class="scor-target ${scorSession.submitted?(result?'correct':'wrong'):''}" ondragover="event.preventDefault()" ondrop="scorDrop(event,'${scorEscape(target.id)}')" onclick="scorPlace('${scorEscape(target.id)}')">${scorEscape(target.text)}<br><small>${assigned.length?assigned.map(entry=>scorEscape(entry.text)).join('<br>'):'Trykk eller dra et element hit'}</small></button>`;}).join('');
+    const matches=scorSession.matches||{};
+    body+=`<div class="scor-dnd-board"><div class="scor-dnd-bank" ondragover="event.preventDefault()" ondrop="scorDropBack(event)"><div class="scor-dnd-heading">Alternativer · dra til høyre</div>${items.filter(entry=>!matches[entry.id]).map(entry=>`<button class="scor-item ${scorSession.selectedItem===entry.id?'selected':''}" draggable="true" ondragstart="scorDragStart(event,'${scorEscape(entry.id)}')" onclick="scorSelectItem('${scorEscape(entry.id)}')">${scorEscape(entry.text)}</button>`).join('')}<div class="scor-dnd-hint">Dra et svar hit for å fjerne det fra feltet.</div></div><div class="scor-dnd-slots"><div class="scor-dnd-heading">Svarfelt · plasser her</div>${targets.map(target=>{const assigned=items.find(entry=>matches[entry.id]===target.id),result=assigned&&item.mapping?.[assigned.id]===target.id;return `<div class="scor-target ${scorSession.submitted?(result?'correct':'wrong'):''}" ondragover="event.preventDefault()" ondrop="scorDrop(event,'${scorEscape(target.id)}')" onclick="scorPlace('${scorEscape(target.id)}')"><span class="scor-target-label">${scorEscape(target.text)}</span>${assigned?`<button class="scor-item ${scorSession.selectedItem===assigned.id?'selected':''}" draggable="true" ondragstart="scorDragStart(event,'${scorEscape(assigned.id)}')" onclick="event.stopPropagation();scorSelectItem('${scorEscape(assigned.id)}')">${scorEscape(assigned.text)}</button>`:'<small>Slipp et alternativ her</small>'}</div>`;}).join('')}</div></div>`;
     if(items.length&&targets.length)body+=`<button class="btn" ${Object.keys(scorSession.matches||{}).length!==items.length||scorSession.submitted?'disabled':''} onclick="scorSubmitDrag()">Sjekk svar</button>`;
     else body+=`<button class="btn" onclick="scorSkipUnresolved()">Marker for gjennomgang og fortsett</button>`;
   }else{
@@ -884,9 +895,19 @@ function scorSubmitMulti(){
   const expected=[...item.correct_answers].sort(),actual=[...scorSession.picked].sort();scorRecord(item,expected.length===actual.length&&expected.every((id,i)=>id===actual[i]));scorRenderQuestion();
 }
 function scorSelectItem(id){if(scorSession.submitted)return;scorSession.selectedItem=id;scorSave();scorRenderQuestion();}
-function scorPlace(targetId){if(scorSession.submitted||!scorSession.selectedItem)return;scorSession.matches=scorSession.matches||{};scorSession.matches[scorSession.selectedItem]=targetId;scorSession.selectedItem=null;scorSave();scorRenderQuestion();}
+function scorAssign(id,targetId){
+  if(scorSession.submitted||!id)return;
+  const matches=scorSession.matches||(scorSession.matches={}),sourceTarget=matches[id];
+  if(sourceTarget===targetId){scorSession.selectedItem=null;return;}
+  const occupant=Object.keys(matches).find(otherId=>otherId!==id&&matches[otherId]===targetId);
+  delete matches[id];
+  if(occupant){if(sourceTarget)matches[occupant]=sourceTarget;else delete matches[occupant];}
+  matches[id]=targetId;scorSession.selectedItem=null;scorSave();scorRenderQuestion();
+}
+function scorPlace(targetId){if(!scorSession.selectedItem)return;scorAssign(scorSession.selectedItem,targetId);}
 function scorDragStart(event,id){event.dataTransfer.setData('text/plain',id);}
-function scorDrop(event,targetId){event.preventDefault();const id=event.dataTransfer.getData('text/plain');if(id){scorSession.selectedItem=id;scorPlace(targetId);}}
+function scorDrop(event,targetId){event.preventDefault();scorAssign(event.dataTransfer.getData('text/plain'),targetId);}
+function scorDropBack(event){event.preventDefault();const id=event.dataTransfer.getData('text/plain');if(!id||scorSession.submitted)return;delete scorSession.matches[id];scorSession.selectedItem=null;scorSave();scorRenderQuestion();}
 function scorSubmitDrag(){
   const item=scorCurrent();if(!item||scorSession.submitted)return;const mapping=item.mapping||{},actual=scorSession.matches||{},keys=Object.keys(mapping);
   scorRecord(item,keys.length===Object.keys(actual).length&&keys.every(id=>mapping[id]===actual[id]));scorRenderQuestion();
