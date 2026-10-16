@@ -100,6 +100,20 @@
   nav button.on{color:var(--accent)}
   nav button div{font-size:19px;margin-bottom:2px}
   .hide{display:none}
+  .subject-switch{display:flex;gap:8px;padding:0 16px 12px}
+  .subject-switch button{flex:1;border:1px solid var(--line);border-radius:10px;padding:10px;background:var(--card);color:var(--text);font-weight:700}
+  .subject-switch button.active{border-color:var(--accent);color:var(--accent2)}
+  .scor-choice,.scor-item,.scor-target{display:block;width:100%;text-align:left;background:var(--card2);border:2px solid var(--line);color:var(--text);border-radius:12px;padding:13px;margin:7px 0;font-size:14px;touch-action:manipulation}
+  .scor-choice{display:flex;align-items:flex-start;gap:10px;cursor:pointer}
+  .scor-choice input{width:18px;height:18px;flex:none;margin:1px 0 0;accent-color:var(--accent)}
+  .scor-choice.selected,.scor-item.selected{border-color:var(--accent);background:rgba(250,88,45,.14)}
+  .scor-choice.correct,.scor-target.correct{border-color:var(--good);background:rgba(46,204,113,.2)}
+  .scor-choice.wrong,.scor-target.wrong{border-color:var(--bad);background:rgba(231,76,60,.18)}
+  .scor-target{min-height:48px;border-style:dashed}
+  .scor-item[draggable="true"]{cursor:grab}
+  .scor-exhibit{max-width:100%;height:auto;border-radius:8px;margin:8px 0}
+  .scor-image-label{font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent2);font-weight:700;margin:12px 0 4px}
+  .scor-banner{padding:10px 12px;border-radius:10px;background:rgba(247,201,72,.12);color:#f7d979;margin:10px 0}
   .toast{position:fixed;left:50%;bottom:98px;transform:translateX(-50%);background:#000;color:#fff;
     padding:9px 16px;border-radius:20px;font-size:13px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:50}
   .toast.show{opacity:.92}
@@ -115,7 +129,12 @@
   <div class="streak">🔥 <b id="streak">0</b>d &nbsp;·&nbsp; ⭐ <b id="pts">0</b></div>
 </header>
 
-<main>
+<div class="subject-switch" role="group" aria-label="Velg emne">
+  <button id="subject-pan" class="active" onclick="switchSubject('pan')">NetSec-Pro · Palo Alto</button>
+  <button id="subject-scor" onclick="switchSubject('scor')">CCNP SCOR · Cisco</button>
+</div>
+
+<main id="pan-main">
   <section id="view-today">
     <div id="resumeBox"></div>
     <div class="flashcard-wrap" id="fcWrap">
@@ -199,7 +218,7 @@
   </section>
 </main>
 
-<nav>
+<nav id="pan-nav">
   <button id="nav-today" class="on" onclick="show('today')"><div>🏠</div>Today</button>
   <button id="nav-domains" onclick="show('domains')"><div>🧩</div>Sections</button>
   <button id="nav-review" onclick="show('review')"><div>🔁</div>Review</button>
@@ -207,9 +226,20 @@
   <button id="nav-stats" onclick="show('stats')"><div>📊</div>Stats</button>
 </nav>
 
+<main id="scor-app" class="hide">
+  <div id="scor-content"></div>
+</main>
+<nav id="scor-nav" class="hide">
+  <button onclick="scorSetView('today')"><div>🏠</div>Home</button>
+  <button onclick="scorSetView('sections')"><div>🧩</div>Sections</button>
+  <button onclick="scorSetView('review')"><div>🔁</div>Review</button>
+  <button onclick="scorSetView('stats')"><div>📊</div>Stats</button>
+</nav>
+
 <div class="toast" id="toast"></div>
 
 <script src="./questions.js"></script>
+<script src="./scor-questions.js"></script>
 <script>
 const KEY = 'pan_study_netsec_pro_app_v1';
 const LEGACY_KEYS = ['pan_study_netsec_v2'];
@@ -730,6 +760,143 @@ if('serviceWorker' in navigator && location.protocol !== 'file:'){
   });
 }
 init();
+
+const SCOR_KEY = 'ccnp_scor_study_v1';
+const SCOR_QUESTIONS = Array.isArray(window.SCOR_QUESTIONS) ? window.SCOR_QUESTIONS : [];
+const SCOR_MAP = new Map(SCOR_QUESTIONS.map(q => [q.id, q]));
+let scorState = scorLoad();
+let scorSession = scorState.saved;
+let scorView = 'today';
+
+function scorLoad(){
+  const fallback={q:{},review:{},answered:0,correct:0,points:0,saved:null};
+  try{
+    const saved=JSON.parse(localStorage.getItem(SCOR_KEY)||'null');
+    if(!saved||typeof saved!=='object')return fallback;
+    const ids=new Set(SCOR_QUESTIONS.map(q=>q.id));
+    saved.q=saved.q&&typeof saved.q==='object'?saved.q:{};
+    saved.review=saved.review&&typeof saved.review==='object'?saved.review:{};
+    Object.keys(saved.q).forEach(id=>{if(!ids.has(id))delete saved.q[id];});
+    Object.keys(saved.review).forEach(id=>{if(!ids.has(id))delete saved.review[id];});
+    if(saved.saved&&(!Array.isArray(saved.saved.ids)||saved.saved.ids.some(id=>!ids.has(id))))saved.saved=null;
+    return {...fallback,...saved};
+  }catch(e){return fallback;}
+}
+function scorSave(){scorState.saved=scorSession;localStorage.setItem(SCOR_KEY,JSON.stringify(scorState));}
+function switchSubject(subject){
+  const pan=subject==='pan';
+  document.getElementById('pan-main').classList.toggle('hide',!pan);
+  document.getElementById('pan-nav').classList.toggle('hide',!pan);
+  document.getElementById('scor-app').classList.toggle('hide',pan);
+  document.getElementById('scor-nav').classList.toggle('hide',pan);
+  document.getElementById('subject-pan').classList.toggle('active',pan);
+  document.getElementById('subject-scor').classList.toggle('active',!pan);
+  if(!pan)scorRender();
+}
+function scorEscape(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function scorSetView(view){scorView=view;scorRender();}
+function scorTopics(){
+  const counts={};SCOR_QUESTIONS.forEach(q=>counts[q.topic]=(counts[q.topic]||0)+1);
+  return Object.entries(counts).map(([topic,count])=>({topic,count}));
+}
+function scorStat(id){return scorState.q[id]||{seen:0,correct:0};}
+function scorReviewIds(){return Object.keys(scorState.review).filter(id=>SCOR_MAP.has(id));}
+function scorPool(topic,reviewOnly){
+  let pool=reviewOnly?scorReviewIds().map(id=>SCOR_MAP.get(id)):SCOR_QUESTIONS.slice();
+  if(topic)pool=pool.filter(q=>q.topic===topic);
+  return pool.sort((a,b)=>(scorStat(a.id).seen-scorStat(b.id).seen)||(Math.random()-.5));
+}
+function scorStart(topic,count,reviewOnly){
+  const pool=scorPool(topic,reviewOnly),size=count==='all'?pool.length:Math.min(Number(count)||pool.length,pool.length);
+  if(!size){toast('Ingen spørsmål tilgjengelig for denne runden');return;}
+  scorSession={ids:pool.slice(0,size).map(q=>q.id),idx:0,correct:0,answered:0,picked:[],matches:{},selectedItem:null,order:null,submitted:false,label:`${topic||'Blandet runde'} · ${size} spørsmål`};
+  scorSave();scorView='quiz';scorRender();
+}
+function scorCurrent(){return scorSession&&SCOR_MAP.get(scorSession.ids[scorSession.idx]);}
+function scorEnsureOrder(item){
+  if(item.type==='dragdrop')return;
+  if(!Array.isArray(scorSession.order)){
+    const choices=item.choices||[],fixed=choices.some(c=>/all of the above|none of the above/i.test(c.text));
+    scorSession.order=choices.map(c=>c.id);if(!fixed)scorSession.order.sort(()=>Math.random()-.5);scorSave();
+  }
+}
+function scorRender(){
+  const root=document.getElementById('scor-content');
+  document.querySelectorAll('#scor-nav button').forEach((b,i)=>b.classList.toggle('on',['today','sections','review','stats'][i]===scorView));
+  if(scorView!=='quiz'&&scorSession&&scorSession.idx>=scorSession.ids.length){scorSession=null;scorState.saved=null;scorSave();}
+  if(scorView==='quiz')return scorRenderQuestion();
+  if(scorView==='today'){
+    const saved=scorState.saved;
+    root.innerHTML=`<div class="card"><div class="label">CCNP Security · SCOR 350-701</div><p>${SCOR_QUESTIONS.length} spørsmål fra PDF-en, inkludert bildebaserte oppgaver.</p>
+      ${saved?`<button class="btn ghost" onclick="scorResume()">▶ Resume: ${scorEscape(saved.label)} · spørsmål ${saved.idx+1}/${saved.ids.length}</button>`:''}
+      <button class="btn" onclick="scorStart(null,5,false)">Tilfeldig runde · 5</button><button class="btn ghost" onclick="scorStart(null,10,false)">Tilfeldig runde · 10</button>
+      <button class="btn ghost" onclick="scorStart(null,'all',false)">Alle spørsmål</button>
+      <div class="inline-actions"><span class="pill">📚 ${SCOR_QUESTIONS.length} spørsmål</span><span class="pill">🔁 ${scorReviewIds().length} til review</span></div></div>`;
+  }else if(scorView==='sections'){
+    root.innerHTML=`<div class="card"><div class="label">Øv per seksjon</div>${scorTopics().map(s=>`<div class="domain-card"><div class="top"><b>${scorEscape(s.topic)}</b><span>${s.count} spørsmål</span></div><div class="rounds"><button class="btn sm" onclick="scorStart('${scorEscape(s.topic)}',5,false)">5</button><button class="btn sm ghost" onclick="scorStart('${scorEscape(s.topic)}',10,false)">10</button><button class="btn sm ghost" onclick="scorStart('${scorEscape(s.topic)}','all',false)">Alle</button></div></div>`).join('')}</div>`;
+  }else if(scorView==='review'){
+    const ids=scorReviewIds();
+    root.innerHTML=`<div class="card"><div class="label">Review · ${ids.length} feilsvarte</div><button class="btn" ${ids.length?'':'disabled'} onclick="scorStart(null,5,true)">Review 5</button><button class="btn ghost" ${ids.length?'':'disabled'} onclick="scorStart(null,10,true)">Review 10</button><button class="btn ghost" ${ids.length?'':'disabled'} onclick="scorStart(null,'all',true)">Review alle</button><button class="btn ghost" ${ids.length?'':'disabled'} onclick="scorClearReview()">Tøm review-listen</button><div class="reviewrow">${ids.length?ids.map(id=>`<div>Q${SCOR_MAP.get(id).source_question}: ${scorEscape(SCOR_MAP.get(id).question)}</div>`).join(''):'Ingen spørsmål til review.'}</div></div>`;
+  }else{
+    const seen=Object.values(scorState.q).filter(q=>q.seen).length,pct=scorState.answered?Math.round(scorState.correct/scorState.answered*100):0;
+    root.innerHTML=`<div class="card"><div class="label">SCOR-statistikk</div><div class="stat"><span>Besvart</span><b>${scorState.answered}</b></div><div class="stat"><span>Riktige</span><b>${pct}%</b></div><div class="stat"><span>Sett</span><b>${seen}/${SCOR_QUESTIONS.length}</b></div><div class="stat"><span>Review</span><b>${scorReviewIds().length}</b></div></div>`;
+  }
+}
+function scorResume(){scorSession=scorState.saved;scorView='quiz';scorRender();}
+function scorRenderQuestion(){
+  if(!scorSession){scorView='today';return scorRender();}
+  if(scorSession.idx>=scorSession.ids.length){
+    const percent=scorSession.answered?Math.round(scorSession.correct/scorSession.answered*100):0;
+    document.getElementById('scor-content').innerHTML=`<div class="card done"><div class="label">${scorEscape(scorSession.label)}</div><div class="big">${scorSession.correct}/${scorSession.ids.length}</div><div class="muted">${percent}% riktig</div><button class="btn" onclick="scorFinish()">Tilbake til SCOR-start</button></div>`;return;
+  }
+  const item=scorCurrent();if(!item){scorSession.idx++;scorSession.order=null;scorSave();return scorRenderQuestion();}
+  scorEnsureOrder(item);
+  const multi=item.type==='multiple',required=(item.correct_answers||[]).length;
+  let body=item.exhibits?.length?item.exhibits.map(path=>`<img class="scor-exhibit" src="${scorEscape(path)}" alt="PDF-utdrag for oppgaven">`).join(''):'';
+  if(item.needs_review)body+='<div class="scor-banner">Oppgaven inneholder materiale som ikke kunne tolkes sikkert. Sjekk bildet før du svarer.</div>';
+  if(item.type==='dragdrop'){
+    const items=item.items||[],targets=item.targets||[];
+    if(item.assignment_image)body+=`<div class="scor-image-label">Drag-and-drop-oppgave · PDF-side ${item.pdf_page}</div><img class="scor-exhibit" src="${scorEscape(item.assignment_image)}" alt="Drag-and-drop-oppgaven fra PDF-en">`;
+    body+=items.map(entry=>`<button class="scor-item ${scorSession.selectedItem===entry.id?'selected':''}" draggable="true" ondragstart="scorDragStart(event,'${scorEscape(entry.id)}')" onclick="scorSelectItem('${scorEscape(entry.id)}')">${scorEscape(entry.text)}</button>`).join('');
+    body+=targets.map(target=>{const assigned=items.filter(entry=>scorSession.matches[entry.id]===target.id),result=assigned.length&&assigned.every(entry=>item.mapping?.[entry.id]===target.id);return `<button class="scor-target ${scorSession.submitted?(result?'correct':'wrong'):''}" ondragover="event.preventDefault()" ondrop="scorDrop(event,'${scorEscape(target.id)}')" onclick="scorPlace('${scorEscape(target.id)}')">${scorEscape(target.text)}<br><small>${assigned.length?assigned.map(entry=>scorEscape(entry.text)).join('<br>'):'Trykk eller dra et element hit'}</small></button>`;}).join('');
+    if(items.length&&targets.length)body+=`<button class="btn" ${Object.keys(scorSession.matches||{}).length!==items.length||scorSession.submitted?'disabled':''} onclick="scorSubmitDrag()">Sjekk svar</button>`;
+    else body+=`<button class="btn" onclick="scorSkipUnresolved()">Marker for gjennomgang og fortsett</button>`;
+  }else{
+    body+=`<p class="subtle">${multi?`Choose ${required}: velg nøyaktig ${required} svar før du sjekker.`:'Velg ett svar.'}</p>`;
+    body+=(scorSession.order||[]).map(id=>{const choice=item.choices.find(c=>c.id===id),picked=(scorSession.picked||[]).includes(id),correct=(item.correct_answers||[]).includes(id),cls=scorSession.submitted?(correct?'correct':(picked?'wrong':'')):(picked?'selected':''),input=multi?'checkbox':'radio',action=multi?`scorToggle('${scorEscape(id)}')`:`scorAnswer('${scorEscape(id)}')`;return `<label class="scor-choice ${cls}"><input type="${input}" name="scor-${scorEscape(item.id)}" ${picked?'checked':''} ${scorSession.submitted?'disabled':''} onchange="${action}"><span>${scorEscape(choice?.text||'')}</span></label>`;}).join('');
+    if(multi)body+=`<button class="btn" ${scorSession.picked.length!==required||scorSession.submitted?'disabled':''} onclick="scorSubmitMulti()">Sjekk svar · Choose ${required}</button>`;
+  }
+  if(scorSession.submitted){
+    if(item.type==='dragdrop'&&item.answer_image)body+=`<div class="scor-image-label">Fasit · PDF-side ${item.pdf_page}</div><img class="scor-exhibit" src="${scorEscape(item.answer_image)}" alt="Fasiten til drag-and-drop-oppgaven">`;
+    body+=`<div class="verdict ${scorSession.lastCorrect?'ok':'no'}">${scorSession.lastCorrect?'✓ Riktig':'✗ Feil — riktig svar er vist'}</div>${item.explanation?`<div class="explain">${scorEscape(item.explanation)}</div>`:''}<button class="btn next-action" onclick="scorNext()">${scorSession.idx+1===scorSession.ids.length?'Se resultat':'Neste spørsmål'} →</button>`;
+  }
+  document.getElementById('scor-content').innerHTML=`<div class="progress"><i style="width:${Math.round(scorSession.idx/scorSession.ids.length*100)}%"></i></div><div class="card"><span class="cat">${scorEscape(item.topic)} · Q${scorSession.idx+1}/${scorSession.ids.length} · ${scorEscape(item.type)}</span><div class="q">${scorEscape(item.question)}</div>${body}<button class="btn ghost" onclick="scorQuit()">Lagre og avslutt</button></div>`;
+}
+function scorRecord(item,correct){
+  const stat=scorState.q[item.id]||(scorState.q[item.id]={seen:0,correct:0});stat.seen++;scorState.answered++;
+  if(correct){stat.correct++;scorState.correct++;scorState.points+=10;scorSession.correct++;delete scorState.review[item.id];}else scorState.review[item.id]=true;
+  scorSession.answered++;scorSession.lastCorrect=correct;scorSession.submitted=true;scorSave();
+}
+function scorAnswer(id){const item=scorCurrent();if(!item||scorSession.submitted)return;scorSession.picked=[id];scorRecord(item,item.correct_answers.length===1&&item.correct_answers[0]===id);scorRenderQuestion();}
+function scorToggle(id){if(scorSession.submitted)return;const values=new Set(scorSession.picked||[]);values.has(id)?values.delete(id):values.add(id);scorSession.picked=[...values];scorSave();scorRenderQuestion();}
+function scorSubmitMulti(){
+  const item=scorCurrent();if(!item||scorSession.submitted||scorSession.picked.length!==item.correct_answers.length)return;
+  const expected=[...item.correct_answers].sort(),actual=[...scorSession.picked].sort();scorRecord(item,expected.length===actual.length&&expected.every((id,i)=>id===actual[i]));scorRenderQuestion();
+}
+function scorSelectItem(id){if(scorSession.submitted)return;scorSession.selectedItem=id;scorSave();scorRenderQuestion();}
+function scorPlace(targetId){if(scorSession.submitted||!scorSession.selectedItem)return;scorSession.matches=scorSession.matches||{};scorSession.matches[scorSession.selectedItem]=targetId;scorSession.selectedItem=null;scorSave();scorRenderQuestion();}
+function scorDragStart(event,id){event.dataTransfer.setData('text/plain',id);}
+function scorDrop(event,targetId){event.preventDefault();const id=event.dataTransfer.getData('text/plain');if(id){scorSession.selectedItem=id;scorPlace(targetId);}}
+function scorSubmitDrag(){
+  const item=scorCurrent();if(!item||scorSession.submitted)return;const mapping=item.mapping||{},actual=scorSession.matches||{},keys=Object.keys(mapping);
+  scorRecord(item,keys.length===Object.keys(actual).length&&keys.every(id=>mapping[id]===actual[id]));scorRenderQuestion();
+}
+function scorSkipUnresolved(){const item=scorCurrent();if(!item||scorSession.submitted)return;scorRecord(item,false);scorNext();}
+function scorNext(){scorSession.idx++;scorSession.picked=[];scorSession.matches={};scorSession.selectedItem=null;scorSession.order=null;scorSession.submitted=false;scorSave();scorRenderQuestion();}
+function scorFinish(){scorSession=null;scorState.saved=null;scorSave();scorView='today';scorRender();}
+function scorQuit(){scorSave();scorView='today';scorRender();toast('SCOR-runden er lagret');}
+function scorClearReview(){if(confirm('Tømme hele SCOR-review-listen?')){scorState.review={};scorSave();scorRender();}}
+scorRender();
 </script>
 </body>
 </html>

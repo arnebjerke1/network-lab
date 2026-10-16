@@ -1,7 +1,7 @@
 {
-  "name": "NetSec-Pro Study",
+  "name": "NetSec-Pro & CCNP SCOR Study",
   "short_name": "NetSec-Pro",
-  "description": "Øv til Palo Alto Networks NetSec-Pro eksamen – quiz, review og statistikk. Fungerer offline.",
+  "description": "Øv til Palo Alto Networks NetSec-Pro og Cisco CCNP Security SCOR 350-701 – quiz, review og statistikk offline.",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
   "start_url": "./index.html",

@@ -42,6 +42,32 @@ Kildematerialet er tagget som **D1–D6** for å gjøre øvingen mer finfordelt:
 
 Den offisielle blueprinten er nyere og mer komprimert, men appen beholder D5 og D6 som egne studiedeler fordi spørsmålsbanken allerede bruker disse taggene.
 
+## CCNP Security SCOR (Cisco)
+
+Velg **CCNP SCOR · Cisco** øverst i appen for å bytte til spørsmålene for Cisco 350-701. NetSec-Pro- og SCOR-fremdrift lagres separat, så den eksisterende Palo Alto-statistikken og review-listen beholdes.
+
+SCOR-banken inneholder **703 spørsmål** fra PDF-en:
+
+- **566** single-choice
+- **111** multiple-choice (med krav om riktig antall valg)
+- **26** drag-and-drop
+
+Du kan starte en tilfeldig runde på 5 eller 10 spørsmål, ta hele banken, øve per seksjon, fortsette en lagret runde, gå gjennom feilsvarte spørsmål og se statistikk. Drag-and-drop kan brukes med dra/slipp eller ved å trykke på et element og deretter en kategori. Bildene skilles også i dataene: for eksempel er `page-011-01.png` oppgaven og `page-011-02.png` fasiten. Appen viser oppgavebildet først og fasitbildet etter at du har svart. Oppgaver der bildet ikke kunne tolkes sikkert er merket for gjennomgang og kan hoppes over til review.
+
+Alle spørsmål med teksten «Refer to the exhibit» viser bildeutdrag fra PDF-en i appen; bildene følger også med i offline-cachen.
+
+SCOR-fremdriften bruker localStorage-nøkkelen `ccnp_scor_study_v1`, uavhengig av NetSec-Pro. Etter første innlasting fungerer SCOR-banken og tilhørende bilder offline.
+
+### Oppdatering av SCOR-spørsmålene
+
+Fra rotmappen til repoet kan parseren kjøres på nytt slik:
+
+```sh
+python course_scraper/scor_parser.py
+```
+
+Parseren leser `course_scraper/920062385-SCOR-PDF.pdf`, skriver `netsec-pro-app/scor-questions.js` og bildeutdrag til `netsec-pro-app/scor-exhibits/`, og oppdaterer `course_scraper/scor_parse_report.md`. Parseravhengigheten `pypdf` er oppført i `course_scraper/requirements.txt`.
+
 ## Innhold i denne byggingen
 
 - Spørsmål slått sammen: **451**
